@@ -1,7 +1,8 @@
 {
   id = "ico";
   title = "Join ICO";
+  link = http://tokenmint.io;
   content = ''
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+    Our Initial Coin Offering allows one to purchase tokens that will be used on the integrated marketplace. We've chosen to use Token Mint as our ICO engine due to the strict vetting process.
   '';
 }

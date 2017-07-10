@@ -1,19 +1,30 @@
 {
   id = "team";
   title = "Team";
-  subtitle = "Lorem ipsum dolor sit amet consectetur.";
+  subtitle = "The team behind Fractalide.";
 
   description = ''
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+    Fractalide started life as a Master Thesis in Université catholique de Louvain under Professor Peter Van Roy back in 2014. Since then the project has undergone multiple rewrites in different programming languages, with new functionality and realizations. Fractalide may now graduate the proof of concept stage into a fully fledged programming platform. We need your help and greatly appreciate your contributions.
   '';
 
   items = [ {
-    img   = "https://dummyimage.com/240";
+    img   = "/img/sjm.jpg";
     name  = "Stewart Mackenzie";
     title = "Founder";
+    social = [ {
+      type = "github";
+      link = "https://github.com/sjmackenzie";
+    } {
+      type = "twitter";
+      link = "https://twitter.com/sj_mackenzie";
+    } ];
   } {
-    img   = "https://dummyimage.com/240";
+    img   = "/img/denis.jpg";
     name  = "Denis Michiels";
     title = "Founder";
+    social = [ {
+      type = "gitlab";
+      link = "https://gitlab.com/dmichiels";
+    } ];
   } ];
 }
