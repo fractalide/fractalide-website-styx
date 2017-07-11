@@ -27,4 +27,19 @@
       link = "https://gitlab.com/dmichiels";
     } ];
   } ];
+
+  advisors = [ {
+    img   = "/img/elaine.jpg";
+    name  = "Elaine Ou";
+    title = "Advisor";
+    social = [ {
+      type = "github";
+      link = "https://github.com/elaineo";
+    } {
+      type = "twitter";
+      link = "https://twitter.com/eiaine";
+    } ];
+  }
+
+  ];
 }
