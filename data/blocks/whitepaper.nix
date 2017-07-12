@@ -8,7 +8,7 @@
   link1 = "/pdf/fractalideCOP.pdf";
   implementation1 = "https://github.com/fractalide/fractalide";
   text2 = ''
-    The entire master thesis of 2014 describes a Hypercard implementation in detail where Hypertalk is swapped out for a Flow-based programming language. This is probably not for the casual investor due to the indepth technical descriptions.
+    The entire master thesis describes the Hypercard implementation in detail. This is probably not for the casual investor due to the indepth technical descriptions.
   '';
   link2 = "/pdf/fractalideCOP.pdf";
   implementation2 = "https://github.com/fractalide/fractalide-oz";

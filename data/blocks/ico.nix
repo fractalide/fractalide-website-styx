@@ -6,9 +6,9 @@
     <b>Token Purpose:</b><p>
     The Initial Coin Offering allows one to purchase THE-TOKEN which will be traded in the integrated marketplace.
     <p>
-    The buyer is someone who is prepared to offer THE-TOKEN for desired software available in the integrated marketplace.
+    The buyer is someone who is prepared to offer THE-TOKEN for desired software available in the integrated marketplace that runs on Fractalide.
     <p>
-    The seller is someone who makes their software available in the integrated marketplace and is prepared to accept THE-TOKEN for a sale.
+    The seller is someone who writes Fractalide compatible software and makes it available on the integrated marketplace and is prepared to accept THE-TOKEN for a sale.
     <p>
     THE-TOKEN may also be used to contract programmers for writing custom components needed.
     <p>
