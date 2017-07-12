@@ -26,6 +26,17 @@
       type = "gitlab";
       link = "https://gitlab.com/dmichiels";
     } ];
+  } {
+    img   = "/img/ericsagnes.jpeg";
+    name  = "Eric Sagnes";
+    title = "Nix Programmer";
+    social = [ {
+      type = "github";
+      link = "https://github.com/ericsagnes";
+    } {
+      type = "twitter";
+      link = "https://twitter.com/ericsagnes";
+    } ];
   } ];
 
   advisors = [ {
