@@ -10,7 +10,7 @@
   items = [ {
     img   = "/img/sjm.jpg";
     name  = "Stewart Mackenzie";
-    title = "Founder";
+    title = "Programmer + Founder";
     social = [ {
       type = "github";
       link = "https://github.com/sjmackenzie";
@@ -21,7 +21,7 @@
   } {
     img   = "/img/denis.jpg";
     name  = "Denis Michiels";
-    title = "Founder";
+    title = "Programmer + Founder";
     social = [ {
       type = "gitlab";
       link = "https://gitlab.com/dmichiels";
