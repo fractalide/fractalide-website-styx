@@ -3,6 +3,20 @@
   title = "Join ICO";
   link = http://tokenmint.io;
   content = ''
-    Our Initial Coin Offering allows one to purchase tokens that will be used on the integrated marketplace. We've chosen to use Token Mint as our ICO engine due to the strict vetting process.
+    <b>Token Purpose:</b><p>
+    The Initial Coin Offering allows one to purchase THE-TOKEN which will be traded in the integrated marketplace.
+    <p>
+    The buyer is someone who is prepared to offer THE-TOKEN for desired software available in the integrated marketplace.
+    <p>
+    The seller is someone who makes their software available in the integrated marketplace and is prepared to accept THE-TOKEN for a sale.
+    <p>
+    THE-TOKEN may also be used to contract programmers for writing custom components needed.
+    <p>
+    The buyer might not be technically minded but knows how to use Hypercard, and may choose to compose already purchased components forming new applications they may sell again. The original author of every component will always be compensated for every sale of a component hierarchy that includes their component.
+    Hence people are rewarded for creating highly reusable, efficient components that solve real world problems.
+    <p>
+    Please participate in the ICO over at Token Mint.
+    <p>
+    Note: Token Mint has not launched yet so the ICO isn't ready yet
   '';
 }
