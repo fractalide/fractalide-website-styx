@@ -1,4 +1,4 @@
-{ lib, templates, ... }:
+{ lib, templates, lang, ... }:
 page:
 with lib;
 ''
@@ -11,7 +11,7 @@ with lib;
   <div class="more">
   ${templates.tag.ilink {
     to = page;
-    content = "Read More";
+    content = i18n "Read More" lang;
   }}
   </div>
 </div>
