@@ -15,7 +15,7 @@ with lib;
         { icon = "fa-twitter";  link ="https://twitter.com/fractalide"; }
       ];
       quicklinks = [
-        { text = "Foo"; link ="#"; }
+        { text = "Home"; link ="#"; }
       ];
     };
 
