@@ -53,7 +53,12 @@ rec {
   themesData = let
     loadThemeForLang = lang: styxLib.themes.load {
       inherit styxLib themes;
-      extraEnv  = { data = data."${lang}"; inherit pages lang; };
+      extraEnv  = {
+        data = data."${lang}";
+        pages = pages."${lang}";
+        prefix = genPrefix lang;
+        inherit lang;
+      };
       extraConf = [ ./conf.nix extraConf ];
     };
   in {
@@ -64,6 +69,11 @@ rec {
   /* Bringing the themes data to the scope
   */
   inherit (themesData.eng) conf lib files;
+
+  genPrefix = lang:
+    if lang == "eng" 
+    then ""
+    else "/${lang}";
 
 
 /*-----------------------------------------------------------------------------
@@ -159,7 +169,7 @@ rec {
       English pages
     ---------------------*/
     eng = let
-      prefix = "";
+      prefix = genPrefix "eng";
       locData = data.eng;
       templates = themesData.eng.templates;
     in rec {
@@ -207,7 +217,7 @@ rec {
       Chinese pages
     ---------------------*/
     zho = let
-      prefix = "/zho";
+      prefix = genPrefix "zho";
       locData = data.zho;
       templates = themesData.zho.templates;
     in rec {
@@ -277,14 +287,14 @@ rec {
 
   # converting pages attribute set to a list
   pageList = let
-    genPageList = ps: lib.pagesToList {
-      pages = ps;
+    genPageList = lang: lib.pagesToList {
+      pages = pages."${lang}";
         default = {
-        layout = themesData.eng.templates.layout;
+        layout = themesData."${lang}".templates.layout;
         body.id = "page-top";
       };
     };
-  in (genPageList pages.eng) ++ (genPageList pages.zho);
+  in (genPageList "eng") ++ (genPageList "zho");
 
   site = lib.mkSite {
     inherit files pageList;
