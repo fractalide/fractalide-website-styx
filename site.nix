@@ -3,7 +3,6 @@
 
    Initialization of Styx, should not be edited
 -----------------------------------------------------------------------------*/
-#{ lib, styx, runCommand, writeText
 { lib, runCommand, writeText
 , fetchFromGitHub
 , styx-themes
@@ -49,16 +48,22 @@ rec {
   ];
 
   /* Loading the themes data
+     Each language gets its own data
   */
-  themesData = styxLib.themes.load {
-    inherit styxLib themes;
-    extraEnv  = { inherit data pages; };
-    extraConf = [ ./conf.nix extraConf ];
+  themesData = let
+    loadThemeForLang = lang: styxLib.themes.load {
+      inherit styxLib themes;
+      extraEnv  = { data = data."${lang}"; inherit pages lang; };
+      extraConf = [ ./conf.nix extraConf ];
+    };
+  in {
+    eng = loadThemeForLang "eng";
+    zho = loadThemeForLang "zho";
   };
-
+  
   /* Bringing the themes data to the scope
   */
-  inherit (themesData) conf lib files templates env;
+  inherit (themesData.eng) conf lib files;
 
 
 /*-----------------------------------------------------------------------------
@@ -69,29 +74,75 @@ rec {
 
   data = with lib; {
 
-    news = sortBy "date" "dsc" (loadDir { dir = ./data/news; inherit env; });
+    /*---------------------
+      Chinese data
+    ---------------------*/
+    eng = let
+      locPages = pages.eng;
+      env = themesData.eng.env;
+    in {
 
-    blocks = loadDir { dir = ./data/blocks; inherit env; asAttrs = true; };
+      news = sortBy "date" "dsc" (loadDir { dir = ./data/eng/news; inherit env; });
 
-    pages = loadDir { dir = ./data/pages; inherit env; asAttrs = true; };
+      blocks = loadDir { dir = ./data/eng/blocks; inherit env; asAttrs = true; };
 
-    /* Menu
-    */
-    menu = let
-      indexBlocks = pages.index.blocks;
-      /* Generating menu entries from index blocks
+      pages = loadDir { dir = ./data/eng/pages; inherit env; asAttrs = true; };
+
+      /* Menu
       */
-      bItems = map (n:
-        let block = find { id = n; } indexBlocks;
-        in block // { navbarClass = "page-scroll"; url = "/#${block.id}"; }
-      ) [ "vision" "whitepaper" "ico" "team" ];
-    in bItems
-    # normal menu entries
-    ++ [
-      pages.faq
-      { title = "Documentation"; path = "/documentation/index.html"; }
-      { title = "GitHub"; url = "https://github.com/fractalide/fractalide"; }
-    ];
+      menu = let
+        indexBlocks = locPages.index.blocks;
+        /* Generating menu entries from index blocks
+        */
+        bItems = map (n:
+          let block = find { id = n; } indexBlocks;
+          in block // { navbarClass = "page-scroll"; url = "/#${block.id}"; }
+        ) [ "vision" "whitepaper" "ico" "team" ];
+      in bItems
+      # normal menu entries
+      ++ [
+        locPages.faq
+        { title = "Documentation"; path = "/documentation/index.html"; }
+        { title = "GitHub"; url = "https://github.com/fractalide/fractalide"; }
+        (pages.zho.index // { title = "中文"; })
+      ];
+
+    };
+
+    /*---------------------
+      Chinese data
+    ---------------------*/
+    zho = let
+      locPages = pages.zho;
+      env = themesData.zho.env;
+    in {
+
+      news = sortBy "date" "dsc" (loadDir { dir = ./data/zho/news; inherit env; });
+
+      blocks = loadDir { dir = ./data/zho/blocks; inherit env; asAttrs = true; };
+
+      pages = loadDir { dir = ./data/zho/pages; inherit env; asAttrs = true; };
+
+      /* Menu
+      */
+      menu = let
+        indexBlocks = locPages.index.blocks;
+        /* Generating menu entries from index blocks
+        */
+        bItems = map (n:
+          let block = find { id = n; } indexBlocks;
+          in block // { navbarClass = "page-scroll"; url = "/zho/#${block.id}"; }
+        ) [ "vision" "whitepaper" "ico" "team" ];
+      in bItems
+      # normal menu entries
+      ++ [
+        locPages.faq
+        { title = "Documentation"; path = "/documentation/index.html"; }
+        { title = "GitHub"; url = "https://github.com/fractalide/fractalide"; }
+        (pages.eng.index // { title = "English"; })
+      ];
+
+    };
 
   };
 
@@ -102,45 +153,103 @@ rec {
    This section declares the pages that will be generated
 -----------------------------------------------------------------------------*/
 
-  pages = rec {
-    index = {
-      title    = "Home";
-      path     = "/index.html";
-      template = templates.block-page.full;
-      layout   = templates.layout;
-      blocks   = let
-        darken = d: d // { class = "bg-light-gray"; };
-      in [
-        (templates.blocks.banner data.blocks.main-banner)
-        (templates.blocks.news (data.blocks.news // { items = pages.news.list; }))
-        (templates.blocks.vision (darken (data.blocks.vision)))
-        (templates.blocks.whitepaper data.blocks.whitepaper)
-        (templates.blocks.ico (darken (data.blocks.ico // { navbarTitle = "ICO"; })))
-        (templates.blocks.team data.blocks.team)
-      ];
-      body.class = "home";
+  pages = {
+
+    /*---------------------
+      English pages
+    ---------------------*/
+    eng = let
+      prefix = "";
+      locData = data.eng;
+      templates = themesData.eng.templates;
+    in rec {
+      index = {
+        title    = "Home";
+        path     = prefix + "/index.html";
+        template = templates.block-page.full;
+        layout   = templates.layout;
+        blocks   = let
+          darken = d: d // { class = "bg-light-gray"; };
+        in [
+          (templates.blocks.banner locData.blocks.main-banner)
+          (templates.blocks.news (locData.blocks.news // { items = news.list; }))
+          (templates.blocks.vision (darken (locData.blocks.vision)))
+          (templates.blocks.whitepaper locData.blocks.whitepaper)
+          (templates.blocks.ico (darken (locData.blocks.ico // { navbarTitle = "ICO"; })))
+          (templates.blocks.team locData.blocks.team)
+        ];
+        body.class = "home";
+      };
+
+      newsIndex = lib.mkSplit {
+        title        = "news";
+        basePath     = prefix + "/news/index";
+        itemsPerPage = conf.theme.news.index.itemsPerPage;
+        template     = templates.news.index;
+        data         = news.list;
+      };
+
+      news = lib.mkPageList {
+        title       = "News";
+        data        = locData.news;
+        pathPrefix  = prefix + "/news/";
+        template    = templates.news.full;
+      };
+
+      faq = {
+        title = "FAQ";
+        path  = prefix + "/faq.html";
+        template = templates.pages.faq;
+      } // locData.pages.faq;
     };
 
-    newsIndex = lib.mkSplit {
-      title        = "news";
-      basePath     = "/news/index";
-      itemsPerPage = conf.theme.news.index.itemsPerPage;
-      template     = templates.news.index;
-      data         = news.list;
-    };
+    /*---------------------
+      Chinese pages
+    ---------------------*/
+    zho = let
+      prefix = "/zho";
+      locData = data.zho;
+      templates = themesData.zho.templates;
+    in rec {
+      index = {
+        title    = "Home";
+        path     = prefix + "/index.html";
+        template = templates.block-page.full;
+        layout   = templates.layout;
+        blocks   = let
+          darken = d: d // { class = "bg-light-gray"; };
+        in [
+          (templates.blocks.banner locData.blocks.main-banner)
+          (templates.blocks.news (locData.blocks.news // { items = news.list; }))
+          (templates.blocks.vision (darken (locData.blocks.vision)))
+          (templates.blocks.whitepaper locData.blocks.whitepaper)
+          (templates.blocks.ico (darken (locData.blocks.ico // { navbarTitle = "ICO"; })))
+          (templates.blocks.team locData.blocks.team)
+        ];
+        body.class = "home";
+      };
 
-    news = lib.mkPageList {
-      title       = "News";
-      data        = data.news;
-      pathPrefix  = "/news/";
-      template    = templates.news.full;
-    };
+      newsIndex = lib.mkSplit {
+        title        = "news";
+        basePath     = prefix + "/news/index";
+        itemsPerPage = conf.theme.news.index.itemsPerPage;
+        template     = templates.news.index;
+        data         = news.list;
+      };
 
-    faq = {
-      title = "FAQ";
-      path  = "/faq.html";
-      template = templates.pages.faq;
-    } // data.pages.faq;
+      news = lib.mkPageList {
+        title       = "News";
+        data        = locData.news;
+        pathPrefix  = prefix + "/news/";
+        template    = templates.news.full;
+      };
+
+      faq = {
+        title = "FAQ";
+        path  = prefix + "/faq.html";
+        template = templates.pages.faq;
+      } // locData.pages.faq;
+    };
   };
 
 
@@ -167,13 +276,15 @@ rec {
   } ];
 
   # converting pages attribute set to a list
-  pageList = lib.pagesToList {
-    inherit pages;
-    default = {
-      layout = templates.layout;
-      body.id = "page-top";
+  pageList = let
+    genPageList = ps: lib.pagesToList {
+      pages = ps;
+        default = {
+        layout = themesData.eng.templates.layout;
+        body.id = "page-top";
+      };
     };
-  };
+  in (genPageList pages.eng) ++ (genPageList pages.zho);
 
   site = lib.mkSite {
     inherit files pageList;
