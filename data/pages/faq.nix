@@ -1,17 +1,35 @@
 {
   items = [ {
     q = ''
-      Lorem ipsum dolor sit amet?
+      What is Fractalide?
     '';
     a = ''
-      Ut recteque torquatos honestatis eos. Rationibus argumentum ea eum. Vix ad summo nostro dissentias. Vim malis insolens concludaturque ex, cu case solum denique per, errem audiam impedit vix id. Et ius malis alterum, mea id ferri mollis. Cum ne omnes feugait. Et vim oblique commune iracundia.
+      It's a programming platform allowing you to program applications using the <a href="https://en.wikipedia.org/wiki/Flow-based_programming">Flow-based programming paradigm</a>
     '';
-  } {
+  }
+  {
     q = ''
-      Lorem ipsum dolor sit amet?
+      Why do you use <a href="https://nixos.org/nix">Nix</a>?
     '';
     a = ''
-      Ut recteque torquatos honestatis eos. Rationibus argumentum ea eum. Vix ad summo nostro dissentias. Vim malis insolens concludaturque ex, cu case solum denique per, errem audiam impedit vix id. Et ius malis alterum, mea id ferri mollis. Cum ne omnes feugait. Et vim oblique commune iracundia.
+      Some hierarchies of components can get very large and complex, a package manager is needed to automate the building and linking of the graph. Nix is one of the few package managers that actually does a good job of setting up dependencies such that you aren't driven insane.
     '';
-  } ];
+  }
+  {
+    q = ''
+      If I write a component and sell it to another programmer and they use my component in their hierarchy they will sell again will I be compensated?
+    '';
+    a = ''
+      Yes, you own that component and wherever it is referenced you will receive compensation for your contribution. Note the marketplace has not been implemented yet.
+    '';
+  }
+  {
+    q = ''
+      Why do you need an ICO?
+    '';
+    a = ''
+      We want a marketplace and need a currency, it would obviously be problematic to use the existing banking infrastructure so it's better to create a coin for the marketplace.
+    '';
+  }
+  ];
 }
