@@ -1,7 +1,10 @@
 {
   id = "ico";
-  title = "加入ICO";
-  link = http://tokenmint.io;
+  title = "参与ICO";
+  link = {
+    to = http://tokenmint.io;
+    text = "参与ICO";
+  };
   content = ''
     <b>Token Purpose:</b><p>
     The Initial Coin Offering allows one to purchase FRACTAL tokens which will be traded in the integrated marketplace.

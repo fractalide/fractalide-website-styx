@@ -1,7 +1,10 @@
 {
   id = "ico";
   title = "Join ICO";
-  link = http://tokenmint.io;
+  link = {
+    to = http://tokenmint.io;
+    text = "Join ICO";
+  };
   content = ''
     <b>Token Name:</b> Fractal Coin<br>
     <b>Token Symbol:</b> FRC<br>

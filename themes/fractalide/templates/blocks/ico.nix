@@ -9,7 +9,7 @@ normalTemplate (data:
         </div>
         <div class="col-md-10">
         <p>${data.content}</p>
-        <p>${templates.tag.ilink { to = data.link; content = "Join ICO"; }}</p>
+        <p>${templates.tag.ilink { to = data.link.to; content = data.link.text; }}</p>
         </div>
       </div>
     '';
