@@ -8,17 +8,16 @@ normalTemplate (data:
         <i class="fa fa-file-text fa-5x" aria-hidden="true"></i>
         </div>
         <div class="col-md-10">
+          ${mapTemplate (block: ''
           <div class="row">
-            <p>${data.text1}</p>
-            <p>${templates.tag.ilink { to = data.link1; content = "Download One Pager"; }}</p>
-            <p>${templates.tag.ilink { to = data.implementation1; content = "Current implementation"; }} <img src="https://img.shields.io/github/stars/fractalide/fractalide.svg?style=flat-square"> <img src="https://img.shields.io/github/forks/fractalide/fractalide.svg?style=flat-square"> <img src="https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square">
-            </p>
+            <p>${block.text}</p>
+            <ul>
+              ${mapTemplate (link: ''
+                <li>${templates.tag.ilink { to = link.to; content = link.text; }}${optionalString (link ? extra) " ${link.extra}"}</li>
+              '') block.links}
+            </ul>
           </div>
-          <div class="row">
-            <p>${data.text2}</p>
-            <p>${templates.tag.ilink { to = data.link2; content = "Download Master Thesis"; }}</p>
-            <p>${templates.tag.ilink { to = data.implementation2; content = "Original Master Thesis implementation"; }}</p>
-          </div>
+          '') data.blocks}
         </div>
       </div>
     '';
