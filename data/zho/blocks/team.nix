@@ -1,6 +1,6 @@
 {
   id = "team";
-  title = "球隊";
+  title = "团队";
   subtitle = "The team behind Fractalide.";
 
   description = ''

@@ -65,13 +65,13 @@ rec {
     eng = loadThemeForLang "eng";
     zho = loadThemeForLang "zho";
   };
-  
+
   /* Bringing the themes data to the scope
   */
   inherit (themesData.eng) conf lib files;
 
   genPrefix = lang:
-    if lang == "eng" 
+    if lang == "eng"
     then ""
     else "/${lang}";
 
@@ -147,7 +147,7 @@ rec {
       # normal menu entries
       ++ [
         locPages.faq
-        { title = "Documentation"; path = "/documentation/index.html"; }
+        { title = "软件文献"; path = "/documentation/index.html"; }
         { title = "GitHub"; url = "https://github.com/fractalide/fractalide"; }
         (pages.eng.index // { title = "English"; })
       ];
