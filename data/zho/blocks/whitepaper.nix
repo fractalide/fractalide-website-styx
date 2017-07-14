@@ -1,6 +1,6 @@
 {
   id = "whitepaper";
-  title = "白皮書";
+  title = "白皮书";
 
   blocks = [{
     text = ''
