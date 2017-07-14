@@ -248,14 +248,14 @@ rec {
       };
 
       news = lib.mkPageList {
-        title       = "News";
+        title       = "公告新闻";
         data        = locData.news;
         pathPrefix  = prefix + "/news/";
         template    = templates.news.full;
       };
 
       faq = {
-        title = "FAQ";
+        title = "常见问题";
         path  = prefix + "/faq.html";
         template = templates.pages.faq;
       } // locData.pages.faq;

@@ -1,4 +1,4 @@
 {
   id = "news";
-  title = "中文News";
+  title = "公告新闻";
 }
