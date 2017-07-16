@@ -10,7 +10,7 @@
   items = [ {
     img   = "/img/sjm.jpg";
     name  = "Stewart Mackenzie";
-    title = "程式员+创办人";
+    title = "程序员+创办人";
     social = [ {
       type = "github";
       link = "https://github.com/sjmackenzie";
@@ -21,7 +21,7 @@
   } {
     img   = "/img/denis.jpg";
     name  = "Denis Michiels";
-    title = "程式员+创办人";
+    title = "程序员+创办人";
     social = [ {
       type = "gitlab";
       link = "https://gitlab.com/dmichiels";
@@ -29,7 +29,7 @@
   } {
     img   = "/img/ericsagnes.jpeg";
     name  = "Eric Sagnes";
-    title = "Nix程式员";
+    title = "Nix程序员";
     social = [ {
       type = "github";
       link = "https://github.com/ericsagnes";
