@@ -59,6 +59,9 @@
       <li>
         Whether or not people will enjoy programming and use it to solve real world problems en mass is also uncertain.
       </li>
+      <li>
+        As is the case in the ETH community, many ETH ICOs have converted their contributed ETH into Fiat currency as fast as possible which creates instablitiy in the cryptocurrency market. We have no intention of getting out of ETC (other than operational expenses) and are committed to this community for the long run. Indeed we aim for our programmers to be paid in ETC.
+      </li>
     </ul>
     <b>Invest</b><br>
     Please participate in the ICO over at Token Mint as long as you follow these guidelines:
