@@ -2,7 +2,7 @@
   id = "vision";
   title = "Vision";
   content = ''
-    Fractalide is a Rapid Application Development (RAD) platform, an integrated marketplace and a new Ethereum Classic client.
+    Fractalide is a Rapid Application Development (RAD) platform, an integrated app marketplace and a new Ethereum Classic client.
 
     <h5>Rapid Application Development platform</h5>
     Fractalide draws much inspiration from <a href="https://en.wikipedia.org/wiki/HyperCard">HyperCard</a>. HyperCard was intuitive, semantically clear and easy to learn such that non-programmers could create powerful programs that solved real world problems at hand.
@@ -14,7 +14,7 @@
 
     <br><br>Which leads us to the next point. We need a way to share these powerful components with the world!
 
-    <h5>App Marketplace</h5>
+    <h5>Integrated App Marketplace</h5>
     Once the above HyperCard layer is completed applications can be built. A Marketplace app will be among the first few applications created. Very similar to how you have an Appstore app on your phone, this Fractalide Marketplace app allows you to search and pay for applications that run on Fractalide.
 
     <br><br>Though unlike the appstore, components that make up an application are shareable and may be included in other component hierachies. The original author is compensated for their work every time their component is sold even when it forms part of a component hierarchy created by another person.
@@ -24,6 +24,8 @@
     <br><br>The last notable point about the marketplace is that a new cryptocurrency will be created enabling trade between Fractalide buyers and sellers. This is the very same coin that can be purchased in the ICO.
 
     <h5>A New Ethereum Classic Client</h5>
-    The first comer app will be wrapping ETCDEV team's modular Ethereum Classic Emerald SDK libraries. This allows Fractalide to become an Ethereum Classic Client. Allowing for deep ETC blockchain functionality integration into the applications available on the Fractalide Marketplace.
+    Another first comer app will be wrapping ETCDEV team's modular Ethereum Classic Emerald SDK libraries. This allows Fractalide to become an Ethereum Classic Client. Allowing for deep ETC blockchain functionality integration into the applications available on the Fractalide Marketplace.
+    <br>
+    Programmers will be hired to assist ETCDEV to build out Emerald SDK.
   '';
 }
