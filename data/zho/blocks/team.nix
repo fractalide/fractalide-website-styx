@@ -1,10 +1,10 @@
 {
   id = "team";
   title = "团队";
-  subtitle = "The team behind Fractalide.";
+  /*subtitle = "";*/
 
   description = ''
-    Fractalide started life as a Master Thesis in Université catholique de Louvain under Professor Peter Van Roy back in 2014. Since then the project has undergone multiple rewrites in different programming languages, with new functionality and realizations. Fractalide may now graduate the proof of concept stage into a fully fledged programming platform. We need your help and greatly appreciate your contributions.
+    Fractalide 这个项目，源于2014年一份在法语鲁汶大学由Peter Van Roy 教授指导下的硕士论文。自此之后，此项目已经以不同的编程语言进行多次重写，具有新的功能和实现。每一个贡献都有助于完成这个项目。谢谢。
   '';
 
   items = [ {
