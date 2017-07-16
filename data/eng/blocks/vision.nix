@@ -2,7 +2,7 @@
   id = "vision";
   title = "Vision";
   content = ''
-    Fractalide is a Rapid Application Development (RAD) platform with integrated marketplace. The integrated marketplace allows programmers and non-programmers to be compensated for their work even when their component is used in another person's published application. The RAD platform will then be extended to support ETCDEV's modular Emerald SDK libraries hence creating a new Ethereum Classic client. Thus the user has an all-in-one marketplace of commercially supported components, a cryptocurrency to pay for the components and a platform to compose, create, mix, match and run them on.
+    Fractalide is a Rapid Application Development (RAD) platform, an integrated marketplace and a new Ethereum Classic client.
 
     <h5>Rapid Application Development platform</h5>
     Fractalide draws much inspiration from <a href="https://en.wikipedia.org/wiki/HyperCard">HyperCard</a>. HyperCard was intuitive, semantically clear and easy to learn such that non-programmers could create powerful programs that solved real world problems at hand.
