@@ -4,14 +4,14 @@
 
   blocks = [{
     text = ''
-      The one-pager describes the project in a succinct manner. It covers what has been done, the latest advancements after the Master Thesis implementation and what still needs to be done to reach our end goal.
+      这一页简报以简洁的方式描述了该项目。它涵盖了已完成的工作，硕士论文发表后的最新进展以及将来须要完成的工作。
     '';
     links = [{
       to = "/pdf/fractalideCOP.pdf";
-      text = "Download One Pager";
+      text = "下载一页简报";
     } {
       to = "https://github.com/fractalide/fractalide";
-      text = "Current implementation";
+      text = "目前已完成的源代码";
       extra = ''
         <img src="https://img.shields.io/github/stars/fractalide/fractalide.svg?style=flat-square">
         <img src="https://img.shields.io/github/forks/fractalide/fractalide.svg?style=flat-square">
@@ -20,14 +20,13 @@
     }];
   } {
     text = ''
-      The entire master thesis describes the Hypercard implementation in detail. This is probably not for the casual investor due to the indepth technical descriptions.
     '';
     links = [{
       to = "/pdf/fractalideCOP.pdf";
-      text = "Download Master Thesis";
+      text = "下载硕士论文";
     } {
       to = "https://github.com/fractalide/fractalide-oz";
-      text = "Original Master Thesis implementation";
+      text = "硕士论文的源代码";
     }];
   }];
 }
