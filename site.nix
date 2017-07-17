@@ -92,7 +92,7 @@ rec {
       env = themesData.eng.env;
     in {
 
-      news = sortBy "date" "dsc" (loadDir { dir = ./data/eng/news; inherit env; });
+      /*news = sortBy "date" "dsc" (loadDir { dir = ./data/eng/news; inherit env; });*/
 
       blocks = loadDir { dir = ./data/eng/blocks; inherit env; asAttrs = true; };
 
@@ -127,7 +127,7 @@ rec {
       env = themesData.zho.env;
     in {
 
-      news = sortBy "date" "dsc" (loadDir { dir = ./data/zho/news; inherit env; });
+      /*news = sortBy "date" "dsc" (loadDir { dir = ./data/zho/news; inherit env; });*/
 
       blocks = loadDir { dir = ./data/zho/blocks; inherit env; asAttrs = true; };
 
@@ -182,16 +182,20 @@ rec {
           darken = d: d // { class = "bg-light-gray"; };
         in [
           (templates.blocks.banner locData.blocks.main-banner)
-          (templates.blocks.news (locData.blocks.news // { items = news.list; }))
+          (templates.blocks.taster locData.blocks.taster)
+          /*(templates.blocks.news (locData.blocks.news // { items = news.list; }))*/
           (templates.blocks.vision (darken (locData.blocks.vision)))
-          (templates.blocks.whitepaper locData.blocks.whitepaper)
-          (templates.blocks.ico (darken (locData.blocks.ico // { navbarTitle = "ICO"; })))
-          (templates.blocks.team locData.blocks.team)
+          (templates.blocks.hyperflow locData.blocks.hyperflow)
+          (templates.blocks.fractalmarket (darken locData.blocks.fractalmarket))
+          (templates.blocks.etherflow locData.blocks.etherflow)
+          (templates.blocks.whitepaper (darken locData.blocks.whitepaper))
+          (templates.blocks.ico (locData.blocks.ico // { navbarTitle = "ICO"; }))
+          (templates.blocks.team (darken locData.blocks.team))
         ];
         body.class = "home";
       };
 
-      newsIndex = lib.mkSplit {
+      /*newsIndex = lib.mkSplit {
         title        = "news";
         basePath     = prefix + "/news/index";
         itemsPerPage = conf.theme.news.index.itemsPerPage;
@@ -204,7 +208,7 @@ rec {
         data        = locData.news;
         pathPrefix  = prefix + "/news/";
         template    = templates.news.full;
-      };
+      };*/
 
       faq = {
         title = "FAQ";
@@ -230,16 +234,20 @@ rec {
           darken = d: d // { class = "bg-light-gray"; };
         in [
           (templates.blocks.banner locData.blocks.main-banner)
-          (templates.blocks.news (locData.blocks.news // { items = news.list; }))
+          (templates.blocks.taster locData.blocks.taster)
+          /*(templates.blocks.news (locData.blocks.news // { items = news.list; }))*/
           (templates.blocks.vision (darken (locData.blocks.vision)))
-          (templates.blocks.whitepaper locData.blocks.whitepaper)
-          (templates.blocks.ico (darken (locData.blocks.ico // { navbarTitle = "ICO"; })))
-          (templates.blocks.team locData.blocks.team)
+          (templates.blocks.hyperflow locData.blocks.hyperflow)
+          (templates.blocks.fractalmarket (darken locData.blocks.fractalmarket))
+          (templates.blocks.etherflow locData.blocks.etherflow)
+          (templates.blocks.whitepaper (darken locData.blocks.whitepaper))
+          (templates.blocks.ico (locData.blocks.ico // { navbarTitle = "ICO"; }))
+          (templates.blocks.team (darken locData.blocks.team))
         ];
         body.class = "home";
       };
 
-      newsIndex = lib.mkSplit {
+      /*newsIndex = lib.mkSplit {
         title        = "news";
         basePath     = prefix + "/news/index";
         itemsPerPage = conf.theme.news.index.itemsPerPage;
@@ -252,7 +260,7 @@ rec {
         data        = locData.news;
         pathPrefix  = prefix + "/news/";
         template    = templates.news.full;
-      };
+      };*/
 
       faq = {
         title = "常见问题";

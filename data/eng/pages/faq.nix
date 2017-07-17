@@ -36,7 +36,7 @@
       Will ETCDEV be compensated for their work on Emerald SDK?
     '';
     a = ''
-      We'll definitely assist ETCDEV to wrap Fractalide components around their software and help them publish on the app marketplace thus they will be compensated for their work. As will anyone else creating components. 
+      We'll definitely assist ETCDEV to wrap Fractalide components around their software and help them publish on the app marketplace thus they will be compensated for their work. As will anyone else creating components.
     '';
   }
   ];

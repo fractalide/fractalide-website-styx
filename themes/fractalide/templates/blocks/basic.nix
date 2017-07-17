@@ -1,5 +1,5 @@
 { lib, ... }:
-data: 
+data:
 with lib;
 let
   class = optionalString (data ? class) " ${htmlAttr "class" data.class}";
@@ -11,7 +11,7 @@ ${data.pre or ""}
     <div class="row">
       <div class="col-lg-12 text-center">
         ${optionalString (data ? title)    ''<h2 class="section-heading">${data.title}</h2>''}
-        ${optionalString (data ? subtitle) ''<h3 class="section-subheading text-muted">${data.subtitle}</h3>''}
+        ${optionalString (data ? subtitle) ''<h4 class="section-subheading text-muted">${data.subtitle}</h4>''}
       </div>
     </div>
     ''}
