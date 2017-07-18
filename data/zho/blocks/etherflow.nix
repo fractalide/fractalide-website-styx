@@ -3,8 +3,19 @@
   title = "Etherflow";
   subtitle = "嶄新以太坊經典(Ethereum Classic)客戶端";
   content = ''
-  Etherflow通过使用模块化的Ethereum Classic Emerald SDK库，构建在ETCDEV的工作之上。 Etherflow旨在成为一个完整的Ethereum Classic客户端。允许由Hyperflow创建的应用程序在数据区块链上进行交易，与加密合约进行交互，或者只是一个平常用户的钱包。
-  <br><br>
-  我们将聘请程序员来协助执行Emerald SDK和与Etherflow集成。
+    Etherflow是一套软件组件，可以大量利用ETCDEV的Emerald SDK。
+    <br><br>
+    我们致力于这些重要成果:
+    <ul>
+      <li>
+        Etherflow提供一个方便的界面，供用户与ETC数据区块链交互。
+      </li>
+      <li>
+        可重复使用的组件将允许数据区块链与HyperFlow创建的应用程序进行交互。
+      </li>
+      <li>
+        需要与ETCDEV团队长期合作，以协助扩展Emerald SDK的功能，并确保其稳定的预期方式运作。
+      </li>
+    </ul>
     '';
 }
