@@ -9,7 +9,7 @@ normalTemplate (data:
         </div>
         <div class="col-md-10">
         <p>${data.content}</p>
-        <p>${templates.tag.ilink { to = data.link.to; content = data.link.text; }}</p>
+        <a href="${data.link.to}" class="page-scroll btn btn-xl">${data.link.text}</a>
         </div>
       </div>
     '';
