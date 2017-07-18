@@ -8,7 +8,7 @@
   FractalMarket has these features:
   <ul>
     <li>
-      Users may sell components and applications for FRACTAL.
+      Users may buy and sell components and applications for FRACTAL.
     </li>
     <li>
       Users may search and download components and applications.
