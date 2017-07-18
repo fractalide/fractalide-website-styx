@@ -1,5 +1,5 @@
 {
   id = "taster";
-  subtitle = "A marketplace of reusable components<br>that can be used with graphical programming tools<br>to build a solution to virtually any problem";
+  subtitle = "一个可用于图形化编程工具的可重复使用组件之应用市场，以解決接近任何问题。";
   content = "";
 }
