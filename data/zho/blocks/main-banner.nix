@@ -2,8 +2,8 @@
   id = "main-banner";
   content = ''
     <div class="intro-text">
-      <div class="intro-lead-in">中文An Ethereum Classic Hypercard Client with Integrated Marketplace.</div>
-      <a href="#ico" class="page-scroll btn btn-xl">Join ICO</a>
+      <div class="intro-lead-in">ETC基础设施ICO</div>
+      <a href="#ico" class="page-scroll btn btn-xl">参与ICO</a>
    </div>
   '';
 }

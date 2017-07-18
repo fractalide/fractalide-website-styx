@@ -2,6 +2,13 @@
   id = "vision";
   title = "Vision";
   content = ''
-    Fractalide aims to be a free and open rapid application development (RAD) platform with integrated marketplace, allowing one to purchase reuseable and reproducible applications. The RAD platform is based on Hypercard which allows non-programmers to mix and match components created by programmers into new applications. The integrated marketplace allows programmers and non-programmers to be compensated for their work even when their component is used in another person's published application. The RAD platform will then be extended to support ETCDEV's modular Emerald SDK libraries hence creating a new Ethereum Classic client. Thus the user has an all-in-one marketplace of commercially supported components, a cryptocurrency to pay for the components and a platform to compose, create, mix, match and run them on.
+    The vision is to create three foundational applications that run on an existing programming platform called Fractalide.
+    <ol>
+      <li><b><a href="#hyperflow">Hyperflow</a></b>: A Rapid Application Development (RAD) platform</li>
+      <li><b><a href="#fractalmarket">Fractalmarket</a></b>: An integrated app marketplace</li>
+      <li><b><a href="#etherflow">Etherflow</a></b>: A new Ethereum Classic client</li>
+    </ol>
+
+    <b>Hyperflow</b> facilitates the creation of applications which can be published on <b>Fractalmarket</b>. <b>Etherflow</b> allows people to purchase applications on <b>Fractalmarket</b> or interact with other Ethereum Classic holders and contracts.
   '';
 }

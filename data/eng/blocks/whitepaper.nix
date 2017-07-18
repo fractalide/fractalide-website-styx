@@ -20,7 +20,6 @@
     }];
   } {
     text = ''
-      The entire master thesis describes the Hypercard implementation in detail. This is probably not for the casual investor due to the indepth technical descriptions.
     '';
     links = [{
       to = "/pdf/fractalideCOP.pdf";
