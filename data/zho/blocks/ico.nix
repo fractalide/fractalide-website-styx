@@ -6,7 +6,7 @@
     text = "参与ICO";
   };
   content = ''
-    <b>代币名称:</b> Fractal Coin<br>
+    <b>代币名称:</b> FRACTAL Coin<br>
     <b>代币代码:</b> FRC<br>
     <b>发行代币目的:</b><br>
     <ul>
@@ -27,7 +27,7 @@
       </li>
     </ul>
     <b>投资:</b>
-    請在Token Mint參與ICO並留意以下指引:
+    请在Token Mint参与ICO并留意以下指引:
     <ul>
       <li>
         不要投资超过你能承受的损失。
@@ -36,6 +36,6 @@
         不要投资你不明白的事情。
       </li>
     </ul>
-    注意：Token Mint還沒有啟動，所以ICO尚未開始
+    注意:Token Mint还没有启动，所以ICO尚未开始
   '';
 }

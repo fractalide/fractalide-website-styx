@@ -6,7 +6,7 @@
     text = "Join ICO";
   };
   content = ''
-    <b>Token Name:</b> Fractal Coin<br>
+    <b>Token Name:</b> FRACTAL Coin<br>
     <b>Token Symbol:</b> FRC<br>
     <b>Token Purpose:</b><br>
     <ul>
