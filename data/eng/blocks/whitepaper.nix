@@ -1,32 +1,20 @@
+{ lib, templates, ... }:
+with lib;
 {
   id = "whitepaper";
   title = "Whitepaper";
 
-  blocks = [{
-    text = ''
-      The one-pager describes the project in a succinct manner. It covers what has been done, the latest advancements after the Master Thesis implementation and what still needs to be done to reach our end goal.
-    '';
-    links = [{
-      to = "/pdf/fractalideCOP.pdf";
-      text = "Download One Pager";
-    } {
-      to = "https://github.com/fractalide/fractalide";
-      text = "Current implementation";
-      extra = ''
-        <img src="https://img.shields.io/github/stars/fractalide/fractalide.svg?style=flat-square">
-        <img src="https://img.shields.io/github/forks/fractalide/fractalide.svg?style=flat-square">
-        <img src="https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square">
-      '';
-    }];
-  } {
-    text = ''
-    '';
-    links = [{
-      to = "/pdf/fractalideCOP.pdf";
-      text = "Download Master Thesis";
-    } {
-      to = "https://github.com/fractalide/fractalide-oz";
-      text = "Original Master Thesis implementation";
-    }];
-  }];
+  content = markdownToHtml ''
+    The one-pager describes the project in a succinct manner. It covers what has been done, the latest advancements after the Master Thesis implementation and what still needs to be done to reach our end goal.
+
+    * ${templates.tag.ilink { to = "/pdf/fractalideCOP.pdf"; content = "Download One Pager"; }}
+    * ${templates.tag.ilink { to = "https://github.com/fractalide/fractalide"; content = "Current implementation"; }}
+      <img src="https://img.shields.io/github/stars/fractalide/fractalide.svg?style=flat-square">
+      <img src="https://img.shields.io/github/forks/fractalide/fractalide.svg?style=flat-square">
+      <img src="https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square">
+    * ${templates.tag.ilink { to = "/pdf/fractalideCOP.pdf"; content = "Download Master Thesis"; }}
+    * ${templates.tag.ilink { to = "https://github.com/fractalide/fractalide-oz"; content = "Original Master Thesis implementation"; }}
+  '';
+
+  icon = "file-text";
 }
