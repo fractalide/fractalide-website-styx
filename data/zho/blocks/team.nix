@@ -51,6 +51,14 @@
       type = "twitter";
       link = "https://twitter.com/eiaine";
     } ];
+  } {
+    img   = "/img/royzou.jpg";
+    name  = "Roy Zou";
+    title = "顾问";
+    social = [ {
+      type = "twitter";
+      link = "https://twitter.com/bitkio_royzou";
+    } ];
   }
 
   ];
