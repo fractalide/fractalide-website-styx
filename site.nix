@@ -182,14 +182,14 @@ rec {
           darken = d: d // { class = "bg-light-gray"; };
         in [
           (templates.blocks.banner locData.blocks.main-banner)
-          (templates.blocks.taster locData.blocks.taster)
+          (templates.blocks.standard locData.blocks.taster)
           /*(templates.blocks.news (locData.blocks.news // { items = news.list; }))*/
-          (templates.blocks.vision (darken (locData.blocks.vision)))
-          (templates.blocks.hyperflow locData.blocks.hyperflow)
-          (templates.blocks.fractalmarket (darken locData.blocks.fractalmarket))
-          (templates.blocks.etherflow locData.blocks.etherflow)
-          (templates.blocks.whitepaper (darken locData.blocks.whitepaper))
-          (templates.blocks.ico (locData.blocks.ico // { navbarTitle = "ICO"; }))
+          (templates.blocks.standard (darken (locData.blocks.vision)))
+          (templates.blocks.standard locData.blocks.hyperflow)
+          (templates.blocks.standard (darken locData.blocks.fractalmarket))
+          (templates.blocks.standard locData.blocks.etherflow)
+          (templates.blocks.standard (darken locData.blocks.whitepaper))
+          (templates.blocks.standard (locData.blocks.ico // { navbarTitle = "ICO"; }))
           (templates.blocks.team (darken locData.blocks.team))
         ];
         body.class = "home";
@@ -234,14 +234,14 @@ rec {
           darken = d: d // { class = "bg-light-gray"; };
         in [
           (templates.blocks.banner locData.blocks.main-banner)
-          (templates.blocks.taster locData.blocks.taster)
+          (templates.blocks.standard locData.blocks.taster)
           /*(templates.blocks.news (locData.blocks.news // { items = news.list; }))*/
-          (templates.blocks.vision (darken (locData.blocks.vision)))
-          (templates.blocks.hyperflow locData.blocks.hyperflow)
-          (templates.blocks.fractalmarket (darken locData.blocks.fractalmarket))
-          (templates.blocks.etherflow locData.blocks.etherflow)
-          (templates.blocks.whitepaper (darken locData.blocks.whitepaper))
-          (templates.blocks.ico (locData.blocks.ico // { navbarTitle = "ICO"; }))
+          (templates.blocks.standard (darken (locData.blocks.vision)))
+          (templates.blocks.standard locData.blocks.hyperflow)
+          (templates.blocks.standard (darken locData.blocks.fractalmarket))
+          (templates.blocks.standard locData.blocks.etherflow)
+          (templates.blocks.standard (darken locData.blocks.whitepaper))
+          (templates.blocks.standard (locData.blocks.ico // { navbarTitle = "ICO"; }))
           (templates.blocks.team (darken locData.blocks.team))
         ];
         body.class = "home";

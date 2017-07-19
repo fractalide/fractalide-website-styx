@@ -1,14 +1,16 @@
+{ lib, templates, ... }:
+with lib;
 {
   id = "vision";
   title = "Vision";
-  content = ''
+  content = markdownToHtml ''
     The vision is to create three foundational applications that run on an existing programming platform called Fractalide.
-    <ol>
-      <li><b><a href="#hyperflow">Hyperflow</a></b>: A Rapid Application Development (RAD) platform</li>
-      <li><b><a href="#fractalmarket">Fractalmarket</a></b>: An integrated app marketplace</li>
-      <li><b><a href="#etherflow">Etherflow</a></b>: A new Ethereum Classic client</li>
-    </ol>
 
-    <b>Hyperflow</b> facilitates the creation of applications which can be published on <b>Fractalmarket</b>. <b>Etherflow</b> allows people to purchase applications on <b>Fractalmarket</b> or interact with other Ethereum Classic holders and contracts.
+    1. **${templates.tag.ilink { to = "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**: A Rapid Application Development (RAD) platform
+    2. **${templates.tag.ilink { to = "/#fractalmarket"; content = "Fractamarket"; class = "page-scroll"; }}**: An integrated app marketplace
+    3. **${templates.tag.ilink { to = "/#etherflow"; content = "Etherflow"; class = "page-scroll"; }}**: A new Ethereum Classic client
+
+    **Hyperflow** facilitates the creation of applications which can be published on **Fractalmarket**. **Etherflow** allows people to purchase applications on **Fractalmarket** or interact with other Ethereum Classic holders and contracts.
   '';
+  icon = "eye";
 }

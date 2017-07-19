@@ -17,7 +17,7 @@ $(function() {
   /* Fixing full urls for scrollspy
   */
   var url = location.href.replace(/#.*/,'');
-  $(".navbar-fixed-top").find('a[href]').each(function(i,a) {
+  $("a[href]").each(function(i,a) {
     var $a = $(a);
     var href = $a.attr('href');
     if (href.indexOf(url+'#') == 0) {
