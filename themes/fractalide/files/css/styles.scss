@@ -1,5 +1,5 @@
-//$main-color: #fed136; 
-$main-color: #5ab6cc; //#66d7f1; 
+//$main-color: #fed136;
+$main-color: #5ab6cc; //#66d7f1;
 
 html {
     min-height: 100%;
@@ -11,7 +11,13 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     padding-top: 100px;
+    margin-bottom: 170px;
+}
+
+@media(min-width:768px) {
+  body {
     margin-bottom: 90px;
+  };
 }
 
 body.home {

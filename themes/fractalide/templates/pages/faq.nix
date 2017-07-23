@@ -9,8 +9,6 @@ normalTemplate (page: ''
     ) page.items}
   </div>
   </div>
-  <br>
-  <br>
 '')
 /*
     ${mapTemplate (f:
