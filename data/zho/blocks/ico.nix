@@ -1,17 +1,17 @@
-{ lib, ... }:
+{ lib, templates, ... }:
 with lib;
 {
   id = "ico";
   title = "参与ICO";
-  content = ''
-    **代币名称:** Fractal Coin  
-    **代币代码:** FRC  
+  content = markdownToHtml ''
+    **代币名称:** Fractal Coin
+    **代币代码:** FRC
     **发行代币目的:**
 
-    * 买卖组件双方将在Fractalmarket中以FRACTAL代币进行交易，所以FRACTAL代币具有实用价值，而不仅是投机性的。
+    * 买卖组件双方将在${templates.tag.ilink { to = "/zho/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}中以FRACTAL代币进行交易，所以FRACTAL代币具有实用价值，而不仅是投机性的。
 
     **重要事项：**
-    
+
     *  FRACTAL代币不是一种债券，FRACTAL不代表公司股权，所以是不能获得股息的。
     * 我们不会马上将您的贡献转换成法定货币，从而造成不稳定的市场，我们的目标是以ETC支付工资。
     * 当整个开源社区的人构建软件，共享和付出，FRACTAL代币就变得有价值。

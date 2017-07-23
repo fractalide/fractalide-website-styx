@@ -49,7 +49,13 @@
       type = "twitter";
       link = "https://twitter.com/eiaine";
     } ];
-  }
-
-  ];
+  } {
+    img   = "/img/royzou.jpg";
+    name  = "Roy Zou";
+    title = "Advisor";
+    social = [ {
+      type = "twitter";
+      link = "https://twitter.com/bitkio_royzou";
+    } ];
+  } ];
 }
