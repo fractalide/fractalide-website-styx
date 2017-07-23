@@ -313,7 +313,7 @@ rec {
         cp -r ${fetchUpstream version}/share/doc/fractalide/* $out/documentation/${version.rev}
       '') docVersions)}
       cp -r ${fetchUpstream (lib.head docVersions)}/share/doc/fractalide/* $out/documentation/
-      echo "fractalide.com" > $out/CNAME
+      echo "${conf.domain}" > $out/CNAME
     '';
   };
 
