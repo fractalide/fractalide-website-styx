@@ -25,6 +25,13 @@ rec {
   */
   styxLib = import styx.lib (args // { inherit styx; });
 
+  /* Site locales
+  */
+  locales = {
+    eng = { prefix = "/"; };
+    zho = { prefix = "/zho/"; };
+  };
+
 
 /*-----------------------------------------------------------------------------
    Themes setup
@@ -47,33 +54,23 @@ rec {
     ./themes/fractalide
   ];
 
-  /* Loading the themes data
-     Each language gets its own data
+  /* Loading the themes data for each locale
   */
-  themesData = let
-    loadThemeForLang = lang: styxLib.themes.load {
+  themesData = styxLib.mapAttrs (name: value:
+    styxLib.themes.load {
       inherit styxLib themes;
-      extraEnv  = {
-        data = data."${lang}";
-        pages = pages."${lang}";
-        prefix = genPrefix lang;
-        inherit lang;
-      };
       extraConf = [ ./conf.nix extraConf ];
-    };
-  in {
-    eng = loadThemeForLang "eng";
-    zho = loadThemeForLang "zho";
-  };
+      extraEnv = value // { locale = name; };
+    }
+  ) locales;
 
-  /* Bringing the themes data to the scope
+  /* Bringing locale independent theme data to scope
   */
   inherit (themesData.eng) conf lib files;
 
-  genPrefix = lang:
-    if lang == "eng"
-    then ""
-    else "/${lang}";
+  # Adding environment to locales
+  locales.eng.env = themesData.eng.env;
+  locales.zho.env = themesData.zho.env;
 
 
 /*-----------------------------------------------------------------------------
@@ -82,78 +79,62 @@ rec {
    This section declares the data used by the site
 -----------------------------------------------------------------------------*/
 
-  data = with lib; {
-
-    /*---------------------
-      Chinese data
-    ---------------------*/
-    eng = let
-      locPages = pages.eng;
-      env = themesData.eng.env;
-    in {
-
-      /*news = sortBy "date" "dsc" (loadDir { dir = ./data/eng/news; inherit env; });*/
-
-      blocks = loadDir { dir = ./data/eng/blocks; inherit env; asAttrs = true; };
-
-      pages = loadDir { dir = ./data/eng/pages; inherit env; asAttrs = true; };
-
-      /* Menu
-      */
-      menu = let
-        indexBlocks = locPages.index.blocks;
-        /* Generating menu entries from index blocks
-        */
-        bItems = map (n:
-          let block = find { id = n; } indexBlocks;
-          in block // { navbarClass = "page-scroll"; url = "/#${block.id}"; }
-        ) [ "vision" "whitepaper" "ico" "team" ];
-      in bItems
-      # normal menu entries
-      ++ [
-        locPages.faq
-        { title = "Documentation"; path = "/documentation/index.html"; }
-        { title = "GitHub"; url = "https://github.com/fractalide/fractalide"; }
-        (pages.zho.index // { title = "中文"; })
-      ];
-
+  /*---------------- 
+    English
+  ----------------*/
+  locales.eng.data = with locales.eng; with locales.eng.env; {
+    # to avoid name clash with pages
+    loaded = {
+      #news   = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/eng/news; inherit env; });
+      blocks = lib.loadDir { dir = ./data/eng/blocks; inherit env; asAttrs = true; };
+      pages  = lib.loadDir { dir = ./data/eng/pages;  inherit env; asAttrs = true; };
     };
 
-    /*---------------------
-      Chinese data
-    ---------------------*/
-    zho = let
-      locPages = pages.zho;
-      env = themesData.zho.env;
-    in {
+    # Menu
+    menu = let
+      # block entries
+      blockEntries = map (n:
+        let block = lib.find { id = n; } pages.index.blocks;
+        in block // { navbarClass = "page-scroll"; url = "${prefix}#${block.id}"; }
+      ) [ "vision" "whitepaper" "ico" "team" ];
+      # entries
+      entries = [
+        pages.faq
+        { title = "Documentation"; path = "/documentation/index.html"; }
+        { title = "GitHub";        url  = "https://github.com/fractalide/fractalide"; }
+        (locales.zho.pages.index // { title = "中文"; })
+      ];
+    in 
+       blockEntries ++ entries;
+  };
 
-      /*news = sortBy "date" "dsc" (loadDir { dir = ./data/zho/news; inherit env; });*/
+  /*---------------- 
+    Chinese
+  ----------------*/
+  locales.zho.data = with locales.zho; with locales.zho.env; {
+    # to avoid name clash with pages
+    loaded = {
+      #news   = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/zho/news; inherit env; });
+      blocks = lib.loadDir { dir = ./data/zho/blocks; inherit env; asAttrs = true; };
+      pages  = lib.loadDir { dir = ./data/zho/pages;  inherit env; asAttrs = true; };
+    };
 
-      blocks = loadDir { dir = ./data/zho/blocks; inherit env; asAttrs = true; };
-
-      pages = loadDir { dir = ./data/zho/pages; inherit env; asAttrs = true; };
-
-      /* Menu
-      */
-      menu = let
-        indexBlocks = locPages.index.blocks;
-        /* Generating menu entries from index blocks
-        */
-        bItems = map (n:
-          let block = find { id = n; } indexBlocks;
-          in block // { navbarClass = "page-scroll"; url = "/zho/#${block.id}"; }
-        ) [ "vision" "whitepaper" "ico" "team" ];
-      in bItems
-      # normal menu entries
-      ++ [
-        locPages.faq
+    # Menu
+    menu = let
+      # block entries
+      blockEntries = map (n:
+        let block = lib.find { id = n; } pages.index.blocks;
+        in block // { navbarClass = "page-scroll"; url = "${prefix}#${block.id}"; }
+      ) [ "vision" "whitepaper" "ico" "team" ];
+      # entries
+      entries = [
+        pages.faq
         { title = "软件文献"; path = "/documentation/index.html"; }
         { title = "GitHub"; url = "https://github.com/fractalide/fractalide"; }
-        (pages.eng.index // { title = "English"; })
+        (locales.eng.pages.index // { title = "English"; })
       ];
-
-    };
-
+    in 
+       blockEntries ++ entries;
   };
 
 
@@ -163,111 +144,101 @@ rec {
    This section declares the pages that will be generated
 -----------------------------------------------------------------------------*/
 
-  pages = {
-
-    /*---------------------
-      English pages
-    ---------------------*/
-    eng = let
-      prefix = genPrefix "eng";
-      locData = data.eng;
-      templates = themesData.eng.templates;
-    in rec {
-      index = {
-        title    = "Home";
-        path     = prefix + "/index.html";
-        template = templates.block-page.full;
-        layout   = templates.layout;
-        blocks   = let
-          darken = d: d // { class = "bg-light-gray"; };
-        in [
-          (templates.blocks.banner locData.blocks.main-banner)
-          (templates.blocks.standard locData.blocks.taster)
-          /*(templates.blocks.news (locData.blocks.news // { items = news.list; }))*/
-          (templates.blocks.standard (darken (locData.blocks.vision)))
-          (templates.blocks.standard locData.blocks.hyperflow)
-          (templates.blocks.standard (darken locData.blocks.fractalmarket))
-          (templates.blocks.standard locData.blocks.etherflow)
-          (templates.blocks.standard (darken locData.blocks.whitepaper))
-          (templates.blocks.standard (locData.blocks.ico // { navbarTitle = "ICO"; }))
-          (templates.blocks.team (darken locData.blocks.team))
-        ];
-        body.class = "home";
-      };
-
-      /*newsIndex = lib.mkSplit {
-        title        = "news";
-        basePath     = prefix + "/news/index";
-        itemsPerPage = conf.theme.news.index.itemsPerPage;
-        template     = templates.news.index;
-        data         = news.list;
-      };
-
-      news = lib.mkPageList {
-        title       = "News";
-        data        = locData.news;
-        pathPrefix  = prefix + "/news/";
-        template    = templates.news.full;
-      };*/
-
-      faq = {
-        title = "FAQ";
-        path  = prefix + "/faq.html";
-        template = templates.pages.faq;
-      } // locData.pages.faq;
+  /*---------------- 
+    English
+  ----------------*/
+  locales.eng.pages = with locales.eng; with locales.eng.env; rec {
+    index = {
+      title    = "Home";
+      path     = prefix + "/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = let
+        darken = d: d // { class = "bg-light-gray"; };
+      in [
+        (templates.blocks.banner   data.loaded.blocks.main-banner)
+        (templates.blocks.standard data.loaded.blocks.taster)
+        #(templates.blocks.news     (data.loaded.blocks.news // { items = news.list; }))
+        (templates.blocks.standard (darken (data.loaded.blocks.vision)))
+        (templates.blocks.standard data.loaded.blocks.hyperflow)
+        (templates.blocks.standard (darken data.loaded.blocks.fractalmarket))
+        (templates.blocks.standard data.loaded.blocks.etherflow)
+        (templates.blocks.standard (darken data.loaded.blocks.whitepaper))
+        (templates.blocks.standard (data.loaded.blocks.ico // { navbarTitle = "ICO"; }))
+        (templates.blocks.team     (darken data.loaded.blocks.team))
+      ];
+      body.class = "home";
     };
 
-    /*---------------------
-      Chinese pages
-    ---------------------*/
-    zho = let
-      prefix = genPrefix "zho";
-      locData = data.zho;
-      templates = themesData.zho.templates;
-    in rec {
-      index = {
-        title    = "Home";
-        path     = prefix + "/index.html";
-        template = templates.block-page.full;
-        layout   = templates.layout;
-        blocks   = let
-          darken = d: d // { class = "bg-light-gray"; };
-        in [
-          (templates.blocks.banner locData.blocks.main-banner)
-          (templates.blocks.standard locData.blocks.taster)
-          /*(templates.blocks.news (locData.blocks.news // { items = news.list; }))*/
-          (templates.blocks.standard (darken (locData.blocks.vision)))
-          (templates.blocks.standard locData.blocks.hyperflow)
-          (templates.blocks.standard (darken locData.blocks.fractalmarket))
-          (templates.blocks.standard locData.blocks.etherflow)
-          (templates.blocks.standard (darken locData.blocks.whitepaper))
-          (templates.blocks.standard (locData.blocks.ico // { navbarTitle = "ICO"; }))
-          (templates.blocks.team (darken locData.blocks.team))
-        ];
-        body.class = "home";
-      };
-
-      /*newsIndex = lib.mkSplit {
-        title        = "news";
-        basePath     = prefix + "/news/index";
-        itemsPerPage = conf.theme.news.index.itemsPerPage;
-        template     = templates.news.index;
-        data         = news.list;
-      };
-
-      news = lib.mkPageList {
-        title       = "公告新闻";
-        data        = locData.news;
-        pathPrefix  = prefix + "/news/";
-        template    = templates.news.full;
-      };*/
-
-      faq = {
-        title = "常见问题";
-        path  = prefix + "/faq.html";
-        template = templates.pages.faq;
-      } // locData.pages.faq;
+    /*
+    newsIndex = lib.mkSplit {
+      title        = "News";
+      basePath     = prefix + "news/index";
+      itemsPerPage = conf.theme.news.index.itemsPerPage;
+      template     = templates.news.index;
+      data         = news.list;
     };
+
+    news = lib.mkPageList {
+      data        = data.loaded.news;
+      pathPrefix  = prefix + "news/";
+      template    = templates.news.full;
+    };
+    */
+
+    faq = {
+      path  = prefix + "faq.html";
+      template = env.templates.pages.faq;
+    } // data.loaded.pages.faq;
+  };
+  
+  /*---------------- 
+    Chinese
+  ----------------*/
+  locales.zho.pages = with locales.zho; with locales.zho.env; rec {
+    index = {
+      title    = "Home";
+      path     = prefix + "index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = let
+        darken = d: d // { class = "bg-light-gray"; };
+      in [
+        (templates.blocks.banner   data.loaded.blocks.main-banner)
+        (templates.blocks.standard data.loaded.blocks.taster)
+        #(templates.blocks.news     (data.loaded.blocks.news // { items = news.list; }))
+        (templates.blocks.standard (darken (data.loaded.blocks.vision)))
+        (templates.blocks.standard data.loaded.blocks.hyperflow)
+        (templates.blocks.standard (darken data.loaded.blocks.fractalmarket))
+        (templates.blocks.standard data.loaded.blocks.etherflow)
+        (templates.blocks.standard (darken data.loaded.blocks.whitepaper))
+        (templates.blocks.standard (data.loaded.blocks.ico // { navbarTitle = "ICO"; }))
+        (templates.blocks.team     (darken data.loaded.blocks.team))
+      ];
+      body.class = "home";
+    };
+
+    /*
+    newsIndex = lib.mkSplit {
+      title        = "公告新闻";
+      basePath     = prefix + "news/index";
+      itemsPerPage = conf.theme.news.index.itemsPerPage;
+      template     = templates.news.index;
+      data         = news.list;
+    };
+
+    news = lib.mkPageList {
+      data        = data.loaded.news;
+      pathPrefix  = prefix + "news/";
+      template    = templates.news.full;
+    };
+    */
+
+    faq = {
+      path  = prefix + "faq.html";
+      template = env.templates.pages.faq;
+    } // data.loaded.pages.faq;
+  
   };
 
 
@@ -275,6 +246,19 @@ rec {
    Site rendering
 
 -----------------------------------------------------------------------------*/
+
+  # converting pages attribute set to a list
+  pageList = let
+    localePages = lib.mapAttrsToList (name: locale: 
+      lib.pagesToList {
+        pages = locale.pages;
+        default = {
+          layout = locale.env.templates.layout;
+          body.id = "page-top";
+        };
+      }
+    ) locales;
+  in lib.fold (acc: x: acc ++ x) [] localePages;
 
   # fetch upstream to generate the documentation
   fetchUpstream = version:
@@ -293,17 +277,6 @@ rec {
     sha256 = "1cxb3zfn0fxim7fpdryqncirz922i2kqiawmisrm5fdfgh9ba7jb";
   } ];
 
-  # converting pages attribute set to a list
-  pageList = let
-    genPageList = lang: lib.pagesToList {
-      pages = pages."${lang}";
-        default = {
-        layout = themesData."${lang}".templates.layout;
-        body.id = "page-top";
-      };
-    };
-  in (genPageList "eng") ++ (genPageList "zho");
-
   site = lib.mkSite {
     inherit files pageList;
     postGen = with lib; ''
@@ -313,7 +286,9 @@ rec {
         cp -r ${fetchUpstream version}/share/doc/fractalide/* $out/documentation/${version.rev}
       '') docVersions)}
       cp -r ${fetchUpstream (lib.head docVersions)}/share/doc/fractalide/* $out/documentation/
-      echo "fractalide.com" > $out/CNAME
+
+      # Generating CNAME
+      echo "${conf.domain}" > $out/CNAME
     '';
   };
 

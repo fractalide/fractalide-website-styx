@@ -1,8 +1,9 @@
 { lib }:
 with lib;
-{
+rec {
   # URL of the site, must be set to the url of the domain the site will be deployed
-  siteUrl = "https://fractalide.github.io/fractalide-website-styx";
+  domain  = "fractalide.com";
+  siteUrl = "http://${domain}";
 
   theme = {
     site.title = "Fractalide";
