@@ -1,4 +1,5 @@
 {
+  title = "FAQ";
   items = [ {
     q = ''
       What is Fractalide?
