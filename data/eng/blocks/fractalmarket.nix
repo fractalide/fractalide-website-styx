@@ -3,7 +3,7 @@ with lib;
 {
   id = "fractalmarket";
   title = "Fractalmarket";
-  subtitle = "An Integrated App Marketplace";
+  subtitle = "A Cryptocontract App Marketplace";
   content = markdownToHtml ''
     Hyperflow components and applications should be shared with people. This will be done via Fractalmarket.
 
