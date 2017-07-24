@@ -16,10 +16,10 @@ with lib;
     * We will not immediately convert your contributions into Fiat currency thus creating an unstable market, indeed we aim to pay salaries in ETC.
     * It takes an entire open source community of people building, sharing, trading and contributing software for the FRACTAL coin to become valuable.
 
-    **Invest:**
+    **Contribute:**
 
     Please participate in the ICO over at Token Mint as long as you follow these guidelines:
-    
+
     * Don't invest more than you can afford to lose.
     * Don't invest in things you don't understand.
 
