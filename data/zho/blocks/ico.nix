@@ -4,8 +4,8 @@ with lib;
   id = "ico";
   title = "参与ICO";
   content = markdownToHtml ''
-    **代币名称:** Fractal Coin
-    **代币代码:** FRC
+    **代币名称:** Fractal Coin  
+    **代币代码:** FRC  
     **发行代币目的:**
 
     * 买卖组件双方将在${templates.tag.ilink { to = "/zho/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}中以FRACTAL代币进行交易，所以FRACTAL代币具有实用价值，而不仅是投机性的。
