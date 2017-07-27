@@ -4,9 +4,9 @@ with lib;
   id = "vision";
   title = "Vision";
   content = markdownToHtml ''
-    It is not intuitive for non-technical end users to interact with published cryptocontracts. For this reason cryptocontracts will not easily reach mainstream.
+    It is unintuitive for non-technical end users to interact with published cryptocontracts. For this reason cryptocontracts will not easily reach mainstream.
 
-    What is expected; a convenient one-click infrastructure that delivers well designed user facing applications which contain the business rules to interact with the contract's immutable rules. The end user should barely see the cryptocontract address and primarily interact with the application.
+    What is expected; a convenient one-click infrastructure that delivers beautiful 3rd party vendor applications which are designed to interact with cryptocontracts. The end user should primarily interact with the applications.
 
     The vision is to create three infrastructure level applications that enable the above.
 
