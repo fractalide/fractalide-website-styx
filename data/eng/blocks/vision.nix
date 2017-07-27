@@ -6,8 +6,8 @@ with lib;
   content = markdownToHtml ''
     Currently it is unintuitive for non-technical end users to interact with published cryptocontracts. For this reason cryptocontracts will not easily reach mainstream.
 
-    End users expect a convenient one-click infrastructure that delivers beautiful yet secure 3rd party applications which are designed to use cryptocontracts.
-    This infrastructure can be broken down into three parts: building, distribution and the blockchain interaction parts.
+    End users expect a convenient one-click platform that delivers user friendly yet secure 3rd party applications which are designed to use cryptocontracts.
+    This platform can be broken down into three parts: building, distribution and the blockchain interaction parts.
 
     The vision is to build a platform that makes the building and distribution of blockchain integrated applications laughably easy.
 
