@@ -9,7 +9,7 @@ with lib;
     The vision is to create three infrastructure level applications.
 
     1. **${templates.tag.ilink { to = "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**: A Rapid Application Development (RAD) platform
-    2. **${templates.tag.ilink { to = "/#fractalmarket"; content = "Fractamarket"; class = "page-scroll"; }}**: An integrated app marketplace
+    2. **${templates.tag.ilink { to = "/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}**: An integrated app marketplace
     3. **${templates.tag.ilink { to = "/#etherflow"; content = "Etherflow"; class = "page-scroll"; }}**: A set of reusable components that make Hyperflow applications interacting with the blockchain seamless.
 
     **Hyperflow** facilitates the creation of applications which can be published on **Fractalmarket**. **Fractalmarket** aims to be the canonical repository for user facing cryptocontract applications created by third party vendors.
