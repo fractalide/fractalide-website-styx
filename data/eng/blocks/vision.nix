@@ -6,9 +6,9 @@ with lib;
   content = markdownToHtml ''
     It is unintuitive for non-technical end users to interact with published cryptocontracts. For this reason cryptocontracts will not easily reach mainstream.
 
-    What is expected; a convenient one-click infrastructure that delivers beautiful 3rd party vendor applications which are designed to interact with cryptocontracts. The end user should primarily interact with the applications.
+    What is expected; a convenient one-click infrastructure that delivers beautiful 3rd party applications which are designed to use cryptocontracts. Making it easier for end users to interact with the blockchain.
 
-    The vision is to create three infrastructure level applications that enable the above.
+    The vision is to create three infrastructure level applications that enable the building, publishing and installation of the applications.
 
     1. **${templates.tag.ilink { to = "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**: A Rapid Application Development (RAD) platform
     2. **${templates.tag.ilink { to = "/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}**: A cryptocontract app marketplace
