@@ -9,7 +9,7 @@ with lib;
     End users expect a convenient one-click platform that delivers user friendly yet secure 3rd party applications which are designed to use cryptocontracts.
     This platform can be broken down into three parts: building, distribution and the blockchain interaction parts.
 
-    The vision is to build a platform that makes the building and distribution of blockchain integrated applications laughably easy.
+    The vision is to build a platform that makes the building and distribution of blockchain friendly applications laughably easy.
 
     1. **${templates.tag.ilink { to = "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**: A Rapid Application Development (RAD) platform
     2. **${templates.tag.ilink { to = "/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}**: A cryptocontract app marketplace
