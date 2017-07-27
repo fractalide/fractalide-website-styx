@@ -8,7 +8,7 @@ with lib;
 
     What is expected; a convenient one-click infrastructure that delivers well designed user facing applications which contain the business rules to interact with the contract's immutable rules. The end user should barely see the cryptocontract address and primarily interact with the application.
 
-    The vision is to create three infrastructure level applications enable the above.
+    The vision is to create three infrastructure level applications that enable the above.
 
     1. **${templates.tag.ilink { to = "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**: A Rapid Application Development (RAD) platform
     2. **${templates.tag.ilink { to = "/#fractalmarket"; content = "Fractamarket"; class = "page-scroll"; }}**: A cryptocontract app marketplace
