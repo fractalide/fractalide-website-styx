@@ -4,7 +4,7 @@ with lib;
   id = "vision";
   title = "Vision";
   content = markdownToHtml ''
-    Cryptocontracts will never reach mainstream as long as we keep publishing contracts to a blockchain address and expect grandmothers to interact with that address.
+    Cryptocontracts will never reach mainstream as long as we keep publishing contracts to a blockchain address and expect users to interact with that address.
     What is expected; convenient one-click infrastructure that delivers well designed user facing applications which contain the business rules to interact with the contract's immutable rules. The end user should barely see the cryptocontract address and primarily interact with the application.
 
     The vision is to create three infrastructure level applications.
