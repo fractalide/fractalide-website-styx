@@ -5,7 +5,7 @@ with lib;
   title = "Hyperflow";
   subtitle = "Rapid Application Development platform";
   content = markdownToHtml ''
-    Hyperflow draws much inspiration from [HyperCard](https://en.wikipedia.org/wiki/HyperCard). It allows programmers and non-programmers to easily build problem solving applications. Though we will make a few changes to it.
+    Hyperflow draws much inspiration from [HyperCard](https://en.wikipedia.org/wiki/HyperCard). It allows programmers and non-programmers to easily build problem solving applications. Though we will differ from HyperCard on these points.
 
     HyperCard concepts to keep:
 
