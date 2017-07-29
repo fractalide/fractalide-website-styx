@@ -1,14 +1,15 @@
-{ lib, templates, ... }:
+{ lib, templates, prefix, ... }:
 with lib;
 {
   id = "ico";
   title = "Join ICO";
+  navbarTitle = "ICO";
   content = markdownToHtml ''
     **Token Name:** Fractal Coin  
     **Token Symbol:** FRC  
     **Token Purpose:**
 
-    * The FRACTAL coin will be traded between component sellers and buyers in the ${templates.tag.ilink { to = "/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}. This coin has real utility and not just speculative in nature.
+    * The FRACTAL coin will be traded between component sellers and buyers in the ${templates.tag.ilink { to = prefix + "/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}. This coin has real utility and not just speculative in nature.
 
     **Important note:**
 

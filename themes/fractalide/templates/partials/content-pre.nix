@@ -10,8 +10,8 @@ templates.bootstrap.navbar.default {
   extraClasses = [ "navbar-fixed-top" ] ++ extraClass;
   content = [
     (templates.bootstrap.navbar.nav {
-      align = "right";
-      items = data.menu;
+      align       = "right";
+      items       = data.menu;
       currentPage = page;
     })
   ];

@@ -10,8 +10,3 @@ normalTemplate (page: ''
   </div>
   </div>
 '')
-/*
-    ${mapTemplate (f:
-      templates.bootstrap.panel { heading = f.q; body = f.a; }
-    ) page.items}
-*/

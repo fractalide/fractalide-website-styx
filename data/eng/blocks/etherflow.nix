@@ -1,11 +1,11 @@
-{ lib, templates, ... }:
+{ lib, templates, prefix, ... }:
 with lib;
 {
   id = "etherflow";
   title = "Etherflow";
   subtitle = "Seamless interaction between Hyperflow apps and the blockchain";
   content = markdownToHtml ''
-    Etherflow is a set of reusable components that allows seamless Ethereum Classic blockchain interaction for applications created by ${templates.tag.ilink { to = "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}.
+    Etherflow is a set of reusable components that allows seamless Ethereum Classic blockchain interaction for applications created by ${templates.tag.ilink { to = prefix + "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}.
 
     We aim for these important results:
 
