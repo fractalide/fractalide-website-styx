@@ -3,7 +3,7 @@ with lib;
 {
   id = "fractalmarket";
   title = "Fractalmarket";
-  subtitle = "APP应用市场";
+  subtitle = "加密合约app的应用市场";
   content = markdownToHtml ''
     Hyperflow上的組件和應用程序可在Fractalmarket中與別人分享。
 

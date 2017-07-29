@@ -5,10 +5,10 @@ with lib;
   title = "白皮书";
 
   content = markdownToHtml ''
-    这一页简报以简洁的方式描述了该项目。它涵盖了已完成的工作，硕士论文发表后的最新进展以及将来须要完成的工作。
+    这两页简报以简洁的方式描述此项目。
 
-    * ${templates.tag.ilink { to = "/pdf/Ethereum_Classic_Infrastructure_ICO.pdf"; content = "下载二页简报"; }}
-    * ${templates.tag.ilink { to = "https://github.com/fractalide/fractalide"; content = "目前已完成的源代码"; }}
+    * ${templates.tag.ilink { to = "/pdf/Ethereum_Classic_Infrastructure_ICO.pdf"; content = "下载ICO两页简报"; }}
+    * ${templates.tag.ilink { to = "https://github.com/fractalide/fractalide"; content = "目前Fractalide的源代码"; }}
       <img src="https://img.shields.io/github/stars/fractalide/fractalide.svg?style=flat-square">
       <img src="https://img.shields.io/github/forks/fractalide/fractalide.svg?style=flat-square">
       <img src="https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square">

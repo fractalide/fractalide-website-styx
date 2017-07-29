@@ -3,14 +3,13 @@ with lib;
 {
   id = "etherflow";
   title = "Etherflow";
-  subtitle = "嶄新以太坊經典(Ethereum Classic)客戶端";
+  subtitle = "HYPERFLOW APPS和区块链的有效交流";
   content = markdownToHtml ''
-    Etherflow是一套软件组件，可以大量利用ETCDEV的Emerald SDK。
+    Etherflow是一組可重複使用的組件，允許由Hyperflow創建的應用程序與Ethereum Classic區塊鏈交互。
 
     我们致力于这些重要成果:
 
-    * Etherflow提供一个方便的界面，供用户与ETC数据区块链交互。
-    * 可重复使用的组件将允许数据区块链与Hyperflow创建的应用程序进行交互。
-    * 需要与ETCDEV团队长期合作，以协助扩展Emerald SDK的功能，并确保其稳定的预期方式运作。
+    * 需要与ETCDEV团队长期合作，以协助扩展Emerald SDK的功能，并确保其以稳定的可预测方式运行。
+    * 虽然ICO不涵盖全面的ETC客户端，其方向大致是将Etherflow扩展到新的ETC客户端。
   '';
 }
