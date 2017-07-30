@@ -20,8 +20,8 @@ with lib;
 
     Please participate in the ICO over at Token Mint as long as you follow these guidelines:
 
-    * Don't invest more than you can afford to lose.
-    * Don't invest in things you don't understand.
+    * Don't contribute more than you can afford to lose.
+    * Don't participate in things you don't understand.
 
     Note: Token Mint has not launched yet so the ICO isn't ready yet
   '';
