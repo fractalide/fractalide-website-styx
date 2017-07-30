@@ -10,7 +10,7 @@ with lib;
     HyperCard concepts to keep:
 
     * The intuitive, semantically clear and easy to learn approach HyperCard is famous for.
-    * It's very easy to see and test what you just built, by simply switching between a run mode and design mode.
+    * It's very easy to see and test what you just built, by simply switching between run mode and design mode.
     * Keep the concept of cards and stacks, a good analogy is a card is a webpage and a stack is a website. Each card contains GUI components and logic that links all the other cards together to form an stack of cards.
 
     HyperCard concepts to remove:
