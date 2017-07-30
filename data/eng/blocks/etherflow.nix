@@ -10,6 +10,7 @@ with lib;
     We aim for these important results:
 
     * Long term collaboration with ETCDEV team is required to assist expanding out Emerald SDK's functionality and ensuring it operates in a stable predictable fashion.
-    * Although the ICO doesn't cover a full blown ETC client, the general direction is to expand Etherflow out into a new ETC client.
+    * ETCDEV libraries will be used to create Etherflow allowing for Hyperflow applications to have blochchain interaction.
+    * Although the ICO doesn't cover a full blown ETC client, the general direction is to expand Etherflow and Hyperflow out into a new ETC client.
   '';
 }
