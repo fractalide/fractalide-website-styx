@@ -1,5 +1,5 @@
 {
-  title = "FAQ";
+  title = "常见问题";
   items = [ {
     q = ''
       你是否会在ICO后立即出售你的ETC吗？
