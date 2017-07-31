@@ -42,18 +42,18 @@
   }
   {
     q = ''
-      ETC is in a unique position as it doesn't have a core development team with a large amount of premine/instamine, therefore it's expected that ICO parties on ETC should contribute towards the ETC core development. Do you intend on doing this?
+      ETC處於獨一無二的地位，因為它沒有一個擁有預礦的核心開發團隊，因此預計ETC的ICO會為ETC核心發展作出貢獻。你打算為ETC核心發展作出貢獻嗎？
     '';
     a = ''
-      Absolutely, we hope we'll be able to build and maintain a new ETC client from this. Also we will be working closely with ETCDEV team on developing the core blockchain libraries.
+      当然，我们希望能够从中建立和维护一个新的ETC客户端。此外，我们将与ETCDEV团队密切合作开发核心软件模块。
     '';
   }
   {
     q = ''
-      Does the ICO build out a revenue generating company that'll be able to pay programmers in the long term?
+      这个ICO是否可建立一个能够长期支付程序员的产生收益公司？
     '';
     a = ''
-      Well, along with the premine which provides incentive to keep at the task the hopes are that enough revenue will be generated from the marketplace to build out a healthy company that hires enough programmers to maintain the infrastructure in a sustainable manner.
+      连同这个项目的预矿，和应用市场能产生足够的收入，希望可建立一个健全的公司，来聘请足够的程序员，来维持基础设施的可持续发展。
     '';
   }
   ];
