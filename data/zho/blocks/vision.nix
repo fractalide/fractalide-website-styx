@@ -1,4 +1,4 @@
-{ lib, templates, ... }:
+{ lib, templates, prefix, ... }:
 with lib;
 {
   id = "vision";
@@ -10,9 +10,9 @@ with lib;
 
     我们的目标是建立一个平台，使区块链友好应用程序的构建和分配变得容易。
 
-    1. **${templates.tag.ilink { to = "/zho/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**:快速应用程式开发(RAD)平台 
-    2. **${templates.tag.ilink { to = "/zho/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}**:加密合约app的应用市场
-    3. **${templates.tag.ilink { to = "/zho/#etherflow"; content = "Etherflow"; class = "page-scroll"; }}**:一组可重用的组件，使Hyperflow应用程序有效地使用区块链。
+    1. **${templates.tag.ilink { to = prefix + "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**:快速应用程式开发(RAD)平台 
+    2. **${templates.tag.ilink { to = prefix + "/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}**:加密合约app的应用市场
+    3. **${templates.tag.ilink { to = prefix + "/#etherflow"; content = "Etherflow"; class = "page-scroll"; }}**:一组可重用的组件，使Hyperflow应用程序有效地使用区块链。
 
     Hyperflow有助于创造可在Fractalmarket上发布的如Etherflow的应用程序和组件。 Fractalmarket旨在成为一个主要应用市场，而这应用市场是容许终端用户和第三方供应商买卖加密合约应用程序。
   '';

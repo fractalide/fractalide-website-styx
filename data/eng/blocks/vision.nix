@@ -1,4 +1,4 @@
-{ lib, templates, ... }:
+{ lib, templates, prefix, ... }:
 with lib;
 {
   id = "vision";
@@ -11,9 +11,9 @@ with lib;
 
     The vision is to build a platform that makes the building and distribution of blockchain friendly applications laughably easy.
 
-    1. **${templates.tag.ilink { to = "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**: A Rapid Application Development (RAD) platform
-    2. **${templates.tag.ilink { to = "/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}**: A cryptocontract app marketplace
-    3. **${templates.tag.ilink { to = "/#etherflow"; content = "Etherflow"; class = "page-scroll"; }}**: A set of reusable components that make Hyperflow applications interacting with the blockchain seamless.
+    1. **${templates.tag.ilink { to = prefix + "/#hyperflow"; content = "Hyperflow"; class = "page-scroll"; }}**: A Rapid Application Development (RAD) platform
+    2. **${templates.tag.ilink { to = prefix + "/#fractalmarket"; content = "Fractalmarket"; class = "page-scroll"; }}**: A cryptocontract app marketplace
+    3. **${templates.tag.ilink { to = prefix + "/#etherflow"; content = "Etherflow"; class = "page-scroll"; }}**: A set of reusable components that make Hyperflow applications interacting with the blockchain seamless.
 
     **Hyperflow** facilitates the creation of applications and components such as **Etherflow** which can be published on **Fractalmarket**. **Fractalmarket** aims to be the main marketplace that allows buying and selling of cryptocontract applications between third party vendors and end users.
   '';
