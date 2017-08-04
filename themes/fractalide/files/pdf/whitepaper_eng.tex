@@ -2,10 +2,10 @@
  aip,
  jmp,%
  amsmath,amssymb,
-%preprint,%
- reprint,%
-%author-year,%
-%author-numerical,%
+ preprint,
+ reprint,
+ author-year,
+ author-numerical,
 ]{revtex4-1}
 
 \usepackage{graphicx}% Include figure files
@@ -18,7 +18,6 @@
 
 \lstset{
   frame=tb,
-  language=HyperTalk,
   aboveskip=3mm,
   belowskip=3mm,
   showstringspaces=false,
@@ -57,20 +56,20 @@ The \textit{Ethereum Classic Marketplace ICO} aims to provide a rich set of deve
 
 \end{quotation}
 
-\section{\label{sec:level1}Fractalide}
+\section{\label{sec:fractalide}Fractalide}
 Fractalide is a programming language which implements a flow-based programming language whereby every component is deterministically reproducible and entirely reusable. Although the ICO is meant to focus on the higher level items such as Hyperflow, Etherflow and Fractalmarket there is some important infrastructure level work that needs to go into Fractalide to enable smooth front end visuals. This allows for the clean implementation of the Card Paradigm as elaborated on in the Master Thesis.
 
 The major concepts introduced by Fractalide are Reusable and Reproducible components. The entire platform hinges on these first principle concepts.
 
-\subsection{\label{sec:level2}Reusability}
+\subsection{\label{sec:reusability}Reusability}
 
 Each Fractalide component is reusable because it has one unifying composable interface. The data that transmits into the component is the invariant of the system.
 
-\subsection{\label{sec:level2}Reproducibility}
+\subsection{\label{sec:reproducibility}Reproducibility}
 
 Each Fractalide component and all their dependencies are capable of being reproduced. Indeed an entire hierarchy of components can be reproduced on another machine. Each component has a universally unique name yet when presented to the programmer the component's name is human readable. Components with the same name but different versions can exist on the same file system side-by-side without conflicting with each other.
 
-\section{\label{sec:level1}Hyperflow}
+\section{\label{sec:hyperflow}Hyperflow}
 
 Hyperflow is a Fractalide module or library that implements a variant of HyperCard. HyperCard was the inspiration for the Delphi and Microsoft Visual Basic Rapid Application Development platforms which allowed non-technical users to quickly put together programs to solve their problems. It significantly lowered the bar allowing people with little to no programming experience to get up and running quickly.
 
@@ -78,8 +77,8 @@ HyperCard allowed one to drag-and-drop Graphical User Interface components onto 
 
 Though a few concepts need retaining, removing and replacing to upgrade HyperCard to a modern day HyperCard suitable for interacting with the blockchain and implementing advanced applications.
 
-\subsection{\label{sec:level2}Concepts to remove from HyperCard}
-\subsubsection{\label{sec:level3}HyperTalk}
+\subsection{\label{sec:concepts to remove from HyperCard}Concepts to remove from HyperCard}
+\subsubsection{\label{sec:HyperTalk}HyperTalk}
 HyperTalk was HyperCard's programming language. It was an English like programming language, with the below snippet being an example.
 \begin{lstlisting}
   on mouseUp
@@ -97,22 +96,22 @@ HyperTalk was not a particularly powerful language, although it did have an avid
 
 Most importantly HyperTalk isn't modularized and cannot easily compose together. As we have a hard requirement of using reusable and reproducible infrastructure in the small and in the large. We'll be replacing HyperTalk with the previously mentioned component oriented programming language called Fractalide.
 
-\subsubsection{\label{sec:level3}HyperCard lacked network access}
+\subsubsection{\label{sec:HyperCard lacked network access}HyperCard lacked network access}
 
 This was the last nail in HyperCard's coffin, it's the fundamental reason why HyperCard died. Attempts to rescue HyperCard were underway at the time by adding networking capabilities, but the task proved too difficult and Steve Jobs eventually called the executioner's axe to HyperCard's head. Had the system been designed from the ground up with full network support, HyperCard would have expanded beyond the boundaries of Apple, just as the HTTP browser became prevalent. Indeed it could well have been the browser we use today.
 
 As every component in Hyperflow is built from first principles of reproducibility and reusability it becomes trivially easy for a programmer to type the name of a component and the package manager and build system will immediately make that component available for use on their system. Packaging their component (or component hierarchy) and distributing it is equally easy.
 
-\subsection{\label{sec:level2}Concepts from HyperCard to keep}
-\subsubsection{\label{sec:level3}Fast switching between run mode and develop mode}
+\subsection{\label{sec:Concepts from HyperCard to keep}Concepts from HyperCard to keep}
+\subsubsection{\label{sec:Fast switching between run mode and design mode}Fast switching between run mode and design mode}
 
-HyperCard had a zero compilation step between run mode and develop mode. So when in develop mode the experimental code could be triggered to run immediately by clicking the run mode button. When in run mode GUI widgets could be manipulated and moved about again by clicking on the develop mode button.
+HyperCard had a zero compilation step between run mode and design mode. So when in design mode the experimental code could be triggered to run immediately by clicking the run mode button. When in run mode GUI widgets could be manipulated and moved about again by clicking on the design mode button.
 
-This was probably one of the most important features which is quite hard for Hyperflow to replicate for a number of reasons. For third party component hierarchies already available on the file system, we'll be able to achieve this ``zero compilation'' switch, but in the case the programmer calls in a component or entire hierarchy of components not presently available on the file system the transition will not be smooth. The package manager must download either the source code of all those components and build them or download the pre-compiled binaries and wire them into Hyperflow during the switch between run mode and develop mode. Given we hope the Fractalmarket will host many component hierarchies we must accept these limits.
+This was probably one of the most important features which is quite hard for Hyperflow to replicate for a number of reasons. For third party component hierarchies already available on the file system, we'll be able to achieve this ``zero compilation'' switch, but in the case the programmer calls in a component or entire hierarchy of components not presently available on the file system the transition will not be smooth. The package manager must download either the source code of all those components and build them or download the pre-compiled binaries and wire them into Hyperflow during the switch between run mode and design mode. Given we hope the Fractalmarket will host many component hierarchies we must accept these limits.
 
 
 
-\section{\label{sec:level1}Fractalmarket}
+\section{\label{sec:Fractalmarket}Fractalmarket}
 
 Fractalmarket intends to provide fair compensation for contribution. Meaning that if you develop and maintain a particular set of components you may optionally charge a fee for those components and wherever they are used, be it in other applications, you, the developer will be paid for your work once an end user purchases that component.
 
@@ -122,7 +121,7 @@ We aim to have nice metrics which demonstrate the reusability factor of each app
 
 The Fractalmarket supports a currency called FRACTAL which enables trade between component buyers and sellers. FRACTAL will be the only accepted currency on the Fractalmarket for the foreseeable future.
 
-\section{\label{sec:level1}Etherflow}
+\section{\label{sec:Etherflow}Etherflow}
 
 Etherflow is a set of reusable and reproducible components that allow for seamless interactions between Hyperflow applications and the blockchain. The code will heavily leverage ETCDEV team's work.
 
@@ -131,7 +130,7 @@ These components will allow users who wish to create domain specific application
 As users will be downloading and paying for components created by ETCDEV, helping ETCDEV become more sustainable and assisting them to continue contributing to the Ethereum Classic community.
 
 
-\section{\label{sec:level1}Conclusion}
+\section{\label{sec:Conclusion}Conclusion}
 
 We hope the contributions ``Ethereum Classic Marketplace ICO'' offers the Ethereum Classic community are seen as valuable and worthwhile contributing towards.
 Creating a platform that enables a whole new layer of blockchain enterprises and services that cut out the middle man along with the high degree of component reusability hopes to reduce costs greatly.
