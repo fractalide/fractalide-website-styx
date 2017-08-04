@@ -29,7 +29,7 @@
       Why do you need an ICO?
     '';
     a = ''
-      We need a currency for the marketplace so users can buy and sell components.
+      We need a currency for the marketplace so users can buy and sell components and fund the development of the project.
     '';
   }
   {
