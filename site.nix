@@ -6,6 +6,8 @@
 { lib, runCommand, writeText
 , fetchFromGitHub
 , styx-themes
+, texlive
+, stdenv
 , extraConf ? {}
 }@args:
 
@@ -143,7 +145,7 @@ rec {
         blocks   = mkIndexBlocks { templates = templates.blocks; data = data.loaded.blocks; inherit pages; };
         body.class = "home";
       };
-   
+
       /*
       newsIndex = lib.mkSplit {
         title        = "News";
@@ -152,14 +154,14 @@ rec {
         template     = templates.news.index;
         data         = news.list;
       };
-   
+
       news = lib.mkPageList {
         data        = data.loaded.news;
         pathPrefix  = prefix + "/news/";
         template    = templates.news.full;
       };
       */
-   
+
       faq = {
         path     = prefix + "/faq.html";
         template = templates.pages.faq;
@@ -346,7 +348,7 @@ rec {
 
   # converting pages attribute set to a list
   pageList = let
-    localePages = lib.mapAttrsToList (name: locale: 
+    localePages = lib.mapAttrsToList (name: locale:
       lib.pagesToList {
         pages   = locale.pages;
         default = {
@@ -374,6 +376,41 @@ rec {
     sha256 = "1cxb3zfn0fxim7fpdryqncirz922i2kqiawmisrm5fdfgh9ba7jb";
   } ];
 
+  tex-env = texlive.combine {
+    inherit (texlive) collection-langchinese
+    revtex4
+    latexmk
+    scheme-small
+    metafont
+    collection-fontsrecommended
+    collection-latexrecommended
+    collection-fontsextra
+    ;
+  };
+
+  whitepaper_eng = stdenv.mkDerivation {
+    name = "whitepaper_eng";
+    src = ./themes/fractalide/files/pdf;
+    buildInputs = [ tex-env ];
+    buildPhase = ''
+      pdflatex whitepaper_eng.tex
+    '';
+    installPhase = ''
+      mkdir -p $out && mv whitepaper_eng.pdf $out
+    '';
+  };
+  whitepaper_zho = stdenv.mkDerivation {
+    name = "whitepaper_zho";
+    src = ./themes/fractalide/files/pdf;
+    buildInputs = [ tex-env ];
+    buildPhase = ''
+      pdflatex whitepaper_zho.tex
+    '';
+    installPhase = ''
+      mkdir -p $out && mv whitepaper_zho.pdf $out
+    '';
+  };
+
   site = lib.mkSite {
     inherit files pageList;
     postGen = with lib; ''
@@ -383,6 +420,8 @@ rec {
         cp -r ${fetchUpstream version}/share/doc/fractalide/* $out/documentation/${version.rev}
       '') docVersions)}
       cp -r ${fetchUpstream (lib.head docVersions)}/share/doc/fractalide/* $out/documentation/
+      ln -s ${whitepaper_eng}/whitepaper_eng.pdf $out/pdf/whitepaper_eng.pdf
+      ln -s ${whitepaper_zho}/whitepaper_zho.pdf $out/pdf/whitepaper_zho.pdf
 
       # Generating CNAME
       echo "${conf.domain}" > $out/CNAME
