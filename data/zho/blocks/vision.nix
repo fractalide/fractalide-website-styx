@@ -2,7 +2,7 @@
 with lib;
 {
   id = "vision";
-  title = "抱负";
+  title = "理念";
   content = markdownToHtml ''
     现在，非技术性用户并不容易明白和使用已发布的加密合约。因此，加密合约并不容易进入主流。
 
