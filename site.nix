@@ -60,15 +60,12 @@ rec {
   */
   themes = [
     # pinning generic-templates to dev version
-    /*
     (fetchFromGitHub {
       owner  = "styx-static";
       repo   = "styx-theme-generic-templates";
       rev    = "f98b002";
       sha256 = "1fqskc22y3wl570v7f10s2qzfpx79f2fni8j49fmy2jxq0054zfk";
     })
-    */
-    (/home/eric/Projects/nixos/styx/themes/generic-templates)
     ./themes/fractalide
   ];
 
