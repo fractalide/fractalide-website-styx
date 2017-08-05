@@ -131,6 +131,9 @@ rec {
             ];
           })
         ];
+
+      # Whitepaper
+      whitepaper = mkWhitepaper locale; 
     };
 
     /*------------
@@ -215,6 +218,9 @@ rec {
             ];
           })
         ];
+
+      # Whitepaper
+      whitepaper = mkWhitepaper locale; 
     };
 
     /*------------
@@ -300,6 +306,10 @@ rec {
             ];
           })
         ];
+
+      # Whitepaper
+      # Using english version until translated
+      whitepaper = mkWhitepaper "eng"; 
     };
 
     /*------------
@@ -376,39 +386,31 @@ rec {
     sha256 = "1cxb3zfn0fxim7fpdryqncirz922i2kqiawmisrm5fdfgh9ba7jb";
   } ];
 
-  tex-env = texlive.combine {
-    inherit (texlive) collection-langchinese
-    revtex4
-    latexmk
-    scheme-small
-    metafont
-    collection-fontsrecommended
-    collection-latexrecommended
-    collection-fontsextra
-    ;
-  };
 
-  whitepaper_eng = stdenv.mkDerivation {
-    name = "whitepaper_eng";
-    src = ./themes/fractalide/files/pdf;
-    buildInputs = [ tex-env ];
-    buildPhase = ''
-      pdflatex whitepaper_eng.tex
-    '';
-    installPhase = ''
-      mkdir -p $out && mv whitepaper_eng.pdf $out
-    '';
-  };
-  whitepaper_zho = stdenv.mkDerivation {
-    name = "whitepaper_zho";
-    src = ./themes/fractalide/files/pdf;
-    buildInputs = [ tex-env ];
-    buildPhase = ''
-      pdflatex whitepaper_zho.tex
-    '';
-    installPhase = ''
-      mkdir -p $out && mv whitepaper_zho.pdf $out
-    '';
+  # Generate a wallpaper for a locale
+  mkWhitepaper = locale: {
+    path = "/pdf/whitepaper_${locale}.pdf";
+    pkg  = stdenv.mkDerivation {
+      name = "whitepaper_${locale}";
+      src = ./. + "/data/${locale}/pdf";
+      buildInputs = [ ( texlive.combine {
+          inherit (texlive) collection-langchinese
+          revtex4
+          latexmk
+          scheme-small
+          metafont
+          collection-fontsrecommended
+          collection-latexrecommended
+          collection-fontsextra
+          ;
+      } ) ];
+      buildPhase = ''
+        pdflatex whitepaper.tex
+      '';
+      installPhase = ''
+        cp whitepaper.pdf $out
+      '';
+    };
   };
 
   site = lib.mkSite {
@@ -420,8 +422,14 @@ rec {
         cp -r ${fetchUpstream version}/share/doc/fractalide/* $out/documentation/${version.rev}
       '') docVersions)}
       cp -r ${fetchUpstream (lib.head docVersions)}/share/doc/fractalide/* $out/documentation/
-      ln -s ${whitepaper_eng}/whitepaper_eng.pdf $out/pdf/whitepaper_eng.pdf
-      ln -s ${whitepaper_zho}/whitepaper_zho.pdf $out/pdf/whitepaper_zho.pdf
+
+      # Whitepaper generation
+      ${lib.concatStringsSep "\n" (lib.mapAttrsToList (n: v: 
+        let whitepaper = locales."${v.locale}".data.whitepaper; in ''
+        if [ ! -f $out${whitepaper.path} ]; then
+          ln -s ${whitepaper.pkg} $out${whitepaper.path}
+        fi
+      '') locales)}
 
       # Generating CNAME
       echo "${conf.domain}" > $out/CNAME

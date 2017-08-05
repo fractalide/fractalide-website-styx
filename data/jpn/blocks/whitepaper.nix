@@ -1,4 +1,4 @@
-{ lib, templates, ... }:
+{ lib, templates, data, ... }:
 with lib;
 {
   id = "whitepaper";
@@ -7,7 +7,7 @@ with lib;
   content = markdownToHtml ''
     この2ページホワイトペーパーはプロジェクトの成果物を紹介します。
 
-    * ${templates.tag.ilink { to = "/pdf/Ethereum_Classic_Infrastructure_ICO.pdf"; content = "ICO概観ホワイトペーパー"; }}
+    * ${templates.tag.ilink { to = data.whitepaper; content = "ICO概観ホワイトペーパー"; }}
     * ${templates.tag.ilink { to = "https://github.com/fractalide/fractalide"; content = "現Fractalide履行"; }}
       <img src="https://img.shields.io/github/stars/fractalide/fractalide.svg?style=flat-square">
       <img src="https://img.shields.io/github/forks/fractalide/fractalide.svg?style=flat-square">
