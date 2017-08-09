@@ -308,8 +308,7 @@ rec {
         ];
 
       # Whitepaper
-      # Using english version until translated
-      whitepaper = mkWhitepaper "eng"; 
+      whitepaper = mkWhitepaper locale; 
     };
 
     /*------------
