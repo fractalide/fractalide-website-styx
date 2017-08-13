@@ -1,0 +1,151 @@
+
+\documentclass[%
+ aip,
+ jmp,
+ amsmath,amssymb,
+ preprint,
+ reprint,
+ author-year,
+ author-numerical,
+]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{listings}
+\usepackage{color}
+\usepackage{CJK}
+\usepackage[utf8]{inputenc}
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+\lstset{
+  frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+\begin{CJK}{UTF8}{ipxm}
+
+%\preprint{AIP/123-QED}
+
+\title[Ethereum Classic Marketplace ICO]{Ethereum Classic Marketplace ICO}% Force line breaks with \\
+
+
+\author{S.J. Mackenzie}%
+ \email{setori88@gmail.com.}
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+
+現在、非技術エンドユーザが公開された暗号契約と対話するのは直感的ではありません。 この理由のために、暗号コントラクトは容易に主流に到達しません。
+エンドユーザーは、暗号化契約を使用するように設計されたユーザーフレンドリーで安全な第三者アプリケーションを提供する便利なワンクリックプラットフォームを期待しています。
+\end{abstract}
+
+\keywords{Ethereum Classic, flow-based programming, dataflow, fractalide, HyperCard}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+\begin{quotation}
+\textit{Ethereum Classic Marketplace ICO}は立地な開発とランタイムツール（ハイパーフロー）、サードパーティベンダーがエンドユーザにアプリケーションを売ることができるマーケットプレイス（フラクタルマーケット）とイーサリアムクラッシックと統合できるコンポネント（イーサフロー）の提供を目指します。
+
+\end{quotation}
+
+\section{\label{sec:fractalide}Fractalide}
+Fractalideはフローベースのプログラミング言語を実装するプログラミング言語であり、すべてのコンポーネントが確定的に再現可能で完全に再利用可能です。 ICOは、ハイパーフロー、イーサフロー、フラクタルマーケットなどの上位レベルの項目に焦点を当てることを意図していますが、スムーズなフロントエンドのビジュアルを実現するためにFractalideに入る必要のある重要なインフラストラクチャレベルの作業があります。 これにより、修士論文で詳述されているカードパラダイムのクリーンな実装が可能になります。
+
+Fractalideによって導入された主な概念は、再使用可能なコンポーネントと再現可能なコンポーネントです。プラットフォーム全体は、これらの第一原理の概念にかかっています。
+
+\subsection{\label{sec:reusability}再利用性}
+
+それぞれのFractalideコンポネントは、1つの統一構成可能なインターフェイスを持っており、再利用可能です。コンポーネントに送信されるデータは、システムの不変です。
+
+\subsection{\label{sec:reproducibility}再現性}
+
+各Fractalideコンポーネントとそのすべての依存関係は再現することができます。実際、コンポーネントの階層全体を別のマシンで再現することができます。
+各コンポーネントはユニバーサルにユニークな名前を持っていますが、プログラマに提示されるのとコンポーネント名は人間が読めるものです。
+同じ名前で異なるバージョンのコンポーネントは、互いに衝突することなく、同じファイルシステム上に並んで存在することができます。
+
+\section{\label{sec:hyperflow}ハイパーフロー}
+
+ハイパーフローは、HyperCardの変種を実装するFractalideモジュールまたはライブラリです。 HyperCardは、技術者ではないユーザーが問題を解決するためのプログラムをすばやく作成できるようにするDelphiおよびMicrosoft Visual Basicの高速アプリケーション開発プラットフォームのインスピレーションでした。
+これはバーを大幅に削減し、プログラミング経験のない人も素早く起動することができました。
+
+HyperCardは、グラフィカルユーザーインターフェイスコンポーネントをカードと呼ばれるキャンバスにドラッグアンドドロップできるようにしました。それぞれの「スクリーン」またはキャンバスはカードであり、多数のカードがスタックを形成していました。 良いアナロジーは次のようになります。カードはウェブページであり、スタックはウェブサイトである。 HyperTalkと呼ばれる組み込みのプログラミング言語は、カードからカードに移動するロジックを書くことを可能にしました。
+
+いくつかのコンセプトでは、HyperCardをブロックチェーンとのやり取りや高度なアプリケーションの実装に適した現代のHyperCardにアップグレードするための保持、取り外し、交換が必要です。
+
+\subsection{\label{sec:concepts to remove from HyperCard}削除するHyperCardの概念}
+\subsubsection{\label{sec:HyperTalk}HyperTalk}
+HyperTalkはHyperCardプログラミング言語でした。 これは英語のようなプログラミング言語であり、以下のスニペットを例にしています。
+\begin{lstlisting}
+  on mouseUp
+    put "100,100" into pos
+    repeat with x = 1 to the number of card buttons
+      set the location of card button x to pos
+      add 15 to item 1 of pos
+    end repeat
+  end mouseUp
+\end{lstlisting}
+
+HyperTalkは特に強力な言語ではありませんでしたが、それは熱心なフォローを持っていましたが、今日までに問題を解決するのに適したハイエンドアプリケーションを作成するのに十分な表現力がありません。
+
+最も重要なのは、HyperTalkはモジュール化されておらず、容易に一緒に構成できないということです。
+私たちは、小規模から大規模のインフラストラクチャーを再利用可能で再現性のあるものにするという厳しい要求があるためです。 HyperTalkを前述のFractalideというコンポーネント指向プログラミング言語に置き換えます。
+
+\subsubsection{\label{sec:HyperCard lacked network access}Hypercardはネットワークをアクセスできなかった}
+
+これがHyperCardの棺の最後の釘であり、HyperCardが死亡した根本的な理由です。 ネットワーキング機能を追加することで、HyperCardを救出しようとする試みが進行中で、タスクが難しすぎることが判明し、Steve Jobsは最終的にHyperCardの死刑執行と呼びました。
+システムがフル・ネットワーク・サポートで初めから設計されていたのであれば、HyperCardは、HTTPブラウザが普及したように、Appleの限界を超えて拡大していたでしょう。 確かに、今日私たちが使っているブラウザはまあまあだと思います。
+
+ハイパーフローのコンポネントは再利用性と再現性を原則とするため、プログラマーがコンポネント名を書くだけでパッケージマネジャーはコンポネントを取得します。コンポネントまたはコンポネント構造をパッケージ化するのも容易。
+
+\subsection{\label{sec:Concepts from HyperCard to keep}維持するHyperCardの概念}
+\subsubsection{\label{sec:Fast switching between run mode and design mode}デザインモードと実行モードの素早い切り替え}
+
+HyperCardは、デザインモードと実行モードの切り替えにはコンパイルが不要でした。デザインモードでは実行ボタンをクリックするだけでコードをすぐ実行できました。実行モードではデザインボタンをクリックするだけでGUIウィジェットを操作と移動できました。
+
+これはおそらく、Hyperflowがさまざまな理由で複製するのが非常に難しい最も重要な機能の1つでした。
+ファイルシステム上で既に利用可能な第三者コンポーネント階層については、この「ゼロコンパイル」スイッチを実現することができますが、プログラマが現在ファイルシステム上で利用可能ではないコンポーネントのコンポーネントまたは階層全体を呼び出す場合移行はスムーズではありません。
+パッケージマネージャは、すべてのコンポーネントのソースコードをダウンロードしてビルドするか、コンパイル済みのバイナリをダウンロードし、実行モードとデザインモードの切り替え中にハイパーフローに配線する必要があります。
+フラクタルマーケットが多くのコンポーネント階層をホストすることを期待しているので、我々はこれらの制限を受け入れる必要があります。
+
+
+\section{\label{sec:Fractalmarket}フラクタルマーケット}
+
+フラクタルマーケットは、貢献に対して公正な報酬を提供するつもりです。 つまり、特定のコンポーネントセットを開発/保守した場合、それらのコンポーネントおよびそれらが使用されている度または、他のアプリケーションで使用されるている場合でも、あなたはコンポーネントの料金を請求することができます。
+
+したがって、階層/アプリケーション開発者が多くのコンポーネントを再利用する場合、すでに多くのエンドユーザーがコンポーネントを購入している可能性が高くなり、特定の階層の合計価格タグが減少します。こうすることで、ダウンロード、コンパイル、インストール、支払いに必要なものを減らすことができ、コードをコピーして再発行するプログラマーよりも競争力が向上します。
+
+各アプリケーション構造の再利用ファクターを可視化できるようなメトリックスを目指します。
+
+フラクタルマーケットでは、コンポネント売り手と買い手のやり取りを可能にできるFRACTAL通貨が利用できます。フラクタルマーケットではFRACTAL追加以外の追加を利用できません。
+
+\section{\label{sec:Etherflow}イーサフロー}
+
+イーサフローは、ハイパーフローで作られたアプリケーションとイーサリアムクラッシックのシームレス相互作用を可能にするコンポネントセットです。ソースコードはETCDEVチームの仕事を利用します。
+
+これらのコンポーネントは、ブロックチェーン保険アプリケーションなどのドメイン固有のアプリケーションを作成したいユーザーが、再利用可能なブロックチェーンコンポーネントを介してブロックチェーンと簡単にやりとりできるすべてのGUIコンポーネントで優良なユーザー向けのアプリケーションを提示できます。
+
+ユーザーはETCDEVによって作成されたコンポーネントをダウンロードして支払うため、ETCDEVの持続可能性を高め、Ethereum Classicコミュニティへの貢献を継続するのを支援します。
+
+\section{\label{sec:Conclusion}結論}
+
+``Ethereum Classic Marketplace ICO''のコントリビューションはイーサリアムクラッシックコミュニティからみて、大切で優良と判断されると期待しています。
+コンポネントの高い再利用性、中間を省きながら多くのブロックチェーンサービスと会社を可能にするプラットフォームは多きなコスト削減に繋がると期待しています。
+
+\end{CJK}
+
+
+\end{document}
