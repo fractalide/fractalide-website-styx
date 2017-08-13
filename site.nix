@@ -3,11 +3,9 @@
 
    Initialization of Styx, should not be edited
 -----------------------------------------------------------------------------*/
-{ lib, runCommand, writeText
-, fetchFromGitHub
-, styx-themes
-, texlive
+{ texlive
 , stdenv
+, fetchFromGitHub
 , extraConf ? {}
 }@args:
 
@@ -17,15 +15,15 @@ rec {
   devStyx = fetchFromGitHub {
     owner  = "styx-static";
     repo   = "styx";
-    rev    = "4a3d603";
-    sha256 = "01frvrvrfh3jzsjgqxz4398x0kk1wl44krbagbwr50xvahjmr80a";
+    rev    = "eec60aa";
+    sha256 = "0k2nlp3mh578sbn8vib0g8qc928i0qi49vg5mfwfg56l2knsmpdf";
   };
 
   styx = import devStyx {};
 
   /* Library loading
   */
-  styxLib = import styx.lib (args // { inherit styx; });
+  styxLib = import styx.lib styx;
 
 
   # Make a block attribute set
@@ -57,17 +55,15 @@ rec {
 
 -----------------------------------------------------------------------------*/
 
+  /* Import styx-themes
+  */
+  styx-themes = import styx.themes;
+
   /* list the themes to load, paths or packages can be used
      items at the end of the list have higher priority
   */
   themes = [
-    # pinning generic-templates to dev version
-    (fetchFromGitHub {
-      owner  = "styx-static";
-      repo   = "styx-theme-generic-templates";
-      rev    = "f98b002";
-      sha256 = "1fqskc22y3wl570v7f10s2qzfpx79f2fni8j49fmy2jxq0054zfk";
-    })
+    styx-themes.generic-templates
     ./themes/fractalide
   ];
 
@@ -357,17 +353,13 @@ rec {
 -----------------------------------------------------------------------------*/
 
   # converting pages attribute set to a list
-  pageList = let
-    localePages = lib.mapAttrsToList (name: locale:
-      lib.pagesToList {
-        pages   = locale.pages;
-        default = {
-          layout  = locale.env.templates.layout;
-          body.id = "page-top";
-        };
-      }
-    ) locales;
-  in lib.fold (acc: x: acc ++ x) [] localePages;
+  pageList = lib.localesToPageList {
+    inherit locales;
+    default = locale: {
+      layout  = locale.env.templates.layout;
+      body.id = "page-top";
+    };
+  };
 
   # fetch upstream to generate the documentation
   fetchUpstream = version:
