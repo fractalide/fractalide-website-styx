@@ -4,6 +4,8 @@ with lib;
   id = "vision";
   title = "Vision";
   content = markdownToHtml ''
+    Fractalide is a marketplace of reusable components that can be used with graphical programming tools to build a solution to virtually any problem.
+
     Currently it is unintuitive for non-technical end users to interact with published cryptocontracts. For this reason cryptocontracts will not easily reach mainstream.
 
     End users expect a convenient one-click platform that delivers user friendly yet secure third party applications which are designed to use cryptocontracts.
