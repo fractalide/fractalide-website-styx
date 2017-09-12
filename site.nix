@@ -373,8 +373,8 @@ rec {
      Head of list will be the main documentation
   */
   docVersions = [ {
-    rev    = "15b7698";
-    sha256 = "1cxb3zfn0fxim7fpdryqncirz922i2kqiawmisrm5fdfgh9ba7jb";
+    rev    = "eb9a49";
+    sha256 = "1v98pim89dkjk46wj82w08qgd6r0mn8jbh3s8qnc6hsm1ny3n6dw";
   } ];
 
 
