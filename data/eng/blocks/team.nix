@@ -9,7 +9,7 @@
   items = [ {
     img   = "/img/sjm.jpg";
     name  = "Stewart Mackenzie";
-    title = "Programmer + Founder";
+    title = "Founder + Programmer";
     social = [ {
       type = "github";
       link = "https://github.com/sjmackenzie";
@@ -20,7 +20,7 @@
   } {
     img   = "/img/denis.jpg";
     name  = "Denis Michiels";
-    title = "Programmer + Founder";
+    title = "Programmer";
     social = [ {
       type = "gitlab";
       link = "https://gitlab.com/dmichiels";
@@ -28,7 +28,7 @@
   } {
     img   = "/img/ericsagnes.jpeg";
     name  = "Eric Sagnes";
-    title = "Nix Programmer";
+    title = "Programmer";
     social = [ {
       type = "github";
       link = "https://github.com/ericsagnes";
@@ -36,7 +36,16 @@
       type = "twitter";
       link = "https://twitter.com/ericsagnes";
     } ];
-  } ];
+  } {
+    img   = "/img/silviu.jpg";
+    name  = "Silviu Tanase";
+    title = "Community Manager";
+    social = [ {
+      type = "twitter";
+      link = "https://twitter.com/silviutanase";
+    } ];
+  }
+  ];
 
   advisors = [ {
     img   = "/img/elaine.jpg";
@@ -52,7 +61,7 @@
   } {
     img   = "/img/royzou.jpg";
     name  = "Roy Zou";
-    title = "Advisor";
+    title = "Investor + Advisor";
     social = [ {
       type = "twitter";
       link = "https://twitter.com/bitkio_royzou";
