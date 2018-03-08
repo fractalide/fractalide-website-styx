@@ -115,6 +115,11 @@ ul li > span {
   margin-bottom: 0%;
   vertical-align: bottom;
 }
+.content_faqs {
+  bottom: 90px;
+  margin-bottom: 0%;
+  vertical-align: bottom;
+}
 #signup_form {
     margin: 15px 0 180px 0;
 }
@@ -127,12 +132,19 @@ section#copyright {
     padding-top: 150px;
 }
 
-.footer_gradient_top {
+.header_gradient {
+    background-image: -moz-linear-gradient( 90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
+    width: 100%;
+    height: 300px;
+}
+.footer_gradient {
     background-image: -moz-linear-gradient( 90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
     width: 100%;
-    height: 300px;
+    padding-top: 200px;
 }
 .footer_solid {
     background-color: rgb(88, 180, 205);
