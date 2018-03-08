@@ -115,11 +115,6 @@ ul li > span {
   margin-bottom: 0%;
   vertical-align: bottom;
 }
-.content_faqs {
-  bottom: 90px;
-  margin-bottom: 0%;
-  vertical-align: bottom;
-}
 #signup_form {
     margin: 15px 0 180px 0;
 }
@@ -128,8 +123,14 @@ ul li > span {
     margin: 15px 0 120px 0;
   }
 }
-section#copyright {
-    padding-top: 150px;
+
+.content_faqs {
+  bottom: 90px;
+  margin-bottom: 0%;
+  vertical-align: bottom;
+}
+.content_vision {
+    padding-bottom: 120px;
 }
 
 .header_gradient {
