@@ -30,27 +30,23 @@
         </div>
         <div class="row">
             {{ range sort .Site.Data.team "weight" }}
-            <div class="col-md-4 col-xs-12 text-center" >
-                <div class="">
-                    <img src="{{ .Site.BaseURL }}../img/{{ .image }}" />
-                </div>
-                <div class="">
-                    <h2 class="sub_heading_blue">{{ .name }}</h2>
-                    <p>{{ .title }}</p>
-                    {{ range .networks }}
-                    <a href="{{ .url }}" target="_blank" rel="external">
-                        <img src="{{ .Site.BaseURL }}../img/{{ .icon }}" width="30px" />
-                    </a>
-                    {{ end }}
-                </div>
+            <div class="col-md-4 col-xs-12 text-center team_member">
+                <img src="{{ .Site.BaseURL }}../img/{{ .image }}" />
+                <h2 class="sub_heading_blue">{{ .name }}</h2>
+                <p>{{ .title }}</p>
+                {{ range .networks }}
+                <a href="{{ .url }}" target="_blank" rel="external">
+                    <img src="{{ .Site.BaseURL }}../img/{{ .icon }}" width="30px" />
+                </a>
+                {{ end }}
             </div>
             {{ end }}
         </div>
     </div>
 </section>
 <section id="vision">
-    <div class="gradient_top"></div>
-    <div class="solid">
+    <div class="footer_gradient_top"></div>
+    <div class="footer_solid">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
