@@ -123,6 +123,9 @@ ul li > span {
     margin: 15px 0 120px 0;
   }
 }
+section#copyright {
+    padding-top: 150px;
+}
 
 /**********************/
 /* Section: Hyperflow */
