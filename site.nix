@@ -45,8 +45,8 @@ rec {
     (templates.standard (darken  data.fractalmarket))
     (templates.standard          data.etherflow)
     (templates.standard (darken  data.whitepaper))
-    (templates.standard          data.ico)
-    (templates.team     (darken  data.team))
+    #(templates.standard          data.ico)
+    (templates.team     (        data.team))
   ];
 
 
@@ -114,22 +114,22 @@ rec {
       };
 
       # Menu
-      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "ico" "team" ])
+      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "team" ])
         ++ [
           pages.faq
           { title = "Documentation"; path = "/documentation/index.html"; }
           { title = "GitHub";        url  = "https://github.com/fractalide/fractalide"; }
-          (templates.bootstrap.navbar.nav_dropdown {
+          /*(templates.bootstrap.navbar.nav_dropdown {
             title = "English";
             items = [
               (locales.zho.pages.index // { title = "中文"; })
               (locales.jpn.pages.index // { title = "日本語"; })
             ];
-          })
+          })*/
         ];
 
       # Whitepaper
-      whitepaper = mkWhitepaper locale; 
+      whitepaper = mkWhitepaper locale;
     };
 
     /*------------
@@ -201,7 +201,7 @@ rec {
       };
 
       # Menu
-      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "ico" "team" ])
+      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "team" ])
         ++ [
           pages.faq
           { title = "软件文献"; path = "/documentation/index.html"; }
@@ -216,7 +216,7 @@ rec {
         ];
 
       # Whitepaper
-      whitepaper = mkWhitepaper locale; 
+      whitepaper = mkWhitepaper locale;
     };
 
     /*------------
@@ -289,7 +289,7 @@ rec {
       };
 
       # Menu
-      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "ico" "team" ])
+      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "team" ])
         ++ [
           pages.faq
           { title = "ドキュメンテーション"; path = "/documentation/index.html"; }
@@ -304,7 +304,7 @@ rec {
         ];
 
       # Whitepaper
-      whitepaper = mkWhitepaper locale; 
+      whitepaper = mkWhitepaper locale;
     };
 
     /*------------
@@ -373,8 +373,8 @@ rec {
      Head of list will be the main documentation
   */
   docVersions = [ {
-    rev    = "eb9a49";
-    sha256 = "1v98pim89dkjk46wj82w08qgd6r0mn8jbh3s8qnc6hsm1ny3n6dw";
+    rev    = "46b151";
+    sha256 = "1v3xzq8k7230j7ggi5c0mi7vwiwsncpwbvbmpcaxvcrhkgbvs73n";
   } ];
 
 
@@ -415,7 +415,7 @@ rec {
       cp -r ${fetchUpstream (lib.head docVersions)}/share/doc/fractalide/* $out/documentation/
 
       # Whitepaper generation
-      ${lib.concatStringsSep "\n" (lib.mapAttrsToList (n: v: 
+      ${lib.concatStringsSep "\n" (lib.mapAttrsToList (n: v:
         let whitepaper = locales."${v.locale}".data.whitepaper; in ''
         if [ ! -f $out${whitepaper.path} ]; then
           ln -s ${whitepaper.pkg} $out${whitepaper.path}
