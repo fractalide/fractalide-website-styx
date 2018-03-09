@@ -1,0 +1,10 @@
+---
+name: Denis Michiels
+title: Programmer
+image: photo-denis-min.png
+networks:
+- name: github
+  url: https://gitlab.com/
+  icon: icon-gitlab-min.png
+weight: 40
+---

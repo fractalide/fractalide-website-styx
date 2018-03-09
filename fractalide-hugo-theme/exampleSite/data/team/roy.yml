@@ -1,0 +1,13 @@
+---
+name: Roy Zou
+title: Investor + Advisor
+image: photo-roy-min.png
+networks:
+- name: github
+  url: https://github.com/
+  icon: icon-github-min.png
+- name: twitter
+  url: https://twitter.com/
+  icon: icon-twitter-min.png
+weight: 30
+---
