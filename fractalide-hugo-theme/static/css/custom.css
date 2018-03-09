@@ -255,6 +255,146 @@ ul li > span {
 /***************************/
 /* Bootstrap Customization */
 /***************************/
+
+/* Navbar */
+.navbar {
+  min-height: 75px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.affix {
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar-brand {
+  min-width: 195px;
+  min-height: 75px;
+  /*padding-left: 120px;*/
+}
+.navbar-default {
+    background-color: #58B4CD
+}
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: #58B4CD
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    background-color: #58B4CD
+}
+.dropdown-menu {
+    background-color: #FFFFFF
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #FFFFFF
+}
+.navbar-default {
+    background-image: none;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-image: none;
+}
+.navbar-default {
+    border-color: #58B4CD
+}
+.navbar-default .navbar-brand {
+    color: #FFFFFF
+}
+.navbar-default .navbar-brand:hover {
+    color: #FFFFFF
+}
+.navbar-default .navbar-nav>li>a {
+    color: #E8F7FA
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #FFFFFF
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: #FFFFFF
+}
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #FFFFFF
+}
+.dropdown-menu>li>a {
+    color: #58B4CD
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: #0D3E4C
+}
+.navbar-default .navbar-nav>.dropdown>a .caret {
+    border-top-color: #E8F7FA
+}
+.navbar-default .navbar-nav>.dropdown>a:hover .caret {
+    border-top-color: #FFFFFF
+}
+.navbar-default .navbar-nav>.dropdown>a .caret {
+    border-bottom-color: #E8F7FA
+}
+.navbar-default .navbar-nav>.dropdown>a:hover .caret {
+    border-bottom-color: #FFFFFF
+}
+
+.navbar-inverse {
+    background-color: #FFFFFF
+}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    background-color: #FFFFFF
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    background-color: #FFFFFF
+}
+.dropdown-menu {
+    background-color: #FFFFFF
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #FFFFFF
+}
+.navbar-inverse {
+    background-image: none;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-image: none;
+}
+.navbar-inverse {
+    border-color: #FFFFFF
+}
+.navbar-inverse .navbar-brand {
+    color: #58B4CD
+}
+.navbar-inverse .navbar-brand:hover {
+    color: #58B4CD
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #58B4CD
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #58B4CD
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    color: #0D3E4C
+}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #0D3E4C
+}
+.dropdown-menu>li>a {
+    color: #58B4CD
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: #0D3E4C
+}
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+    border-top-color: #58B4CD
+}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+    border-top-color: #0D3E4C
+}
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+    border-bottom-color: #58B4CD
+}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+    border-bottom-color: #0D3E4C
+}
+
+/* Buttons */
 .btn-default {
     color: #FFF;
     background-color: #ED7A7F;

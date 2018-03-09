@@ -75,8 +75,8 @@ paginate = 10
 
 [[menu.main]]
     name = ""
-    url  = "http://twitter.com"
-    pre = "<i class='fa fa-2x fa-twitter'></i>"
+    url  = "http://twitter.com/fractalide"
+    pre = "twitter-min.png"
     weight = 6
 
 # Top bar social links menu
