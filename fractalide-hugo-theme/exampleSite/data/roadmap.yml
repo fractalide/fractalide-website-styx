@@ -1,0 +1,38 @@
+---
+data:
+- id: release
+  title: "Integrated Runtime & Development Environment (IRDE)"
+  icon: release-min.png
+  details:
+  - "Mockups"
+  - "Minimum Viable Product (design mode + run mode)"
+  - "Alpha release (improve graph editing in design mode)"
+  - "Beta release (include programmer mode + text editor)"
+  - "Macos + Windows 10 + Linux + Mobile support"
+  - "Stable release"
+- id: wallet
+  title: "ADA Wallet"
+  icon: wallet-min.png
+  details:
+  - "First application to give Cardano users a reason to bond with Fractalide: build an ADA Wallet on the IRDE, expose interface so that programmers can programatically interface with the wallet easily."
+- id: ico
+  title: "Private ICO"
+  icon: ico-min.png
+  details:
+  - "(If sidechains + treasury are available) Create Fractalide Sidechain + Treasury Private ICO (FCTL ticker symbol)."
+  - "Integrate FCTL into Fractalide as a wallet alongside ADA wallet (reuse ADA wallet code)."
+- id: marketplace
+  title: "Marketplace"
+  icon: marketplace-min.png
+  details:
+  - "Initial integration with IRDE using open source distribution only."
+  - "Implement Contract Jobs interface in IRDE and Marketplace feature (see Appendix Construction Revenue Stream), publish as standard open source only."
+  - "Implement Pay for components in IRDE and Marketplace feature (see Appendix Commission Revenue Stream (Component Sales) Revenue Stream)"
+  - "Implement closed source licenses feature in IRDE and Marketplace (see Appendix Licensing (Software) Revenue Stream)"
+- id: handon
+  title: "Handon.io"
+  icon: revenue-min.png
+  details:
+  - "Use FCTL for Handon logistics built on Fractalide"
+  - "Implement earnings per contract execution (see Appendix Licensing (Cryptocontract executions) Revenue Stream)"
+---
