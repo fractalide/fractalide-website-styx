@@ -30,19 +30,19 @@ paginate = 10
 [[menu.main]]
     name = "Resources"
     identifier = "resources"
-    url  = "/resources/"
+    url  = "/"
     weight = 3
 
 [[menu.main]]
     name = "Research"
     parent = "resources"
-    url  = "/resources/research/"
+    url  = "/research/"
     weight = 3.1
 
 [[menu.main]]
     name = "Documentation"
     parent = "resources"
-    url  = "/resources/documentation/"
+    url  = "/documentation/"
     weight = 3.2
 
 [[menu.main]]
@@ -54,13 +54,13 @@ paginate = 10
 [[menu.main]]
     name = "FAQs"
     parent = "resources"
-    url  = "/resources/faqs/"
+    url  = "/faqs/"
     weight = 3.4
 
 [[menu.main]]
     name = "Research"
     parent = "resources"
-    url  = "/resources/research/"
+    url  = "/research/"
     weight = 3.1
 
 [[menu.main]]
