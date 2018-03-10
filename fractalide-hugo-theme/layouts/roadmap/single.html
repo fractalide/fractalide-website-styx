@@ -1,0 +1,73 @@
+{{ partial "header.html" . }}
+<section id="roadmap">
+    <div class="header_gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h1 class="section_heading_blue fractal_white">Roadmap</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="roadmap">
+        {{ $iconBaseURL := print .Site.BaseURL "img/roadmap-min/" }}
+        {{ range .Site.Data.roadmap.data }}
+        <div class="roadmap_spot">
+            <img src="{{ $iconBaseURL }}spot-min.png"/>
+        </div>
+        <div class="roadmap_container">
+            <div class="roadmap_icon">
+                <img src="{{ $iconBaseURL }}{{ .icon }}"/>
+            </div>
+            <div class="roadmap_line"></div>
+            <div class="roadmap_line_fill"></div>
+            <div class="roadmap_info">
+                <h2 class="sub_heading_blue">{{ .title }}</h2>
+                <div class="roadmap_details">
+                    <div class="collapse" id="{{ .id }}">
+                        {{ if gt (len .details) 1 }}
+                        <ul>
+                            {{ range .details }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                        {{ else }}
+                            {{ range .details }}<p>{{ . }}</p>{{ end }}
+                        {{ end }}
+                    </div>
+                    <a role="button" data-toggle="collapse" href="#{{ .id }}" aria-expanded="false" aria-controls="{{ .id }}">
+                        Details <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        <div class="roadmap_end">
+            <div class="roadmap_line_end"></div>
+            <div class="roadmap_fractal"></div>
+        </div>
+    </div>
+
+    <div class="background_container">
+        <img class="background_aspect_ratio" src="{{ .Site.BaseURL }}img/footer-min.png" />
+        <div class="background_filler"><!--to compensate img/footer-min.png on small resolutions--></div>
+        <div class="content content_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h1 class="section_heading_white">Fractalide</h1>
+                            <p class="text_white">
+                                Your smart contract app marketplace
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}
