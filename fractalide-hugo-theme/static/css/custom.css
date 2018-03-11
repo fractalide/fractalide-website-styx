@@ -10,6 +10,9 @@
 .text_white {
     color: #ffffff;
 }
+.text_blue {
+    color: #58B4CD;
+}
 h1 {
     font-weight: 900;
     font-size: 40px;
@@ -21,19 +24,18 @@ h1.section_heading_white {
     color: #ffffff;
 }
 h1.fractal_blue {
-    background: url(../img/fractal-blue-min.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../img/fractal-blue-min.png) no-repeat center;
     background-size: 437px 190px;
     height: 190px;
     padding-top: 75px;
 }
 h1.fractal_white {
-    background: url(../img/fractal-white-min.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../img/fractal-white-min.png) no-repeat center;
     background-size: 437px 190px;
     height: 190px;
+    padding-top: 75px;
+}
+h1.no_fractal {
     padding-top: 75px;
 }
 h2 {
@@ -50,6 +52,11 @@ h2.sub_heading_blue {
 }
 h2.sub_heading_white {
     color: #ffffff;
+}
+h3 {
+    color: #0D3E4C;
+    font-size: 18px;
+    font-weight: bold;
 }
 p {
     font-size: 16px;
@@ -76,7 +83,15 @@ ul {
 }
 ul li {
   color: #64DBEC;
+}
+#cardano ul li {
   margin-bottom: 30px;
+}
+.sidebar-menu ul {
+  padding: 5px 0 5px 0;
+}
+.sidebar-menu ul li a {
+  padding: 5px 0 5px 0;
 }
 ul li > span {
   color: #171d1f;
@@ -157,6 +172,7 @@ ul li > span {
 .footer_solid {
     background-color: rgb(88, 180, 205);
     width: 100%;
+    padding-top: 10px
 }
 
 /**********************/
@@ -545,4 +561,171 @@ fieldset[disabled] .btn-default.focus {
 .btn-default .badge {
     color: #fff;
     background-color: #EEE;
+}
+
+/********/
+/* Blog */
+/********/
+.img-responsive {
+    padding-top: 22px;
+    width: 100%;
+}
+
+.btn-blue {
+    color: #FFF;
+    background-color: #58B4CD;
+    border-color: #58B4CD;
+}
+.btn-blue:focus,
+.btn-blue.focus {
+    color: #EEE;
+    background-color: #58B4CD;
+    border-color: #58B4CD;
+}
+.btn-blue:hover {
+    color: #EEE;
+    background-color: #58B4CD;
+    border-color: #58B4CD;
+}
+.btn-blue:active,
+.btn-blue.active,
+.open>
+.dropdown-toggle.btn-blue {
+    color: #EEE;
+    background-color: #58B4CD;
+    border-color: #58B4CD;
+}
+.btn-blue:active:hover,
+.btn-blue.active:hover,
+.open> .dropdown-toggle.btn-blue:hover,
+.btn-blue:active:focus,
+.btn-blue.active:focus,
+.open> .dropdown-toggle.btn-blue:focus,
+.btn-blue:active.focus,
+.btn-blue.active.focus,
+.open> .dropdown-toggle.btn-blue.focus {
+    color: #EEE;
+    background-color: #58B4CD;
+    border-color: #58B4CD;
+}
+.btn-blue:active,
+.btn-blue.active,
+.open> .dropdown-toggle.btn-blue {
+    background-image: none;
+}
+.btn-blue.disabled:hover,
+.btn-blue[disabled]:hover,
+fieldset[disabled] .btn-blue:hover,
+.btn-blue.disabled:focus,
+.btn-blue[disabled]:focus,
+fieldset[disabled] .btn-blue:focus,
+.btn-blue.disabled.focus,
+.btn-blue[disabled].focus,
+fieldset[disabled] .btn-blue.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-blue .badge {
+    color: #fff;
+    background-color: #EEE;
+}
+
+.btn-tag {
+    color: #FFF;
+    background-color: #FFFFFF;
+    border-color: #58B4CD;
+    margin: 5px;
+}
+.btn-tag:focus,
+.btn-tag.focus {
+    color: #EEE;
+    background-color: #FFFFFF;
+    border-color: #58B4CD;
+}
+.btn-tag:hover {
+    color: #EEE;
+    background-color: #FFFFFF;
+    border-color: #58B4CD;
+}
+.btn-tag:active,
+.btn-tag.active,
+.open>
+.dropdown-toggle.btn-tag {
+    color: #EEE;
+    background-color: #FFFFFF;
+    border-color: #58B4CD;
+}
+.btn-tag:active:hover,
+.btn-tag.active:hover,
+.open> .dropdown-toggle.btn-tag:hover,
+.btn-tag:active:focus,
+.btn-tag.active:focus,
+.open> .dropdown-toggle.btn-tag:focus,
+.btn-tag:active.focus,
+.btn-tag.active.focus,
+.open> .dropdown-toggle.btn-tag.focus {
+    color: #EEE;
+    background-color: #FFFFFF;
+    border-color: #58B4CD;
+}
+.btn-tag:active,
+.btn-tag.active,
+.open> .dropdown-toggle.btn-tag {
+    background-image: none;
+}
+.btn-tag.disabled:hover,
+.btn-tag[disabled]:hover,
+fieldset[disabled] .btn-tag:hover,
+.btn-tag.disabled:focus,
+.btn-tag[disabled]:focus,
+fieldset[disabled] .btn-tag:focus,
+.btn-tag.disabled.focus,
+.btn-tag[disabled].focus,
+fieldset[disabled] .btn-tag.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-tag .badge {
+    color: #fff;
+    background-color: #EEE;
+}
+
+.form-control {
+  border-color: #58B4CD;
+}
+.form-control::placeholder {
+    color: #58B4CD;
+}
+.read-more a {
+    color: #58B4CD;
+    padding: 0;
+    text-decoration: underline;
+}
+.pagination a {
+    color: #58B4CD;
+    border: 0;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination li {
+    border-width: 0;
+    border-color: transparent;
+}
+.pagination>li>a,
+.pagination>li>span {
+  border: 0;
+}
+.pagination>li.active>a {
+  background: #58B4CD;
+  color: #fff;
+  border: 0;
+}
+.pagination>li.active>a:hover {
+    cursor: pointer;
+    background: #58B4CD;
+}
+
+.blog_post {
+    margin-bottom: 60px;
 }
