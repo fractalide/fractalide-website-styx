@@ -1,0 +1,18 @@
+{{ if isset .Site.Params.widgets "search" }}
+{{ if .Site.Params.widgets.search }}
+<div class="sidebar-menu">
+    <h3>{{ i18n "searchTitle" }}</h3>
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+        <div class="input-group">
+            <input type="search" name="q" class="form-control" placeholder="{{ i18n "searchTitle" }}">
+            <input type="hidden" name="sitesearch" value="{{ .Site.BaseURL }}">
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-blue">
+                    <img src="{{ $.Site.BaseURL }}img/blog-min/icon-search-min.png" width="20px">
+                </button>
+            </span>
+        </div>
+    </form>
+</div>
+{{ end }}
+{{ end }}

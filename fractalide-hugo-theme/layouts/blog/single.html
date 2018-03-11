@@ -1,0 +1,73 @@
+{{ partial "header.html" . }}
+<section id="blog">
+    <div class="header_gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h1 class="section_heading_blue no_fractal">{{ .Title }}</h1>
+                        {{ if .Params.author }}
+                        <h5 class="text-muted">{{ i18n "authorBy" }} {{ .Params.author }}</h5>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container blog_post">
+
+        <div class="row">
+
+            <div class="col-md-offset-2 col-md-8" id="blog-post">
+
+                <h5 class="text-muted">{{ .Date.Format .Site.Params.date_format }}</h5>
+
+                <div id="post-content">
+                  {{ .Content }}
+                </div>
+                <!-- /#post-content -->
+                {{ if .Site.DisqusShortname }}
+                <div id="comments">
+                    {{ template "_internal/disqus.html" . }}
+                </div>
+                {{ end }}
+
+            </div>
+            <!-- /#blog-post -->
+
+            {{ if .Site.DisqusShortname }}
+            <div id="comments">
+                {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ end }}
+
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+                <ul class="pagination">
+                    <li>
+                        <a class="page-link" href="{{ .Site.BaseURL }}blog/" title="All posts" aria-label="All posts">
+                            <i class="fa fa-angle-left text_blue" aria-hidden="true"></i> View all blog post
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4 text-right">
+                {{ if .NextInSection }}
+                    <ul class="pagination">
+                        <li>
+                            <a class="page-link" href="{{ .NextInSection.Permalink }}" rel="next" title="{{ .NextInSection.Title }}" aria-label="Next">
+                                Next blog post <i class="fa fa-angle-right text_blue" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+<section>
+{{ partial "footer.html" . }}

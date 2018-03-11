@@ -9,9 +9,10 @@ defaultContentLanguage = "en"
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
+pluralizeListTitles = false
 
 # Define the number of posts per page
-paginate = 10
+paginate = 5
 
 [menu]
 
