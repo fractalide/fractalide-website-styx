@@ -3,7 +3,8 @@ title = "Go is for lovers"
 date = "2015-09-17T13:47:08+02:00"
 tags = ["go"]
 categories = ["programming"]
-banner = "img/banners/banner-2.jpg"
+banner = "img/banners/post-3-min.png"
+author = "John Doe"
 +++
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
