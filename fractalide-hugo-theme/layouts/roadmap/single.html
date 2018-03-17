@@ -35,7 +35,7 @@
                             {{ end }}
                         </ul>
                         {{ else }}
-                            {{ range .details }}<p>{{ . }}</p>{{ end }}
+                        {{ range .details }}<p>{{ . }}</p>{{ end }}
                         {{ end }}
                     </div>
                     <a role="button" data-toggle="collapse" href="#{{ .id }}" aria-expanded="false" aria-controls="{{ .id }}">
@@ -47,14 +47,14 @@
         {{ end }}
         <div class="roadmap_end">
             <div class="roadmap_line_end"></div>
-            <div class="roadmap_fractal"></div>
+            <div class="roadmap_fractal text-center align-text-bottom">
+                <img src="../img/roadmap-min/fractal-min.png"/>
+            </div>
         </div>
     </div>
 
-    <div class="background_container">
-        <img class="background_aspect_ratio" src="{{ .Site.BaseURL }}img/footer-min.png" />
-        <div class="background_filler"><!--to compensate img/footer-min.png on small resolutions--></div>
-        <div class="content content_footer">
+    <div class="footer_background roadmap_footer">
+        <div class="footer_content_roadmap">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
