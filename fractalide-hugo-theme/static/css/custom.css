@@ -1,6 +1,6 @@
-/**********/
-/* Custom */
-/**********/
+/*********************/
+/* Fractalide Styles */
+/*********************/
 * {
     font-family: "Nunito Sans", Arial, sans-serif;
     font-weight: 400;
@@ -24,13 +24,13 @@ h1.section_heading_white {
     color: #ffffff;
 }
 h1.fractal_blue {
-    background: url(../img/fractal-blue-min.png) no-repeat center;
+    background: url('../img/fractal-blue-min.png') no-repeat center;
     background-size: 437px 190px;
     height: 190px;
     padding-top: 75px;
 }
 h1.fractal_white {
-    background: url(../img/fractal-white-min.png) no-repeat center;
+    background: url('../img/fractal-white-min.png') no-repeat center;
     background-size: 437px 190px;
     height: 190px;
     padding-top: 75px;
@@ -84,22 +84,10 @@ ul {
 ul li {
   color: #64DBEC;
 }
-#cardano ul li {
-  margin-bottom: 30px;
-}
-.sidebar-menu ul {
-  padding: 5px 0 5px 0;
-}
-.sidebar-menu ul li a {
-  padding: 5px 0 5px 0;
-}
-ul li > span {
-  color: #171d1f;
-}
 
-/***********************/
-/* Top/Bottom sections */
-/***********************/
+/******************/
+/* Header section */
+/******************/
 .background_container {
   position: relative;
 }
@@ -131,29 +119,6 @@ ul li > span {
   margin-top: 90px;
   vertical-align: middle;
 }
-.content_signup {
-  bottom: 15px;
-  margin-bottom: 0%;
-  vertical-align: bottom;
-}
-#signup_form {
-    margin: 15px 0 180px 0;
-}
-@media (max-width: 479px) {
-  #signup_form {
-    margin: 15px 0 120px 0;
-  }
-}
-
-.content_footer {
-  bottom: 90px;
-  margin-bottom: 0%;
-  vertical-align: bottom;
-}
-.content_vision {
-    padding-bottom: 120px;
-}
-
 .header_gradient {
     background-image: -moz-linear-gradient( 90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
@@ -161,6 +126,32 @@ ul li > span {
     width: 100%;
     height: 300px;
     margin-top: 75px;
+}
+
+/******************/
+/* Footer section */
+/******************/
+.footer_background {
+    background: #FFFFFF url('../img/footer-min.png') no-repeat center bottom;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 67.97%; /* (img-height / img-width * width) */
+}
+.signup_form {
+    margin: 30px 0 0 0;
+}
+.footer_content_signup {
+    margin-top: -30%;
+}
+.footer_content_faqs {
+    margin-top: -24%;
+}
+.footer_content_roadmap {
+    margin-top: -16%;
 }
 .footer_gradient {
     background-image: -moz-linear-gradient( 90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
@@ -175,9 +166,10 @@ ul li > span {
     padding-top: 10px
 }
 
-/**********************/
-/* Section: Hyperflow */
-/**********************/
+
+/***********************************/
+/* Page: Home - Section: Hyperflow */
+/***********************************/
 .concept_container {
     display: flex;
 }
@@ -191,9 +183,9 @@ ul li > span {
     order: 2;
 }
 
-/**************************/
-/* Section: Fractalmarket */
-/**************************/
+/***************************************/
+/* Page: Home - Section: Fractalmarket */
+/***************************************/
 .gradient_top {
     background-image: -moz-linear-gradient( 90deg, rgb(167, 221, 236) 0%, rgba(167, 221, 236, 0) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(167, 221, 236) 0%, rgba(167, 221, 236, 0) 100%);
@@ -214,7 +206,7 @@ ul li > span {
     height: 200px;
 }
 .feature {
-    background: url(../img/shape-min.png);
+    background: url('../img/shape-min.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 288px 246px;
@@ -253,33 +245,34 @@ ul li > span {
     padding-right: 60px;
 }
 
-/******************************************************************************/
-/* CSS for the top section gradient background in these pages: FAQs, Research */
-/******************************************************************************/
-.gradient_top_ {
-    background-image: -moz-linear-gradient( 90deg, rgba(83, 207, 196, 0.50196) 0%, rgb(88, 180, 205) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgba(83, 207, 196, 0.50196) 0%, rgb(88, 180, 205) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgba(83, 207, 196, 0.50196) 0%, rgb(88, 180, 205) 100%);
+/*********************************/
+/* Page: Home - Section: Cardano */
+/*********************************/
+#cardano ul li {
+  margin-bottom: 30px;
 }
 
-/*******************************************************************/
-/* CSS for the bottom section gradient background in About Us page */
-/*******************************************************************/
+
+/******************/
+/* Page: About us */
+/******************/
+.team_member {
+    margin: 30px 0 30px 0;
+}
+.content_vision {
+    padding-bottom: 120px;
+}
 .hero_bg_copy {
     background-image: -moz-linear-gradient( 90deg, rgb(88, 180, 205) 0%, rgba(83, 207, 196, 0.50196) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(88, 180, 205) 0%, rgba(83, 207, 196, 0.50196) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(88, 180, 205) 0%, rgba(83, 207, 196, 0.50196) 100%);
 }
 
-.team_member {
-    margin: 30px 0 30px 0;
-}
-
-/***********/
-/* Roadmap */
-/**********/
+/*****************/
+/* Page: Roadmap */
+/*****************/
 .roadmap {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .roadmap_container {
     display: flex;
@@ -349,11 +342,25 @@ ul li > span {
     height: 200px;
 }
 .roadmap_fractal {
-    background-image: url(../img/roadmap-min/fractal-min.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    text-align: center;
+    padding-top: 210px;
     height: 280px;
-    z-index: 9999 !important;
+}
+.roadmap_footer {
+    margin-top: -44%;
+}
+
+/********/
+/* Blog */
+/********/
+.sidebar-menu ul {
+  padding: 5px 0 5px 0;
+}
+.sidebar-menu ul li a {
+  padding: 5px 0 5px 0;
+}
+ul li > span {
+  color: #171d1f;
 }
 
 /***************************/
@@ -368,7 +375,7 @@ ul li > span {
   border-radius: 0;
 }
 .navbar-brand {
-  background-image: url(../img/logo-min.png);
+  background-image: url('../img/logo-min.png');
   background-size: 195px;
   background-position: center;
   background-repeat: no-repeat;
@@ -466,7 +473,7 @@ ul li > span {
     border-color: #FFFFFF
 }
 .affix .navbar-brand {
-    background-image: url(../img/logo-blue-min.png);
+    background-image: url('../img/logo-blue-min.png');
     color: #0D3E4C;
 }
 .affix .navbar-brand:hover {
