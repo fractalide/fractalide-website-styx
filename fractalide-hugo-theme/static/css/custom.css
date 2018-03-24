@@ -146,7 +146,8 @@ ul li {
 /******************/
 /* Footer section */
 /******************/
-.footer_background {
+.footer_background,
+.footer_background_home {
     background: #FFFFFF url('../img/footer-min.png') no-repeat center bottom;
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -158,16 +159,31 @@ ul li {
 }
 @media (max-width: 479px) {
   .footer_background {
+    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+    width: 100%;
+    padding-top: 200px;
+  }
+  .footer_background_home {
     background: #FFFFFF url('../img/footer-phone-min.png') no-repeat center bottom;
     padding-top: 220%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .footer_background {
+    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+    width: 100%;
+    padding-top: 200px;
+  }
+  .footer_background_home {
     background: #FFFFFF url('../img/footer-tab-min.png') no-repeat center bottom;
     padding-top: 200%;
   }
 }
+
 .signup_form {
     margin: 30px 0 0 0;
 }
@@ -184,12 +200,13 @@ ul li {
     margin-top: -70%;
   }
 }
+
 .footer_content_faqs {
     margin-top: -24%;
 }
 @media (max-width: 479px) {
   .footer_content_faqs {
-    margin-top: -48%;
+    margin-top: -40%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
