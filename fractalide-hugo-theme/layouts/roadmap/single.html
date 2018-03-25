@@ -19,19 +19,28 @@
             <img src="{{ $iconBaseURL }}spot-min.png"/>
         </div>
         <div class="roadmap_container">
+            <div class="roadmap_line"></div>
             <div class="roadmap_icon">
                 <img src="{{ $iconBaseURL }}{{ .icon }}"/>
+                <h2 class="sub_heading_blue">{{ .title }}</h2>
             </div>
-            <div class="roadmap_line"></div>
             <div class="roadmap_line_fill"></div>
             <div class="roadmap_info">
-                <h2 class="sub_heading_blue">{{ .title }}</h2>
+                <div class="roadmap_progress">
+                    <p>Progress <span class="pull-right">{{ .progress }}%</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="{{ .progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ .progress }}%;">
+                        <span class="sr-only">{{ .progress }}% Complete</span>
+                      </div>
+                    </div>
+                    <p>Deployed</p>
+                </div>
                 <div class="roadmap_details">
                     <div class="collapse" id="{{ .id }}">
                         {{ if gt (len .details) 1 }}
                         <ul>
                             {{ range .details }}
-                            <li>{{ . }}</li>
+                            <li>{{ . | markdownify }}</li>
                             {{ end }}
                         </ul>
                         {{ else }}
