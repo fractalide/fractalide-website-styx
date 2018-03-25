@@ -598,3 +598,16 @@ fieldset[disabled] .btn-default.focus {
     color: #fff;
     background-color: #EEE;
 }
+
+
+
+/****************/
+/* Progress Bar */
+/****************/
+.progress {
+  height: 10px;
+  margin-bottom: 10px;
+}
+.progress-bar {
+  background: linear-gradient(to right, #FDFC8F 0%, #FEE09A 50%, #F5AA95 100%);
+}

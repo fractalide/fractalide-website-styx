@@ -102,6 +102,7 @@ ul li {
     background: #FFFFFF url('../img/header-min.png') no-repeat center top;
     -webkit-background-size: contain;
     -moz-background-size: contain;
+    -ms-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
     width: 100%;
@@ -120,28 +121,27 @@ ul li {
     padding-bottom: 200%;
   }
 }
+
 .header_content_stack {
   margin-top: 75px;
   padding-top: 45px;
 }
-@media (max-width: 479px) {
-  .header_content_stack {
-    padding-bottom: 0%;
-  }
-}
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 991px) {
   .header_content_stack {
     padding-bottom: 0%;
   }
 }
 .header_gradient {
-    background-image: -moz-linear-gradient(90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
     background-image: -webkit-linear-gradient(90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
+    background-image: -moz-linear-gradient(90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
     background-image: -ms-linear-gradient(90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
+    background-image: -o-linear-gradient(90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
     width: 100%;
     height: 300px;
     margin-top: 75px;
 }
+
+
 
 /******************/
 /* Footer section */
@@ -151,33 +151,30 @@ ul li {
     background: #FFFFFF url('../img/footer-min.png') no-repeat center bottom;
     -webkit-background-size: contain;
     -moz-background-size: contain;
+    -ms-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
     width: 100%;
     height: 0;
     padding-top: 67.97%; /* (img-height / img-width * width) */
 }
+@media (max-width: 767px) {
+    .footer_background {
+      background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+      background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+      background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+      background-image: -o-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+      width: 100%;
+      padding-top: 200px;
+    }
+}
 @media (max-width: 479px) {
-  .footer_background {
-    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
-    width: 100%;
-    padding-top: 200px;
-  }
   .footer_background_home {
     background: #FFFFFF url('../img/footer-phone-min.png') no-repeat center bottom;
     padding-top: 220%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  .footer_background {
-    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
-    width: 100%;
-    padding-top: 200px;
-  }
   .footer_background_home {
     background: #FFFFFF url('../img/footer-tab-min.png') no-repeat center bottom;
     padding-top: 200%;
@@ -211,18 +208,29 @@ ul li {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .footer_content_faqs {
-    margin-top: -60%;
+    margin-top: -20%;
   }
 }
 
 .footer_content_roadmap {
-    margin-top: -16%;
+    margin-top: -15%;
+}
+@media (max-width: 479px) {
+  .footer_content_roadmap {
+    margin-top: -25%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .footer_content_roadmap {
+    margin-top: -20%;
+  }
 }
 
 .footer_gradient {
-    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
     background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
     background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+    background-image: -o-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
     width: 100%;
     padding-top: 200px;
 }
@@ -253,9 +261,10 @@ ul li {
 /* Page: Home - Section: Fractalmarket */
 /***************************************/
 .gradient_top {
-    background-image: -moz-linear-gradient(90deg, rgb(167, 221, 236) 0%, rgba(167, 221, 236, 0) 100%);
     background-image: -webkit-linear-gradient(90deg, rgb(167, 221, 236) 0%, rgba(167, 221, 236, 0) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(167, 221, 236) 0%, rgba(167, 221, 236, 0) 100%);
     background-image: -ms-linear-gradient(90deg, rgb(167, 221, 236) 0%, rgba(167, 221, 236, 0) 100%);
+    background-image: -o-linear-gradient(90deg, rgb(167, 221, 236) 0%, rgba(167, 221, 236, 0) 100%);
     width: 100%;
     height: 200px;
 }
@@ -265,9 +274,10 @@ ul li {
     height: auto;
 }
 .gradient_bottom {
-    background-image: -moz-linear-gradient(90deg, rgba(167, 221, 236, 0) 0%, rgb(167, 221, 236) 100%);
     background-image: -webkit-linear-gradient(90deg, rgba(167, 221, 236, 0) 0%, rgb(167, 221, 236) 100%);
+    background-image: -moz-linear-gradient(90deg, rgba(167, 221, 236, 0) 0%, rgb(167, 221, 236) 100%);
     background-image: -ms-linear-gradient(90deg, rgba(167, 221, 236, 0) 0%, rgb(167, 221, 236) 100%);
+    background-image: -o-linear-gradient(90deg, rgba(167, 221, 236, 0) 0%, rgb(167, 221, 236) 100%);
     width: 100%;
     height: 200px;
 }
@@ -312,11 +322,7 @@ ul li {
 .content_vision {
     padding-bottom: 120px;
 }
-.hero_bg_copy {
-    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(83, 207, 196, 0.50196) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(83, 207, 196, 0.50196) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(83, 207, 196, 0.50196) 100%);
-}
+
 
 /*****************/
 /* Page: Roadmap */
@@ -324,38 +330,117 @@ ul li {
 .roadmap {
     margin-top: 80px;
 }
-.roadmap_container {
-    display: flex;
-    height: 100%;
-}
 .roadmap_spot {
     text-align: center;
     padding-bottom: 2px;
 }
-.roadmap_icon {
-    order: 1;
-    width: 49%;
-    text-align: right;
-    margin-right: 30px;
-    margin-top: -65px;
+@media (max-width: 767px) {
+    .roadmap_spot {
+        text-align: left;
+        padding-left: 25px;
+        padding-bottom: 2px;
+    }
+}
+.roadmap_container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+@media (max-width: 767px) {
+    .roadmap_container {
+        flex-flow: row wrap;
+    }
 }
 .roadmap_line {
     order: 2;
-    width: 1%;
-    border-right: 4px solid #79949F;
-    margin-right: -4px;
+    background-color: #79949F;
+    width: 4px;
+    margin-left: 32px;
+    margin-right: 32px;
     min-height: 200px;
 }
-.roadmap_line_fill {
-    order: 3;
-    width: 1%;
+@media (max-width: 767px) {
+    .roadmap_line {
+        order: 1;
+        min-height: 100px;
+    }
+    .roadmap_line_fill {
+        order: 3;
+        background-color: #79949F;
+        width: 4px;
+        margin-left: 32px;
+        margin-right: 32px;
+        min-height: 100px;
+    }
+}
+.roadmap_icon {
+    order: 1;
+    flex: 1 1 45%;
+    text-align: right;
+    margin-top: -65px;
+}
+@media (max-width: 479px) {
+    .roadmap_icon img {
+        width: 119px;
+        height: 77px;
+    }
+}
+@media (max-width: 767px) {
+    .roadmap_icon {
+        order: 2;
+        text-align: left;
+        margin-top: -50px;
+    }
+}
+@media (max-width: 479px) {
+    .roadmap_icon {
+        flex: 1 1 75%;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .roadmap_icon {
+        flex: 1 1 85%;
+    }
+}
+.roadmap_icon h2 {
+    margin-top: 0px;
 }
 .roadmap_info {
-    order: 4;
-    width: 49%;
-    margin-left: 30px;
+    order: 3;
+    flex: 1 1 45%;
     margin-top: -40px;
     padding-bottom: 60px;
+}
+@media (max-width: 767px) {
+    .roadmap_info {
+        margin-top: 0px;
+    }
+}
+.roadmap_progress {
+    width: 50%;
+    margin-bottom: 20px;
+}
+@media (max-width: 479px) {
+    .roadmap_progress {
+        width: 80%;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .roadmap_progress {
+        width: 70%;
+    }
+}
+.roadmap_progress p,
+.roadmap_progress span {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    color: #79949f;
+}
+.roadmap_progress .progress {
+    width: 100%;
+}
+.roadmap_details {
+    width: 70%;
 }
 .roadmap_details a,
 .roadmap_details li,
@@ -383,9 +468,6 @@ ul li {
 .roadmap_line_end {
     position: absolute;
     z-index: 9999 !important;
-}
-.roadmap_line_end {
-    /*order: 1;*/
     width: 50%;
     border-right: 4px solid #79949F;
     margin-left: 2px;
@@ -399,6 +481,25 @@ ul li {
 .roadmap_footer {
     margin-top: -44%;
 }
+@media (max-width: 767px) {
+    .roadmap_line_end {
+        background-color: #79949F;
+        width: 4px;
+        margin-left: 32px;
+        height: 60px;
+    }
+    .roadmap_fractal {
+        text-align: left;
+        padding-left: 7px;
+        padding-top: 70px;
+        height: 60px;
+    }
+    .roadmap_footer {
+        margin-top: 0%;
+    }
+}
+
+
 
 /********/
 /* Blog */
