@@ -402,13 +402,6 @@ ul li {
         flex: 1 1 85%;
     }
 }
-/*
-@media (min-width: 768px) and (max-width: 991px) {
-    .roadmap_icon {
-        flex: 1 1 90%;
-    }
-}
-*/
 .roadmap_icon h2 {
     margin-top: 0px;
 }
@@ -422,6 +415,29 @@ ul li {
     .roadmap_info {
         margin-top: 0px;
     }
+}
+.roadmap_progress {
+    width: 50%;
+    margin-bottom: 20px;
+}
+@media (max-width: 479px) {
+    .roadmap_progress {
+        width: 80%;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .roadmap_progress {
+        width: 70%;
+    }
+}
+.roadmap_progress p,
+.roadmap_progress span {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    color: #79949f;
+}
+.roadmap_progress .progress {
+    width: 100%;
 }
 .roadmap_details {
     width: 70%;
