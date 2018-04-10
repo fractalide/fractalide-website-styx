@@ -8,20 +8,42 @@
                         <h1 class="section_heading_blue fractal_white">Roadmap</h1>
                     </div>
                 </div>
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="text-center">
+                        <p class="text_dark_blue">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="text_dark_blue">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="roadmap">
         {{ $iconBaseURL := print .Site.BaseURL "img/roadmap-min/" }}
-        {{ range .Site.Data.roadmap.data }}
+        {{ range sort .Site.Data.roadmap "weight" }}
+        <div class="roadmap_fractal text-center">
+            <img src="../img/roadmap-min/fractal-min.png"/>
+            <h2 class="text_dark_blue">{{ .title }}</h2>
+            <p class="text_dark_blue">
+                {{ .description }}
+            </p>
+        </div>
+        {{ if not .steps }}
+        <div class="roadmap_container">
+            <div class="roadmap_line"></div>
+        </div>
+        {{ end }}
+        {{ range .steps }}
         <div class="roadmap_spot">
             <img src="{{ $iconBaseURL }}spot-min.png"/>
         </div>
         <div class="roadmap_container">
             <div class="roadmap_line"></div>
-            <div class="roadmap_icon">
-                <img src="{{ $iconBaseURL }}{{ .icon }}"/>
+            <div class="roadmap_step">
                 <h2 class="sub_heading_blue">{{ .title }}</h2>
             </div>
             <div class="roadmap_line_fill"></div>
@@ -34,25 +56,46 @@
                       </div>
                     </div>
                     <p>Deployed</p>
-                </div>
-                <div class="roadmap_details">
-                    <div class="collapse" id="{{ .id }}">
-                        {{ if gt (len .details) 1 }}
+                </div>  <!-- roadmap_progress -->
+                <div class="roadmap_detail">
+                    <a role="button" data-toggle="collapse" href="#{{ .id }}_objectives" aria-expanded="false" aria-controls="{{ .id }}">
+                        <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Objectives <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </a>
+                    <div class="collapse" id="{{ .id }}_objectives">
+                        {{ if .objectives }}
+                        {{ if gt (len .objectives) 1 }}
                         <ul>
-                            {{ range .details }}
+                            {{ range .objectives }}
                             <li>{{ . | markdownify }}</li>
                             {{ end }}
                         </ul>
                         {{ else }}
-                        {{ range .details }}<p>{{ . }}</p>{{ end }}
+                        {{ range .objectives }}<p>{{ . }}</p>{{ end }}
+                        {{ end }}
                         {{ end }}
                     </div>
-                    <a role="button" data-toggle="collapse" href="#{{ .id }}" aria-expanded="false" aria-controls="{{ .id }}">
-                        Details <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </div> <!-- roadmap_detail -->
+                <div class="roadmap_detail">
+                    <a role="button" data-toggle="collapse" href="#{{ .id }}_workdone" aria-expanded="false" aria-controls="{{ .id }}">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i> Work Done <i class="fa fa-chevron-up" aria-hidden="true"></i>
                     </a>
-                </div>
-            </div>
-        </div>
+                    <div class="collapse" id="{{ .id }}_workdone">
+                        {{ if .work_done }}
+                        {{ if gt (len .work_done) 1 }}
+                        <ul>
+                            {{ range .work_done }}
+                            <li>{{ . | markdownify }}</li>
+                            {{ end }}
+                        </ul>
+                        {{ else }}
+                        {{ range .work_done }}<p>{{ . }}</p>{{ end }}
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div> <!-- roadmap_detail -->
+            </div> <!-- roadmap_info -->
+        </div> <!-- roadmap_container -->
+        {{ end }}
         {{ end }}
         <div class="roadmap_end">
             <div class="roadmap_line_end"></div>
