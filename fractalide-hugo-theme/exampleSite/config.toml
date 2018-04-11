@@ -21,90 +21,94 @@ paginate = 5
 [[menu.main]]
     name = "Home"
     url  = "/"
-    weight = 1
+    weight = 10
 
 [[menu.main]]
     name = "About us"
     url  = "/about_us/"
-    weight = 2
+    weight = 20
+
+[[menu.main]]
+    name = "Solutions"
+    identifier = "solutions"
+    url  = "/"
+    weight = 30
+
+[[menu.main]]
+    name = "Hyperflow"
+    parent = "solutions"
+    url  = "/hyperflow/"
+    weight = 31
+
+[[menu.main]]
+    name = "Fractalmarket"
+    parent = "solutions"
+    url  = "/fractalmarket/"
+    weight = 32
+
+[[menu.main]]
+    name = "Blockchain Construction"
+    parent = "solutions"
+    url  = "/blockchain_construction/"
+    weight = 33
+
+[[menu.main]]
+    name = "Technical Analysis"
+    parent = "solutions"
+    url  = "/technical_analysis/"
+    weight = 34
+
+[[menu.main]]
+    name = "Stake Pool"
+    parent = "solutions"
+    url  = "/stake_pool/"
+    weight = 35
 
 [[menu.main]]
     name = "Resources"
     identifier = "resources"
     url  = "/"
-    weight = 3
+    weight = 40
 
 [[menu.main]]
     name = "Research"
     parent = "resources"
     url  = "/research/"
-    weight = 3.1
+    weight = 41
 
 [[menu.main]]
     name = "Documentation"
     parent = "resources"
     url  = "/documentation/"
-    weight = 3.2
+    weight = 42
 
 [[menu.main]]
     name = "GitHub"
     parent = "resources"
     url  = "https://github.com/fractalide/"
-    weight = 3.3
+    weight = 43
 
 [[menu.main]]
     name = "FAQs"
     parent = "resources"
     url  = "/faqs/"
-    weight = 3.4
-
-[[menu.main]]
-    name = "Research"
-    parent = "resources"
-    url  = "/research/"
-    weight = 3.1
+    weight = 44
 
 [[menu.main]]
     name = "Roadmap"
     url  = "/roadmap/"
-    weight = 4
+    weight = 50
 
 [[menu.main]]
     name = "Blog"
     url  = "/blog/"
-    weight = 5
+    weight = 60
 
 [[menu.main]]
     name = ""
     url  = "http://twitter.com/fractalide"
     pre = "twitter-min.png"
-    weight = 6
-
-# Top bar social links menu
-
-[[menu.topbar]]
-    weight = 1
-    name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
-    pre = "<i class='fa fa-2x fa-github'></i>"
-
-[[menu.topbar]]
-    weight = 2
-    name = "Facebook"
-    url = "http://facebook.com"
-    pre = "<i class='fa fa-2x fa-facebook'></i>"
-
-[[menu.topbar]]
-    weight = 3
-    name = "Twitter"
-    url = "http://twitter.com"
-    pre = "<i class='fa fa-2x fa-twitter'></i>"
-
-[[menu.topbar]]
-    weight = 4
-    name = "Email"
-    url = "mailto:your@email.com"
-    pre = "<i class='fa fa-2x fa-envelope'></i>"
+    weight = 70
 
 [params]
     viewMorePostLink = "/blog/"
