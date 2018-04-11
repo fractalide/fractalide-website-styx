@@ -63,7 +63,6 @@ rec {
 
   pages = rec {
     index = rec {
-      title    = "Home";
       path     = "/index.html";
       template = templates.block-page.full;
       layout   = templates.layout;
