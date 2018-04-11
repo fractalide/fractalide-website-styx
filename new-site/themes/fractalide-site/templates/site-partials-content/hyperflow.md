@@ -1,0 +1,56 @@
+<section id="hyperflow">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h1 class="section_heading_blue fractal_blue">Hyperflow</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-xs-12">
+                <div class="text-center">
+                    <h2 class="sub_heading_blue">A Browser and Rapid Application Development platform for normal people</h2>
+                    <p>
+                         Hyperflow is a browser of smart contracts apps. It draws much inspiration from HyperCard, by allowing non-technical people to easily build and run problem solving apps. Though we will differ from HyperCard on these points.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-xs-12 concept_icon">
+                <img src="/img/icon-stack-min.png" width="83px" />
+            </div>
+            <div class="col-lg-4 col-xs-12 concept_info">
+                <h2 class="sub_heading_blue">Hypercard concepts to keep</h2>
+                <p>
+                    The intuitive, and easy to learn approach HyperCard is famous for.
+                </p>
+                <p>
+                    It’s very easy to try out your newly built app, by simply switching between run mode and design mode.
+                </p>
+                <p>
+                    Keep the concept of <strong>cards</strong> and <strong>stacks</strong>, an analogy would be; a card is a webpage and a stack is a website. Each card contains GUI components and logic that links other cards together to form a stack of cards.
+                </p>
+                <p>
+                    Cards, stacks and low level components are shareable via Fractalmarket.
+                </p>
+            </div>
+            <div class="col-lg-2 col-xs-12 text-center concept_icon">
+                <img src="/img/icon-share-min.png" width="90px" />
+            </div>
+            <div class="col-lg-4 col-xs-12 concept_info">
+                <h2 class="sub_heading_blue">Hypercard concepts to remove</h2>
+                <p>
+                    Remove the HyperTalk programming language and replace it with Flowscript, a Flow-based Programming language that promotes reusability.
+                </p>
+                <p>
+                    HyperCard didn't have a network layer, it should go without saying, but this will be corrected.
+                </p>
+                <p>
+                    HyperCard is old and outdated. Hyperflow will be a fresh new take on HyperCard, being completely rewritten from scratch.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
