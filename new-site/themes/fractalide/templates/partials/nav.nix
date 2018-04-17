@@ -5,6 +5,15 @@ let template = env: args:
     site = env.conf.theme.site;
     lib = env.lib;
     page = args.page;
+    stripSuffix = suffix: string:
+      let
+        sxl = builtins.stringLength suffix;
+        sl = builtins.stringLength string;
+      in
+        if (sl >= sxl) && ((builtins.substring (sl - sxl) sxl string) == suffix) then
+          builtins.substring 0 (sl - sxl) string
+        else string;
+    stripIndexHtml = stripSuffix "index.html";
   in ''
 ${if page.path == "/index.html" then ''
   <nav id="menu" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="200" role="navigation">
@@ -36,7 +45,7 @@ ${if page.path == "/index.html" then ''
                   ${
                     let
                       renderChild = child: ''
-                        <li class="${if page.path == child.url then "active" else ""}">
+                        <li class="${if (stripIndexHtml page.path) == child.url then "active" else ""}">
                           <a href="${child.url}">${child.name}</a>
                         </li>
                       '';
@@ -46,7 +55,7 @@ ${if page.path == "/index.html" then ''
                 </ul>
               </li>
             '' else ''
-              <li class="${if page.path == currentItem.url then "active" else ""}">
+              <li class="${if (stripIndexHtml page.path) == currentItem.url then "active" else ""}">
                 ${if currentItem ? pre then ''
                   <a href="${currentItem.url}">
                     <img alt="${currentItem.name}" src="/img/${currentItem.pre}" width="20px">
