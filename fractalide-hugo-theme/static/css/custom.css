@@ -97,6 +97,9 @@ ul {
 ul li {
   color: #64DBEC;
 }
+.subsection {
+    padding-top: 70px;
+}
 
 /******************/
 /* Header section */
@@ -244,6 +247,17 @@ ul li {
 }
 
 
+/******************************/
+/* Page: Home - Section: Main */
+/******************************/
+h2.fractal_blue {
+    background: url('../img/fractal-blue-min.png') no-repeat center;
+    background-size: 219px 95px;
+    height: 95px;
+    padding-top: 35px;
+}
+
+
 /***********************************/
 /* Page: Home - Section: Hyperflow */
 /***********************************/
@@ -258,6 +272,28 @@ ul li {
   .concept_info {
     text-align: center;
   }
+}
+section#hyperflow_modes {
+    margin-top: 90px;
+}
+section#hyperflow_modes > div.container > div.row:nth-child(2) {
+    margin-top: 120px;
+}
+.hyperflow_mode_top {
+    margin-top: -90px;
+    margin-right: -80px;
+}
+.hyperflow_mode_mid {
+    margin-top: -90px;
+    margin-left: 160px;
+}
+.hyperflow_mode_bottom {
+    margin-top: -90px;
+    margin-right: -80px;
+}
+.hyperflow_mode_description {
+    margin-top: -20px;
+    margin-left: 120px;
 }
 
 /***************************************/
@@ -285,7 +321,7 @@ ul li {
     height: 200px;
 }
 .feature {
-    background: url('../img/shape-min.png');
+    background: url('../img/shape-blue-min.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 308px 360px;
