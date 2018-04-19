@@ -6,14 +6,14 @@
     children = [
       { name = "Hyperflow"; url = "/hyperflow/"; }
       { name = "Fractalmarket"; url = "/fractalmarket/"; }
-      { name = "Blockchain Construction"; url = "/blockchain_construction/"; }
-      { name = "Technical Analysis"; url = "/technical_analysis/"; }
-      { name = "Stake Pool"; url = "/stake_pool/"; }
+      { name = "Blockchain Development"; url = "/development-and-analysis/#blockchain_development"; }
+      { name = "Application Development"; url = "/development-and-analysis/#app_development"; }
+      { name = "Technical Analysis"; url = "/development-and-analysis/#technical_analysis"; }
+      { name = "Cardano Stake Pool"; url = "/cardano_stake_pool/"; }
     ];
   }
   {
     name = "Resources";
-    url = "/";
     children = [
       { name = "Research"; url = "/research/"; }
       { name = "Documentation"; url = "/documentation/"; }
