@@ -5,6 +5,13 @@
 -----------------------------------------------------------------------------*/
 { styx
 , extraConf ? {}
+, pkgs ? import ./nixpkgs.nix {}
+, changelog-src ? pkgs.fetchFromGitHub {
+    owner = "fractalide"; repo = "fractalide";
+    rev = "dcc3745355f80fa6c85a22f246eb320b2ab1667b";
+    sha256 = "16hfrpfbvcm9ns89nfik945hzlsfx4xk61kqmbdwxi8wcs6n2q0y";
+  }
+, changelog ? builtins.fromJSON (builtins.readFile "${changelog-src}/CHANGELOG.json")
 }:
 
 rec {
@@ -52,6 +59,7 @@ rec {
 -----------------------------------------------------------------------------*/
 
   data = {
+    inherit changelog;
   };
 
 
@@ -68,6 +76,16 @@ rec {
       layout   = templates.layout;
       blocks   = [ content ];
       content  = lib.loadFile { file = ./content/index.md; env = { inherit (templates) site-partials; }; };
+    };
+    roadmap = rec {
+      path     = "/roadmap/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/roadmap.md; env = {
+        inherit lib;
+        inherit (data) changelog;
+      }; };
     };
   };
 
