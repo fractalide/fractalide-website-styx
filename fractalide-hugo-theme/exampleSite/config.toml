@@ -49,25 +49,25 @@ paginate = 5
 [[menu.main]]
     name = "Blockchain Development"
     parent = "solutions"
-    url  = "/development-and-analysis/#blockchain_construction"
+    url  = "/development-and-analysis/#blockchain_development"
     weight = 33
+
+[[menu.main]]
+    name = "Application Development"
+    parent = "solutions"
+    url  = "/development-and-analysis/#app_development"
+    weight = 34
 
 [[menu.main]]
     name = "Technical Analysis"
     parent = "solutions"
     url  = "/development-and-analysis/#technical_analysis"
-    weight = 34
-
-[[menu.main]]
-    name = "App Development"
-    parent = "solutions"
-    url  = "/development-and-analysis/#app_development"
     weight = 35
 
 [[menu.main]]
-    name = "Stake Pool"
+    name = "Cardano Stake Pool"
     parent = "solutions"
-    url  = "/cardano/"
+    url  = "/cardano-stake-pool/"
     weight = 36
 
 [[menu.main]]
