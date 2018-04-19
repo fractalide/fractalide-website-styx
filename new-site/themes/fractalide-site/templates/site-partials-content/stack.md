@@ -6,9 +6,9 @@
                     <div class="col-md-offset-2 col-md-8">
                         <div class="text-center">
                             <img src="/img/stack-min.png" width="121px" />
-                            <h1 class="section_heading_white">A Smart Contract App Marketplace</h1>
+                            <h1 class="section_heading_white">A New Browser Connected to a Smart Contract App Store</h1>
                             <p class="text_white">
-                                You don’t have to be a programmer to use smart contracts.<br>Fractalide is an app store linked to a new browser, allowing you to run, create, buy and sell apps.
+                                Fractalide provides a new browser for smart contracts and cryptocurrencies.  The browser, Hyperflow, allows people to execute and develop applications found in a connected app marketplace called Fractalmarket. We also offer Development Services, Technical Analysis and provide a Cardano Stake Pool.
                             </p>
                             <button class="btn btn-lg btn-default">Sign up for early access</button>
                         </div>
