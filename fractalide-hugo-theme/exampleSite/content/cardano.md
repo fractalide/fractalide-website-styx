@@ -1,4 +1,0 @@
-+++
-title = "Cardano"
-type = "cardano"
-+++
