@@ -1,9 +1,3 @@
-<p>attrNames changelog</p>
-<ul>
-{{
-  lib.concatMapStringsSep "\n" (s: if s == "description" then "" else ''<li>'' + s + ''</li>'') (builtins.attrNames changelog.Fractalide-Releases)
-}}
-</ul>
 <section id="roadmap">
     <div class="header_gradient">
         <div class="container">
