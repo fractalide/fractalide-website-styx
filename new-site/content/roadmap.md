@@ -1,10 +1,9 @@
 <p>attrNames changelog</p>
 <ul>
 {{
-  lib.concatStringsSep "" (map (s: ''<li>'' + s + ''</li>'') (builtins.attrNames changelog))
+  lib.concatMapStringsSep "\n" (s: if s == "description" then "" else ''<li>'' + s + ''</li>'') (builtins.attrNames changelog.Fractalide-Releases)
 }}
 </ul>
-{{ let dummy = ''
 <section id="roadmap">
     <div class="header_gradient">
         <div class="container">
@@ -27,17 +26,24 @@
             </div>
         </div>
     </div>
-
     <div class="roadmap">
-        { { $iconBaseURL := print .Site.BaseURL "img/roadmap-min/" } }
-        { { range sort .Site.Data.roadmap "weight" } }
-        <div class="roadmap_fractal text-center">
+      {{ let
+        renderRelease = (release: ''
+          <div class="roadmap_fractal text-center">
             <img src="../img/roadmap-min/fractal-min.png"/>
-            <h2 class="text_dark_blue">{ { .title } }</h2>
+            <h2 class="text_dark_blue">${release.title}</h2>
             <p class="text_dark_blue">
-                { { .description } }
+              ${release.description}
             </p>
-        </div>
+          </div>
+        '');
+       in
+         lib.concatMapStringsSep "\n" renderRelease changelog.Fractalide-Releases.releases
+       }}
+    </div>
+</section>
+{{ let dummy = ''
+
         { { if not .steps } }
         <div class="roadmap_container">
             <div class="roadmap_line"></div>
