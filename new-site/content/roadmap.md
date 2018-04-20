@@ -54,6 +54,7 @@
             let
               progress = builtins.toString feature.progress-bar;
               id = stringToId "release ${release.title} feature ${feature.title}";
+              work_done = if feature ? "Work Done" then feature."Work Done" else null;
             in with feature;
             ''
               <div class="roadmap_spot">
@@ -75,14 +76,14 @@
                       </div>
                     </div>
                     <p>Deployed</p>
-                </div>  <!-- roadmap_progress -->
-                <div class="roadmap_detail">
+                  </div>  <!-- roadmap_progress -->
+                  <div class="roadmap_detail">
                     <a role="button" data-toggle="collapse" href="#${id}_objectives"
                        aria-expanded="false" aria-controls="${id}">
                         <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Objectives <i class="fa fa-chevron-up" aria-hidden="true"></i>
                     </a>
                     <div class="collapse" id="${id}_objectives">
-                      ${if feature ? Objectives then (
+                      ${if (feature ? Objectives) && ((builtins.length Objectives) > 0) then
                         if (builtins.length Objectives) > 1 then ''
                           <ul>
                         '' + lib.concatMapStringsSep "\n"
@@ -92,42 +93,34 @@
                         '' else ''
                           <p>${builtins.elemAt objective 0}</p>
                         ''
-                      ) else ""}
+                      else ""}
                     </div>
-                </div> <!-- roadmap_detail -->
-              </div>
+                  </div> <!-- roadmap_detail -->
+                  <div class="roadmap_detail">
+                    <a role="button" data-toggle="collapse" href="#${id}_workdone"
+                       aria-expanded="false" aria-controls="${id}">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i> Work Done <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </a>
+                    <div class="collapse" id="${id}_workdone">
+                      ${if (builtins.isList work_done) && ((builtins.length work_done) > 0) then
+                        if builtins.length work_done > 1 then ''
+                          <ul>
+                        '' + (lib.concatMapStringsSep "\n"
+                          (done_item: "<li>${done_item}</li>") work_done) + ''
+
+                          </ul>
+                        '' else "<p>${builtins.elemAt work_done 0}</p>"
+                      else ""}
+                    </div>
+                  </div> <!-- roadmap_detail -->
+                </div> <!-- roadmap_info -->
+              </div> <!-- roadmap_container -->
             '');
           in
             output);
        in
          lib.concatMapStringsSep "\n" renderRelease changelog.Fractalide-Releases.releases
        }}
-    </div>
-</section>
-{{ let dummy = ''
-
-                <div class="roadmap_detail">
-                    <a role="button" data-toggle="collapse" href="#{ { .id } }_workdone" aria-expanded="false" aria-controls="{ { .id } }">
-                        <i class="fa fa-check-circle" aria-hidden="true"></i> Work Done <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="{ { .id } }_workdone">
-                        { { if .work_done } }
-                        { { if gt (len .work_done) 1 } }
-                        <ul>
-                            { { range .work_done } }
-                            <li>{ { . | markdownify } }</li>
-                            { { end } }
-                        </ul>
-                        { { else } }
-                        { { range .work_done } }<p>{ { . } }</p>{ { end } }
-                        { { end } }
-                        { { end } }
-                    </div>
-                </div> <!-- roadmap_detail -->
-            </div> <!-- roadmap_info -->
-        </div> <!-- roadmap_container -->
-        { { end } }
-        { { end } }
         <div class="roadmap_end">
             <div class="roadmap_line_end"></div>
             <div class="roadmap_fractal text-center align-text-bottom">
@@ -135,7 +128,6 @@
             </div>
         </div>
     </div>
-
     <div class="footer_background roadmap_footer">
         <div class="footer_content_roadmap">
             <div class="container">
@@ -153,4 +145,3 @@
         </div>
     </div>
 </section>
-''; in "" }}
