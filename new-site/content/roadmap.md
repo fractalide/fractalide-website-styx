@@ -28,15 +28,77 @@
     </div>
     <div class="roadmap">
       {{ let
-        renderRelease = (release: ''
-          <div class="roadmap_fractal text-center">
-            <img src="../img/roadmap-min/fractal-min.png"/>
-            <h2 class="text_dark_blue">${release.title}</h2>
-            <p class="text_dark_blue">
-              ${release.description}
-            </p>
-          </div>
-        '');
+        iconBaseURL = "/img/roadmap-min/";
+        upperCase = ["A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N"]
+                    ++ ["O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"];
+        lowerCase = ["a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n"]
+                    ++ ["o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"];
+        stringToId = builtins.replaceStrings (upperCase ++ [" "]) (lowerCase ++ ["_"]); 
+        renderRelease = (release: with release; let
+          output = ''
+            <div class="roadmap_fractal text-center">
+              <img src="../img/roadmap-min/fractal-min.png"/>
+              <h2 class="text_dark_blue">${title}</h2>
+              <p class="text_dark_blue">
+                ${description}
+              </p>
+              ${if !(release ? features) then ''
+                  <div class="roadmap_container">
+                    <div class="roadmap_line"></div>
+                  </div>
+                '' else lib.concatMapStringsSep "\n" renderFeature features
+              }
+            </div>
+          '';
+          renderFeature = (feature:
+            let
+              progress = builtins.toString feature.progress-bar;
+              id = stringToId "release ${release.title} feature ${feature.title}";
+            in with feature;
+            ''
+              <div class="roadmap_spot">
+                <img src="${iconBaseURL}spot-min.png"/>
+              </div>
+              <div class="roadmap_container">
+                <div class="roadmap_line"></div>
+                <div class="roadmap_step">
+                  <h2 class="sub_heading_blue">${title}</h2>
+                </div>
+                <div class="roadmap_line_fill"></div>
+                <div class="roadmap_info">
+                  <div class="roadmap_progress">
+                    <p>Progress <span class="pull-right">${progress}%</span></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="${progress}"
+                           aria-valuemin="0" aria-valuemax="100" style="width: ${progress}%;">
+                        <span class="sr-only">${progress}% Complete</span>
+                      </div>
+                    </div>
+                    <p>Deployed</p>
+                </div>  <!-- roadmap_progress -->
+                <div class="roadmap_detail">
+                    <a role="button" data-toggle="collapse" href="#${id}_objectives"
+                       aria-expanded="false" aria-controls="${id}">
+                        <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Objectives <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </a>
+                    <div class="collapse" id="${id}_objectives">
+                      ${if feature ? Objectives then (
+                        if (builtins.length Objectives) > 1 then ''
+                          <ul>
+                        '' + lib.concatMapStringsSep "\n"
+                          (objective: "<li>${objective}</li>") Objectives + ''
+
+                          </ul>
+                        '' else ''
+                          <p>${builtins.elemAt objective 0}</p>
+                        ''
+                      ) else ""}
+                    </div>
+                </div> <!-- roadmap_detail -->
+              </div>
+            '');
+          in
+            output);
        in
          lib.concatMapStringsSep "\n" renderRelease changelog.Fractalide-Releases.releases
        }}
@@ -44,49 +106,6 @@
 </section>
 {{ let dummy = ''
 
-        { { if not .steps } }
-        <div class="roadmap_container">
-            <div class="roadmap_line"></div>
-        </div>
-        { { end } }
-        { { range .steps } }
-        <div class="roadmap_spot">
-            <img src="{ { $iconBaseURL } }spot-min.png"/>
-        </div>
-        <div class="roadmap_container">
-            <div class="roadmap_line"></div>
-            <div class="roadmap_step">
-                <h2 class="sub_heading_blue">{ { .title } }</h2>
-            </div>
-            <div class="roadmap_line_fill"></div>
-            <div class="roadmap_info">
-                <div class="roadmap_progress">
-                    <p>Progress <span class="pull-right">{ { .progress } }%</span></p>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="{ { .progress } }" aria-valuemin="0" aria-valuemax="100" style="width: { { .progress } }%;">
-                        <span class="sr-only">{ { .progress } }% Complete</span>
-                      </div>
-                    </div>
-                    <p>Deployed</p>
-                </div>  <!-- roadmap_progress -->
-                <div class="roadmap_detail">
-                    <a role="button" data-toggle="collapse" href="#{ { .id } }_objectives" aria-expanded="false" aria-controls="{ { .id } }">
-                        <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Objectives <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="{ { .id } }_objectives">
-                        { { if .objectives } }
-                        { { if gt (len .objectives) 1 } }
-                        <ul>
-                            { { range .objectives } }
-                            <li>{ { . | markdownify } }</li>
-                            { { end } }
-                        </ul>
-                        { { else } }
-                        { { range .objectives } }<p>{ { . } }</p>{ { end } }
-                        { { end } }
-                        { { end } }
-                    </div>
-                </div> <!-- roadmap_detail -->
                 <div class="roadmap_detail">
                     <a role="button" data-toggle="collapse" href="#{ { .id } }_workdone" aria-expanded="false" aria-controls="{ { .id } }">
                         <i class="fa fa-check-circle" aria-hidden="true"></i> Work Done <i class="fa fa-chevron-up" aria-hidden="true"></i>
