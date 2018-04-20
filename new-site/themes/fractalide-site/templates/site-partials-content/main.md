@@ -5,7 +5,7 @@
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Hyperflow</h2>
                     <p>
-                        Hyperflow is a browser of smart contracts apps and cryptocurrencies. It draws much inspiration from HyperCard, by allowing people to easily build and run problem solving apps.
+                        People need a simple way to use smart contracts. Hyperflow is a browser for smart contract apps and cryptocurrencies. It allows users to build and run apps such as wallets.
                     </p>
                     <a class="" href="/hyperflow/">Learn more</a>
                 </div>
@@ -14,7 +14,7 @@
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Fractalmarket</h2>
                     <p>
-                        Hyperflow is connected to the app marketplace Fractalmarket. This provides a place for people to upload, share and sell their Hyperflow applications.
+                        We need to share apps. Hyperflow connects to an app market called Fractalmarket. Fractalmarket lets people buy, sell and share Hyperflow apps.
                     </p>
                     <a class="" href="/fractalmarket/">Learn more</a>
                 </div>
@@ -25,7 +25,7 @@
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Development and Analysis</h2>
                     <p>
-                        Blockchain Development, Hyperflow App Development and Technical Analysis as developing software in Fractalide reduces development costs due to reusable, reproducible and composable components.
+                        We need high quality apps. We offer blockchain development, application development and technical analysis. Fractalide's reusable, reproducible and composable features allows us to reduce costs.
                     </p>
                     <a class="" href="/development-and-analysis/">Learn more</a>
                 </div>
@@ -34,7 +34,7 @@
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Cardano Stake Pool</h2>
                     <p>
-                        Lastly we offer a Cardano Stake Pool so that our users may delegate voting rights to our online servers allowing them to stake offline.
+                        A way to help fund core Fractalide software. A Cardano stake pool allows users to stake offline. All profit goes towards Fractalide development. 
                     </p>
                     <a class="" href="/cardano/">Learn more</a>
                 </div>
