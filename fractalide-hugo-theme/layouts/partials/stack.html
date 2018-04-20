@@ -8,7 +8,7 @@
                             <img src="/img/stack-min.png" width="121px" />
                             <h1 class="section_heading_white">A New Browser Connected to a Smart Contract App Store</h1>
                             <p class="text_white">
-                                Fractalide provides a new browser for smart contracts and cryptocurrencies.  The browser, Hyperflow, allows people to execute and develop applications found in a connected app marketplace called Fractalmarket. We also offer Development Services, Technical Analysis and provide a Cardano Stake Pool.
+                                Fractalide is a new browser for smart contracts and cryptocurrency apps.  The browser, Hyperflow, lets people run and build apps. Hyperflow comes connected to Fractalmarket, a place to buy, sell and share apps. We also offer Development Services, Technical Analysis and provide a Cardano Stake Pool.
                             </p>
                             <button class="btn btn-lg btn-default">Sign up for early access</button>
                         </div>
