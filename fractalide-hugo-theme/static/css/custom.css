@@ -387,6 +387,20 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 }
 
 
+/**************************************************/
+/* Page: Home - Section: Development and Analysis */
+/**************************************************/
+#development_and_analysis p {
+    margin-bottom: 30px;
+}
+.development_item {
+    margin-top: 30px;
+}
+.development_title {
+    margin-top: 60px;
+}
+
+
 /******************/
 /* Page: About us */
 /******************/
