@@ -379,8 +379,11 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 /*********************************/
 /* Page: Home - Section: Cardano */
 /*********************************/
-#cardano ul li {
-  margin-bottom: 30px;
+#cardano p {
+    margin-top: 30px;
+}
+.cardano_icon {
+    margin-top: 60px;
 }
 
 
