@@ -437,6 +437,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 @media (max-width: 767px) {
     .roadmap_container {
         flex-flow: row wrap;
+        justify-content: flex-start;
     }
 }
 .roadmap_line {
@@ -487,6 +488,11 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .roadmap_step h2 {
     margin-top: 0px;
 }
+@media (max-width: 767px) {
+    .roadmap_step h2 {
+        margin-top: 30px;
+    }
+}
 .roadmap_info {
     order: 3;
     flex: 1 1 45%;
@@ -495,7 +501,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 }
 @media (max-width: 767px) {
     .roadmap_info {
-        margin-top: 0px;
+        margin-top: -60px;
     }
 }
 .roadmap_progress {
@@ -572,16 +578,13 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
         background-color: #79949F;
         width: 4px;
         margin-left: 32px;
-        height: 60px;
+        /*height: 60px;*/
     }
     .roadmap_fractal {
         text-align: left;
-        padding-left: 7px;
-        padding-top: 70px;
-        height: 60px;
-    }
-    .roadmap_footer {
-        margin-top: 0%;
+        padding-left: 30px;
+        /*padding-top: 70px;
+        height: 60px;*/
     }
 }
 
