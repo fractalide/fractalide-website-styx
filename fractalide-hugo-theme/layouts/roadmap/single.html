@@ -23,12 +23,18 @@
     </div>
 
     <div class="roadmap">
-        {{ $iconBaseURL := print .Site.BaseURL "img/roadmap-min/" }}
         {{ range sort .Site.Data.roadmap "weight" }}
         <div class="roadmap_fractal text-center">
-            <img src="../img/roadmap-min/fractal-min.png"/>
-            <h2 class="text_dark_blue">{{ .title }}</h2>
-            <p class="text_dark_blue">
+            <img src="/img/roadmap-min/fractal-min.png"/>
+            <h2 class="text_dark_blue">
+                {{ .title }}
+                <small>
+                    <a role="button" data-toggle="collapse" href="#{{ .id }}" aria-expanded="false" aria-controls="{{ .id }}">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </a>
+                </small>
+            </h2>
+            <p id="{{ .id }}" class="collapse text_dark_blue">
                 {{ .description }}
             </p>
         </div>
@@ -39,7 +45,7 @@
         {{ end }}
         {{ range .steps }}
         <div class="roadmap_spot">
-            <img src="{{ $iconBaseURL }}spot-min.png"/>
+            <img src="/img/roadmap-min/spot-min.png"/>
         </div>
         <div class="roadmap_container">
             <div class="roadmap_line"></div>
@@ -57,7 +63,7 @@
                     </div>
                 </div>  <!-- roadmap_progress -->
                 <div class="roadmap_detail">
-                    <a role="button" data-toggle="collapse" href="#{{ .id }}_objectives" aria-expanded="false" aria-controls="{{ .id }}">
+                    <a role="button" data-toggle="collapse" href="#{{ .id }}_objectives" aria-expanded="false" aria-controls="{{ .id }}_objectives">
                         <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Objectives <i class="fa fa-chevron-up" aria-hidden="true"></i>
                     </a>
                     <div class="collapse" id="{{ .id }}_objectives">
@@ -75,7 +81,7 @@
                     </div>
                 </div> <!-- roadmap_detail -->
                 <div class="roadmap_detail">
-                    <a role="button" data-toggle="collapse" href="#{{ .id }}_workdone" aria-expanded="false" aria-controls="{{ .id }}">
+                    <a role="button" data-toggle="collapse" href="#{{ .id }}_workdone" aria-expanded="false" aria-controls="{{ .id }}_workdone">
                         <i class="fa fa-check-circle" aria-hidden="true"></i> Work Done <i class="fa fa-chevron-up" aria-hidden="true"></i>
                     </a>
                     <div class="collapse" id="{{ .id }}_workdone">
@@ -99,7 +105,7 @@
         <div class="roadmap_end">
             <div class="roadmap_line_end"></div>
             <div class="roadmap_fractal text-center align-text-bottom">
-                <img src="../img/roadmap-min/fractal-min.png"/>
+                <img src="/img/roadmap-min/fractal-min.png"/>
             </div>
         </div>
     </div>
