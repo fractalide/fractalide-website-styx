@@ -267,6 +267,7 @@ h2.fractal_blue {
 }
 @media (max-width: 1199px) {
   .concept_icon {
+    padding-top: 45px;
     text-align: center;
   }
   .concept_info {
@@ -279,21 +280,52 @@ section#hyperflow_modes {
 section#hyperflow_modes > div.container > div.row:nth-child(2) {
     margin-top: 120px;
 }
-.hyperflow_mode_top {
+.hyperflow_mode {
     margin-top: -90px;
+}
+.hyperflow_mode_top {
     margin-right: -80px;
 }
+.hyperflow_mode_top > img {
+    width: 316px;
+}
 .hyperflow_mode_mid {
-    margin-top: -90px;
     margin-left: 160px;
 }
 .hyperflow_mode_bottom {
-    margin-top: -90px;
     margin-right: -80px;
 }
 .hyperflow_mode_description {
     margin-top: -20px;
     margin-left: 120px;
+}
+@media (max-width: 1199px) {
+    section#hyperflow_modes {
+        margin-top: 0px;
+    }
+    section#hyperflow_modes > div.container > div.row:nth-child(2) {
+        margin-top: 0px;
+    }
+    .hyperflow_mode {
+        margin-top: 0px;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .hyperflow_mode > img {
+        width: 236px;
+    }
+    .hyperflow_mode_top {
+        margin-right: 0px;
+    }
+    .hyperflow_mode_mid {
+        margin-left: 0px;
+    }
+    .hyperflow_mode_bottom {
+        margin-right: 0px;
+    }
+    .hyperflow_mode_description {
+        margin-left: 0px;
+    }
 }
 
 /***************************************/
