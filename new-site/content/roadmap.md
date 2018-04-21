@@ -69,7 +69,6 @@
                         <span class="sr-only">${progress}% Complete</span>
                       </div>
                     </div>
-                    <p>Deployed</p>
                   </div>  <!-- roadmap_progress -->
                   <div class="roadmap_detail">
                     <a role="button" data-toggle="collapse" href="#${id}_objectives"
