@@ -53,9 +53,9 @@ paginate = 5
     weight = 33
 
 [[menu.main]]
-    name = "Stake Pool"
+    name = "Cardano Stake Pool"
     parent = "solutions"
-    url  = "/cardano/"
+    url  = "/cardano-stake-pool/"
     weight = 34
 
 [[menu.main]]

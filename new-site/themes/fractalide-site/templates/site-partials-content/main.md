@@ -5,9 +5,9 @@
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Hyperflow</h2>
                     <p>
-                      People need a simple way to use smart contracts. Hyperflow is a browser for smart contract apps and cryptocurrencies. It allows users to build and run apps such as wallets.
+                        People need a simple way to use smart contracts. Hyperflow is a browser for smart contract apps and cryptocurrencies. It allows users to build and run apps such as wallets.
                     </p>
-                    <a href="/hyperflow/">Learn more</a>
+                    <a class="" href="/hyperflow/">Learn more</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -16,7 +16,7 @@
                     <p>
                         We need to share apps. Hyperflow connects to an app market called Fractalmarket. Fractalmarket lets people buy, sell and share Hyperflow apps.
                     </p>
-                    <a href="/fractalmarket/">Learn more</a>
+                    <a class="" href="/fractalmarket/">Learn more</a>
                 </div>
             </div>
         </div>
@@ -27,16 +27,16 @@
                     <p>
                         We need high quality apps. We offer blockchain development, application development and technical analysis. Fractalide's reusable, reproducible and composable features allows us to reduce costs.
                     </p>
-                    <a href="/development-and-analysis/">Learn more</a>
+                    <a class="" href="/development-and-analysis/">Learn more</a>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Cardano Stake Pool</h2>
                     <p>
-                        A way to help fund core Fractalide software. A Cardano stake pool allows users to stake offline. All profit goes towards Fractalide development.
+                        A way to help fund core Fractalide software. A Cardano stake pool allows users to stake offline. All profit goes towards Fractalide development. 
                     </p>
-                    <a href="/cardano-stake-pool/">Learn more</a>
+                    <a class="" href="/cardano/">Learn more</a>
                 </div>
             </div>
         </div>

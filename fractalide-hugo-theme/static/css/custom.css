@@ -32,13 +32,13 @@ h1.section_heading_white {
     color: #ffffff;
 }
 h1.fractal_blue {
-    background: url('../img/fractal-blue-min.png') no-repeat center;
+    background: url('/img/fractal-blue-min.png') no-repeat center;
     background-size: 437px 190px;
     height: 190px;
     padding-top: 75px;
 }
 h1.fractal_white {
-    background: url('../img/fractal-white-min.png') no-repeat center;
+    background: url('/img/fractal-white-min.png') no-repeat center;
     background-size: 437px 190px;
     height: 190px;
     padding-top: 75px;
@@ -105,7 +105,7 @@ ul li {
 /* Header section */
 /******************/
 .header_background {
-    background: #FFFFFF url('../img/header-min.png') no-repeat center top;
+    background: #FFFFFF url('/img/header-min.png') no-repeat center top;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -ms-background-size: contain;
@@ -117,13 +117,13 @@ ul li {
 }
 @media (max-width: 479px) {
   .header_background {
-    background: #FFFFFF url('../img/header-phone-min.png') no-repeat center top;
+    background: #FFFFFF url('/img/header-phone-min.png') no-repeat center top;
     padding-bottom: 220%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .header_background {
-    background: #FFFFFF url('../img/header-tab-min.png') no-repeat center top;
+    background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
     padding-bottom: 200%;
   }
 }
@@ -154,7 +154,7 @@ ul li {
 /******************/
 .footer_background,
 .footer_background_home {
-    background: #FFFFFF url('../img/footer-min.png') no-repeat center bottom;
+    background: #FFFFFF url('/img/footer-min.png') no-repeat center bottom;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -ms-background-size: contain;
@@ -176,13 +176,13 @@ ul li {
 }
 @media (max-width: 479px) {
   .footer_background_home {
-    background: #FFFFFF url('../img/footer-phone-min.png') no-repeat center bottom;
+    background: #FFFFFF url('/img/footer-phone-min.png') no-repeat center bottom;
     padding-top: 220%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .footer_background_home {
-    background: #FFFFFF url('../img/footer-tab-min.png') no-repeat center bottom;
+    background: #FFFFFF url('/img/footer-tab-min.png') no-repeat center bottom;
     padding-top: 200%;
   }
 }
@@ -251,7 +251,7 @@ ul li {
 /* Page: Home - Section: Main */
 /******************************/
 h2.fractal_blue {
-    background: url('../img/fractal-blue-min.png') no-repeat center;
+    background: url('/img/fractal-blue-min.png') no-repeat center;
     background-size: 219px 95px;
     height: 95px;
     padding-top: 35px;
@@ -353,7 +353,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     height: 200px;
 }
 .feature {
-    background: url('../img/shape-blue-min.png');
+    background: url('/img/shape-blue-min.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 308px 360px;
