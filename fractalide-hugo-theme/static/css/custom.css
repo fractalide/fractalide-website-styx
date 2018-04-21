@@ -540,7 +540,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .roadmap_detail li {
     margin-bottom: 15px;
 }
-.roadmap_info a[aria-expanded="false"] i.fa-chevron-up
+.roadmap a[aria-expanded="false"] i.fa-chevron-up
 {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
