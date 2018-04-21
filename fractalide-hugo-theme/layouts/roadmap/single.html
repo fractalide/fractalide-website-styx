@@ -25,7 +25,7 @@
     <div class="roadmap">
         {{ range sort .Site.Data.roadmap "weight" }}
         <div class="roadmap_fractal text-center">
-            <img src="../img/roadmap-min/fractal-min.png"/>
+            <img src="/img/roadmap-min/fractal-min.png"/>
             <h2 class="text_dark_blue">
                 {{ .title }}
                 <small>
@@ -45,7 +45,7 @@
         {{ end }}
         {{ range .steps }}
         <div class="roadmap_spot">
-            <img src="../img/roadmap-min/spot-min.png"/>
+            <img src="/img/roadmap-min/spot-min.png"/>
         </div>
         <div class="roadmap_container">
             <div class="roadmap_line"></div>
@@ -61,7 +61,6 @@
                         <span class="sr-only">{{ .progress }}% Complete</span>
                       </div>
                     </div>
-                    <p>Deployed</p>
                 </div>  <!-- roadmap_progress -->
                 <div class="roadmap_detail">
                     <a role="button" data-toggle="collapse" href="#{{ .id }}_objectives" aria-expanded="false" aria-controls="{{ .id }}_objectives">
@@ -106,7 +105,7 @@
         <div class="roadmap_end">
             <div class="roadmap_line_end"></div>
             <div class="roadmap_fractal text-center align-text-bottom">
-                <img src="../img/roadmap-min/fractal-min.png"/>
+                <img src="/img/roadmap-min/fractal-min.png"/>
             </div>
         </div>
     </div>
