@@ -446,12 +446,12 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     width: 4px;
     margin-left: 32px;
     margin-right: 32px;
-    min-height: 100px;
+    min-height: 60px;
 }
 @media (max-width: 767px) {
     .roadmap_line {
         order: 1;
-        min-height: 100px;
+        min-height: 60px;
     }
     .roadmap_line_fill {
         order: 3;
@@ -459,7 +459,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
         width: 4px;
         margin-left: 32px;
         margin-right: 32px;
-        min-height: 100px;
+        min-height: 60px;
     }
 }
 .roadmap_step {
@@ -501,7 +501,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 }
 @media (max-width: 767px) {
     .roadmap_info {
-        margin-top: -60px;
+        margin-top: -30px;
     }
 }
 .roadmap_progress {
@@ -546,7 +546,15 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .roadmap_detail li {
     margin-bottom: 15px;
 }
-.roadmap a[aria-expanded="false"] i.fa-chevron-up
+.roadmap a[aria-expanded="true"] i.fa-chevron-down
+{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.roadmap_info a[aria-expanded="false"] i.fa-chevron-up
 {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
