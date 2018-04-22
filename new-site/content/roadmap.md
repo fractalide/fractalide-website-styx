@@ -36,13 +36,13 @@
               <p class="text_dark_blue">
                 ${description}
               </p>
-              ${if !(release ? features) then ''
-                  <div class="roadmap_container">
-                    <div class="roadmap_line"></div>
-                  </div>
-                '' else lib.concatMapStringsSep "\n" renderFeature features
-              }
             </div>
+            ${if !(release ? features) then ''
+                <div class="roadmap_container">
+                  <div class="roadmap_line"></div>
+                </div>
+              '' else lib.concatMapStringsSep "\n" renderFeature features
+            }
           '';
           renderFeature = (feature:
             let
