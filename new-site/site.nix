@@ -89,7 +89,13 @@ rec {
         inherit (data) changelog;
       }; };
     };
-
+    development-and-analysis = rec {
+      path     = "/development-and-analysis/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/development-and-analysis.md; env = { inherit (data) site-partials; }; };
+    };
     blogIndex = lib.mkSplit {
       basePath     = "/blog/index";
       title        = "Blog";
