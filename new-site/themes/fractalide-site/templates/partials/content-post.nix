@@ -1,8 +1,7 @@
 env:
 
 let template = env: args:
-  let site-partials = env.templates.site-partials;
-  in site-partials.footer;
+  env.data.site-partials.footer.content;
 
 in with env.lib; documentedTemplate {
   description = ''

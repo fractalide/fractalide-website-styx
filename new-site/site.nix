@@ -60,6 +60,7 @@ rec {
 
   data = {
     inherit changelog;
+    site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
   };
 
 
@@ -75,7 +76,7 @@ rec {
       template = templates.block-page.full;
       layout   = templates.layout;
       blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/index.md; env = { inherit (templates) site-partials; }; };
+      content  = lib.loadFile { file = ./content/index.md; env = { inherit (data) site-partials; }; };
     };
     roadmap = rec {
       path     = "/roadmap/index.html";
