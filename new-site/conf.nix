@@ -9,6 +9,7 @@
      it is possible to override any of the used themes configuration in this set.
   */
   theme = {
+    blog.index.itemsPerPage = 5;
     site.title = "Fractalide";
     site.nav = import ./data/nav.nix;
     lib.bootstrap = { enable = true; version = "3.3.7"; };
