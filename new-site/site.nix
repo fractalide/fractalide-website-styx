@@ -89,7 +89,34 @@ rec {
         inherit (data) changelog;
       }; };
     };
-
+    development-and-analysis = rec {
+      path     = "/development-and-analysis/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/development-and-analysis.md; env = { inherit (data) site-partials; }; };
+    };
+    cardano-stake-pool = rec {
+      path     = "/cardano-stake-pool/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/cardano-stake-pool.md; env = { inherit (data) site-partials; }; };
+    };
+    hyperflow = rec {
+      path     = "/hyperflow/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/hyperflow.md; env = { inherit (data) site-partials; }; };
+    };
+    fractalmarket = rec {
+      path     = "/fractalmarket/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/fractalmarket.md; env = { inherit (data) site-partials; }; };
+    };
     blogIndex = lib.mkSplit {
       basePath     = "/blog/index";
       title        = "Blog";
