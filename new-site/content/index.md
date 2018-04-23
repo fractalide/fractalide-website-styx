@@ -1,3 +1,3 @@
-{{ site-partials.stack }}
-{{ site-partials.main }}
-{{ site-partials.signup }}
+{{ site-partials.stack.content }}
+{{ site-partials.main.content }}
+{{ site-partials.signup.content }}
