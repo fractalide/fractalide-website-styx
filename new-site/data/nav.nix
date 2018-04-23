@@ -6,10 +6,7 @@
     children = [
       { name = "Hyperflow"; url = "/hyperflow/"; }
       { name = "Fractalmarket"; url = "/fractalmarket/"; }
-      { name = "Blockchain Development"; url = "/development-and-analysis/#blockchain_development"; }
-      { name = "Application Development"; url = "/development-and-analysis/#app_development"; }
-      { name = "Technical Analysis"; url = "/development-and-analysis/#technical_analysis"; }
-      { name = "Cardano Stake Pool"; url = "/cardano_stake_pool/"; }
+      { name = "Services"; url = "/development-and-analysis/"; }
     ];
   }
   {
