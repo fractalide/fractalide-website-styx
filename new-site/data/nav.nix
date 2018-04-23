@@ -7,6 +7,7 @@
       { name = "Hyperflow"; url = "/hyperflow/"; }
       { name = "Fractalmarket"; url = "/fractalmarket/"; }
       { name = "Services"; url = "/development-and-analysis/"; }
+      { name = "Cardano Stake Pool"; url = "/cardano-stake-pool/"; }
     ];
   }
   {
