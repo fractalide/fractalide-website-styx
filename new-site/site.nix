@@ -61,6 +61,7 @@ rec {
   data = {
     inherit changelog;
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
+    blog = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/blog; inherit env; });
   };
 
 
@@ -87,6 +88,22 @@ rec {
         inherit lib;
         inherit (data) changelog;
       }; };
+    };
+
+    blogIndex = lib.mkSplit {
+      basePath     = "/blog/index";
+      title        = "Blog";
+      template     = templates.blog.index;
+      layout       = templates.layout;
+      itemsPerPage = conf.theme.blog.index.itemsPerPage;
+      data         = blog.list;
+    };
+
+    blog = lib.mkPageList {
+      data        = data.blog;
+      pathPrefix  = "/blog/";
+      template    = templates.blog.full;
+      layout      = templates.layout;
     };
   };
 
