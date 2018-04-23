@@ -110,6 +110,13 @@ rec {
       blocks   = [ content ];
       content  = lib.loadFile { file = ./content/hyperflow.md; env = { inherit (data) site-partials; }; };
     };
+    fractalmarket = rec {
+      path     = "/fractalmarket/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/fractalmarket.md; env = { inherit (data) site-partials; }; };
+    };
     blogIndex = lib.mkSplit {
       basePath     = "/blog/index";
       title        = "Blog";
