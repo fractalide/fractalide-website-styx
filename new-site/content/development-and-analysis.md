@@ -1,4 +1,3 @@
-{{ partial "header.html" . }}
 <section id="development_and_analysis">
     <div class="header_gradient">
         <div class="container">
@@ -79,5 +78,4 @@
         </div>
     </div>
 </section>
-{{ partial "signup.html" . }}
-{{ partial "footer.html" . }}
+{{ site-partials.signup.content }}
