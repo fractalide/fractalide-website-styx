@@ -132,6 +132,15 @@ rec {
       template    = templates.blog.full;
       layout      = templates.layout;
     };
+
+    err_404 = rec {
+      path     = "/404.html";
+      title    = "404 Page Not Found";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/404.md; env = { inherit conf; }; };
+    };
   };
 
 
