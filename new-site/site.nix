@@ -59,9 +59,10 @@ rec {
 -----------------------------------------------------------------------------*/
 
   data = {
+    blog = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/blog; inherit env; });
     inherit changelog;
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
-    blog = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/blog; inherit env; });
+    team = lib.loadDir { dir = ./data/team; };
   };
 
 
@@ -140,6 +141,17 @@ rec {
       layout   = templates.layout;
       blocks   = [ content ];
       content  = lib.loadFile { file = ./content/404.md; env = { inherit conf; }; };
+    };
+
+    about_us = rec {
+      path     = "/about_us/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/about_us.md; env = {
+        inherit (data) team;
+        inherit lib;
+      }; };
     };
   };
 
