@@ -80,6 +80,15 @@ rec {
       blocks   = [ content ];
       content  = lib.loadFile { file = ./content/index.md; env = { inherit (data) site-partials; }; };
     };
+
+    research = rec {
+      path     = "/research/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/research.md; env = {}; };
+    };
+
     roadmap = rec {
       path     = "/roadmap/index.html";
       template = templates.block-page.full;
