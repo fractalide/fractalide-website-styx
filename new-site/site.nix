@@ -108,6 +108,14 @@ rec {
         inherit (data) changelog;
       }; };
     };
+
+    sitemap = {
+      path     = "/sitemap.xml";
+      template = templates.sitemap;
+      layout   = lib.id;
+      pages    = lib.pagesToList { inherit pages; };
+    };
+
     development-and-analysis = rec {
       path     = "/development-and-analysis/index.html";
       template = templates.block-page.full;
