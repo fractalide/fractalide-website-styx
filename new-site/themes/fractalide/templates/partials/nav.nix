@@ -40,7 +40,7 @@ ${if page.path == "/index.html" then ''
           renderItem = currentItem:
             if currentItem ? children then ''
               <li class="dropdown ${if (hasMenuCurrent currentItem page.path) then "active" else ""}">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${currentItem.name}<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${currentItem.name} <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   ${
                     let
