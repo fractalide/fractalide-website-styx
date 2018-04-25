@@ -6,14 +6,27 @@
 { styx
 , extraConf ? {}
 , pkgs ? import ./nixpkgs.nix {}
-, changelog-src ? pkgs.fetchFromGitHub {
+, fractalide-src ? pkgs.fetchFromGitHub {
     owner = "fractalide"; repo = "fractalide";
-    rev = "085888b4db13ccf01bfee5993318c6cc912696d8";
-    sha256 = "145bccp42mjzxabq8syl9bw56qgbng2xdx6lp3l95cgbg3mb4dih";
+    rev = "27395e8ecc781a01da58c39a6eea01981940b334";
+    sha256 = "0j6cbpnwj84dc4hbnv74av7zdzpw22zbp5xsby9b6cr3anwx1cy6";
   }
-, changelog ? builtins.fromJSON (builtins.readFile "${changelog-src}/CHANGELOG.json")
+, changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
 }:
 
+let
+  fractalide-docs = pkgs.stdenvNoCC.mkDerivation {
+    name = "fractalide-docs";
+    src = fractalide-src;
+    phases = "unpackPhase installPhase";
+    buildInputs = [ pkgs.findutils pkgs.gnused ];
+    installPhase = ''
+      mkdir $out
+      find . -name '*.adoc' -exec bash -c 'outname=$(echo "$1" | sed -e "s,^./,," -e s,/,_,g); exec cp "$1" "$out/$outname"' cp {} ';'
+    '';
+  };
+in
+  
 rec {
 
   /* Importing styx library
@@ -64,7 +77,34 @@ rec {
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
     team = lib.loadDir { dir = ./data/team; };
     faqs = import ./data/faqs.nix;
+    documentation = lib.loadDir {
+      dir = fractalide-docs;
+    };
   };
+
+  doc-index-content = pkgs.runCommand "doc-index" {
+    buildInputs = [ pkgs.styx ];
+    allowSubstitutes = false;
+    src = fractalide-src;
+  } ''
+    asciidoctor -b xhtml5 -s -a showtitle -o- $src/doc/index.adoc > $out
+  '';
+
+  doc-pages = builtins.listToAttrs (builtins.map (docpage:
+    let subpath = builtins.replaceStrings [ "_" ] [ "/" ] docpage.fileData.basename; in
+    {
+      name = docpage.fileData.basename;
+      value = rec {
+        path = "/documentation/${subpath}.html";
+        template = templates.block-page.full;
+        layout = templates.layout;
+        blocks = [ content ];
+        content = if docpage.fileData.basename == "doc_index" then {
+          content = builtins.readFile doc-index-content;
+        } else docpage;
+      };
+    } 
+  ) data.documentation);
 
 
 /*-----------------------------------------------------------------------------
@@ -198,7 +238,7 @@ rec {
         inherit lib title;
       }; };
     };
-  };
+  } // doc-pages;
 
 
 /*-----------------------------------------------------------------------------
