@@ -82,6 +82,14 @@ rec {
     };
   };
 
+  doc-index-content = pkgs.runCommand "doc-index" {
+    buildInputs = [ pkgs.styx ];
+    allowSubstitutes = false;
+    src = fractalide-src;
+  } ''
+    asciidoctor -b xhtml5 -s -a showtitle -o- $src/doc/index.adoc > $out
+  '';
+
   doc-pages = builtins.listToAttrs (builtins.map (docpage:
     let subpath = builtins.replaceStrings [ "_" ] [ "/" ] docpage.fileData.basename; in
     {
@@ -91,7 +99,9 @@ rec {
         template = templates.block-page.full;
         layout = templates.layout;
         blocks = [ content ];
-        content = docpage;
+        content = if docpage.fileData.basename == "doc_index" then {
+          content = builtins.readFile doc-index-content;
+        } else docpage;
       };
     } 
   ) data.documentation);
