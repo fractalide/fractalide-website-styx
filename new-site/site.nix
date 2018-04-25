@@ -63,6 +63,7 @@ rec {
     inherit changelog;
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
     team = lib.loadDir { dir = ./data/team; };
+    faqs = import ./data/faqs.nix;
   };
 
 
@@ -151,6 +152,18 @@ rec {
       content  = lib.loadFile { file = ./content/about_us.md; env = {
         inherit (data) team;
         inherit lib;
+      }; };
+    };
+
+    faqs = rec {
+      path     = "/faqs/index.html";
+      title    = "FAQs";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/faqs.md; env = {
+        inherit (data) faqs;
+        inherit lib title;
       }; };
     };
   };
