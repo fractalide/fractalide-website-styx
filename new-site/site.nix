@@ -95,7 +95,7 @@ rec {
     {
       name = docpage.fileData.basename;
       value = rec {
-        path = "/documentation/${subpath}.html";
+        path = "/fractalide/${subpath}.html";
         template = templates.block-page.full;
         layout = templates.layout;
         blocks = [ content ];
