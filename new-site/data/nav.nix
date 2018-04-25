@@ -1,3 +1,7 @@
+{ pages
+, templates
+}:
+
 [
   { name = "Home"; url = "/"; }
   { name = "About us"; url = "/about_us/"; }
@@ -22,4 +26,8 @@
   { name = "Roadmap"; url = "/roadmap/"; }
   { name = "Blog"; url = "/blog/"; }
   { name = "Twitter"; pre = "twitter-min.png"; url = "http://twitter.com/fractalide"; }
+  {
+    name = (templates.icon.font-awesome "rss-square") + ''<span class="sr-only">Atom</span>'';
+    url  = pages.feed.path;
+  }
 ]
