@@ -152,6 +152,13 @@ rec {
       layout      = templates.layout;
     };
 
+    feed = {
+      path     = "/blog/feed.xml";
+      template = templates.feed.atom;
+      items    = lib.take 10 blog.list;
+      layout   = lib.id;
+    };
+
     err_404 = rec {
       path     = "/404.html";
       title    = "404 Page Not Found";
