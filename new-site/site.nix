@@ -74,6 +74,14 @@ rec {
 -----------------------------------------------------------------------------*/
 
   pages = rec {
+    contact = rec {
+      path     = "/contact/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/contact.md; env = {}; };
+    };
+
     index = rec {
       path     = "/index.html";
       template = templates.block-page.full;
