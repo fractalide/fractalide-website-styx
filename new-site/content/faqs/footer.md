@@ -5,7 +5,7 @@
                         <div class="text-center">
                             <h1 class="section_heading_white">Got another question?</h1>
                             <p class="text_white">
-                                Contact us at ${faqs.email}
+                                Contact us at {{ faqs.email }}
                             </p>
                         </div>
                     </div>
