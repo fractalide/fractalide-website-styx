@@ -18,7 +18,7 @@
     name = "Resources";
     children = [
       { name = "Research"; url = "/research/"; }
-      { name = "Documentation"; url = "/fractalide/doc/"; }
+      { name = "Documentation"; url = "/documentation/"; }
       { name = "GitHub"; url = "https://github.com/fractalide/"; }
       { name = "FAQs"; url = "/faqs/"; }
     ];
