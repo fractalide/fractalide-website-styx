@@ -131,11 +131,13 @@ rec {
     };
 
     research = rec {
+      title    = "Research";
+      section  = "research";
       path     = "/research/index.html";
-      template = templates.block-page.full;
+      template = templates.page.full;
       layout   = templates.layout;
-      blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/research.md; env = {}; };
+      content  = (lib.loadFile { file = ./content/research.md; }).content;
+      footerBackground = true;
     };
 
     roadmap = rec {
