@@ -2,6 +2,7 @@ env:
 
 let template = env: args:
   let
+    data = env.data;
     site = env.conf.theme.site;
     lib = env.lib;
     page = args.page;
@@ -66,7 +67,7 @@ ${if page.path == "/index.html" then ''
               </li>
             '';
         in
-          lib.concatStringsSep "\n" (map renderItem site.nav)
+          lib.concatStringsSep "\n" (map renderItem data.nav)
       }
       </ul>
     </div><!-- /.navbar-collapse -->
