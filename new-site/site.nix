@@ -14,19 +14,6 @@
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
 }:
 
-let
-  fractalide-docs = pkgs.stdenvNoCC.mkDerivation {
-    name = "fractalide-docs";
-    src = fractalide-src;
-    phases = "unpackPhase installPhase";
-    buildInputs = [ pkgs.findutils pkgs.gnused ];
-    installPhase = ''
-      mkdir $out
-      find . -name '*.adoc' -exec bash -c 'outname=$(echo "$1" | sed -e "s,^./,," -e s,/,_,g); exec cp "$1" "$out/$outname"' cp {} ';'
-    '';
-  };
-in
-  
 rec {
 
   /* Importing styx library
@@ -78,35 +65,7 @@ rec {
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
     team = lib.loadDir { dir = ./data/team; };
     faqs = import ./data/faqs.nix;
-    documentation = lib.loadDir {
-      dir = fractalide-docs;
-    };
   };
-
-  doc-index-content = pkgs.runCommand "doc-index" {
-    buildInputs = [ pkgs.styx ];
-    allowSubstitutes = false;
-    src = fractalide-src;
-  } ''
-    asciidoctor -b xhtml5 -s -a showtitle -o- $src/doc/index.adoc > $out
-  '';
-
-  doc-pages = builtins.listToAttrs (builtins.map (docpage:
-    let subpath = builtins.replaceStrings [ "_" ] [ "/" ] docpage.fileData.basename; in
-    {
-      name = docpage.fileData.basename;
-      value = rec {
-        path = "/fractalide/${subpath}.html";
-        template = templates.block-page.full;
-        layout = templates.layout;
-        blocks = [ content ];
-        content = if docpage.fileData.basename == "doc_index" then {
-          content = builtins.readFile doc-index-content;
-        } else docpage;
-      };
-    } 
-  ) data.documentation);
-
 
 /*-----------------------------------------------------------------------------
    Pages
@@ -121,6 +80,22 @@ rec {
       layout   = templates.layout;
       blocks   = [ content ];
       content  = lib.loadFile { file = ./content/contact.md; env = {}; };
+    };
+
+    documentation = rec {
+      title    = "Documentation";
+      path     = "/documentation/index.html";
+      template = templates.container;
+      layout   = templates.layout;
+      content  = builtins.readFile (
+        pkgs.runCommand "doc-index" {
+          buildInputs = [ pkgs.styx ];
+          allowSubstitutes = false;
+          src = fractalide-src;
+        } ''
+          asciidoctor -b xhtml5 -s -a showtitle -o- $src/doc/index.adoc > $out
+        ''
+      );
     };
 
     index = rec {
@@ -239,7 +214,7 @@ rec {
         inherit lib title;
       }; };
     };
-  } // doc-pages;
+  };
 
 
 /*-----------------------------------------------------------------------------
