@@ -1,52 +1,3 @@
-<section id="about_us">
-    <div class="header_background">
-        <div class="header_content_stack">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <div class="text-center">
-                            <h1 class="section_heading_blue fractal_white">About us</h1>
-                            <p class="text_white">
-                                Fractalide started life as a Master Thesis in Université catholique de Louvain under Professor Peter Van Roy back in 2014. Since then the project has undergone multiple rewrites in different programming languages, with new functionality and realizations. Every contribution helps us complete this undertaking. Thank you.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="team">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-center">
-                    <h1 class="section_heading_blue fractal_blue">Team</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-          {{ let
-            renderMember = member: ''
-              <div class="col-md-4 col-xs-12 text-center team_member">
-                <img src="/img/${member.image}" />
-                <h2 class="sub_heading_blue">${member.name}</h2>
-                <p>${member.title}</p>
-                ${lib.concatMapStringsSep "\n" renderNetwork member.networks}
-              </div> <!-- team_member -->
-            '';
-            renderNetwork = network: ''
-              <a href="${network.url}" target="_blank" rel="external">
-                <img src="/img/${network.icon}" width="30px" />
-              </a>
-            '';
-          in
-            lib.concatMapStringsSep "\n" renderMember (lib.sortBy "weight" "asc" team)
-          }}
-        </div>
-    </div>
-</section>
-<section id="vision">
     <div class="footer_gradient">
         <div class="container content_vision">
             <div class="row">
@@ -86,4 +37,3 @@
             </div>
         </div>
     </div>
-</section>
