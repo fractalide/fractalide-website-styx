@@ -177,13 +177,18 @@ rec {
       blocks   = [ content ];
       content  = lib.loadFile { file = ./content/hyperflow.md; env = { inherit (data) site-partials; }; };
     };
+
     fractalmarket = rec {
+      title    = "Fractalmarket";
+      section  = "fractalmarket";
       path     = "/fractalmarket/index.html";
-      template = templates.block-page.full;
+      template = templates.page.full;
       layout   = templates.layout;
-      blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/fractalmarket.md; env = { inherit (data) site-partials; }; };
+      content  = (lib.loadFile { file = ./content/fractalmarket.md; }).content;
+      extraContent = site-partials.signup.content;
+      inherit (data) site-partials;
     };
+
     blogIndex = lib.mkSplit {
       basePath     = "/blog/index";
       title        = "Blog";
