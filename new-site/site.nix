@@ -177,12 +177,17 @@ rec {
       content  = (lib.loadFile { file = ./content/cardano-stake-pool.md; }).content;
       extraContent = site-partials.signup.content;
     };
+
     hyperflow = rec {
+      title    = "Hyperflow";
+      section  = "hyperflow";
       path     = "/hyperflow/index.html";
-      template = templates.block-page.full;
+      template = templates.page.full;
       layout   = templates.layout;
-      blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/hyperflow.md; env = { inherit (data) site-partials; }; };
+      content  = sections.hyperflow.content;
+      extraContent = sections.hyperflow_modes.content + site-partials.signup.content;
+      sections = lib.loadDir { dir = ./content/hyperflow; asAttrs = true; };
+      inherit (data) site-partials;
     };
 
     fractalmarket = rec {
