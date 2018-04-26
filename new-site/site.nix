@@ -209,14 +209,18 @@ rec {
     };
 
     about_us = rec {
-      path     = "/about_us/index.html";
-      template = templates.block-page.full;
-      layout   = templates.layout;
-      blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/about_us.md; env = {
-        inherit (data) team;
-        inherit lib;
-      }; };
+      title        = "About us";
+      section      = "about_us";
+      path         = "/about_us/index.html";
+      template     = templates.page.sections;
+      layout       = templates.layout;
+      lede         = sections.lede.content;
+      sectionOrder = [ "team" "vision" ];
+      sections     = lib.loadDir {
+        dir = ./content/about_us;
+        env = { inherit (data) team; inherit lib; };
+        asAttrs = true;
+      };
     };
 
     faqs = rec {
