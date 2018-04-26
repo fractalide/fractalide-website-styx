@@ -74,6 +74,7 @@ rec {
   data = {
     blog = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/blog; inherit env; });
     inherit changelog;
+    nav = import ./data/nav.nix { inherit pages templates; };
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
     team = lib.loadDir { dir = ./data/team; };
     faqs = import ./data/faqs.nix;

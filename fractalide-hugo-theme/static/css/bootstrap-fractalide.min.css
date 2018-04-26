@@ -49,11 +49,14 @@
 .navbar-default .navbar-text {
   color: #E8F7FA;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a * {
   color: #E8F7FA;
 }
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover *,
+.navbar-default .navbar-nav > li > a:focus *{
   color: #FFFFFF;
   background-color: transparent;
 }
@@ -265,7 +268,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-text {
   color: #58B4CD;
 }
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a * {
   color: #58B4CD;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
