@@ -1,16 +1,3 @@
-<section id="research">
-    <div class="header_gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h1 class="section_heading_blue fractal_white">Research</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8 col-xs-12">
                 <h2 class="sub_heading_blue">
@@ -45,6 +32,3 @@
                 </h2>
             </div>
         </div>
-    </div>
-    <div class="footer_background"></div>
-</section>

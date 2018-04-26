@@ -1,16 +1,3 @@
-<section id="fractalmarket">
-    <div class="header_gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h1 class="section_heading_blue fractal_white">Fractalmarket</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
         <div class="row">
             <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12">
                 <div class="text-center">
@@ -56,6 +43,3 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-{{ site-partials.signup.content }}

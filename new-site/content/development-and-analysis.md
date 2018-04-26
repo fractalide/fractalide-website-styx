@@ -1,16 +1,3 @@
-<section id="development_and_analysis">
-    <div class="header_gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h1 class="section_heading_blue fractal_white">Development and Analysis</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
         <div class="row">
             <div class="col-lg-offset-2 col-lg-8 col-sm-offset-2 col-sm-8 text-center">
                 <h2 class="sub_heading_blue">Fractalide Features</h2>
@@ -76,6 +63,3 @@
                 </p>
             </div>
         </div>
-    </div>
-</section>
-{{ site-partials.signup.content }}
