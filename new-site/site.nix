@@ -113,7 +113,7 @@ rec {
    This section declares the pages that will be generated
 -----------------------------------------------------------------------------*/
 
-  pages = rec {
+  pages = let site-partials = data.site-partials; in rec {
     contact = rec {
       path     = "/contact/index.html";
       template = templates.block-page.full;
@@ -157,12 +157,15 @@ rec {
     };
 
     development-and-analysis = rec {
+      title    = "Development and Analysis";
+      section  = "development_and_analysis";
       path     = "/development-and-analysis/index.html";
-      template = templates.block-page.full;
+      template = templates.page.full;
       layout   = templates.layout;
-      blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/development-and-analysis.md; env = { inherit (data) site-partials; }; };
+      content  = (lib.loadFile { file = ./content/development-and-analysis.md; }).content;
+      extraContent = site-partials.signup.content;
     };
+
     cardano-stake-pool = rec {
       title    = "Cardano Stake Pool";
       section  = "cardano";
@@ -171,7 +174,6 @@ rec {
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/cardano-stake-pool.md; }).content;
       extraContent = site-partials.signup.content;
-      inherit (data) site-partials;
     };
     hyperflow = rec {
       path     = "/hyperflow/index.html";
@@ -189,7 +191,6 @@ rec {
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/fractalmarket.md; }).content;
       extraContent = site-partials.signup.content;
-      inherit (data) site-partials;
     };
 
     blogIndex = lib.mkSplit {
