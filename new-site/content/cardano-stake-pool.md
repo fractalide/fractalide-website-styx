@@ -1,16 +1,3 @@
-<section id="cardano">
-    <div class="header_gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h1 class="section_heading_blue fractal_white">Cardano Stake Pool</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
         <div class="row">
             <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-12">
                 <div class="text-center">
@@ -44,6 +31,3 @@
                 </p>
             </div>
         </div>
-    </div>
-</section>
-{{ site-partials.signup.content }}
