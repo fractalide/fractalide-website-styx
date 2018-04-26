@@ -19,7 +19,7 @@ let template = { lib, templates, ... }:
       <div class="container">
         ${page.content}
       </div> <!-- container -->
-      ${lib.optionalString (page ? footerBackground) ''<div class="footer_background"></div>''}
+      ${lib.optionalString (page ? footer) ''<div class="footer_background">${page.footer}</div>''}
     </section>
     ${lib.optionalString (page ? extraContent) page.extraContent}
   '');

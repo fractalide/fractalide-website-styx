@@ -137,7 +137,7 @@ rec {
       template = templates.page.full;
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/research.md; }).content;
-      footerBackground = true;
+      footer   = "";
     };
 
     roadmap = rec {
@@ -244,15 +244,18 @@ rec {
     };
 
     faqs = rec {
-      path     = "/faqs/index.html";
       title    = "FAQs";
-      template = templates.block-page.full;
+      section  = "faqs";
+      path     = "/faqs/index.html";
+      template = templates.page.full;
       layout   = templates.layout;
-      blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/faqs.md; env = {
-        inherit (data) faqs;
-        inherit lib title;
-      }; };
+      content  = sections.faqs.content;
+      footer   = sections.footer.content;
+      sections = lib.loadDir {
+        dir = ./content/faqs;
+        env = { inherit (data) faqs; inherit lib; };
+        asAttrs = true;
+      };
     };
   } // doc-pages;
 
