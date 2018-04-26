@@ -164,11 +164,14 @@ rec {
       content  = lib.loadFile { file = ./content/development-and-analysis.md; env = { inherit (data) site-partials; }; };
     };
     cardano-stake-pool = rec {
+      title    = "Cardano Stake Pool";
+      section  = "cardano";
       path     = "/cardano-stake-pool/index.html";
-      template = templates.block-page.full;
+      template = templates.page.full;
       layout   = templates.layout;
-      blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/cardano-stake-pool.md; env = { inherit (data) site-partials; }; };
+      content  = (lib.loadFile { file = ./content/cardano-stake-pool.md; }).content;
+      extraContent = site-partials.signup.content;
+      inherit (data) site-partials;
     };
     hyperflow = rec {
       path     = "/hyperflow/index.html";
