@@ -96,12 +96,11 @@ rec {
       name = docpage.fileData.basename;
       value = rec {
         path = "/fractalide/${subpath}.html";
-        template = templates.block-page.full;
+        template = templates.container;
         layout = templates.layout;
-        blocks = [ content ];
-        content = if docpage.fileData.basename == "doc_index" then {
-          content = builtins.readFile doc-index-content;
-        } else docpage;
+        content = if docpage.fileData.basename == "doc_index" then
+          builtins.readFile doc-index-content
+        else docpage.content;
       };
     } 
   ) data.documentation);
