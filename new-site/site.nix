@@ -85,7 +85,7 @@ rec {
     documentation = rec {
       title    = "Documentation";
       path     = "/documentation/index.html";
-      template = templates.container;
+      template = templates.page.full;
       layout   = templates.layout;
       content  = builtins.readFile (
         pkgs.runCommand "doc-index" {
@@ -96,6 +96,7 @@ rec {
           asciidoctor -b xhtml5 -s -a showtitle -o- $src/doc/index.adoc > $out
         ''
       );
+      footer   = "";
     };
 
     index = rec {
