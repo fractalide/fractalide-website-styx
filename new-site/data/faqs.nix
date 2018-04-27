@@ -9,5 +9,6 @@
 "answer" = "No, Fractalide is an application framework that locally executes applications that are programmed to interface with smart contracts, you might or might not have written, that are already deployed to the Cardano blockchain.";
 }
 ];
+  email = "info@fractalide.com";
 }
 
