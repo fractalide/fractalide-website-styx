@@ -10,10 +10,13 @@
                 <div class="col-md-offset-2 col-md-8">
                     <div class="text-center">
                         <p class="text_dark_blue">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            The Fractalide Roadmap is a changelog of what has happened with the project. We've chosen to represent changes in a format that highlights objectives and work done to complete a release. The progress bar gives an best effort estimate on the completion of the release.
                         </p>
                         <p class="text_dark_blue">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            A cardinal sin that many open source developers make is to place themselves above others. "I founded this project thus my intellect is superior to that of others". It's immodest and rude, and usually inaccurate. The contribution policy we use at Fractalide applies equally to everyone, without distinction. The contribution policy we follow is the <a href="https://github.com/fractalide/fractalide/blob/master/CONTRIBUTING.md"> Collective Code Construction Contract (C4)</a>.
+                        </p>
+                        <p>
+                            Everyone is welcome to participate.
                         </p>
                     </div>
                 </div>
@@ -27,7 +30,7 @@
                     ++ ["O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"];
         lowerCase = ["a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n"]
                     ++ ["o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"];
-        stringToId = builtins.replaceStrings (upperCase ++ [" "]) (lowerCase ++ ["_"]); 
+        stringToId = builtins.replaceStrings (upperCase ++ [" "]) (lowerCase ++ ["_"]);
         renderRelease = (release: with release; let
           output = ''
             <div class="roadmap_fractal text-center">
