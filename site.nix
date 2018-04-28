@@ -3,51 +3,22 @@
 
    Initialization of Styx, should not be edited
 -----------------------------------------------------------------------------*/
-{ texlive
-, stdenv
-, fetchFromGitHub
+{ styx
 , extraConf ? {}
-}@args:
+, pkgs ? import ./nixpkgs.nix {}
+, fractalide-src ? pkgs.fetchFromGitHub {
+    owner = "fractalide"; repo = "fractalide";
+    rev = "42ab8f70e62f51e7e71d5b258aabdc8dd3e47605";
+    sha256 = "0h8wj87k8x42ixcyb7vyqa4199z71cqfhvkhx5xckh089fhc6zbs";
+  }
+, changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
+}:
 
 rec {
 
-  # Pinning styx to dev version
-  devStyx = fetchFromGitHub {
-    owner  = "styx-static";
-    repo   = "styx";
-    rev    = "eec60aa";
-    sha256 = "0k2nlp3mh578sbn8vib0g8qc928i0qi49vg5mfwfg56l2knsmpdf";
-  };
-
-  styx = import devStyx {};
-
-  /* Library loading
+  /* Importing styx library
   */
   styxLib = import styx.lib styx;
-
-
-  # Make a block attribute set
-  mkBlockSet = blocks: prefix:
-    map (id:
-      (lib.find { inherit id; } blocks) // { navbarClass = "page-scroll"; url = prefix + "/#${id}"; }
-    );
-
-  # Darken a block by adding a css class
-  darken = d: d // { class = "bg-light-gray"; };
-
-  # Generate index page blocks
-  mkIndexBlocks = { templates, data, pages }: [
-    (templates.banner            data.main-banner)
-    (templates.standard          data.taster)
-   #(templates.news             (data.news // { items = pages.news.list; }))
-    (templates.standard (darken  data.vision))
-    (templates.standard          data.hyperflow)
-    (templates.standard (darken  data.fractalmarket))
-    (templates.standard          data.etherflow)
-    (templates.standard (darken  data.whitepaper))
-    #(templates.standard          data.ico)
-    (templates.team     (        data.team))
-  ];
 
 
 /*-----------------------------------------------------------------------------
@@ -55,7 +26,7 @@ rec {
 
 -----------------------------------------------------------------------------*/
 
-  /* Import styx-themes
+  /* Importing styx themes from styx
   */
   styx-themes = import styx.themes;
 
@@ -65,366 +36,222 @@ rec {
   themes = [
     styx-themes.generic-templates
     ./themes/fractalide
+    ./themes/fractalide-site
   ];
 
-  /* Loading the themes data for each locale
+  /* Loading the themes data
   */
-  themesData = styxLib.mapAttrs (name: value:
-    styxLib.themes.load {
-      inherit styxLib themes;
-      extraConf = [ ./conf.nix extraConf ];
-      extraEnv = value;
-    }
-  ) locales;
+  themesData = styxLib.themes.load {
+    inherit styxLib themes;
+    extraEnv = { inherit data pages; };
+    extraConf = [ ./conf.nix extraConf ];
+  };
 
-  /* Bringing locale independent theme data to scope
+  /* Bringing the themes data to the scope
   */
-  inherit (themesData.eng) conf lib files env;
-
+  inherit (themesData) conf lib files templates env;
 
 
 /*-----------------------------------------------------------------------------
-   English
+   Data
 
-   This section declares English locale data and pages
+   This section declares the data used by the site
 -----------------------------------------------------------------------------*/
 
-  locales.eng = rec {
-    # Locale code
-    locale = "eng";
+  data = {
+    blog = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/blog; inherit env; });
+    inherit changelog;
+    nav = import ./data/nav.nix { inherit pages templates; };
+    site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
+    team = lib.loadDir { dir = ./data/team; };
+    faqs = import ./data/faqs.nix;
+  };
 
-    # Html lang
-    html.lang = "en";
+/*-----------------------------------------------------------------------------
+   Pages
 
-    # Prefix
-    prefix = "";
+   This section declares the pages that will be generated
+-----------------------------------------------------------------------------*/
 
-    # Environment
-    inherit (themesData."${locale}") env;
-
-    /*------------
-      Data
-    ------------*/
-    data = with env; {
-      # to avoid name clash with pages
-      loaded = {
-        #news   = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/eng/news; inherit env; });
-        blocks = lib.loadDir { dir = ./data/eng/blocks; inherit env; asAttrs = true; };
-        pages  = lib.loadDir { dir = ./data/eng/pages;  inherit env; asAttrs = true; };
-      };
-
-      # Menu
-      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "team" ])
-        ++ [
-          pages.faq
-          { title = "Documentation"; path = "/documentation/index.html"; }
-          { title = "GitHub";        url  = "https://github.com/fractalide/fractalide"; }
-          /*(templates.bootstrap.navbar.nav_dropdown {
-            title = "English";
-            items = [
-              (locales.zho.pages.index // { title = "中文"; })
-              (locales.jpn.pages.index // { title = "日本語"; })
-            ];
-          })*/
-        ];
-
-      # Whitepaper
-      whitepaper = mkWhitepaper locale;
+  pages = let site-partials = data.site-partials; in rec {
+    contact = rec {
+      path     = "/contact/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/contact.md; env = {}; };
     };
 
-    /*------------
-      Pages
-    ------------*/
-    pages = with env; rec {
-      index = {
-        title    = "Home";
-        path     = prefix + "/index.html";
-        template = templates.block-page.full;
-        layout   = templates.layout;
-        blocks   = mkIndexBlocks { templates = templates.blocks; data = data.loaded.blocks; inherit pages; };
-        body.class = "home";
-      };
+    documentation = rec {
+      title    = "Documentation";
+      path     = "/documentation/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = builtins.readFile (
+        pkgs.runCommand "doc-index" {
+          buildInputs = [ pkgs.styx ];
+          allowSubstitutes = false;
+          src = fractalide-src;
+        } ''
+          asciidoctor -b xhtml5 -s -a showtitle -o- $src/doc/index.adoc > $out
+        ''
+      );
+      footer   = "";
+    };
 
-      /*
-      newsIndex = lib.mkSplit {
-        title        = "News";
-        basePath     = prefix + "/news/index";
-        itemsPerPage = conf.theme.news.index.itemsPerPage;
-        template     = templates.news.index;
-        data         = news.list;
-      };
+    index = rec {
+      path     = "/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/index.md; env = { inherit (data) site-partials; }; };
+    };
 
-      news = lib.mkPageList {
-        data        = data.loaded.news;
-        pathPrefix  = prefix + "/news/";
-        template    = templates.news.full;
-      };
-      */
+    research = rec {
+      title    = "Research";
+      section  = "research";
+      path     = "/research/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/research.md; }).content;
+      footer   = "";
+    };
 
-      faq = {
-        path     = prefix + "/faq.html";
-        template = templates.pages.faq;
-      } // data.loaded.pages.faq;
+    roadmap = rec {
+      path     = "/roadmap/index.html";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/roadmap.md; env = {
+        inherit lib;
+        inherit (data) changelog;
+      }; };
+    };
+
+    sitemap = {
+      path     = "/sitemap.xml";
+      template = templates.sitemap;
+      layout   = lib.id;
+      pages    = lib.pagesToList { inherit pages; };
+    };
+
+    development-and-analysis = rec {
+      title    = "Development and Analysis";
+      section  = "development_and_analysis";
+      path     = "/development-and-analysis/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/development-and-analysis.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
+    cardano-stake-pool = rec {
+      title    = "Cardano Stake Pool";
+      section  = "cardano";
+      path     = "/cardano-stake-pool/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/cardano-stake-pool.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
+    hyperflow = rec {
+      title    = "Hyperflow";
+      section  = "hyperflow";
+      path     = "/hyperflow/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = sections.hyperflow.content;
+      extraContent = sections.hyperflow_modes.content + site-partials.signup.content;
+      sections = lib.loadDir { dir = ./content/hyperflow; asAttrs = true; };
+      inherit (data) site-partials;
+    };
+
+    fractalmarket = rec {
+      title    = "Fractalmarket";
+      section  = "fractalmarket";
+      path     = "/fractalmarket/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/fractalmarket.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
+    blogIndex = lib.mkSplit {
+      basePath     = "/blog/index";
+      title        = "Blog";
+      template     = templates.blog.index;
+      layout       = templates.layout;
+      itemsPerPage = conf.theme.blog.index.itemsPerPage;
+      data         = blog.list;
+    };
+
+    blog = lib.mkPageList {
+      data        = data.blog;
+      pathPrefix  = "/blog/";
+      template    = templates.blog.full;
+      layout      = templates.layout;
+    };
+
+    feed = {
+      path     = "/blog/feed.xml";
+      template = templates.feed.atom;
+      items    = lib.take 10 blog.list;
+      layout   = lib.id;
+    };
+
+    err_404 = rec {
+      path     = "/404.html";
+      title    = "404 Page Not Found";
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [ content ];
+      content  = lib.loadFile { file = ./content/404.md; env = { inherit conf; }; };
+    };
+
+    about_us = rec {
+      title        = "About us";
+      section      = "about_us";
+      path         = "/about_us/index.html";
+      template     = templates.page.sections;
+      layout       = templates.layout;
+      lede         = sections.lede.content;
+      sectionOrder = [ "team" "vision" ];
+      sections     = lib.loadDir {
+        dir = ./content/about_us;
+        env = { inherit (data) team; inherit lib; };
+        asAttrs = true;
+      };
+    };
+
+    faqs = rec {
+      title    = "FAQs";
+      section  = "faqs";
+      path     = "/faqs/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = sections.faqs.content;
+      footer   = sections.footer.content;
+      sections = lib.loadDir {
+        dir = ./content/faqs;
+        env = { inherit (data) faqs; inherit lib; };
+        asAttrs = true;
+      };
     };
   };
 
 
-
 /*-----------------------------------------------------------------------------
-   Chinese
-
-   This section declares Chinese locale data and pages
------------------------------------------------------------------------------*/
-
-  locales.zho = rec {
-    # Locale code
-    locale = "zho";
-
-    # Prefix
-    prefix = "/${locale}";
-
-    # Html lang
-    html.lang = "zh";
-
-    # Environment
-    inherit (themesData."${locale}") env;
-
-    /*------------
-      Data
-    ------------*/
-    data = with env; {
-      # to avoid name clash with pages
-      loaded = {
-        #news   = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/zho/news; inherit env; });
-        blocks = lib.loadDir { dir = ./data/zho/blocks; inherit env; asAttrs = true; };
-        pages  = lib.loadDir { dir = ./data/zho/pages;  inherit env; asAttrs = true; };
-      };
-
-      # Menu
-      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "team" ])
-        ++ [
-          pages.faq
-          { title = "软件文献"; path = "/documentation/index.html"; }
-          { title = "GitHub";   url  = "https://github.com/fractalide/fractalide"; }
-          (templates.bootstrap.navbar.nav_dropdown {
-            title = "中文";
-            items = [
-              (locales.eng.pages.index // { title = "English"; })
-              (locales.jpn.pages.index // { title = "日本語"; })
-            ];
-          })
-        ];
-
-      # Whitepaper
-      whitepaper = mkWhitepaper locale;
-    };
-
-    /*------------
-      Pages
-    ------------*/
-    pages = with env; rec {
-      index = {
-        title    = "Home";
-        path     = prefix + "/index.html";
-        template = templates.block-page.full;
-        layout   = templates.layout;
-        blocks   = mkIndexBlocks { templates = templates.blocks; data = data.loaded.blocks; inherit pages; };
-        body.class = "home";
-      };
-
-      /*
-      newsIndex = lib.mkSplit {
-        title        = "公告新闻";
-        basePath     = prefix + "/news/index";
-        itemsPerPage = conf.theme.news.index.itemsPerPage;
-        template     = templates.news.index;
-        data         = news.list;
-      };
-
-      news = lib.mkPageList {
-        data        = data.loaded.news;
-        pathPrefix  = prefix + "/news/";
-        template    = templates.news.full;
-      };
-      */
-
-      faq = {
-        path     = prefix + "/faq.html";
-        template = templates.pages.faq;
-      } // data.loaded.pages.faq;
-
-    };
-
-  };
-
-
-/*-----------------------------------------------------------------------------
-   Japanese
-
-   This section declares Japanese locale data and pages
------------------------------------------------------------------------------*/
-
-  locales.jpn = rec {
-    # Locale code
-    locale = "jpn";
-
-    # Prefix
-    prefix = "/${locale}";
-
-    # Html lang
-    html.lang = "ja";
-
-    # Environment
-    inherit (themesData."${locale}") env;
-
-    /*------------
-      Data
-    ------------*/
-    data = with env; {
-      # to avoid name clash with pages
-      loaded = {
-        #news   = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/zho/news; inherit env; });
-        blocks = lib.loadDir { dir = ./data/jpn/blocks; inherit env; asAttrs = true; };
-        pages  = lib.loadDir { dir = ./data/jpn/pages;  inherit env; asAttrs = true; };
-      };
-
-      # Menu
-      menu = (mkBlockSet pages.index.blocks prefix [ "vision" "whitepaper" "team" ])
-        ++ [
-          pages.faq
-          { title = "ドキュメンテーション"; path = "/documentation/index.html"; }
-          { title = "GitHub";               url  = "https://github.com/fractalide/fractalide"; }
-          (templates.bootstrap.navbar.nav_dropdown {
-            title = "日本語";
-            items = [
-              (locales.eng.pages.index // { title = "English"; })
-              (locales.zho.pages.index // { title = "中文"; })
-            ];
-          })
-        ];
-
-      # Whitepaper
-      whitepaper = mkWhitepaper locale;
-    };
-
-    /*------------
-      Pages
-    ------------*/
-    pages = with locales.jpn; with env; rec {
-      index = {
-        title    = "ホーム";
-        path     = prefix + "/index.html";
-        template = templates.block-page.full;
-        layout   = templates.layout;
-        blocks   = mkIndexBlocks { templates = templates.blocks; data = data.loaded.blocks; inherit pages; };
-        body.class = "home";
-      };
-
-      /*
-      newsIndex = lib.mkSplit {
-        title        = "News";
-        basePath     = prefix + "/news/index";
-        itemsPerPage = conf.theme.news.index.itemsPerPage;
-        template     = templates.news.index;
-        data         = news.list;
-      };
-
-      news = lib.mkPageList {
-        data        = data.loaded.news;
-        pathPrefix  = prefix + "/news/";
-        template    = templates.news.full;
-      };
-      */
-
-      faq = {
-        path     = prefix + "/faq.html";
-        template = templates.pages.faq;
-      } // data.loaded.pages.faq;
-    };
-
-  };
-
-
-
-/*-----------------------------------------------------------------------------
-   Site rendering
+   Site
 
 -----------------------------------------------------------------------------*/
 
-  # converting pages attribute set to a list
-  pageList = lib.localesToPageList {
-    inherit locales;
-    default = locale: {
-      layout  = locale.env.templates.layout;
-      body.id = "page-top";
-    };
-  };
-
-  # fetch upstream to generate the documentation
-  fetchUpstream = version:
-    let
-      repo = fetchFromGitHub ({
-        owner = "fractalide";
-        repo  = "fractalide";
-      } // version);
-    in import "${repo}/doc" {};
-
-  /* Versions of documentation to generate
-     Head of list will be the main documentation
+  /* Converting the pages attribute set to a list
   */
-  docVersions = [ {
-    rev    = "46b151";
-    sha256 = "1v3xzq8k7230j7ggi5c0mi7vwiwsncpwbvbmpcaxvcrhkgbvs73n";
-  } ];
+  pageList = lib.pagesToList { inherit pages; };
 
-
-  # Generate a wallpaper for a locale
-  mkWhitepaper = locale: {
-    path = "/pdf/whitepaper_${locale}.pdf";
-    pkg  = stdenv.mkDerivation {
-      name = "whitepaper_${locale}";
-      src = ./. + "/data/${locale}/pdf";
-      buildInputs = [ ( texlive.combine {
-          inherit (texlive) collection-langchinese
-          revtex4
-          latexmk
-          scheme-small
-          metafont
-          collection-fontsrecommended
-          collection-latexrecommended
-          collection-fontsextra
-          ;
-      } ) ];
-      buildPhase = ''
-        pdflatex whitepaper.tex
-      '';
-      installPhase = ''
-        cp whitepaper.pdf $out
-      '';
-    };
-  };
-
-  site = lib.mkSite {
-    inherit files pageList;
-    postGen = with lib; ''
-      # Documentation generation
-      ${lib.concatStringsSep "\n" (map (version: ''
-        mkdir -p $out/documentation/${version.rev}/
-        cp -r ${fetchUpstream version}/share/doc/fractalide/* $out/documentation/${version.rev}
-      '') docVersions)}
-      cp -r ${fetchUpstream (lib.head docVersions)}/share/doc/fractalide/* $out/documentation/
-
-      # Whitepaper generation
-      ${lib.concatStringsSep "\n" (lib.mapAttrsToList (n: v:
-        let whitepaper = locales."${v.locale}".data.whitepaper; in ''
-        if [ ! -f $out${whitepaper.path} ]; then
-          ln -s ${whitepaper.pkg} $out${whitepaper.path}
-        fi
-      '') locales)}
-
-      # Generating CNAME
-      echo "${conf.domain}" > $out/CNAME
-    '';
-  };
+  /* Generating the site
+  */
+  site = lib.mkSite { inherit files pageList; };
 
 }
