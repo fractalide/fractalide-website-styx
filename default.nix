@@ -1,9 +1,7 @@
-/*
-  This file can be used to build a styx site directly with nix-build.
+{ pkgs ? import ./nixpkgs.nix {}
+}:
 
-    $ nix-build
-
-*/
-{ pkgs ? import <nixpkgs> {} }:
-
-(pkgs.callPackage (import ./site.nix) {}).site
+let
+  site-attrs = (pkgs.callPackage (import ./site.nix) {});
+in
+  site-attrs.site // site-attrs
