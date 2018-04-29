@@ -1,4 +1,0 @@
-{ lib }:
-{
-  id = "fractalide-theme";
-}
