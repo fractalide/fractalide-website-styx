@@ -7,7 +7,7 @@
                         <div class="text-center">
                             <h1 class="section_heading_white">Sign up for early access</h1>
                             <p class="text_white">
-                                You will get the latest news about Fractalmarket.
+                                You will get the latest news about Fractalide.
                             </p>
                         </div>
                     </div>
