@@ -1,6 +1,6 @@
 {
 "name" = "Meredith Patterson";
-"title" = "Researcher";
+"title" = "Security Researcher";
 "image" = "photo-meredith.png";
 "weight" = 100;
 "networks" = [
@@ -11,4 +11,3 @@
 }
 ];
 }
-
