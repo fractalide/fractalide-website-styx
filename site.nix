@@ -252,6 +252,10 @@ rec {
 
   /* Generating the site
   */
-  site = lib.mkSite { inherit files pageList; };
-
+  site = lib.mkSite {
+    inherit files pageList;
+    postGen = ''
+      echo "${conf.domain}" > $out/CNAME
+    '';
+  };
 }
