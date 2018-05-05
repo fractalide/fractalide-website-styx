@@ -58,7 +58,7 @@ ${if page.path == "/index.html" then ''
             '' else ''
               <li class="${if (stripIndexHtml page.path) == currentItem.url then "active" else ""}">
                 ${if currentItem ? pre then ''
-                  <a href="${currentItem.url}">
+                  <a href="${currentItem.url}" target="_blank">
                     <img alt="${currentItem.name}" src="/img/${currentItem.pre}" width="20px">
                   </a>
                 '' else ''
