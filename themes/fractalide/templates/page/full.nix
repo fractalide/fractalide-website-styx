@@ -2,7 +2,7 @@ env:
 
 let template = { lib, templates, ... }:
   lib.normalTemplate (page: ''
-    <section${lib.optionalString (page ? section) (" " + ''"${page.section}"'')}>
+    <section${lib.optionalString (page ? section) (" id=" + ''"${page.section}"'')}>
       ${lib.optionalString (page ? title) ''
         <div class="header_gradient"> <!-- title -->
           <div class="container">

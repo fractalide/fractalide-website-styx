@@ -32,6 +32,7 @@
                     ++ ["o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"];
         stringToId = builtins.replaceStrings (upperCase ++ [" "]) (lowerCase ++ ["_"]);
         renderRelease = (release: with release; let
+          id = stringToId "release ${release.title}";
           output = ''
             <div class="roadmap_fractal text-center">
               <img src="../img/roadmap-min/fractal-min.png"/>
@@ -39,13 +40,20 @@
               <p class="text_dark_blue">
                 ${description}
               </p>
+              <a role="button" data-toggle="collapse" href="#${id}" aria-expanded="true" aria-controls="${id}">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
             </div>
-            ${if !(release ? features) then ''
-                <div class="roadmap_container">
-                  <div class="roadmap_line"></div>
-                </div>
-              '' else lib.concatMapStringsSep "\n" renderFeature features
-            }
+            <div id="${id}" class="collapse in">
+              ${if !(release ? features)
+                then ''
+                  <div class="roadmap_container">
+                    <div class="roadmap_line"></div>
+                  </div>
+                ''
+                else lib.concatMapStringsSep "\n" renderFeature features
+              }
+            </div>
           '';
           renderFeature = (feature:
             let

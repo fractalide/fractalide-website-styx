@@ -3,7 +3,7 @@ env:
 let template = { lib, templates, ... }:
   lib.normalTemplate (page: ''
     ${lib.optionalString (page ? title) ''
-      <section${lib.optionalString (page ? section) " " + ''"${page.section}"''}>
+      <section${lib.optionalString (page ? section) " id=" + ''"${page.section}"''}>
         <div class="header_background"> <!-- title -->
          <div class="header_content_stack">
           <div class="container">
