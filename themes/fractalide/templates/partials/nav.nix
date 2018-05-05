@@ -29,7 +29,7 @@ ${if page.path == "/index.html" then ''
         <span class="navbar_toggle_collapsed glyphicon glyphicon-menu-hamburger"></span>
         <span class="navbar_toggle_expanded glyphicon glyphicon-remove"></span>
       </button>
-      <a class="navbar-brand" href="#"></a>
+      <a class="navbar-brand" href="/"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
