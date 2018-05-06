@@ -544,6 +544,11 @@ fieldset[disabled] .affix .btn-link:focus {
 /***********/
 /* Buttons */
 /***********/
+.btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 3px;
+}
 .btn-default {
     color: #FFF;
     background-color: #ED7A7F;
