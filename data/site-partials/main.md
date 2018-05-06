@@ -36,7 +36,7 @@
                     <p>
                         A way to help fund core Fractalide software. A Cardano stake pool allows users to stake offline. All profit goes towards Fractalide development. 
                     </p>
-                    <a class="" href="/cardano/">Learn more</a>
+                    <a class="" href="/cardano-stake-pool/">Learn more</a>
                 </div>
             </div>
         </div>
