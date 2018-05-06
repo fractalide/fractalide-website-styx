@@ -425,7 +425,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .affix .navbar-text {
   color: #58B4CD;
 }
-.affix .navbar-nav > li > a {
+.affix .navbar-nav > li > a,
+.affix .navbar-nav > li > a > i {
   color: #58B4CD;
 }
 .affix .navbar-nav > li > a:hover,
