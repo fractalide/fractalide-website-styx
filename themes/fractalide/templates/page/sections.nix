@@ -8,7 +8,7 @@ let template = { lib, templates, ... }:
          <div class="header_content_stack">
           <div class="container">
             <div class="row">
-                <div class="col-md-offset-2 col-md-8">
+                <div class="col-md-offset-3 col-md-6">
                     <div class="text-center">
                         <h1 class="section_heading_blue fractal_white">${page.title}</h1>
                         ${lib.optionalString (page ? lede) ''

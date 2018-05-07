@@ -36,12 +36,14 @@ h1.fractal_blue {
     background-size: 437px 190px;
     height: 190px;
     padding-top: 75px;
+    margin-bottom: 40px;
 }
 h1.fractal_white {
     background: url('/img/fractal-white-min.png') no-repeat center;
     background-size: 437px 190px;
     height: 190px;
     padding-top: 75px;
+    margin-bottom: 40px;
 }
 h1.no_fractal {
     padding-top: 75px;
