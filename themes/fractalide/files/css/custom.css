@@ -442,6 +442,14 @@ section#development_and_analysis {
 }
 
 
+/******************/
+/* Page: Research */
+/******************/
+section#research > div.container {
+    margin-bottom: -120px;
+}
+
+
 /*****************/
 /* Page: Roadmap */
 /*****************/
