@@ -64,9 +64,11 @@ h2>a:hover {
 }
 h2.sub_heading_blue {
     color: #58b4cd;
+    margin-bottom: 20px;
 }
 h2.sub_heading_white {
     color: #ffffff;
+    margin-bottom: 20px;
 }
 h3 {
     color: #0D3E4C;
@@ -76,6 +78,7 @@ h3 {
 p {
     font-size: 16px;
     color: #171d1f;
+    margin-bottom: 20px;
 }
 p.copyright {
     font-size: 14px;
@@ -102,9 +105,6 @@ ul {
 }
 ul li {
   color: #64DBEC;
-}
-.subsection {
-    padding-top: 70px;
 }
 
 /******************/
@@ -377,7 +377,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     width: 308px;
     height: 360px;
     padding-top: 85px;
-    margin: 40px auto 15px auto;
+    margin: 80px auto 15px auto;
 }
 @media (max-width: 479px) {
   .feature {
@@ -391,6 +391,9 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     margin-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+}
+section#fractalmarket {
+    margin-bottom: -120px;
 }
 
 /*********************************/
