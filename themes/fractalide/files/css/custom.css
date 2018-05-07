@@ -403,7 +403,10 @@ section#fractalmarket {
     margin-top: 30px;
 }
 .cardano_icon {
-    margin-top: 60px;
+    margin: 60px 0 40px 0;
+}
+section#cardano {
+    margin-bottom: -120px;
 }
 
 
