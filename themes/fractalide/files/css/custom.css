@@ -114,6 +114,7 @@ ul li {
     width: 100%;
     height: 0;
     padding-bottom: 67.97%; /* (img-height / img-width * width) */
+    margin-bottom: -120px;
 }
 @media (max-width: 479px) {
   .header_background {
@@ -190,8 +191,8 @@ ul li {
   }
 }
 
-.signup_form {
-    margin: 30px 0 0 0;
+.signup_button {
+    margin-top: 120px;
 }
 .footer_content_signup {
     margin-top: -35%;
@@ -260,6 +261,9 @@ h2.fractal_blue {
     padding-top: 35px;
 }
 
+section#solutions {
+    margin-bottom: -120px;
+}
 
 /***********************************/
 /* Page: Home - Section: Hyperflow */

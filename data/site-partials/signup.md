@@ -14,7 +14,9 @@
                 </div>
                 <div class="row">
                     <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
-                        <button type="submit" class="btn btn-lg btn-default btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfJYF5LM5MD-IaEqJAZ-oboUi-IDnGaH7II5yg1_1WfIadhPw/viewform?usp=sf_link';">Submit</button>
+                        <div class="signup_button">
+                            <button type="submit" class="btn btn-lg btn-default btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfJYF5LM5MD-IaEqJAZ-oboUi-IDnGaH7II5yg1_1WfIadhPw/viewform?usp=sf_link';">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
