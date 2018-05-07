@@ -414,10 +414,16 @@ section#fractalmarket {
     margin-bottom: 30px;
 }
 .development_item {
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .development_title {
     margin-top: 60px;
+}
+.development_item p {
+    padding: 0 15px 0 15px;
+}
+section#development_and_analysis {
+    margin-bottom: -120px;
 }
 
 
