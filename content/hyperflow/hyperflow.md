@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row hypercard_concepts">
             <div class="col-lg-2 col-xs-12 concept_icon">
                 <img src="/img/icon-stack-min.png" width="83px" />
             </div>
