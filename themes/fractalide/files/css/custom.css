@@ -174,6 +174,7 @@ ul li {
     width: 100%;
     height: 0;
     padding-top: 67.97%; /* (img-height / img-width * width) */
+    margin-top: -120px;
 }
 @media (max-width: 767px) {
     .footer_background {
@@ -268,9 +269,6 @@ h2.fractal_blue {
     padding-top: 35px;
 }
 
-section#solutions {
-    margin-bottom: -120px;
-}
 
 /***********************************/
 /* Page: Home - Section: Hyperflow */
@@ -392,9 +390,6 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     padding-left: 30px;
     padding-right: 30px;
 }
-section#fractalmarket {
-    margin-bottom: -120px;
-}
 
 /*********************************/
 /* Page: Home - Section: Cardano */
@@ -404,9 +399,6 @@ section#fractalmarket {
 }
 .cardano_icon {
     margin: 60px 0 40px 0;
-}
-section#cardano {
-    margin-bottom: -120px;
 }
 
 
@@ -425,9 +417,6 @@ section#cardano {
 .development_item p {
     padding: 0 15px 0 15px;
 }
-section#development_and_analysis {
-    margin-bottom: -120px;
-}
 
 
 /******************/
@@ -439,14 +428,6 @@ section#development_and_analysis {
 }
 .content_vision {
     padding-bottom: 120px;
-}
-
-
-/******************/
-/* Page: Research */
-/******************/
-section#research > div.container {
-    margin-bottom: -120px;
 }
 
 
