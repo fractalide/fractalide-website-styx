@@ -2,11 +2,10 @@
 title = "Reproducibility";
 tags = [ "reproducibility" ];
 level = [ "★★" ];
+author = { name = "Stewart Mackenzie"; };
 ---}
 
 This non-technical post introduces the concept of reproducibility.
-
-Author: Stewart Mackenzie
 
 >>>
 

@@ -619,6 +619,10 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 /********/
 /* Blog */
 /********/
+.blog_list {
+    margin-bottom: 80px;
+}
+
 .sidebar-menu ul {
   padding: 5px 0 5px 0;
 }
@@ -628,6 +632,10 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 
 ul li > span {
   color: #171d1f;
+}
+
+.post-date {
+    margin-top: 60px;
 }
 
 .blog_post {
