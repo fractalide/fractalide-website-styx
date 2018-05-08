@@ -7,7 +7,7 @@
                         <h1 class="section_heading_blue fractal_white">Roadmap</h1>
                     </div>
                 </div>
-                <div class="col-md-offset-2 col-md-8">
+                <div class="col-md-offset-3 col-md-6">
                     <div class="text-center">
                         <p class="text_dark_blue">
                             The Fractalide Roadmap is a changelog of what has happened with the project. We've chosen to represent changes in a format that highlights objectives and work done to complete a release. The progress bar gives an best effort estimate on the completion of the release.
@@ -25,7 +25,6 @@
     </div>
     <div class="roadmap">
       {{ let
-        iconBaseURL = "/img/roadmap-min/";
         upperCase = ["A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N"]
                     ++ ["O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"];
         lowerCase = ["a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n"]
@@ -63,7 +62,7 @@
             in with feature;
             ''
               <div class="roadmap_spot">
-                <img src="${iconBaseURL}spot-min.png"/>
+                <img src="/img/roadmap-min/spot-min.png" width="12px"/>
               </div>
               <div class="roadmap_container">
                 <div class="roadmap_line"></div>
@@ -139,9 +138,9 @@
                     <div class="col-md-12">
                         <div class="text-center">
                             <h1 class="section_heading_white">Fractalide</h1>
-                            <p class="text_white">
+                            <h2 class="sub_heading_white">
                                 Your smart contract app marketplace
-                            </p>
+                            </h2>
                         </div>
                     </div>
                 </div>

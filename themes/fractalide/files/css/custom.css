@@ -462,7 +462,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .roadmap_line {
     order: 2;
     background-color: #79949F;
-    width: 4px;
+    width: 2px;
     margin-left: 32px;
     margin-right: 32px;
     min-height: 60px;
@@ -475,7 +475,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     .roadmap_line_fill {
         order: 3;
         background-color: #79949F;
-        width: 4px;
+        width: 2px;
         margin-left: 32px;
         margin-right: 32px;
         min-height: 60px;
@@ -586,10 +586,9 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 }
 .roadmap_line_end {
     position: absolute;
-    z-index: 9999 !important;
     width: 50%;
-    border-right: 4px solid #79949F;
-    margin-left: 2px;
+    border-right: 2px solid #79949F;
+    margin-left: 1px;
     height: 200px;
     margin-top: -180px;
 }
@@ -603,7 +602,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 @media (max-width: 767px) {
     .roadmap_line_end {
         background-color: #79949F;
-        width: 4px;
+        width: 2px;
         margin-left: 32px;
         /*height: 60px;*/
     }
