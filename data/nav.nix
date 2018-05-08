@@ -19,7 +19,7 @@
     children = [
       { name = "Research"; url = "/research/"; }
       { name = "Documentation"; url = "/documentation/"; }
-      { name = "GitHub"; url = "https://github.com/fractalide/"; }
+      { name = "GitHub"; url = "https://github.com/fractalide/"; target = "_blank"; }
       { name = "FAQs"; url = "/faqs/"; }
     ];
   }
