@@ -1,4 +1,0 @@
-+++
-title = "Research"
-type = "research"
-+++
