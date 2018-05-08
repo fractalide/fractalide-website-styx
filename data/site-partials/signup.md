@@ -8,6 +8,7 @@
                             <h1 class="section_heading_white">Sign up for early access</h1>
                             <p class="text_white">
                                 You will get the latest news about Fractalide.
+                                <br>Feel free to contact us at <a href="mailto:info@fractalide.com">info@fractalide.com</a>.<br>We will never share your contact details.
                             </p>
                         </div>
                     </div>
