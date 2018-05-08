@@ -1,4 +1,0 @@
-+++
-title = "Fractalmarket"
-type = "fractalmarket"
-+++
