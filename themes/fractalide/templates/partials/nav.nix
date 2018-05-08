@@ -47,7 +47,7 @@ ${if page.path == "/index.html" then ''
                     let
                       renderChild = child: ''
                         <li class="${if (stripIndexHtml page.path) == child.url then "active" else ""}">
-                          <a href="${child.url}">${child.name}</a>
+                          <a href="${child.url}" target="${if child ? target then child.target else ""}">${child.name}</a>
                         </li>
                       '';
                     in
