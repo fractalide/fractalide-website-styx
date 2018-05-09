@@ -13,7 +13,7 @@
                     <a href="https://t.me/joinchat/HXdgc1CvRT6K3A4la7AApQ">Telegram Group</a>
                 </h2>
                 <h2 class="sub_heading_blue">
-                    <a href="http://fractalide.com/pdf/fractalideCOP.pdf">Fractalide Master Thesis</a>
+                    <a href="https://github.com/fractalide/fractalide-oz/raw/master/docs/fractalideCOP.pdf">Fractalide Master Thesis</a>
                 </h2>
                 <h2 class="sub_heading_blue">
                     <a href="https://github.com/fractalide/fractalide-oz">Original Master Thesis Fractalide Implementation</a>
