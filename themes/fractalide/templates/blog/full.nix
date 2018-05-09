@@ -11,20 +11,15 @@ normalTemplate (page: ''
           <h1 class="post-title section_heading_blue no_fractal" itemprop="name headline">${page.title}</h1>
           <p class="post-author">
             ${optionalString (page ? author) ''
-            <span class="text-muted">By</span>
             <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
               <span class="text-muted" itemprop="name">
                 ${if (page.author ? url)
                 then ''<a href="${page.author.url}" itemprop="url" rel="author">${page.author.name}</a>''
                 else page.author.name}
+                <time class="text-muted" datetime="${(parseDate page.date).T}">${with (parseDate page.date); "• ${B} ${D}, ${Y}"}</time>
               </span>
             </span>
             ''}
-          </p>
-        </div>
-        <div class="col-md-offset-2 col-md-8">
-          <p class="post-date">
-            <time class="text-muted" datetime="${(parseDate page.date).T}">${with (parseDate page.date); "${B} ${D}, ${Y}"}</time>
           </p>
         </div>
       </div>
