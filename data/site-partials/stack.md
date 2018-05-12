@@ -11,7 +11,7 @@
                                 Problem: We all know banks or governments can cut access to your bank account. Fewer realize, a centralized website wrapping a smart contract can cut your service. This violates the ethos of decentralized cryptocurrencies.
                             </p>
                             <p class="text_white">
-                                Solution: The Fractalide project consists of a new browser and an app marketplace. The browser, Hyperflow, lets people build and run cryptocurrencies and their associated apps. The app marketplace, Fractalmarket, allows people to buy, sell and share apps. Hyperflow and Fractalmarket connect using Named Data Networking.
+                                Solution: The Fractalide project consists of a new browser and an app marketplace. The browser, Hyperflow, lets people build and run cryptocurrencies and their associated apps. The app marketplace, Fractalmarket, lets people buy, sell and share apps. Hyperflow and Fractalmarket connect using Named Data Networking.
                             </p>
                             <p class="text_white">
                                 We also offer development services, technical analysis and provide a Cardano stake pool.
