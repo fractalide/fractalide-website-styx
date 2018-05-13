@@ -2,7 +2,7 @@
 title = "Reproducibility";
 tags = [ "reproducibility" ];
 level = [ "★★" ];
-author = { name = "Stewart Mackenzie"; };
+author = { name = "Stewart Mackenzie"; image = "photo-stewart-min.png"; };
 ---}
 
 This non-technical post introduces the concept of reproducibility.
