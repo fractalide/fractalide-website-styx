@@ -16,7 +16,7 @@ normalTemplate (page: ''
                 ${if (page.author ? url)
                 then ''<a href="${page.author.url}" itemprop="url" rel="author">${page.author.name}</a>''
                 else page.author.name}
-                <time class="text-muted" datetime="${(parseDate page.date).T}">${with (parseDate page.date); "• ${B} ${D}, ${Y}"}</time>
+                <time class="text-muted" datetime="${(parseDate page.date).T}">${with (parseDate page.date); "• ${D} ${B} ${Y}"}</time>
               </span>
             </span>
             ''}
