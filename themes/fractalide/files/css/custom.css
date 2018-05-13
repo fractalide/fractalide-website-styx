@@ -632,5 +632,9 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 }
 
 .panel {
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(121,148,159,0.2);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(121,148,159,0.2);
+    -ms-box-shadow: 0px 3px 3px 0px rgba(121,148,159,0.2);
+    -o-box-shadow: 0px 3px 3px 0px rgba(121,148,159,0.2);
     box-shadow: 0px 3px 3px 0px rgba(121,148,159,0.2);
 }
