@@ -17,7 +17,7 @@ normalTemplate (page: ''
 <div class="blog_list">
   <div class="container">
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-12">
 
         <div class="posts">
           ${mapTemplate templates.blog.list (page.items or [])}
@@ -27,9 +27,6 @@ normalTemplate (page: ''
           ${optionalString (page ? pages) (templates.bootstrap.pagination { inherit (page) pages index; })}
         </div>
 
-      </div>
-      <div class="col-md-3">
-          <!-- sidebar: widgets -->
       </div>
     </div>
   </div>

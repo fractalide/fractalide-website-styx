@@ -2,7 +2,7 @@
 title = "Reusability and Composability";
 tags = [ "reusability" "Composability" ];
 level = [ "★★" ];
-author = { name = "Stewart Mackenzie"; };
+author = { name = "Stewart Mackenzie"; image = "photo-stewart-min.png"; };
 ---}
 
 This non-technical post introduces the concepts of reusability and composability and why they are important.
