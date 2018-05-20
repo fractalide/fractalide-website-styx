@@ -7,7 +7,7 @@
                         <h1 class="section_heading_blue fractal_white">Roadmap</h1>
                     </div>
                 </div>
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                     <div class="text-center">
                         <p class="text_dark_blue">
                             The Fractalide Roadmap is a changelog of what has happened with the project. We've chosen to represent changes in a format that highlights objectives and work done to complete a release. The progress bar gives an best effort estimate on the completion of the release.

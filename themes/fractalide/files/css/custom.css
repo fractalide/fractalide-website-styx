@@ -447,7 +447,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 @media (max-width: 767px) {
     .roadmap_spot {
         text-align: left;
-        padding-left: 25px;
+        padding-left: 27px;
         padding-bottom: 2px;
     }
 }
