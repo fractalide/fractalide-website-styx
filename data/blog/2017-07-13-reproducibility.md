@@ -5,7 +5,7 @@ level = [ "★★" ];
 author = { name = "Stewart Mackenzie"; image = "photo-stewart-min.png"; };
 ---}
 
-This non-technical post introduces the concept of reproducibility.
+Reproducibility, a cornerstone of science.
 
 >>>
 

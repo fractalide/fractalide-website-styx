@@ -15,7 +15,7 @@
                         <p class="text_dark_blue">
                             A cardinal sin that many open source developers make is to place themselves above others. "I founded this project thus my intellect is superior to that of others". It's immodest and rude, and usually inaccurate. The contribution policy we use at Fractalide applies equally to everyone, without distinction. The contribution policy we follow is the <a href="https://github.com/fractalide/fractalide/blob/master/CONTRIBUTING.md"> Collective Code Construction Contract (C4)</a>.
                         </p>
-                        <p>
+                        <p class="text_dark_blue">
                             Everyone is welcome to participate.
                         </p>
                     </div>
@@ -87,7 +87,7 @@
                     </a>
                     <div class="collapse" id="${id}_objectives">
                       ${if (feature ? Objectives) && ((builtins.length Objectives) > 0) then
-                        if (builtins.length Objectives) > 1 then ''
+                        if (builtins.length Objectives) > 0 then ''
                           <ul>
                         '' + lib.concatMapStringsSep "\n"
                           (objective: "<li>${objective}</li>") Objectives + ''
