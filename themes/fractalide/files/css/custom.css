@@ -88,6 +88,10 @@ a {
     font-size: 16px;
     color: #58b4cd;
 }
+a.link_white {
+    color: #ffffff;
+    text-decoration: underline;
+}
 a.topnav .active {
     font-size: 14px;
     color: #ffffff;
@@ -125,13 +129,13 @@ ul li {
 @media (max-width: 479px) {
   .header_background {
     background: #FFFFFF url('/img/header-phone-min.png') no-repeat center top;
-    padding-bottom: 220%;
+    padding-bottom: 300%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .header_background {
     background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
-    padding-bottom: 200%;
+    padding-bottom: 260%;
   }
 }
 
@@ -195,24 +199,21 @@ ul li {
 @media (min-width: 480px) and (max-width: 767px) {
   .footer_background_home {
     background: #FFFFFF url('/img/footer-tab-min.png') no-repeat center bottom;
-    padding-top: 200%;
+    padding-top: 260%;
   }
 }
 
-.signup_button {
-    margin-top: 120px;
-}
 .footer_content_signup {
-    margin-top: -35%;
+    margin-top: -40%;
 }
 @media (max-width: 479px) {
   .footer_content_signup {
-    margin-top: -100%;
+    margin-top: -120%;
   }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 991px) {
   .footer_content_signup {
-    margin-top: -70%;
+    margin-top: -80%;
   }
 }
 
