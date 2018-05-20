@@ -9,19 +9,11 @@
   border-radius: 0;
 }
 .navbar-brand {
-    background-size: 195px;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 195px;
-    height: 75px;
-}
-@media (max-width: 767px) {
-  .navbar-nav {
-    padding-right: 0;
-  }
-  .navbar-brand {
-    margin-left: 30px;
-  }
+  background-size: 195px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 195px;
+  height: 75px;
 }
 .navbar-toggle {
     margin-top: 18px;
@@ -31,6 +23,48 @@
 }
 .navbar-toggle[data-toggle="collapse"]:not(.collapsed) .navbar_toggle_collapsed {
   display: none;
+}
+@media (max-width: 992px) {
+  .navbar-nav {
+    padding-right: 0;
+  }
+  .navbar-brand {
+    margin-left: 30px;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left, .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
 }
 
 .navbar-default {
@@ -150,7 +184,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-top-color: #FFFFFF;
   border-bottom-color: #FFFFFF;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .navbar-default .navbar-collapse {
     border-color: #FFFFFF;
     background-color: #FFFFFF;
@@ -373,7 +407,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-top-color: #0D3E4C;
   border-bottom-color: #0D3E4C;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .navbar-inverse .navbar-collapse {
     border-color: #FFFFFF;
     background-color: #FFFFFF;
@@ -464,7 +498,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .affix .navbar-form {
   border-color: #FFFFFF;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .affix .navbar-collapse {
     border-color: #FFFFFF;
     background-color: #FFFFFF;
