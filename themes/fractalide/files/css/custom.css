@@ -252,6 +252,7 @@ ul li {
     background-image: -o-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
     width: 100%;
     padding-top: 200px;
+    margin-top: -80px;
 }
 .footer_solid {
     background-color: rgb(88, 180, 205);

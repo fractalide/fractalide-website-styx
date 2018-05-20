@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-2 col-md-8 col-xs-12">
+                <div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10">
                     <h2 class="sub_heading_white">Fractalide is a marketplace of reusable components that can be used with graphical programming tools to build a solution to virtually any problem.</h2>
                     <p>
                         Currently it is unintuitive for non-technical end users to interact with published cryptocontracts. For this reason cryptocontracts will not easily reach mainstream.
@@ -22,13 +22,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-2 col-md-4 col-xs-12" >
+                <div class="col-md-offset-2 col-md-4 col-xs-offset-1 col-xs-10">
                     <h2 class="sub_heading_white">Hyperflow</h2>
                     <p>
                         Hyperflow is a Rapid Application Development (RAD) platform. It facilitates the creation of applications and components that interact with smart contracts which can be published on.
                     </p>
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-4 col-xs-offset-1 col-xs-10">
                     <h2 class="sub_heading_white">Fractalmarket</h2>
                     <p>
                         Fractalmarket is a cryptocontract app marketplace. It aims to be the main marketplace that allows buying and selling of cryptocontract applications between third party vendors and end users.
