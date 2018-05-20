@@ -291,6 +291,9 @@ h2.fractal_blue {
   .concept_info {
     text-align: center;
   }
+  .concept_info p {
+      margin: 0 25px 0 25px;
+  }
 }
 section#hyperflow_modes {
     margin-top: 90px;
@@ -413,6 +416,11 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 }
 .development_item {
     margin-top: 60px;
+}
+@media (max-width: 1199px) {
+  .development_item p {
+      margin: 0 25px 0 25px;
+  }
 }
 .development_title {
     margin-top: 60px;
