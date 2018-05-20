@@ -13,7 +13,7 @@
                     <img src="/img/hyperflow-min/node@2x-min.png" width="317px" />
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-offset-1 col-xs-10">
                 <div class="hyperflow_mode_description">
                     <h2 class="sub_heading_blue">Node mode</h2>
                     <p>
@@ -31,7 +31,7 @@
                     <img src="/img/hyperflow-min/graph@2x-min.png" width="317px" />
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-offset-1 col-xs-10">
                 <div class="hyperflow_mode_description">
                     <h2 class="sub_heading_blue">Graph mode</h2>
                     <p>
@@ -49,7 +49,7 @@
                     <img src="/img/hyperflow-min/run@2x-min.png" width="317px" />
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-offset-1 col-xs-10">
                 <div class="hyperflow_mode_description">
                     <h2 class="sub_heading_blue">Run mode</h2>
                     <p>
