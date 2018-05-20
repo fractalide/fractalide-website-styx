@@ -1,5 +1,5 @@
         <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-xs-12">
+            <div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10">
                 <h2 class="sub_heading_blue">
                     <a href="https://github.com/fractalide/fractalide">Current Fractalide implementation</a>
                 </h2>

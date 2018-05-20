@@ -1,7 +1,7 @@
 <section id="solutions">
     <div class="container">
         <div class="row">
-            <div class="col-md-offset-1 col-md-4">
+            <div class="col-md-offset-1 col-md-4 col-xs-offset-2 col-xs-8">
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Hyperflow</h2>
                     <p>
@@ -10,7 +10,7 @@
                     <a class="" href="/hyperflow/">Learn more</a>
                 </div>
             </div>
-            <div class="col-md-offset-2 col-md-4">
+            <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-8">
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Fractalmarket</h2>
                     <p>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-offset-1 col-md-4">
+            <div class="col-md-offset-1 col-md-4 col-xs-offset-2 col-xs-8">
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Development and Analysis</h2>
                     <p>
@@ -30,7 +30,7 @@
                     <a class="" href="/development-and-analysis/">Learn more</a>
                 </div>
             </div>
-            <div class="col-md-offset-2 col-md-4">
+            <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-8">
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Cardano Stake Pool</h2>
                     <p>
