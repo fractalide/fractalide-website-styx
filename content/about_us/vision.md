@@ -9,30 +9,9 @@
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10">
-                    <h2 class="sub_heading_white">Fractalide is a marketplace of reusable components that can be used with graphical programming tools to build a solution to virtually any problem.</h2>
-                    <p>
-                        Currently it is unintuitive for non-technical end users to interact with published cryptocontracts. For this reason cryptocontracts will not easily reach mainstream.
-                    </p>
-                    <p>
-                        End users expect a convenient one-click platform that delivers user friendly yet secure third party applications which are designed to use cryptocontracts. This platform can be broken down into three parts: building, distribution and the blockchain interaction parts.
-                    </p>
-                    <p>
-                        The vision is to build a platform that makes the building and distribution of blockchain friendly applications laughably easy.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-4 col-xs-offset-1 col-xs-10">
-                    <h2 class="sub_heading_white">Hyperflow</h2>
-                    <p>
-                        Hyperflow is a Rapid Application Development (RAD) platform. It facilitates the creation of applications and components that interact with smart contracts which can be published on.
-                    </p>
-                </div>
-                <div class="col-md-4 col-xs-offset-1 col-xs-10">
-                    <h2 class="sub_heading_white">Fractalmarket</h2>
-                    <p>
-                        Fractalmarket is a cryptocontract app marketplace. It aims to be the main marketplace that allows buying and selling of cryptocontract applications between third party vendors and end users.
-                    </p>
+                    <h2 class="text-center sub_heading_white"> Our goal is to create a convenient, secure browser for people to build and run decentralized applications.</h2>
+
+                    <a class="text-center sub_heading_white" href="https://nakamotoinstitute.org/trusted-third-parties/"><h2 class="text-center sub_heading_white">"Trusted third parties are security holes." - Nick Szabo</h2></a>
                 </div>
             </div>
         </div>
