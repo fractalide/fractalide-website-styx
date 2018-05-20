@@ -8,21 +8,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-xs-offset-1 col-xs-10 text-center development_item">
+            <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Reusable</h3>
                 <p>
                     Components consist of a function with predefined bounded buffer inputs and outputs. Every component has a single function with the same signature. This design allows for a reusable systems. Software quality improves as components are reused. Over time components become robust, meaning you spend less on firefighting.
                 </p>
             </div>
-            <div class="col-lg-4 col-xs-offset-1 col-xs-10 text-center development_item">
+            <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Reproducible</h3>
                 <p>
                     Most reusable systems don’t pay enough attention to reproducibility. Reproducibility is the act of reproducing a system with the least amount of manual steps. We have reduced it to typing a component’s name. The build system sets up all transitive dependencies. Even if they have dependencies on other subsystems like python. Fewer manual steps mean less money spent on programmer time. Making programmers more productive.
                 </p>
             </div>
-            <div class="col-lg-4 col-xs-offset-1 col-xs-10 text-center development_item">
+            <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Composable</h3>
                 <p>
@@ -39,14 +39,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-xs-offset-1 col-xs-10 text-center development_item">
+            <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Blockchain Development</h3>
                 <p>
                     We build financial systems and blockchains for government entities and corporations. Our focus is on reusing as much code as possible. This allows us provide better prices and offer higher quality solutions to customers.
                 </p>
             </div>
-            <div class="col-lg-4 col-xs-offset-1 col-xs-10 text-center development_item">
+            <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Application Development</h3>
                 <p>
@@ -54,7 +54,7 @@
                     We offer corporations development services to help design and develop their applications. These might be general purpose applications which might not connect to a blockchain. They may be logistics application coupled to a specific blockchain.
                 </p>
             </div>
-            <div class="col-lg-4 col-xs-offset-1 col-xs-10 text-center development_item">
+            <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Technical Analysis</h3>
                 <p>
