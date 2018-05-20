@@ -5,7 +5,7 @@
                         <div class="text-center">
                             <h1 class="section_heading_white">Got another question?</h1>
                             <p class="text_white">
-                                Contact us at <a class="text_white" href="mailto:{{faqs.email}}" target="_blank">{{faqs.email}}</a>.
+                                Contact us at <a class="link_white" href="mailto:{{faqs.email}}" target="_blank">{{faqs.email}}</a>.
                             </p>
                         </div>
                     </div>

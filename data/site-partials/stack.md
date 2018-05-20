@@ -3,10 +3,14 @@
         <div class="header_content_stack">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
+                    <div class="col-xs-12">
                         <div class="text-center">
                             <img src="/img/stack-min.png" width="121px" />
                             <h1 class="section_heading_white">Decentralized apps for<br>cryptocurrencies</h1>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-2 col-xs-8">
+                        <div class="text-center">
                             <p class="text_white">
                                 <b class="text_white">Problem:</b> We all know banks or governments can cut access to your bank account. Few realize a centralized website wrapping a smart contract can cut your service. This violates the ethos of decentralized cryptocurrencies.
                             </p>
