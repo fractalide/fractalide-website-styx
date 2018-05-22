@@ -139,7 +139,7 @@
                         <div class="text-center">
                             <h1 class="section_heading_white">Fractalide</h1>
                             <h2 class="sub_heading_white">
-                                Your smart contract app marketplace
+                                Your decentralized app browser
                             </h2>
                         </div>
                     </div>
