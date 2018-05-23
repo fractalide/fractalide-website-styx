@@ -13,7 +13,7 @@
                             The Fractalide Roadmap is a changelog of what has happened with the project. We've chosen to represent changes in a format that highlights objectives and work done to complete a release. The progress bar gives an best effort estimate on the completion of the release.
                         </p>
                         <p class="text_dark_blue">
-                            A cardinal sin that many open source developers make is to place themselves above others. "I founded this project thus my intellect is superior to that of others". It's immodest and rude, and usually inaccurate. The contribution policy we use at Fractalide applies equally to everyone, without distinction. The contribution policy we follow is the <a href="https://github.com/fractalide/fractalide/blob/master/CONTRIBUTING.md"> Collective Code Construction Contract (C4)</a>.
+                            A cardinal sin that many open source developers make is to place themselves above others. "I founded this project thus my intellect is superior to that of others". It's immodest and rude, and usually inaccurate. The contribution policy we use at Fractalide applies equally to everyone, without distinction. The contribution policy we follow is the <a href="https://github.com/fractalide/fractalide/blob/master/CONTRIBUTING.md" target="_blank"> Collective Code Construction Contract (C4)</a>.
                         </p>
                         <p class="text_dark_blue">
                             Everyone is welcome to participate.
