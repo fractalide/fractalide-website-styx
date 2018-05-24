@@ -638,8 +638,12 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     margin: -4px 8px 0 0;
 }
 
-.blog_post {
+.blog_posts {
     margin-bottom: 60px;
+}
+
+.post .panel-body {
+    padding: 20px 40px;
 }
 
 .panel {
