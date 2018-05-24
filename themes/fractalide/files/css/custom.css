@@ -312,6 +312,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 }
 .hyperflow_mode_mid {
     margin-left: 160px;
+    margin-top: -87px;
 }
 .hyperflow_mode_bottom {
     margin-right: -80px;
@@ -401,8 +402,9 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 /* Page: Home - Section: Cardano */
 /*********************************/
 #cardano p {
-    margin-top: 30px;
+    margin: 30px 25px 0 25px;
 }
+
 .cardano_icon {
     margin: 60px 0 40px 0;
 }
