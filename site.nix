@@ -155,6 +155,21 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
+    cardano-wallet = rec {
+      title    = "Cardano Wallet";
+      section  = "cardano";
+      path     = "/cardano-wallet/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = sections.cardano-wallet.content;
+      extraContent = sections.download_center.content;
+      sections = lib.loadDir {
+        dir = ./content/cardano-wallet;
+        asAttrs = true;
+      };
+      inherit (data) site-partials;
+    };
+
     hyperflow = rec {
       title    = "Hyperflow";
       section  = "hyperflow";
