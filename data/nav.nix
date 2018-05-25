@@ -12,6 +12,7 @@
       { name = "Fractalmarket"; url = "/fractalmarket/"; }
       { name = "Services"; url = "/development-and-analysis/"; }
       { name = "Cardano Stake Pool"; url = "/cardano-stake-pool/"; }
+      { name = "Cardano Wallet"; url = "/cardano-wallet/"; }
     ];
   }
   {

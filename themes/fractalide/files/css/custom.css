@@ -398,15 +398,79 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     padding-right: 30px;
 }
 
-/*********************************/
-/* Page: Home - Section: Cardano */
-/*********************************/
+
+/********************************************/
+/* Page: Home - Section: Cardano Stake Pool */
+/********************************************/
 #cardano p {
     margin: 30px 25px 0 25px;
 }
-
 .cardano_icon {
     margin: 60px 0 40px 0;
+}
+
+
+/****************************************/
+/* Page: Home - Section: Cardano Wallet */
+/****************************************/
+#cardano a {
+    margin-top: 40px;
+}
+.cantor_features {
+    padding-top: 120px;
+}
+.cantor_feature {
+    margin-top: 40px;
+}
+@media (max-width: 1199px) {
+  .cantor_feature p {
+      margin: 0 25px 0 25px;
+  }
+}
+
+.download_container {
+    padding-bottom: 150px;
+}
+.download_title {
+    margin-bottom: 25px;
+}
+.download_row {
+    margin: 0 40px 0 40px;
+}
+.cardano_download {
+    background-color: #FFFFFF;
+    padding: 60px 0 40px 0;
+    margin-bottom: 25px;
+}
+@media (max-width: 479px) {
+    .download_container {
+        padding-bottom: 90px;
+    }
+    .cardano_download {
+        padding: 40px 0 10px 0;
+        width: 260px;
+        display: inline-block;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .download_container {
+        padding-bottom: 120px;
+    }
+    .cardano_download {
+        padding: 60px 0 40px 0;
+        width: 320px;
+        display: inline-block;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .download_container {
+        padding-bottom: 180px;
+    }
+    .cardano_download {
+        padding: 90px 0 60px 0;
+        width: 400px;
+        display: inline-block;
+    }
 }
 
 
