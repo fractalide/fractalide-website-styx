@@ -13,7 +13,7 @@
                         <img src="/img/wallet-min/linux-min.png" height="75px">
                         <h3>Linux</h3>
                         <p>
-                            Version 1.0.0 64 bit
+                            Coming soon
                         </p>
                     </div>
                 </a>
@@ -24,7 +24,7 @@
                         <img src="/img/wallet-min/macOS-min.png" height="75px">
                         <h3>MacOS</h3>
                         <p>
-                            Version 1.0.0 64 bit
+                            Coming soon
                         </p>
                     </div>
                 </a>
