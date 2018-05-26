@@ -1,12 +1,12 @@
         <div class="row">
             <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-12">
                 <div class="text-center">
-                    <h2 class="sub_heading_blue">A Cardano Stake Pool forms an important role in securing the ADA cryptocurrency</h2>
+                    <h2 class="sub_heading_blue">A Cardano Stake Pool has an important role in securing the ADA cryptocurrency</h2>
                     <p>
-                        Ouroboros, Cardano’s Proof of Stake algorithm, needs users to be online. Which is inconvenient for many users. Ouroboros allows offline users to delegate their vote to a stake pool of their choice. This way, users may take part in securing the consensus algorithm and earn rewards.
+                        Ouroboros, Cardano’s Proof of Stake algorithm, requires users to be online, which isn't always possible for everyone. Ouroboros allows offline users to delegate their vote to a stake pool of their choice. This way, users can take part in securing the consensus algorithm and earn rewards.
                     </p>
                     <p>
-                        Q2 or Q3, 2018 signals the Cardano Shelley release. Shelley represents a completely decentralized Cardano. That's when Fractalide's Cardano Stake Pool goes live.
+                        The Cardano Shelley shifts the architecture to a completely decentralized Cardano. It's due for release in Q3 2018. Fractalide's Cardano Stake Pool will then go live.
                     </p>
                 </div>
             </div>
@@ -15,19 +15,19 @@
             <div class="col-lg-4 col-xs-12 text-center">
                 <img class="cardano_icon" src="/img/cardano-min/algorithm-min.png">
                 <p>
-                    Game theory motivates stake pools not to get too big allowing an attack on the consensus protocol. So we avoid the problem of Bitcoin's centralized mining.
+                    Centralized mining is an issue for currencies like Bitcoin, because when pools get too big, it can lead to an attack on the consensus protocol. Being on Cardano, Fractalide's stake pool participates in a process that avoids centralization.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center">
                 <img class="cardano_icon" src="/img/cardano-min/reward-min.png">
                 <p>
-                    Users take part in securing the consensus algorithm and earn rewards. The Cardano blockchain pays the delegators and delegatees, removing fear of theft.
+                    Users take part in mining and earn rewards. Cardano allows you to nominate another party, like Fractalide, to vote on your behalf to make it easier. If you nominate someone else, both you and them will be rewarded through the Cardano blockchain, which removes the fear of theft.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center">
                 <img class="cardano_icon" src="/img/cardano-min/earnings-min.png">
                 <p>
-                    All stake pool earnings, after server costs, goes to Fractalide development. We welcome your vote delegation. Your help improves Fractalide and surrounding Cardano software.
+                    When you nominate Fractlide to vote for you, all earnings, after server costs, go into Fractalide development. By nominating Fractalide, you're helping improve Fractalide and the Cardano ecosystem.
                 </p>
             </div>
         </div>
