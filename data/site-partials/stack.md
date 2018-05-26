@@ -12,10 +12,10 @@
                     <div class="col-xs-offset-2 col-xs-8">
                         <div class="text-center">
                             <p class="text_white">
-                                <b class="text_white">Problem:</b> We all know banks or governments can cut access to your bank account. Few realize a centralized website wrapping a smart contract can cut your service. This violates the ethos of decentralized cryptocurrencies.
+                                <b class="text_white">Problem:</b> We all know banks or governments can cut access to your bank account. Few realize a centralized website wrapping a smart contract can cut your service or spy on you. This violates the ethos of decentralized cryptocurrencies.
                             </p>
                             <p class="text_white">
-                                <b class="text_white">Solution:</b> The Fractalide project consists of a new browser and an dapp marketplace. The browser, Hyperflow, lets people run cryptocurrencies and their dapps. The marketplace, Fractalmarket, lets people buy, sell and share dapps.
+                                <b class="text_white">Solution:</b> The Fractalide project consists of a new dapp browser and a dapp marketplace. The browser, Hyperflow, lets people run cryptocurrencies and their dapps on their machines. The marketplace, Fractalmarket, lets people buy, sell and share dapps. 
                             </p>
                             <button class="btn btn-lg btn-default" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfJYF5LM5MD-IaEqJAZ-oboUi-IDnGaH7II5yg1_1WfIadhPw/viewform?usp=sf_link';">Sign up for early access</button>
                         </div>
