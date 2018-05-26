@@ -327,11 +327,11 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .hyperflow_mode {
     margin-top: -90px;
 }
+.hyperflow_mode > img {
+    width: 316px;
+}
 .hyperflow_mode_top {
     margin-right: -80px;
-}
-.hyperflow_mode_top > img {
-    width: 316px;
 }
 .hyperflow_mode_mid {
     margin-left: 160px;
