@@ -134,6 +134,7 @@ ul li {
   }
   .header_background_home {
       background: #FFFFFF url('/img/header-phone-tall-min.png') no-repeat center top;
+      padding-bottom: 180%;
       height: auto;
   }
 }
