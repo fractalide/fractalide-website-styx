@@ -267,7 +267,21 @@ ul li {
 .footer_solid {
     background-color: rgb(88, 180, 205);
     width: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
+}
+
+
+/*******************/
+/* Page: Error 404 */
+/*******************/
+section#error_404 {
+    margin-top: 75px;
+}
+section#error_404 a {
+    margin: 120px 0 120px 0;
+}
+section#error_404 > div.header_background {
+    margin-bottom: 0px;
 }
 
 
@@ -313,11 +327,11 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .hyperflow_mode {
     margin-top: -90px;
 }
+.hyperflow_mode > img {
+    width: 316px;
+}
 .hyperflow_mode_top {
     margin-right: -80px;
-}
-.hyperflow_mode_top > img {
-    width: 316px;
 }
 .hyperflow_mode_mid {
     margin-left: 160px;
