@@ -271,6 +271,20 @@ ul li {
 }
 
 
+/*******************/
+/* Page: Error 404 */
+/*******************/
+section#error_404 {
+    margin-top: 75px;
+}
+section#error_404 a {
+    margin: 120px 0 120px 0;
+}
+section#error_404 > div.header_background {
+    margin-bottom: 0px;
+}
+
+
 /******************************/
 /* Page: Home - Section: Main */
 /******************************/
