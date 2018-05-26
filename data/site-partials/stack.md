@@ -1,5 +1,5 @@
 <section id="stack">
-    <div class="header_background">
+    <div class="header_background_home">
         <div class="header_content_stack">
             <div class="container">
                 <div class="row">
