@@ -126,7 +126,7 @@
        }}
         <div class="roadmap_end">
             <div class="roadmap_line_end"></div>
-            <div class="roadmap_fractal text-center align-text-bottom">
+            <div class="roadmap_fractal roadmap_fractal_end text-center align-text-bottom">
                 <img src="../img/roadmap-min/fractal-min.png"/>
             </div>
         </div>
