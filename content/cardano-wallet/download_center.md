@@ -10,7 +10,7 @@
             <div class="col-lg-4 col-xs-12 text-center">
                 <a href="#download_center">
                     <div class="cardano_download">
-                        <img src="/img/wallet-min/linux-min.png" height="75px">
+                        <img src="/img/wallet-min/linux-grey-min.png" height="75px">
                         <h3>Linux</h3>
                         <p>
                             Coming soon
@@ -18,10 +18,10 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-xs-12 text-center">
+            <div class="col-lg-4 col-xs-12 grey text-center">
                 <a href="#download_center">
                     <div class="cardano_download">
-                        <img src="/img/wallet-min/macOS-min.png" height="75px">
+                        <img src="/img/wallet-min/macOS-grey-min.png" height="75px">
                         <h3>MacOS</h3>
                         <p>
                             Coming soon
