@@ -3,7 +3,7 @@
         <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-12 text-center">
             <h2 class="sub_heading_blue">What is Cantor?</h2>
             <p>
-                Cantor is a Cardano wallet and is Fractalide's first application. The wallet allows you to send and receive ADA transactions. Please consider this alpha software and use with patience.
+                Fractalide's first application is Cantor, a Cardano wallet. The wallet allows you to send and receive ADA transactions. Please consider this alpha software and use with patience.
             </p>
             <a class="btn btn-lg btn-default" href="#download_center">Download Cantor</a>
         </div>
