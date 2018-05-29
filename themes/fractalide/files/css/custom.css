@@ -20,7 +20,7 @@ h1 {
     font-weight: 900;
     font-size: 40px;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 32px;
   }
@@ -51,7 +51,7 @@ h1.no_fractal {
 h2 {
     font-size: 24px;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   h2 {
     font-size: 20px;
   }
@@ -114,7 +114,8 @@ ul li {
 /******************/
 /* Header section */
 /******************/
-.header_background {
+.header_background,
+.header_background_home {
     background: #FFFFFF url('/img/header-min.png') no-repeat center top;
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -124,18 +125,26 @@ ul li {
     width: 100%;
     height: 0;
     padding-bottom: 67.97%; /* (img-height / img-width * width) */
-    margin-bottom: -120px;
+    margin: -1px 0 -120px 0px;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .header_background {
     background: #FFFFFF url('/img/header-phone-min.png') no-repeat center top;
     padding-bottom: 300%;
   }
+  .header_background_home {
+      background: #FFFFFF url('/img/header-phone-tall-min.png') no-repeat center top;
+      height: auto;
+  }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .header_background {
     background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
     padding-bottom: 260%;
+  }
+  .header_background_home {
+    background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
+    height: auto;
   }
 }
 
@@ -178,9 +187,9 @@ ul li {
     width: 100%;
     height: 0;
     padding-top: 67.97%; /* (img-height / img-width * width) */
-    margin-top: -120px;
+    margin: -120px 0 -1px 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .footer_background {
       background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
       background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
@@ -191,28 +200,28 @@ ul li {
       margin-top: -80px;
     }
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .footer_background_home {
     background: #FFFFFF url('/img/footer-phone-min.png') no-repeat center bottom;
     padding-top: 220%;
   }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .footer_background_home {
     background: #FFFFFF url('/img/footer-tab-min.png') no-repeat center bottom;
-    padding-top: 260%;
+    padding-top: 160%;
   }
 }
 
 .footer_content_signup {
     margin-top: -40%;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .footer_content_signup {
     margin-top: -120%;
   }
 }
-@media (min-width: 480px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 991px) {
   .footer_content_signup {
     margin-top: -80%;
   }
@@ -221,12 +230,12 @@ ul li {
 .footer_content_faqs {
     margin-top: -24%;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .footer_content_faqs {
     margin-top: -40%;
   }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .footer_content_faqs {
     margin-top: -20%;
   }
@@ -235,14 +244,14 @@ ul li {
 .footer_content_roadmap {
     margin-top: -15%;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .footer_content_roadmap {
-    margin-top: -25%;
+    margin-top: -30%;
   }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .footer_content_roadmap {
-    margin-top: -20%;
+      margin-top: -15%;
   }
 }
 
@@ -258,7 +267,21 @@ ul li {
 .footer_solid {
     background-color: rgb(88, 180, 205);
     width: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
+}
+
+
+/*******************/
+/* Page: Error 404 */
+/*******************/
+section#error_404 {
+    margin-top: 75px;
+}
+section#error_404 a {
+    margin: 120px 0 120px 0;
+}
+section#error_404 > div.header_background {
+    margin-bottom: 0px;
 }
 
 
@@ -304,11 +327,11 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .hyperflow_mode {
     margin-top: -90px;
 }
+.hyperflow_mode > img {
+    width: 316px;
+}
 .hyperflow_mode_top {
     margin-right: -80px;
-}
-.hyperflow_mode_top > img {
-    width: 316px;
 }
 .hyperflow_mode_mid {
     margin-left: 160px;
@@ -384,7 +407,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     padding-top: 85px;
     margin: 80px auto 15px auto;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .feature {
     background-size: 246px 288px;
     width: 246px;
@@ -442,7 +465,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     padding: 60px 0 40px 0;
     margin-bottom: 25px;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
     .download_container {
         padding-bottom: 90px;
     }
@@ -452,7 +475,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
         display: inline-block;
     }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .download_container {
         padding-bottom: 120px;
     }
@@ -518,7 +541,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     text-align: center;
     padding-bottom: 2px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .roadmap_spot {
         text-align: left;
         padding-left: 27px;
@@ -530,7 +553,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     justify-content: center;
     height: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .roadmap_container {
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -544,7 +567,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     margin-right: 32px;
     min-height: 60px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .roadmap_line {
         order: 1;
         min-height: 60px;
@@ -564,19 +587,19 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     text-align: right;
     margin-top: -23px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .roadmap_step {
         order: 2;
         text-align: left;
         margin-top: -50px;
     }
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
     .roadmap_step {
         flex: 1 1 75%;
     }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .roadmap_step {
         flex: 1 1 85%;
     }
@@ -584,7 +607,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .roadmap_step h2 {
     margin-top: 0px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .roadmap_step h2 {
         margin-top: 30px;
     }
@@ -595,7 +618,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     margin-top: -19px;
     padding-bottom: 60px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .roadmap_info {
         margin-top: -30px;
     }
@@ -604,12 +627,12 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     width: 50%;
     margin-bottom: 20px;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
     .roadmap_progress {
         width: 80%;
     }
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .roadmap_progress {
         width: 70%;
     }
@@ -676,18 +699,48 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 .roadmap_footer {
     margin-top: -45%;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .roadmap_line_end {
         background-color: #79949F;
         width: 2px;
         margin-left: 32px;
-        /*height: 60px;*/
     }
     .roadmap_fractal {
         text-align: left;
         padding-left: 30px;
-        /*padding-top: 70px;
-        height: 60px;*/
+    }
+
+    .roadmap_end {
+        padding-top: 90px;
+    }
+    .roadmap_line_end {
+        height: 100px;
+        margin-top: -90px;
+    }
+    .roadmap_footer {
+        margin-top: -30%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .roadmap_line_end {
+        background-color: #79949F;
+        width: 2px;
+        margin-left: 32px;
+    }
+    .roadmap_fractal {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .roadmap_end {
+        padding-top: 90px;
+    }
+    .roadmap_line_end {
+        height: 100px;
+        margin-top: -90px;
+    }
+    .roadmap_footer {
+        margin-top: -15%;
     }
 }
 
