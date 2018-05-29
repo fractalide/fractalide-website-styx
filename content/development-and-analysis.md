@@ -3,7 +3,7 @@
                 <h2 class="sub_heading_blue">Fractalide Features</h2>
                 <p>
                     Fractalide applications are written using reusable, reproducible and composable software blocks.
-                    Customers see benefit, through a reduction in software development costs and increase in quality and stability.
+                    This means reduced software development costs and increased quality and stability.
                 </p>
             </div>
         </div>
@@ -12,21 +12,21 @@
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Reusable</h3>
                 <p>
-                    Components consist of a function with predefined bounded buffer inputs and outputs. Every component has a single function with the same signature. This design allows for a reusable systems. Software quality improves as components are reused. Over time components become robust, meaning you spend less on firefighting.
+                    Components consist of a function with predefined bounded buffer inputs and outputs. Every component has a single function with the same signature, which allows for a reusable system. As components are reused, the quality of the software improves. Over time, the components become increasingly robust, meaning you can spend less time fighting fires.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Reproducible</h3>
                 <p>
-                    Most reusable systems don’t pay enough attention to reproducibility. Reproducibility is the act of reproducing a system with the least amount of manual steps. We have reduced it to typing a component’s name. The build system sets up all transitive dependencies. Even if they have dependencies on other subsystems like python. Fewer manual steps mean less money spent on programmer time. Making programmers more productive.
+                    Most reusable systems don’t consider reproducibility - the ability to reproduce a system with the least work possible. We've reduced it to typing a component’s name. The system sets up all transitive dependencies, even if they have dependencies on other subsystems like Python. 
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Composable</h3>
                 <p>
-                    Composable systems allow the programmer to layer software into abstractions. Each abstraction does one and only one thing. It’s quite easy to decompose an abstraction and isolate the exact component you want. Then reuse it in a new abstraction. Strong isolation lets programmers bug hunt faster and design systems amenable to long-term maintenance. After all, the sofware maintenance phase is the most expensive.
+                    Composable systems allow the programmer to layer software into abstractions. Each abstraction does one and only one thing. We make it easy to decompose an abstraction and isolate the exact component you want, then reuse it in a new abstraction. Strong isolation lets programmers hunt for bugs more quickly, and design systems that are more efficient when it comes to long-term maintenance. 
                 </p>
             </div>
         </div>
@@ -34,7 +34,7 @@
             <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 text-center development_title">
                 <h2 class="sub_heading_blue">Services Offered</h2>
                 <p>
-                    We offer development and consulting in these areas
+                    We offer development and consulting in the following areas:
                 </p>
             </div>
         </div>
@@ -43,23 +43,21 @@
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Blockchain Development</h3>
                 <p>
-                    We build financial systems and blockchains for government entities and corporations. Our focus is on reusing as much code as possible. This allows us provide better prices and offer higher quality solutions to customers.
+                    We build financial systems and blockchains for government entities and corporations. Our ability to reuse code allows us to provide better prices and offer higher quality and more stable solutions to our clients.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Application Development</h3>
                 <p>
-                    Fractalide apps run on Hyperflow and are reusable, reproducible and composable components. They can talk to smart contracts on the blockchain.
-                    We offer corporations development services to help design and develop their applications. These might be general purpose applications which might not connect to a blockchain. They may be logistics application coupled to a specific blockchain.
+                    Fractalide apps run on Hyperflow and are reusable, reproducible and composable components that can talk to smart contracts on the blockchain. We offer services to help design and develop applications, from general purpose applications which might not connect to a blockchain, to logistics applications coupled to specific blockchains.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Technical Analysis</h3>
                 <p>
-                    Meredith L. Patterson, the founder of the IEEE Language-theoretic Security field. Will do an analysis of your white paper.
-                    The Analysis may extend into language security analysis of your smart contract. All research is published using the Community Commons License Attribution + ShareAlike (BY-SA).
+                    Have your white paper analysed by a team led by Meredith L. Patterson, the creator of the field of IEEE Language-theoretic Security. The analysis can be extended into the language security of your smart contract. All research is published under Community Commons License Attribution + ShareAlike (BY-SA).
                 </p>
             </div>
         </div>
