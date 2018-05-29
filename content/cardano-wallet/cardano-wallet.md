@@ -14,7 +14,7 @@
         </div>
         <div class="col-lg-4 col-xs-12 text-center cantor_feature">
             <img src="/img/roadmap-min/fractal-min.png" />
-            <h3>Easy to use "building blocks' of software</h3>
+            <h3>Easy to use software 'building blocks'</h3>
             <p>
                 The software components are designed to be reusable, reproducible and composable, meaning anyone can easily build new wallets to support other cryptocurrencies. 
             </p>
@@ -23,14 +23,14 @@
             <img src="/img/roadmap-min/fractal-min.png" />
             <h3>A formally verified Cardano wallet</h3>
             <p>
-                Cantor adheres to the <a href="https://cardanodocs.com/technical/formal-specification-for-a-cardano-wallet/">Cardano Wallet Formal Specification</a> document. This allows for a better implementation that accurately maps a reality which has been formally verified, thereby reducing architectural problems and improving upgrades. We become better citizens in the Cardano community.
+                Cantor adheres to the <a href="https://cardanodocs.com/technical/formal-specification-for-a-cardano-wallet/">Cardano Wallet Formal Specification</a> document. This allows for a better, formally verified implementation. We become better citizens in the Cardano community.
             </p>
         </div>
         <div class="col-lg-4 col-xs-12 text-center cantor_feature">
             <img src="/img/roadmap-min/fractal-min.png" />
             <h3>Designed for long-term integration <br>with Fractalide dapps</h3>
             <p>
-                Most dapps will need to interact with Cardano's currency ADA. With Cantor, all they need to do is call in the wallet and ADA transactions can be made. In short, Cantor makes dapps more usable.
+                Most dapps will need to interact with Cardano's currency ADA. With Cantor, all they need to do is call in the wallet and start transacting with ADA, which means Cantor makes dapps usable more quickly and to more people.
             </p>
         </div>
     </div>
