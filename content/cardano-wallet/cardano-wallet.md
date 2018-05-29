@@ -14,7 +14,7 @@
         </div>
         <div class="col-lg-4 col-xs-12 text-center cantor_feature">
             <img src="/img/roadmap-min/fractal-min.png" />
-            <h3>Easy to use software 'building blocks'</h3>
+            <h3>Easy-to-use software 'building blocks'</h3>
             <p>
                 The software components are designed to be reusable, reproducible and composable, meaning anyone can easily build new wallets to support other cryptocurrencies. 
             </p>
@@ -28,9 +28,9 @@
         </div>
         <div class="col-lg-4 col-xs-12 text-center cantor_feature">
             <img src="/img/roadmap-min/fractal-min.png" />
-            <h3>Designed for long-term integration <br>with Fractalide dapps</h3>
+            <h3>Efficient, long-term integration</h3>
             <p>
-                Most dapps will need to interact with Cardano's currency ADA. With Cantor, all they need to do is call in the wallet and start transacting with ADA, which means Cantor makes dapps usable more quickly and to more people.
+                Most Fractalide dapps will need to interact with Cardano's currency ADA. With Cantor, all they need to do is call in the wallet and start transacting with ADA. Cantor makes dapps usable more quickly and to more people.
             </p>
         </div>
     </div>
