@@ -16,10 +16,14 @@ in
     <meta property="og:title" content="${lib.optionalString (page ? title) page.title}${lib.optionalString ((lib.hasAttrByPath ["theme" "site" "title"] conf) && (page ? title)) " - "}${lib.optionalString (lib.hasAttrByPath ["theme" "site" "title"] conf) conf.theme.site.title}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="${conf.siteUrl + page.path}" />
-    <meta property="og:image" content="/img/logo-blue-min.png" />
+    <meta property="og:image" content="${conf.siteUrl + "/img/social-sharing-400-min.png"}" />
+    <meta property="og:description" content="A dapp browser for cryptocurrencies" />
     <meta name="twitter:title" content="${lib.optionalString (page ? title) page.title}${lib.optionalString ((lib.hasAttrByPath ["theme" "site" "title"] conf) && (page ? title)) " - "}${lib.optionalString (lib.hasAttrByPath ["theme" "site" "title"] conf) conf.theme.site.title}" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@fractalide" />
+    <meta name="twitter:title" content="Fractalide" />
+    <meta name="twitter:description" content="A dapp browser for cryptocurrencies" />
+    <meta name="twitter:image" content="${conf.siteUrl + "/img/social-sharing-400-min.png"}" />
     <meta name="twitter:creator" content="@fractalide" />
   '';
 
