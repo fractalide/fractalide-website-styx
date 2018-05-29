@@ -216,12 +216,12 @@ rec {
     };
 
     err_404 = rec {
+      title    = "Error 404";
+      section  = "error_404";
       path     = "/404.html";
-      title    = "404 Page Not Found";
-      template = templates.block-page.full;
+      template = templates.err_404;
       layout   = templates.layout;
-      blocks   = [ content ];
-      content  = lib.loadFile { file = ./content/404.md; env = { inherit conf; }; };
+      content  = (lib.loadFile { file = ./content/404.md; }).content;
     };
 
     about_us = rec {
