@@ -3,9 +3,9 @@
                 <div class="text-center">
                     <h2 class="sub_heading_blue">An application marketplace connected to Hyperflow</h2>
                     <p>
-                        Hyperflow's software agents are shareable. Fractalmarket allows users to search for agents, then include them into their dapps, meaning a reduction in software development cost. It enables people to build ever more powerful dapps by standing on the shoulders of giants.
+                        Hyperflow's software blocks are shareable. Fractalmarket allows users to search for software blocks, then include them into their dapps, meaning a reduction in software development cost. It enables people to build ever more powerful dapps by standing on the shoulders of giants.
                         </p>
-                        <p>Fractalmarket integrates into Hyperflow. Anyone can upload and trade agents using ADA, or publish them as open source with or without a price tag.
+                        <p>Fractalmarket integrates into Hyperflow. Anyone can upload and trade software blocks using ADA, or publish them as open source with or without a price tag.
                     </p>
                     <p>
                         The trading of open source software is a fundamental shift away from the centralised advertisment-pushing revenue models of yore, moving to decentralised community funding.
@@ -34,7 +34,7 @@
                 <div class="feature">
                     <img src="/img/icon-align-min.png" />
                     <p>
-                        Anyone can create reusable software agents to upload to Fractalmarket. You are rewarded each time your agents are reused by others.
+                        Anyone can create reusable software blocks to upload to Fractalmarket. You are rewarded each time your software blocks are reused by others.
                     </p>
                 </div>
             </div>
