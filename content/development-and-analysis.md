@@ -19,7 +19,7 @@
                 <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Reproducible</h3>
                 <p>
-                    Most reusable systems don’t consider reproducibility - the ability to reproduce a system with the least work possible. We've reduced it to typing the name of a node. The system automatically sets up all transitive dependencies, even if they have dependencies on other subsystems like Python. 
+                    Most reusable systems don’t consider reproducibility - the ability to reproduce a system with the least work possible. We've reduced it to a single step - typing the name of a node. The system automatically sets up all transitive dependencies, even if they have dependencies on other subsystems like Python. 
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
