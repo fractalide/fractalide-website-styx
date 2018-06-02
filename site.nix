@@ -117,6 +117,16 @@ rec {
       footer   = "";
     };
 
+    community = rec {
+      title    = "Community";
+      section  = "community";
+      path     = "/community/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/community.md; }).content;
+      footer   = "";
+    };
+
     roadmap = rec {
       path     = "/roadmap/index.html";
       template = templates.block-page.full;
