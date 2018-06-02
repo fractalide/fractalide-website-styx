@@ -134,17 +134,21 @@ ul li {
   }
   .header_background_home {
       background: #FFFFFF url('/img/header-phone-tall-min.png') no-repeat center top;
-      height: auto;
+      padding-bottom: 300%;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .header_background {
-    background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
-    padding-bottom: 260%;
-  }
+  .header_background,
   .header_background_home {
     background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
-    height: auto;
+    padding-bottom: 170%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  .header_background,
+  .header_background_home {
+    background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
+    padding-bottom: 200%;
   }
 }
 
