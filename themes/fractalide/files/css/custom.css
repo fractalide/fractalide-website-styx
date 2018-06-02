@@ -134,17 +134,21 @@ ul li {
   }
   .header_background_home {
       background: #FFFFFF url('/img/header-phone-tall-min.png') no-repeat center top;
-      height: auto;
+      padding-bottom: 300%;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .header_background {
-    background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
-    padding-bottom: 260%;
-  }
+  .header_background,
   .header_background_home {
     background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
-    height: auto;
+    padding-bottom: 170%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  .header_background,
+  .header_background_home {
+    background: #FFFFFF url('/img/header-tab-min.png') no-repeat center top;
+    padding-bottom: 200%;
   }
 }
 
@@ -452,7 +456,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 }
 
 .download_container {
-    padding-bottom: 150px;
+    padding-bottom: 450px;
 }
 .download_title {
     margin-bottom: 25px;
@@ -495,6 +499,38 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
         display: inline-block;
     }
 }
+
+@media (min-width: 1200px) {
+    .footer_background_dc {
+        background: #FFFFFF url('/img/footer-min.png') no-repeat center bottom;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -ms-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: 67.97%; /* (img-height / img-width * width) */
+        margin: -600px 0 -1px 0;
+    }
+}
+@media (max-width: 1199px) {
+    .footer_gradient_dc {
+        background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+        background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+        background-image: -o-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 100%);
+        width: 100%;
+        padding-top: 200px;
+        margin-top: -80px;
+    }
+    .footer_solid_dc {
+        background-color: rgb(88, 180, 205);
+        width: 100%;
+        padding-top: 15px;
+    }
+}
+
 
 
 /**************************************************/
