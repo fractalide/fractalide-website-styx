@@ -11,6 +11,10 @@
                 </div>
             </div>
         </div>
+        <div class="text-center">
+            <p><p>
+            <button class="btn btn-lg btn-default" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfkL5kmYwNWoToHFfs4qRDkWcznlE2MEO54sykTo6_zXuixqQ/viewform';">Email me when it's live</button>
+        </div>
         <div class="row">
             <div class="col-lg-4 col-xs-12 text-center">
                 <img class="cardano_icon" src="/img/cardano-min/algorithm-min.png">
