@@ -9,7 +9,7 @@
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10">
-                    <h2 class="text-center sub_heading_white"> Our goal is to create a convenient, secure browser for people to build and run decentralized applications.</h2>
+                    <h2 class="text-center sub_heading_white"> Our goal is to create a convenient, secure browser for anyone to build and run decentralized applications on the Cardano blockchain.</h2>
 
                     <a class="text-center sub_heading_white" href="https://nakamotoinstitute.org/trusted-third-parties/" target="_blank"><h2 class="text-center sub_heading_white">"Trusted third parties are security holes." - Nick Szabo</h2></a>
                 </div>
