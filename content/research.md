@@ -3,6 +3,7 @@
                 <h2 class="sub_heading_blue">
                     <a href="https://github.com/fractalide/fractalide" target="_blank">Current Fractalide implementation</a>
                 </h2>
+                <img src="https://img.shields.io/github/watchers/fractalide/fractalide.svg?style=flat-square">
                 <img src="https://img.shields.io/github/stars/fractalide/fractalide.svg?style=flat-square">
                 <img src="https://img.shields.io/github/forks/fractalide/fractalide.svg?style=flat-square">
                 <img src="https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square">
