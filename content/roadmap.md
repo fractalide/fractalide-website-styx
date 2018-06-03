@@ -139,7 +139,7 @@
                         <div class="text-center">
                             <h1 class="section_heading_white">Fractalide</h1>
                             <h2 class="sub_heading_white">
-                                Your decentralized app browser
+                                Your decentralised dapp browser
                             </h2>
                         </div>
                     </div>
