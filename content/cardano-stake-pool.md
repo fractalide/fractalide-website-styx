@@ -6,10 +6,14 @@
                         Ouroboros, Cardano’s Proof of Stake algorithm, requires users to be online, which isn't always possible for everyone. Ouroboros allows offline users to delegate their vote to a stake pool of their choice. This way, users can take part in securing the consensus algorithm and earn rewards.
                     </p>
                     <p>
-                        The Cardano Shelley is due for release around Q3 2018, and shifts the architecture to a completely decentralised Cardano. Fractalide's Cardano Stake Pool will then go live.
+                        The Cardano Shelley release is due around Q3 2018, and shifts the architecture to a completely decentralised scenario. Fractalide's Cardano Stake Pool will then go live.
                     </p>
                 </div>
             </div>
+        </div>
+        <div class="text-center">
+            <p><p>
+            <button class="btn btn-lg btn-default" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfkL5kmYwNWoToHFfs4qRDkWcznlE2MEO54sykTo6_zXuixqQ/viewform';">Email me when it's live</button>
         </div>
         <div class="row">
             <div class="col-lg-4 col-xs-12 text-center">
@@ -27,7 +31,7 @@
             <div class="col-lg-4 col-xs-12 text-center">
                 <img class="cardano_icon" src="/img/cardano-min/earnings-min.png">
                 <p>
-                    When you nominate Fractlide to vote for you, all earnings, after server costs, go into Fractalide development. By nominating Fractalide, you're helping improve Fractalide and the Cardano ecosystem.
+                    When you nominate Fractalide's stake pool to vote for you, all earnings, after server costs, go into development of Fractalide's open source dapp browser. By nominating Fractalide, you're helping improve Fractalide and the Cardano ecosystem.
                 </p>
             </div>
         </div>
