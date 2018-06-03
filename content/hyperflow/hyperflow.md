@@ -1,7 +1,7 @@
         <div class="row">
             <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                 <div class="text-center">
-                    <h2 class="sub_heading_blue">Hyperflow is a browser for smart contract apps and cryptocurrencies</h2>
+                    <h2 class="sub_heading_blue">Hyperflow is a browser for smart contracts and cryptocurrencies</h2>
                     <p>
                       Hyperflow draws inspiration from HyperCard, one of the most successul hypermedia applications in the 1980s, pre-World Wide Web, and can be used regardless of technical know-how.
                     </p>
@@ -18,7 +18,7 @@
                     The intuitive, and easy to learn approach HyperCard is famous for.
                 </p>
                 <p>
-                    It’s very easy to try out your app, by switching between run mode and design mode.
+                    It’s very easy to try out your dapp, by switching between run mode and design mode.
                 </p>
                 <p>
                     Keep the concept of <strong>cards</strong> and <strong>stacks</strong>, an analogy would be; a card is a webpage and a stack is a website. Each card contains GUI components and logic that links other cards together to form a stack of cards.
@@ -36,7 +36,7 @@
                     Remove the HyperTalk programming language and replace it with Flowscript. A Flow-based Programming language that promotes reusability.
                 </p>
                 <p>
-                    HyperCard didn't have a network layer. We'll add networking to share apps.
+                    HyperCard didn't have a network layer. We'll add networking to share dapp.
                 </p>
                 <p>
                   HyperCard is old and outdated. Hyperflow is a fresh new take on HyperCard, being completely rewritten from scratch.

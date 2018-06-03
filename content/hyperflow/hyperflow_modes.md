@@ -20,7 +20,7 @@
                         Node mode is for programmers. It allows them to build reusable, reproducible and composable software agents. Otherwise known as “black box” processes. Agents do one and only one thing. They have unique names, enforced by the nix language.
                     </p>
                     <p>
-                        Racket, the glue language. Provides the programmer with plenty of <a href="http://docs.racket-lang.org/search/index.html?q=H%3A">languages</a> to use within agents. Rust makes for fast, secure apps.
+                        Racket, the glue language. Provides the programmer with plenty of <a href="http://docs.racket-lang.org/search/index.html?q=H%3A">languages</a> to use within agents. Rust makes for fast, secure dapps.
                     </p>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                         Graph mode is for domain experts, such as engineers, biologists and mathematicians. They may compose agents created by programmers into subgraphs. Subgraphs and agents are nodes. Their interface looks the same, and are an abstraction.
                     </p>
                     <p>
-                        Networks of nodes exchange data across predefined connections by message passing. Connections are external to nodes. Nodes reconnect to form different apps, without changing their internals.
+                        Networks of nodes exchange data across predefined connections by message passing. Connections are external to nodes. Nodes reconnect to form different dapps, without changing their internals.
                     </p>
                 </div>
             </div>
@@ -53,10 +53,10 @@
                 <div class="hyperflow_mode_description">
                     <h2 class="sub_heading_blue">Run mode</h2>
                     <p>
-                        Run mode is for all users. It runs applications created by programmers and domain experts. Users may enter the name of the app they want in the search bar at the top and Hyperflow will find and run the app. It's the same idea as your Firefox browser.
+                        Run mode is for all users. It runs dapps created by programmers and domain experts. Users may enter the name of the dapp they want in the search bar at the top and Hyperflow will find and run the dapp. It's the same idea as your Firefox browser.
                     </p>
                     <p>
-                        Typical apps would be cryptocurrency wallets. One day, apps that talk to smart contracts to do insurance and other advanced concepts. Users may also buy high-quality apps if they wish.
+                        Typical dapps would be cryptocurrency wallets. One day, dapps that talk to smart contracts to do insurance and other advanced concepts.
                     </p>
                 </div>
             </div>
