@@ -27,7 +27,7 @@
             <div class="col-lg-4 col-xs-12 text-center">
                 <img class="cardano_icon" src="/img/cardano-min/earnings-min.png">
                 <p>
-                    When you nominate Fractlide to vote for you, all earnings, after server costs, go into Fractalide development. By nominating Fractalide, you're helping improve Fractalide and the Cardano ecosystem.
+                    We'll make our costs and spendings transparent. If you appreciate Fractalide and want your experience improved, then nominate us to stake for you. The more nominators the lighter it is for everyone. All pool earnings (not nominator earnings), after server costs, goes into development of the open source Hyperflow dapp browser. By nominating Fractalide, you're helping improve Fractalide and the Cardano ecosystem.
                 </p>
             </div>
         </div>
