@@ -1,28 +1,22 @@
         <div class="row">
             <div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10">
                 <h2 class="sub_heading_blue">
-                    <a href="https://github.com/fractalide/fractalide" target="_blank">Current Fractalide implementation</a>
-                </h2>
-                <img src="https://img.shields.io/github/stars/fractalide/fractalide.svg?style=flat-square">
-                <img src="https://img.shields.io/github/forks/fractalide/fractalide.svg?style=flat-square">
-                <img src="https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square">
-                <h2 class="sub_heading_blue">
-                    <a href="https://riot.im/app/#/room/#fractalide:matrix.org" target="_blank">Riot Channel</a>
+                    <a href="https://github.com/fractalide/fractalide-oz/raw/master/docs/fractalideCOP.pdf" target="_blank">Fractalide</a>
                 </h2>
                 <h2 class="sub_heading_blue">
-                    <a href="https://t.me/joinchat/HXdgc1CvRT6K3A4la7AApQ" target="_blank">Telegram Group</a>
+                    <a href="https://named-data.net/publications/" target="_blank">Named Data Networking</a>
                 </h2>
                 <h2 class="sub_heading_blue">
-                    <a href="https://github.com/fractalide/fractalide-oz/raw/master/docs/fractalideCOP.pdf" target="_blank">Fractalide Master Thesis</a>
+                    <a href="http://racket-lang.org/books.html" target="_blank">Racket Programming Language</a>
                 </h2>
                 <h2 class="sub_heading_blue">
-                    <a href="https://github.com/fractalide/fractalide-oz" target="_blank">Original Master Thesis Fractalide Implementation</a>
+                    <a href="https://eprint.iacr.org/2017/573.pdf" target="_blank">Ouroboros Praos</a>
                 </h2>
                 <h2 class="sub_heading_blue">
-                    <a href="https://iohk.io/research/papers/#XJ6MHFXX" target="_blank">Ouroboros Praos</a>
+                    <a href="https://eprint.iacr.org/2018/378.pdf" target="_blank">Ouroboros Genesis</a>
                 </h2>
                 <h2 class="sub_heading_blue">
-                    <a href="https://iohk.io/research/papers/#S7KC2KGJ" target="_blank">A Treasury system for Cryptocurrencies</a>
+                    <a href="https://eprint.iacr.org/2018/435.pdf" target="_blank">A Treasury system for Cryptocurrencies</a>
                 </h2>
                 <h2 class="sub_heading_blue">
                     <a href="https://iohk.io/research/papers/#JT5XKNBP" target="_blank">A Formal Specification of the Plutus Core Language</a>
