@@ -1,45 +1,21 @@
         <div class="row">
             <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                 <div class="text-center">
-                    <h2 class="sub_heading_blue">Hyperflow is a browser for smart contracts and cryptocurrencies</h2>
+                    <h2 class="sub_heading_blue">A dapp browser for Cardano</h2>
                     <p>
-                      Hyperflow draws inspiration from HyperCard, one of the most successul hypermedia applications in the 1980s, pre-World Wide Web, and can be used regardless of technical know-how.
+                        Decentralised applications are not just smart contracts sitting on a blockchain. They are complex programs with deep transitive dependencies. It's untenable to put the entire dependency tree of a rich graphical application on a blockchain. So we need another way.  
                     </p>
+                    <p>
+                        The current trend is to use a centralised webserver which interacts with a decentralised blockchain. This approach is a cop out and introduces a trusted third party susceptible to attack.
+                    </p>
+                    <p>
+                        To develop a properly decentralised app framework we need to start at a more fundamental level. We do this by making use of Named Data Networking, which divorces location from data. Meaning in order to get data you do not need to go to an IP address. You simply issue a request for data by name and the network, a TCP/IP overlay, will return it.
+                    </p>
+                    <p>
+                        The second fundamental modification we've made is breaking the application into atomic reusable and reproducible units making them conducive to being transmitted over a Named Data Network.
+                    </p>
+                    <p>
+                        Hyperflow is dapp browser which allows you to build, test, run and distribute your dapps to other people. Dapps run locally on your computer and communicate with other dapps using Named Data Networking.
                 </div>
-            </div>
-        </div>
-        <div class="row hypercard_concepts">
-            <div class="col-lg-2 col-xs-12 concept_icon">
-                <img src="/img/icon-stack-min.png" width="83px" />
-            </div>
-            <div class="col-lg-4 col-xs-12 concept_info">
-                <h2 class="sub_heading_blue">Hypercard concepts to keep</h2>
-                <p>
-                    The intuitive, and easy to learn approach HyperCard is famous for.
-                </p>
-                <p>
-                    It’s very easy to try out your dapp, by switching between run mode and design mode.
-                </p>
-                <p>
-                    Keep the concept of <strong>cards</strong> and <strong>stacks</strong>, an analogy would be; a card is a webpage and a stack is a website. Each card contains GUI components and logic that links other cards together to form a stack of cards.
-                </p>
-                <p>
-                    Cards, stacks and low level components are shareable via Fractalmarket.
-                </p>
-            </div>
-            <div class="col-lg-2 col-xs-12 text-center concept_icon">
-                <img src="/img/icon-share-min.png" width="90px" />
-            </div>
-            <div class="col-lg-4 col-xs-12 concept_info">
-                <h2 class="sub_heading_blue">Hypercard concepts to remove</h2>
-                <p>
-                    Remove the HyperTalk programming language and replace it with Flowscript. A Flow-based Programming language that promotes reusability.
-                </p>
-                <p>
-                    HyperCard didn't have a network layer. We'll add networking to share dapp.
-                </p>
-                <p>
-                  HyperCard is old and outdated. Hyperflow is a fresh new take on HyperCard, being completely rewritten from scratch.
-                </p>
             </div>
         </div>
