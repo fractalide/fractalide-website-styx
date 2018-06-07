@@ -12,7 +12,7 @@
                     <div class="col-xs-offset-2 col-xs-8">
                         <div class="text-center">
                             <p class="text_white">
-                                <b class="text_white">Problem:</b> Banks can freeze your account. A centralized "dapp" website can cut your service or spy on you. This violates the ethos of decentralized cryptocurrencies.
+                                <b class="text_white">Problem:</b> Banks can freeze your account. A centralised "dapp" website can cut your service or spy on you. This violates the ethos of decentralised cryptocurrencies.
                             </p>
                             <p class="text_white">
                                 <b class="text_white">Solution:</b> The Fractalide project is a dapp browser for Cardano, which allows you to buy, sell and share decentralised apps that run entirely on your computer.
