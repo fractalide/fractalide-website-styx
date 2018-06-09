@@ -35,10 +35,10 @@
                 <div class="hyperflow_mode_description">
                     <h2 class="sub_heading_blue">Graph mode</h2>
                     <p>
-                        Graph mode is for people who are experts in their industries, such as engineers, biologists, or mathematicians, who may not necessarily have programming skills. Using a visual tool, they can easily compose subgraphs using the agents created by programmers. 
+                        Graph mode is for people who are experts in their industries, such as engineers, biologists, or mathematicians, who may not necessarily have programming skills. Using a visual tool, they can easily compose subgraphs using the nodes created by programmers. 
                     </p>
                     <p>
-                        Subgraphs and agents are both nodes, and can be composed into networks of nodes, also known as graphs, which become a dapp. Nodes are independent entities, and thanks to Fractalide, they are reusable, reproducable and composable. Nodes can be connected in as many ways as you wish, to create any number of different dapps.  
+                        Subgraphs and agents are both considered nodes, and can be composed into graphs, or networks of nodes, which become a dapp. Fractalide's core strength is that nodes are independent blocks of software that are reusable, reproducable and composable. Nodes can be connected in as many ways as you wish, to create any number of different dapps.  
                     </p>
                 </div>
             </div>
