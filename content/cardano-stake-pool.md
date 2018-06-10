@@ -15,7 +15,7 @@
             <div class="col-lg-4 col-xs-12 text-center">
                 <img class="cardano_icon" src="/img/cardano-min/algorithm-min.png">
                 <p>
-                    Centralised mining is an issue for currencies like Bitcoin, because when pools get too big, it can lead to an attack on the consensus protocol. Being on Cardano, Fractalide's stake pool participates in a process that avoids centralisation.
+                    Centralised mining is an issue for currencies like Bitcoin, because when pools get too big and centralised, it can lead to an attack on the consensus protocol. Being on Cardano, Fractalide's stake pool participates in a process that avoids centralisation.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center">
