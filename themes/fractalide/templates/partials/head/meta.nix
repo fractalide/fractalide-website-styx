@@ -7,6 +7,13 @@ let
   page = args.page;
 in
   ''
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120734485-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-120734485-1');
+    </script>
     <meta charset="utf-8">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
