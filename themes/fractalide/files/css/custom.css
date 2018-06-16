@@ -43,7 +43,7 @@ h1.fractal_white {
     background-size: 437px 190px;
     height: 190px;
     padding-top: 75px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 h1.no_fractal {
     padding-top: 75px;
@@ -170,7 +170,7 @@ ul li {
     background-image: -ms-linear-gradient(90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
     background-image: -o-linear-gradient(90deg, rgba(88, 180, 205, 0) 0%, rgb(88, 180, 205) 100%);
     width: 100%;
-    min-height: 340px;
+    min-height: 150px;
     margin-top: 75px;
     padding-top: 45px;
 }
@@ -440,6 +440,9 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 /****************************************/
 /* Page: Home - Section: Cardano Wallet */
 /****************************************/
+.cardano_wallet {
+    margin-top: -40px;
+}
 #cardano a {
     margin-top: 40px;
 }

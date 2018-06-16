@@ -5,6 +5,7 @@ let template = { lib, templates, ... }:
     <section${lib.optionalString (page ? section) (" id=" + ''"${page.section}"'')}>
       ${lib.optionalString (page ? title) ''
         <div class="header_gradient"> <!-- title -->
+          ${lib.optionalString (!(page ? hideTitle)) ''
           <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -14,6 +15,7 @@ let template = { lib, templates, ... }:
                 </div>
             </div>
           </div>
+          ''}
         </div> <!-- title -->
       ''}
       <div class="container">
