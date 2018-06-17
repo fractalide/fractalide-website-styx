@@ -167,6 +167,7 @@ rec {
 
     cardano-wallet = rec {
       title    = "Cardano Wallet";
+      hideTitle = true;
       section  = "cardano";
       path     = "/cardano-wallet/index.html";
       template = templates.page.full;
