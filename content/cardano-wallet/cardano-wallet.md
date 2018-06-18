@@ -4,7 +4,7 @@
             <img src="/img/wallet-min/cantor-logo-min.png" />
             <h2 class="sub_heading_blue">What is Cantor?</h2>
             <p>
-                Fractalide's first application is Cantor, a Cardano wallet. The wallet allows you to send and receive ADA transactions. Please consider this alpha software and use with patience.
+                Fractalide's first application is Cantor, a Cardano wallet. The wallet allows you to send and receive ADA. Please consider this alpha software and use with patience once it's released.
             </p>
             <a class="btn btn-lg btn-default" href="#download_center">Download Cantor</a>
         </div>
@@ -27,7 +27,7 @@
             <img src="/img/wallet-min/verified-min.png" />
             <h3>A formally verified Cardano wallet</h3>
             <p>
-                Cantor adheres to the <a href="https://cardanodocs.com/technical/formal-specification-for-a-cardano-wallet/">Cardano Wallet Formal Specification</a> document. This allows for a better, formally verified implementation. We become better citizens in the Cardano community.
+                Cantor adheres to the <a href="https://cardanodocs.com/technical/formal-specification-for-a-cardano-wallet/">Cardano Wallet Specification</a> document by using IOHK's new wallet backend. Meaning our wallet will be well behaved.
             </p>
         </div>
         <div class="col-lg-4 col-xs-12 text-center cantor_feature">
