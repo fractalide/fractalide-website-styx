@@ -3,7 +3,7 @@
                 <div class="text-center">
                     <h2 class="sub_heading_blue">A dapp browser for Cardano</h2>
                     <p>
-                        Decentralised applications are not just smart contracts sitting on a blockchain. They are complex programs with deep transitive dependencies. It's untenable to put the entire dependency tree of a rich graphical application on a blockchain. So we need another way.  
+                      The most distinctive feature of Hyperflow is that can be used by everyone, regardless of technical know-how. From advanced programmers to regular users with no programming skills.
                     </p>
                     <p>
                         The current trend is to use a centralised webserver which interacts with a decentralised blockchain. This approach is a cop out and introduces a trusted third party susceptible to attack.
