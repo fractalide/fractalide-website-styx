@@ -3,9 +3,12 @@
                 <div class="text-center">
                     <h2 class="sub_heading_blue">A dapp marketplace connected to Hyperflow</h2>
                     <p>
-                        Fractalmarket allows users to search for components, then include them into their decentralised applications. This allows for a reduction in software development cost. It enables people to build ever more powerful dapps by standing on the shoulders of giants.
+                        Hyperflow's software blocks are shareable on Fractalmarket, a marketplace that allows users to search for software blocks, and include them into their dapps, meaning a reduction in software development cost. It enables people to build ever more powerful dapps by standing on the shoulders of giants.
                         </p>
-                        <p>Fractalmarket integrates into Hyperflow. Users can upload, buy, sell or publish components as open source with or without a price tag. Publishers may choose to purchase a timeout DRM license. Which defaults to an open source license should it not be extended.
+                        <p>Fractalmarket integrates into Hyperflow. Anyone can upload and trade software blocks using ADA, or publish them as open source with or without a price tag.
+                    </p>
+                    <p>
+                        The trading of open source software is a fundamental shift away from the centralised, advertisment-pushing revenue models of yore, moving to decentralised, community-based funding.
                     </p>
                 </div>
             </div>
@@ -31,7 +34,7 @@
                 <div class="feature">
                     <img src="/img/icon-align-min.png" />
                     <p>
-                        Fractalmarket rewards people for creating and using reusable software.
+                        Anyone can create reusable software blocks to upload to Fractalmarket. You are rewarded each time your software blocks are reused by others.
                     </p>
                 </div>
             </div>
