@@ -23,14 +23,14 @@
             <img src="/img/roadmap-min/fractal-min.png" />
             <h3>A formally verified Cardano wallet</h3>
             <p>
-                Cantor adheres to the <a href="https://cardanodocs.com/technical/formal-specification-for-a-cardano-wallet/">Cardano Wallet Formal Specification</a> document. This allows for a better, formally verified implementation. We become better citizens in the Cardano community.
+                Cantor adheres to the <a href="https://cardanodocs.com/technical/formal-specification-for-a-cardano-wallet/">Cardano Wallet Formal Specification</a> document. Formally-verified implementation creates more stability, and we become better citizens of the Cardano community.
             </p>
         </div>
         <div class="col-lg-4 col-xs-12 text-center cantor_feature">
             <img src="/img/roadmap-min/fractal-min.png" />
             <h3>Efficient, long-term integration</h3>
             <p>
-                Most Fractalide dapps will need to interact with Cardano's currency ADA. With Cantor, all they need to do is call in the wallet and start transacting with ADA. Cantor makes dapps usable more quickly and to more people.
+                Most Fractalide dapps will need to interact with Cardano's currency ADA. With Cantor, thie process is streamlined - all they need to do is call in the wallet and start transacting with ADA. Cantor makes dapps usable more quickly and to more people.
             </p>
         </div>
     </div>
