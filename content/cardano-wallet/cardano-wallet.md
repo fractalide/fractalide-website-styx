@@ -34,7 +34,7 @@
             <img src="/img/wallet-min/long-term-min.png" />
             <h3>Efficient, long-term integration</h3>
             <p>
-                Most Fractalide dapps will need to interact with Cardano's currency ADA. With Cantor, all they need to do is call in the wallet and start transacting with ADA. Cantor makes dapps usable more quickly and to more people.
+                Most Fractalide dapps will need to interact with Cardano's currency ADA. With Cantor, thie process is streamlined - all they need to do is call in the wallet and start transacting with ADA. Cantor makes dapps usable more quickly and to more people.
             </p>
         </div>
     </div>
