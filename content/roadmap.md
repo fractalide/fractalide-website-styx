@@ -10,7 +10,7 @@
                 <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                     <div class="text-center">
                         <p class="text_dark_blue">
-                            The Fractalide Roadmap is a changelog of what has happened with the project. We've chosen to represent changes in a format that highlights objectives and work done to complete a release. The progress bar gives an best effort estimate on the completion of the release.
+                            The Fractalide Roadmap is a changelog of what has happened in the project. We've chosen to represent changes in a format that highlights objectives and work done to complete a release. The progress bar gives a best-effort estimate on the completion of the release.
                         </p>
                         <p class="text_dark_blue">
                             At Fractalide, we believe that all developers, be they a founder or an occasional contributor, should be subject to the same contribution policy. It applies to everyone equally. The contribution policy we follow is the <a href="https://github.com/fractalide/fractalide/blob/master/CONTRIBUTING.md" target="_blank"> Collective Code Construction Contract (C4)</a>.
