@@ -6,7 +6,7 @@
                         Ouroboros, Cardano’s Proof of Stake algorithm, requires users to be online, which isn't always possible. Ouroboros allows offline users to delegate their vote to a stake pool of their choice, such as Fractalide's Cardano Stake Pool. This way, users can take part in securing the consensus algorithm and earn rewards.
                     </p>
                     <p>
-                        The Cardano Shelley release is due around Q3 2018, and shifts the architecture to a completely decentralised Cardano. Fractalide's Cardano Stake Pool will then go live.
+                        The Cardano Shelley release is due around Q1 2019, and shifts the architecture to a completely decentralised Cardano. Fractalide's Cardano Stake Pool will then go live.
                     </p>
                 </div>
             </div>
