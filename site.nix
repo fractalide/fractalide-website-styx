@@ -264,6 +264,17 @@ rec {
         asAttrs = true;
       };
     };
+
+    ico = rec {
+      title    = "ICO";
+      section  = "ico";
+      path     = "/ico/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/ico/comic.md; }).content;
+      footer   = "";
+    };
+
   };
 
 
