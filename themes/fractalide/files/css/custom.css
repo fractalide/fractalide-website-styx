@@ -13,6 +13,10 @@
 .text_blue {
     color: #58B4CD;
 }
+.text_blue b {
+    color: #58B4CD;
+    font-weight: bold;
+}
 .text_dark_blue {
     color: #0d3e4c;
 }
@@ -825,23 +829,71 @@ section#ico h1.fractal_white {
     margin-bottom: 80px;
 }
 
+.comic_container {
+    width: 100%;
+}
+.comic_slide {
+    width: 770px;
+}
 .comic {
-    max-width: 100%;
+    width: 100%;
+}
+.comic_secret {
+    width: 100%;
+}
+.comic_secret_sword {
+    width: 391px;
+    margin: -309px -1px 0 0;
+    z-index: 9999;
 }
 .comic_end {
     margin-bottom: -350px;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 479px) {
+    .comic_slide {
+        width: 350px;
+    }
+    .comic_secret_sword {
+        width: 178px;
+        margin: -153px -1px 0 0;
+    }
     .comic_end {
         margin-bottom: 0px;
     }
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 767px) {
+    .comic_slide {
+        width: 350px;
+    }
+    .comic_secret_sword {
+        width: 178px;
+        margin: -153px -1px 0 0;
+    }
+    .comic_end {
+        margin-bottom: 0px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .comic_slide {
+        width: 550px;
+    }
+    .comic_secret_sword {
+        width: 279px;
+        margin: -227px -1px 0 0;
+    }
     .comic_end {
         margin-bottom: -240px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+    .comic_slide {
+        width: 770px;
+    }
+    .comic_secret_sword {
+        width: 391px;
+        margin: -309px -1px 0 0;
+    }
     .comic_end {
         margin-bottom: -180px;
     }
