@@ -818,14 +818,14 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 
 
 
-/*************/
-/* Page: ICO */
-/*************/
+/*******************/
+/* Page: ICO Comic */
+/*******************/
 section#ico h1.fractal_white {
-    background: url('/img/comic/sword-hero-min.png') no-repeat center;
+    background: url('/img/comic/sword-hero-min.png') no-repeat bottom;
     background-size: 437px 190px;
-    height: 190px;
-    padding-top: 75px;
+    height: 270px;
+    padding-top: 0px;
     margin-bottom: 80px;
 }
 
@@ -897,4 +897,27 @@ section#ico h1.fractal_white {
     .comic_end {
         margin-bottom: -180px;
     }
+}
+
+
+
+/*********************/
+/* Page: ICO Details */
+/*********************/
+section#ico-details h1.fractal_white {
+    background: url('/img/comic/coin-min.png') no-repeat center;
+    background-size: 437px 190px;
+    height: 190px;
+    padding-top: 75px;
+    margin-bottom: 80px;
+}
+
+.ico-details-background {
+    background-color: #a7ddec;
+    /*gradient to: #58b4cd;*/
+}
+
+.light_blue_box {
+    background-color: #E8F7FA;
+    padding: 30px;
 }

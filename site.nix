@@ -275,6 +275,15 @@ rec {
       footer   = "";
     };
 
+    ico_detail = rec {
+      title    = "";
+      section  = "ico-details";
+      path     = "/ico/details/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/ico/details.md; }).content;
+    };
+
   };
 
 
