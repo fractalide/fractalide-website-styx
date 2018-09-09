@@ -17,5 +17,6 @@ rec {
     lib.font-awesome = { enable = true; version = "4.7.0"; };
     lib.googlefonts = [ "Nunito+Sans:400,900" ];
     lib.jquery = { enable = true; version = "3.1.1"; };
+    lib.mathjax = { enable = true; version = "2.7.5"; };
   };
 }
