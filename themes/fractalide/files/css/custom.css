@@ -912,12 +912,52 @@ section#ico-details h1.fractal_white {
     margin-bottom: 80px;
 }
 
-.ico-details-background {
-    background-color: #a7ddec;
-    /*gradient to: #58b4cd;*/
+section#ico-details {
+    background-color: #A7DDEC;
+    background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -o-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+}
+
+section#ico-details .header_gradient {
+    background: #A7DDEC !important;
 }
 
 .light_blue_box {
     background-color: #E8F7FA;
-    padding: 30px;
+    padding: 20px;
 }
+
+.checklist input[type=checkbox] {
+  display: none;
+}
+
+.checklist input[type=checkbox] ~ span {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #bbbbbb;
+  vertical-align: middle;
+}
+
+.checklist input[type=checkbox].has-error ~ span {
+  border: 1px solid #ed7a7f;
+}
+
+.checklist input[type=checkbox] ~ span:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+.checklist input[type=checkbox]:checked ~ span {
+  border: 0px;
+  background-color: #58B4CD;
+}
+/*
+.checklist input[type=checkbox]:checked ~ span:before {
+  font-family: 'fontawesome';
+  color: #ffffff;
+  content: '\f00c';
+}
+*/
