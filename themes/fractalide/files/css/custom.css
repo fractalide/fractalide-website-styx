@@ -845,6 +845,7 @@ section#ico h1.fractal_white {
     width: 391px;
     margin: -309px -1px 0 0;
     z-index: 9999;
+    cursor: default;
 }
 .comic_end {
     margin-bottom: -350px;
