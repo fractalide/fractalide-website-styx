@@ -8,6 +8,9 @@
                     The actual link to the ICO is hidden in plain sight,
                     hence our rather pathetic attempt in trying to filter for these qualities becomes apparent.
                 </p>
+                <p class="text_blue">
+                    Note: At epoch 13 of the ICO the first of two hurdles is removed, at epoch 26 all hurdles are removed.
+                </p>
             </div>
         </div>
     </div>
