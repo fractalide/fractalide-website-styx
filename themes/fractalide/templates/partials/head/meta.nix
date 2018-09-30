@@ -14,6 +14,7 @@ in
       gtag('js', new Date());
       gtag('config', 'UA-120734485-1');
     </script>
+    <script crossorigin="anonymous" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
     <meta charset="utf-8">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">

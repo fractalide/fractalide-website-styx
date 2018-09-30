@@ -942,7 +942,7 @@ section#ico-details .header_gradient {
   vertical-align: middle;
 }
 
-.checklist input[type=checkbox].has-error ~ span {
+.checklist input[type=checkbox].error ~ span {
   border: 1px solid #ed7a7f;
 }
 
@@ -962,3 +962,8 @@ section#ico-details .header_gradient {
   content: '\f00c';
 }
 */
+.sub_heading_blue val {
+    font-size: 24px;
+    color: #58b4cd;
+    margin-bottom: 20px;
+}

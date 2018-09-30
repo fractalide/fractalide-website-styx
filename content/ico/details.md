@@ -158,13 +158,26 @@
                             </p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-1 col-xs-2 text-right">
+                            <label>
+                                <input type="checkbox" />
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="col-md-11 col-xs-10">
+                            <p>
+                                I agree not to send ADA directly from a hardware wallet as I will not be able to extract the private key from the device and will never be able to clain my LUCEO.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="panel-body text-center">
                     <form class="form-horizontal light_blue_box">
-                        <h2 class="sub_heading_blue">What is the ADA price (p) of 1 LUCEO at epoch <span id="epoch"></span> (e)?</h2>
+                        <h2 class="sub_heading_blue">What is the ADA price (p) of 1 LUCEO at epoch (<val id="epoch">e</val>)?</h2>
                         <div class="form-group form-group-lg">
                             <div class="col-md-offset-2 col-md-8 col-xs-12">
-                                <input type="text" class="form-control input-lg" placeholder="Enter your answer" />
+                                <input type="text" class="form-control input-lg" id="answer" placeholder="Enter your answer" />
                             </div>
                         </div>
                     </form>
@@ -172,7 +185,7 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12 col-xs-12">
-                            <p>
+                            <p id="warning_message">
                                 Please make sure that you've checked all the checkboxes above and answered the challenge question correctly before submitting this form to get the ADA presale address.
                             </p>
                         </div>
@@ -180,7 +193,7 @@
                     <div class="row">
                         <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                             <p>
-                                <button class="btn btn-lg btn-default btn-block" type="button" data-toggle="modal" data-target="#myModal">Submit</button>
+                                <button class="btn btn-lg btn-default btn-block" type="button" data-toggle="modal" data-target="#myModal" id="btnSubmit">Submit</button>
                             </p>
                         </div>
                     </div>
@@ -203,3 +216,5 @@
         </div>
     </div>
 </div>
+
+<script src="/js/ico.js"></script>
