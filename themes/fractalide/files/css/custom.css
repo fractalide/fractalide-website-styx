@@ -13,6 +13,10 @@
 .text_blue {
     color: #58B4CD;
 }
+.text_blue b {
+    color: #58B4CD;
+    font-weight: bold;
+}
 .text_dark_blue {
     color: #0d3e4c;
 }
@@ -563,7 +567,7 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
 /******************/
 .team_member {
     margin: 30px 0 30px 0;
-    min-height: 328px;
+    min-height: 348px;
 }
 .content_vision {
     padding-bottom: 120px;
@@ -810,4 +814,156 @@ section#hyperflow_modes > div.container > div.row:nth-child(2) {
     -ms-box-shadow: 0px 3px 3px 0px rgba(121,148,159,0.2);
     -o-box-shadow: 0px 3px 3px 0px rgba(121,148,159,0.2);
     box-shadow: 0px 3px 3px 0px rgba(121,148,159,0.2);
+}
+
+
+
+/*******************/
+/* Page: ICO Comic */
+/*******************/
+section#ico h1.fractal_white {
+    background: url('/img/comic/sword-hero-min.png') no-repeat bottom;
+    background-size: 437px 190px;
+    height: 270px;
+    padding-top: 0px;
+    margin-bottom: 80px;
+}
+
+.comic_container {
+    width: 100%;
+}
+.comic_slide {
+    width: 770px;
+}
+.comic {
+    width: 100%;
+}
+.comic_secret {
+    width: 100%;
+}
+.comic_secret_sword {
+    width: 391px;
+    margin: -309px -1px 0 0;
+    z-index: 9999;
+    cursor: default;
+}
+.comic_end {
+    margin-bottom: -350px;
+}
+
+@media (max-width: 479px) {
+    .comic_slide {
+        width: 350px;
+    }
+    .comic_secret_sword {
+        width: 178px;
+        margin: -153px -1px 0 0;
+    }
+    .comic_end {
+        margin-bottom: 0px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .comic_slide {
+        width: 350px;
+    }
+    .comic_secret_sword {
+        width: 178px;
+        margin: -153px -1px 0 0;
+    }
+    .comic_end {
+        margin-bottom: 0px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .comic_slide {
+        width: 550px;
+    }
+    .comic_secret_sword {
+        width: 279px;
+        margin: -227px -1px 0 0;
+    }
+    .comic_end {
+        margin-bottom: -240px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .comic_slide {
+        width: 770px;
+    }
+    .comic_secret_sword {
+        width: 391px;
+        margin: -309px -1px 0 0;
+    }
+    .comic_end {
+        margin-bottom: -180px;
+    }
+}
+
+
+
+/*********************/
+/* Page: ICO Details */
+/*********************/
+section#ico-details h1.fractal_white {
+    background: url('/img/comic/coin-min.png') no-repeat center;
+    background-size: 437px 190px;
+    height: 190px;
+    padding-top: 75px;
+    margin-bottom: 80px;
+}
+
+section#ico-details {
+    background-color: #A7DDEC;
+    background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -o-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+}
+
+section#ico-details .header_gradient {
+    background: #A7DDEC !important;
+}
+
+.light_blue_box {
+    background-color: #E8F7FA;
+    padding: 20px;
+}
+
+.checklist input[type=checkbox] {
+  display: none;
+}
+
+.checklist input[type=checkbox] ~ span {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #bbbbbb;
+  vertical-align: middle;
+}
+
+.checklist input[type=checkbox].error ~ span {
+  border: 1px solid #ed7a7f;
+}
+
+.checklist input[type=checkbox] ~ span:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+.checklist input[type=checkbox]:checked ~ span {
+  border: 0px;
+  background-color: #58B4CD;
+}
+/*
+.checklist input[type=checkbox]:checked ~ span:before {
+  font-family: 'fontawesome';
+  color: #ffffff;
+  content: '\f00c';
+}
+*/
+.sub_heading_blue val {
+    font-size: 24px;
+    color: #58b4cd;
+    margin-bottom: 20px;
 }
