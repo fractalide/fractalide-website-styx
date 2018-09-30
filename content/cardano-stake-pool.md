@@ -3,10 +3,10 @@
                 <div class="text-center">
                     <h2 class="sub_heading_blue">A Cardano Stake Pool has an important role in securing the ADA cryptocurrency</h2>
                     <p>
-                        Ouroboros, Cardano’s Proof of Stake algorithm, requires users to be online, which isn't always possible for everyone. Ouroboros allows offline users to delegate their vote to a stake pool of their choice. This way, users can take part in securing the consensus algorithm and earn rewards.
+                        Ouroboros, Cardano’s Proof of Stake algorithm, requires users to be online, which isn't always possible. Ouroboros allows offline users to delegate their vote to a stake pool of their choice, such as Fractalide's Cardano Stake Pool. This way, users can take part in securing the consensus algorithm and earn rewards.
                     </p>
                     <p>
-                        The Cardano Shelley release is due around Q3 2018, and shifts the architecture to a completely decentralised scenario. Fractalide's Cardano Stake Pool will then go live.
+                        The Cardano Shelley release is due around Q1 2019, and shifts the architecture to a completely decentralised Cardano. Fractalide's Cardano Stake Pool will then go live.
                     </p>
                 </div>
             </div>
@@ -19,7 +19,7 @@
             <div class="col-lg-4 col-xs-12 text-center">
                 <img class="cardano_icon" src="/img/cardano-min/algorithm-min.png">
                 <p>
-                    Centralised mining is an issue for currencies like Bitcoin, because when pools get too big, it can lead to an attack on the consensus protocol. Being on Cardano, Fractalide's stake pool participates in a process that avoids centralisation.
+                    Centralised mining is an issue for currencies like Bitcoin, because when pools get too big and centralised, it can lead to an attack on the consensus protocol. Being on Cardano, Fractalide's stake pool participates in a process that avoids centralisation.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center">
