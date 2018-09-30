@@ -35,7 +35,7 @@
                                 <b>Price:</b> Starting at 75% discount at first epoch to 0% discount at last epoch 1 ADA buys 1 LUCEO.
                             </p>
                             <p>
-                                $$p = x \cdot 0.01 \cdot 100 - d + {e \over (n - 1)} \cdot d$$
+                                $$p = x \cdot 0.01 \cdot (100 - d + {e \over (n - 1)} \cdot d)$$
                             </p>
                             <p>
                                 <b>x</b> = exchange rate of 1 ADA in final epoch
@@ -63,7 +63,7 @@
         <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
             <div class="panel panel-default">
                 <div class="panel-body text-center">
-                    <h2 class="sub_heading_blue">If you wish to participate in the ICO please agree to these points and solve a small mathematical problem.</h2>
+                    <h2 class="sub_heading_blue">Our ICO isn't ready yet, this code is not functional just yet</h2>
                 </div>
                 <div class="panel-body checklist">
                     <div class="row">
@@ -174,7 +174,7 @@
                 </div>
                 <div class="panel-body text-center">
                     <form class="form-horizontal light_blue_box">
-                        <h2 class="sub_heading_blue">What is the ADA price (p) of 1 LUCEO at epoch (<val id="epoch">e</val>)?</h2>
+                        <h2 class="sub_heading_blue">What is the ADA price (p) (use 6 decimals and no rounding) of 1 LUCEO at epoch (e) <val id="epoch">e</val>?</h2>
                         <div class="form-group form-group-lg">
                             <div class="col-md-offset-2 col-md-8 col-xs-12">
                                 <input type="text" class="form-control input-lg" id="answer" placeholder="Enter your answer" />
