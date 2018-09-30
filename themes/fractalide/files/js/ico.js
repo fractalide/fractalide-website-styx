@@ -12,14 +12,16 @@ $(document).ready(function(){
 });
 
 function generateRandomEpoch(){
-    var e = Math.floor(Math.random() * 42);
+    var e = Math.floor(Math.random() * 41); // generate a random number from 0 to 40
     $('#epoch').html(e);
 }
 
 function calculateP(e) {
-    var x = 1.0;
-    var d = 75.0;
-    var n = 41.0;
+    // e = epoch to query for ADA price (p)
+    // p = ADA price at queried epoch (e)
+    var x = 1.0; //exchange rate of 1 ADA in final epoch
+    var d = 75.0; //initial discount of 75%
+    var n = 41.0; //41 epochs to complete presale (0 upto and including 40)
     var p = x * 0.01 * (100.0 - d + e / (n - 1.0) * d);
     return p.toFixed(6);
 }
@@ -33,10 +35,8 @@ function isValidAnswer() {
     });
 
     var p = calculateP(parseInt($('#epoch').html()));
-    window.alert(p);
     var answer = (parseFloat($('#answer').val()) || 0).toFixed(6);
     valid &= answer === p
-    window.alert(answer);
     $('#answer').parents('div.form-group').toggleClass('has-error', answer !== p);
 
     $('#warning_message').toggleClass('text-danger', !valid);
