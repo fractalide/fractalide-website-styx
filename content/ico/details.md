@@ -32,13 +32,13 @@
                         </div>
                         <div class="col-md-5 col-xs-12 light_blue_box">
                             <p>
-                                <b>Price:</b> Starting at 75% discount at first epoch to 0% discount at last epoch 1 ADA buys 1 LUCEO.
+                                <b>Price:</b> Starting at 75% discount at first epoch to 0% discount at last epoch where 1 ADA buys 1 CEO.
                             </p>
                             <p>
                                 $$p = x \cdot 0.01 \cdot (100 - d + {e \over (n - 1)} \cdot d)$$
                             </p>
                             <p>
-                                <b>x</b> = exchange rate of 1 ADA in final epoch
+                                <b>x</b> = exchange rate of 1 CEO to 1 ADA in final epoch
                                 <br/>
                                 <b>d</b> = initial discount of 75%
                                 <br/>
@@ -167,7 +167,20 @@
                         </div>
                         <div class="col-md-11 col-xs-10">
                             <p>
-                                I agree not to send ADA directly from a hardware wallet as I will not be able to extract the private key from the device and will never be able to clain my LUCEO.
+                                I agree not to send ADA directly from a hardware wallet as I will not be able to extract the private key from the device and will never be able to claim my LUCEO.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 col-xs-2 text-right">
+                            <label>
+                                <input type="checkbox" />
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="col-md-11 col-xs-10">
+                            <p>
+                                I agree that if I send ADA to the presale address outside of the specific ICO epochs, it'll be treated as a donation and will not be refunded to me.
                             </p>
                         </div>
                     </div>
