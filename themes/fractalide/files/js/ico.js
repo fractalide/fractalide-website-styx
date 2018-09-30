@@ -17,11 +17,11 @@ function generateRandomEpoch(){
 }
 
 function calculateP(e) {
-    var x = 0.01;
-    var d = 75;
-    var n = 41;
-    var p = x * 0.01 * (100 - d + e / (n - 1) * d);
-    return p.toFixed(4);
+    var x = 1.0;
+    var d = 75.0;
+    var n = 41.0;
+    var p = x * 0.01 * (100.0 - d + e / (n - 1.0) * d);
+    return p.toFixed(6);
 }
 
 function isValidAnswer() {
@@ -31,13 +31,15 @@ function isValidAnswer() {
         valid &= $(this).is(':checked');
         $(this).toggleClass('error', $(this).is(':not(:checked)'));
     });
-    
+
     var p = calculateP(parseInt($('#epoch').html()));
-    var answer = (parseFloat($('#answer').val()) || 0).toFixed(4);
+    window.alert(p);
+    var answer = (parseFloat($('#answer').val()) || 0).toFixed(6);
     valid &= answer === p
+    window.alert(answer);
     $('#answer').parents('div.form-group').toggleClass('has-error', answer !== p);
 
     $('#warning_message').toggleClass('text-danger', !valid);
-    
+
     return valid;
 }
