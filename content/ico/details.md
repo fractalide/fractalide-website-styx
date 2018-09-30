@@ -191,6 +191,7 @@
                         <div class="form-group form-group-lg">
                             <div class="col-md-offset-2 col-md-8 col-xs-12">
                                 <input type="text" class="form-control input-lg" id="answer" placeholder="Enter your answer" />
+                                <span class="text-danger hidden">...</span>
                             </div>
                         </div>
                     </form>
@@ -206,7 +207,7 @@
                     <div class="row">
                         <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                             <p>
-                                <button class="btn btn-lg btn-default btn-block" type="button" data-toggle="modal" data-target="#myModal" id="btnSubmit">Submit</button>
+                                <button class="btn btn-lg btn-default btn-block" type="button" data-toggle="modal" data-target="#presaleAddressModal" id="btnSubmit">Submit</button>
                             </p>
                         </div>
                     </div>
@@ -216,7 +217,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="presaleAddressModal" tabindex="-1" role="dialog" aria-labelledby="presaleAddressModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
