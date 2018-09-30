@@ -1,8 +1,7 @@
 $(document).ready(function(){
-
     generateRandomEpoch();
 
-    $('#myModal').on('show.bs.modal', function (e) {
+    $('#presaleAddressModal').on('show.bs.modal', function (e) {
         if(!isValidAnswer()) {
             e.preventDefault();
             generateRandomEpoch();
@@ -36,8 +35,9 @@ function isValidAnswer() {
 
     var p = calculateP(parseInt($('#epoch').html()));
     var answer = (parseFloat($('#answer').val()) || 0).toFixed(6);
-    valid &= answer === p
+    valid &= answer === p;
     $('#answer').parents('div.form-group').toggleClass('has-error', answer !== p);
+    $('#answer ~ span').html('Ouch! The right answer for epoch ' + $('#epoch').html() + '  was: ' + p).toggleClass('hidden', answer === p);
 
     $('#warning_message').toggleClass('text-danger', !valid);
 
