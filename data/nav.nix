@@ -5,7 +5,7 @@
 [
   { name = "Home"; url = "/"; }
   { name = "About us"; url = "/about_us/"; }
-  { name = "ICO"; url = "/ico/"; }
+  #{ name = "ICO"; url = "/ico/"; }
   {
     name = "Solutions";
     children = [
