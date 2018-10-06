@@ -329,55 +329,76 @@ h2.fractal_blue {
 section#hyperflow_modes {
     margin-top: 90px;
 }
-section#hyperflow_modes > div.container > div.row:nth-child(2) {
-    margin-top: 120px;
-}
-.hyperflow_mode {
-    margin-top: -90px;
-}
-.hyperflow_mode > img {
-    width: 316px;
-}
-.hyperflow_mode_top {
-    margin-right: -80px;
-}
-.hyperflow_mode_mid {
-    margin-left: 160px;
-    margin-top: -87px;
-}
-.hyperflow_mode_bottom {
-    margin-right: -80px;
-}
-.hyperflow_mode_description {
-    margin-top: -20px;
-    margin-left: 120px;
-}
-@media (max-width: 1199px) {
-    section#hyperflow_modes {
-        margin-top: 0px;
-    }
+@media (min-width: 1200px) {
     section#hyperflow_modes > div.container > div.row:nth-child(2) {
-        margin-top: 0px;
+        margin-top: 120px;
+    }
+    .hyperflow_flex_container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        height: 900px;
+    }
+    .hyperflow_icon {
+        order: 2;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .hyperflow_icon > img {
+        width: 316px;
+    }
+    .hyperflow_icon_top {
+        margin-top: -70px;
+    }
+    .hyperflow_icon_middle {
+        margin-top: -95px;
+    }
+    .hyperflow_icon_bottom {
+        margin-top: -96px;
+    }
+    .hyperflow_icon_odd {
+        padding-right: 160px;
+    }
+    .hyperflow_icon_none {
+        padding-left: 160px;
     }
     .hyperflow_mode {
-        margin-top: 0px;
-        padding-top: 60px;
+        order: 1;
+        width: 50%;
+        margin: 0px 30px 30px 30px;
+    }
+    .hyperflow_item_1 {}
+    .hyperflow_item_2 {}
+    .hyperflow_item_3 {}
+}
+
+@media (max-width: 1199px) {
+    .hyperflow_flex_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hyperflow_icon {
         text-align: center;
     }
-    .hyperflow_mode > img {
+    .hyperflow_icon > img {
         width: 236px;
     }
-    .hyperflow_mode_top {
-        margin-right: 0px;
+    .hyperflow_icon_odd {}
+    .hyperflow_icon_none {}
+    .hyperflow_mode {
+        text-align: center;
+        margin: 0px 30px 60px 30px;
     }
-    .hyperflow_mode_mid {
-        margin-left: 0px;
+    .hyperflow_item_1 {
+        order: 1
     }
-    .hyperflow_mode_bottom {
-        margin-right: 0px;
+    .hyperflow_item_2 {
+        order: 2
     }
-    .hyperflow_mode_description {
-        margin-left: 0px;
+    .hyperflow_item_3 {
+        order: 3
     }
 }
 
