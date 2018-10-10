@@ -951,6 +951,10 @@ section#ico-details .header_gradient {
     padding: 20px;
 }
 
+.sale_progress {
+    color: #79949f;
+}
+
 .checklist input[type=checkbox] {
   display: none;
 }
