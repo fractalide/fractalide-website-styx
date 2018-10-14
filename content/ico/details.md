@@ -52,7 +52,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
-                            <a class="btn btn-lg btn-default btn-block" href="#">Download whitepaper</a>
+                            <a class="btn btn-lg btn-primary btn-block" href="#">Download whitepaper</a>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
                     <div class="row">
                         <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                             <p>
-                                <button class="btn btn-lg btn-default btn-block" type="button" data-toggle="modal" data-target="#presaleAddressModal" id="btnSubmit">Submit</button>
+                                <button class="btn btn-lg btn-primary btn-block" type="button" data-toggle="modal" data-target="#presaleAddressModal" id="btnSubmit">Submit</button>
                             </p>
                         </div>
                     </div>
