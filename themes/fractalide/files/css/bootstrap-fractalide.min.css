@@ -883,7 +883,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
   background-color: #080808;
 }
-.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
   color: #58B4CD;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -1096,6 +1096,11 @@ fieldset[disabled] .affix .btn-link:focus {
 .affix .navbar-nav>.dropdown>a:hover .caret {
   border-top-color: #0D3E4C;
   border-bottom-color: #0D3E4C;
+}
+
+/* font-awesome icons */
+.navbar-nav .open .dropdown-menu>li>a>i {
+  color: #58B4CD;
 }
 
 
