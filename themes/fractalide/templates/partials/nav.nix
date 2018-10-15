@@ -47,7 +47,13 @@ ${if page.path == "/index.html" then ''
                     let
                       renderChild = child: ''
                         <li class="${if (stripIndexHtml page.path) == child.url then "active" else ""}">
-                          <a href="${child.url}" target="${if child ? target then child.target else ""}">${child.name}</a>
+                          ${if child ? pre then ''
+                            <a href="${child.url}" target="_blank">
+                              <img alt="${child.name}" src="/img/${child.pre}" width="20px">
+                            </a>
+                          '' else ''
+                            <a href="${child.url}" target="${if child ? target then child.target else ""}">${child.name}</a>
+                          ''}
                         </li>
                       '';
                     in
