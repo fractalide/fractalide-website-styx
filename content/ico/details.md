@@ -21,10 +21,7 @@
                                 <b>Total supply:</b> 45 Billion CEO
                             </p>
                             <p>
-                                <b>Amount for sale:</b> 850 Million CEO
-                            </p>
-                            <p>
-                                <b>Sales target:</b> USD $20 Million
+                                <b>Amount for sale:</b> 1.6 Billion CEO
                             </p>
                             <p>
                                 <b>Private sale duration:</b> 41 epochs (~6.5 months)
@@ -76,10 +73,10 @@
                             <div class="text-center">
                                 <p class="sale_progress">50% completed</p>
                             </div>
-                            <p><b>ICO started in ADA Epoch:</b>> <span class="pull-right">74</span></p>
+                            <p><b>ICO started in ADA Epoch:</b> <span class="pull-right">74</span></p>
                             <p><b>Current ADA Epoch:</b> <span class="pull-right">74</span></p>
                             <p><b>ICO Ends in ADA Epoch:</b> <span class="pull-right">115</span></p>
-                            <p><b>ICO Epoch:</b> <span class="pull-right">0/40</span></p>
+                            <p><b>Current ICO Epoch:</b> <span class="pull-right">0/40</span></p>
                             <p><b>Discount at ICO Epoch 0:</b> <span class="pull-right">75% off</span></p>
                         </div>
                     </div>
@@ -91,7 +88,7 @@
         <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
             <div class="panel panel-default">
                 <div class="panel-body text-center">
-                    <h2 class="sub_heading_blue">Our ICO isn't ready yet, this code is not functional just yet</h2>
+                    <h2 class="sub_heading_blue">If you wish to participate in the ICO please agree to these points and solve a small mathematical problem.</h2>
                 </div>
                 <div class="panel-body checklist">
                     <div class="row">
