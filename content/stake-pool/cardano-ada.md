@@ -15,7 +15,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-offset-4 col-lg-4 col-xs-12 text-center">
+    <div class="col-lg-offset-4 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-12 text-center">
         <button class="btn btn-lg btn-primary btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfkL5kmYwNWoToHFfs4qRDkWcznlE2MEO54sykTo6_zXuixqQ/viewform';">Email me when it's live</button>
     </div>
 </div>
