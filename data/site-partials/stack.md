@@ -17,7 +17,7 @@
                             <p class="text_white">
                                 <b class="text_white">Solution:</b> Fractalide supports the creation of decentralised apps ("dapps"). Anyone can create, buy, sell and share dapps in a stable, reliable way.
                             </p>
-                            <button class="btn btn-lg btn-default" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfJYF5LM5MD-IaEqJAZ-oboUi-IDnGaH7II5yg1_1WfIadhPw/viewform?usp=sf_link';">Sign up for early access</button>
+                            <button class="btn btn-lg btn-primary" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfJYF5LM5MD-IaEqJAZ-oboUi-IDnGaH7II5yg1_1WfIadhPw/viewform?usp=sf_link';">Sign up for early access</button>
                         </div>
                     </div>
                 </div>

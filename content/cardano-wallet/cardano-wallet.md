@@ -6,7 +6,7 @@
             <p>
                 Fractalide's first application is Cantor, a Cardano wallet. The wallet allows you to send and receive ADA. Please consider this alpha software and use with patience once it's released.
             </p>
-            <a class="btn btn-lg btn-default" href="#download_center">Download Cantor</a>
+            <a class="btn btn-lg btn-primary" href="#download_center">Download Cantor</a>
         </div>
     </div>
     <div class="row cantor_features">
