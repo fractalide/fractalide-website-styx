@@ -155,13 +155,33 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    cardano-stake-pool = rec {
-      title    = "Cardano Stake Pool";
-      section  = "cardano";
-      path     = "/cardano-stake-pool/index.html";
+    stake-pool-cardano-luceo = rec {
+      title    = "";
+      section  = "cardano-luceo";
+      path     = "/stake-pool/cardano-luceo/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/cardano-stake-pool.md; }).content;
+      content  = (lib.loadFile { file = ./content/stake-pool/cardano-luceo.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
+    stake-pool-cardano-ada = rec {
+      title    = "";
+      section  = "cardano-ada";
+      path     = "/stake-pool/cardano-ada/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/stake-pool/cardano-ada.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
+    stake-pool-tezos-xtz = rec {
+      title    = "";
+      section  = "tezos-xtz";
+      path     = "/stake-pool/tezos-xtz/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/stake-pool/tezos-xtz.md; }).content;
       extraContent = site-partials.signup.content;
     };
 

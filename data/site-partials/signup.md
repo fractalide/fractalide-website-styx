@@ -15,7 +15,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
-                        <a class="btn btn-lg btn-default btn-block" href="https://docs.google.com/forms/d/e/1FAIpQLSfJYF5LM5MD-IaEqJAZ-oboUi-IDnGaH7II5yg1_1WfIadhPw/viewform?usp=sf_link" target="_blank">Submit</a>
+                        <a class="btn btn-lg btn-primary btn-block" href="https://docs.google.com/forms/d/e/1FAIpQLSfJYF5LM5MD-IaEqJAZ-oboUi-IDnGaH7II5yg1_1WfIadhPw/viewform?usp=sf_link" target="_blank">Submit</a>
                     </div>
                 </div>
             </div>
