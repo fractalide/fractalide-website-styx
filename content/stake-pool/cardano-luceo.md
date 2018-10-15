@@ -15,11 +15,11 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-offset-4 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-12 text-center">
+    <div class="col-lg-offset-2 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-12 text-center">
         <button class="btn btn-lg btn-primary btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdVgN3RK6hW_6qetR4hTL17z1SbWcK_Mt4ZmpBNvab-ncxGIQ/viewform';">Email me when it's live</button>
     </div>
     <div class="col-lg-offset-0 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-12 text-center">
-        <button class="btn btn-lg btn-default btn-block" onclick="">I want to run a LUCEO stake pool</button>
+        <button class="btn btn-lg btn-default btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfSrkVfE7PcMmfOn77OS9UImKwOnj3TK5NtQLkwJDMzi8hl4Q/viewform';">I want to run a LUCEO stake pool</button>
     </div>
 </div>
 <div class="row">
