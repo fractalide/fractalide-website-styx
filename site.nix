@@ -285,7 +285,7 @@ rec {
       };
     };
 
-    ico = rec {
+    /* ico = rec {
       title    = "ICO";
       section  = "ico";
       path     = "/ico/index.html";
@@ -302,7 +302,7 @@ rec {
       template = templates.page.full;
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/ico/details.md; }).content;
-    };
+    }; */
 
   };
 
