@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-12">
+    <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
         <div class="text-center">
             <h2 class="sub_heading_blue">A Cardano Stake Pool has an important role in securing the ADA cryptocurrency</h2>
             <p>
@@ -15,19 +15,19 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-offset-4 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-12 text-center">
+    <div class="col-lg-offset-4 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
         <button class="btn btn-lg btn-primary btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfkL5kmYwNWoToHFfs4qRDkWcznlE2MEO54sykTo6_zXuixqQ/viewform';">Email me when it's live</button>
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-offset-2 col-sm-8 col-xs-12 text-center">
+    <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <div class="blue_box">
             <h2 class="sub_heading_blue">Delegation address</h2>
             <div class="row white_box">
-                <div class="col-lg-8 col-xs-12">
+                <div class="col-lg-8 col-xs-offset-1 col-xs-10">
                     <span id="delegationAddress">CARDANO-SHELLEY-RELEASE-NOT-READY-YET<span>
                 </div>
-                <div class="col-lg-4 col-xs-12">
+                <div class="col-lg-4 col-xs-offset-1 col-xs-10">
                     <a class="copy" href="#" onclick="javascript:copyToClipboard('delegationAddress',event);">
                         <img src="/img/stake-pools/copy.png" width="19px">
                         Copy
@@ -43,21 +43,21 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-12 text-center">
+    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/algorithm-min.png">
         <h2 class="sub_heading_blue">Decentralisation</h2>
         <p class="stake_pool_text">
             Centralised mining is an issue for currencies like Bitcoin, because when pools get too big and centralised, it can lead to an attack on the consensus protocol. Being on Cardano, Fractalide's stake pool participates in a process that avoids centralisation.
         </p>
     </div>
-    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-12 text-center">
+    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/reward-min.png">
         <h2 class="sub_heading_blue">Mining and rewards</h2>
         <p class="stake_pool_text">
             Cryptocurrency users take part in mining and earn rewards. Cardano allows you to nominate another party, like Fractalide, to vote on your behalf to make it easier. If you nominate someone else, both you and your nominee will be rewarded through the Cardano blockchain, which removes the fear of theft.
         </p>
     </div>
-    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-12 text-center">
+    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/earnings-min.png">
         <h2 class="sub_heading_blue">Trasparency</h2>
         <p class="stake_pool_text">
