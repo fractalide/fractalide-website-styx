@@ -14,7 +14,7 @@
             <h2 class="sub_heading_blue">Delegation address</h2>
             <div class="row white_box">
                 <div class="col-lg-8 col-xs-offset-1 col-xs-10">
-                    <span id="delegationAddress">OUR-XTZ-STAKEPOOL-IS-NOT-READY-YET<span>
+                    <span id="delegationAddress">{{ address }}<span>
                 </div>
                 <div class="col-lg-4 col-xs-offset-1 col-xs-10">
                     <a class="copy" href="#" onclick="javascript:copyToClipboard('delegationAddress',event);">
