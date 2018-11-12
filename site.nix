@@ -12,6 +12,7 @@
     sha256 = "04yfzjjskimrjds4jk0z9s18873d939l3sc1sjm0r1m7cs280ddl";
   }
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
+, liveConf ? pkgs.callPackage <fractalide-com-config> {}
 }:
 
 rec {
@@ -181,7 +182,10 @@ rec {
       path     = "/stake-pool/tezos-xtz/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/stake-pool/tezos-xtz.md; }).content;
+      content  = (lib.loadFile {
+        file = ./content/stake-pool/tezos-xtz.md;
+        env = { inherit (liveConf.stakepool.xtz) address data; };
+      }).content;
       extraContent = site-partials.signup.content;
     };
 
