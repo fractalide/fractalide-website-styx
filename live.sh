@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 cd "${BASH_SOURCE[0]%/*}"
 
-exec nix-shell --run "xargs -0 styx live" < <( (( $# > 0 )) && printf "%s\0" "$@")
+styx=$(nix-build --no-out-link ./nixpkgs.nix -A styx)
+exec $styx/bin/styx live "$@"
