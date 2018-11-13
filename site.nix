@@ -184,7 +184,10 @@ rec {
       layout   = templates.layout;
       content  = (lib.loadFile {
         file = ./content/stake-pool/tezos-xtz.md;
-        env = { inherit (liveConf.stakepool.xtz) address data; };
+        env = {
+          inherit (liveConf.stakepool.xtz) address data;
+          inherit lib;
+        };
       }).content;
       extraContent = site-partials.signup.content;
     };

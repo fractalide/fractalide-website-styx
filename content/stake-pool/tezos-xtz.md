@@ -29,6 +29,20 @@
                 </div>
             </div>
         </div>
+        <table>
+        <tr><th>cycle</th><th>staker</th><th>balance<br>(at the snapshot of this cycle)</th><th>rewards<br>(returned in this cycle)</th></tr>
+        {{
+          let
+            renderRow = row: ''
+            <tr><td>${toString row.cycle}</td><td>${row.staker}</td>
+                <td>${if row ? balance then row.balance else "0"}</td>
+                <td>${if row ? rewards then row.rewards else "0"}</td></tr>
+            '';
+          in
+            lib.concatMapStringsSep "\n" renderRow
+              (lib.sortBy "staker" "asc" (lib.sortBy "cycle" "asc" data))
+        }}
+        </table>
     </div>
 </div>
 
