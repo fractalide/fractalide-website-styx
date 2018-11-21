@@ -14,7 +14,7 @@
             <h2 class="sub_heading_blue">Delegation address</h2>
             <div class="row white_box">
                 <div class="col-lg-8 col-xs-offset-1 col-xs-10">
-                    <a href="https://tzscan.io/tz1P6kxtzRrJ8KfXE4kKqR1RBiSpEgimxN5o?default=delegation"
+                    <a href="https://tzscan.io/{{ address }}?default=delegation"
                        <span id="delegationAddress">{{ address }}</span>
                     </a>
                     <a class="copy" href="#" onclick="javascript:copyToClipboard('delegationAddress',event);">
