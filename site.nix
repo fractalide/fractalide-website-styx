@@ -156,6 +156,16 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
+    stake-pool-overview = rec {
+      title    = "Stakepools";
+      section  = "stakepools";
+      path     = "/stake-pool/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/stake-pool/stakepools.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
     stake-pool-cardano-luceo = rec {
       title    = "";
       section  = "cardano-luceo";
