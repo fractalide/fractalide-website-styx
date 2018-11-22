@@ -15,8 +15,9 @@
     ];
   }
   {
-    name = "Stake Pools";
+    name = "Stakepools";
     children = [
+      { name = "Stakepools"; url = "/stake-pool/"; }
       { name = "Cardano (LUCEO)"; url = "/stake-pool/cardano-luceo/"; }
       { name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }
       { name = "Tezos (XTZ)"; url = "/stake-pool/tezos-xtz/"; }

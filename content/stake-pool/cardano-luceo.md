@@ -27,13 +27,10 @@
         <div class="blue_box">
             <h2 class="sub_heading_blue">Delegation address</h2>
             <div class="row white_box">
-                <div class="col-lg-8 col-xs-offset-1 col-xs-10">
-                    <span id="delegationAddress">CARDANO-SHELLEY-RELEASE-NOT-READY-YET<span>
-                </div>
-                <div class="col-lg-4 col-xs-offset-1 col-xs-10">
+                <div class="col-lg-8 col-xs-offset-2 col-xs-10">
+                    <span id="delegationAddress">CARDANO-SHELLEY-RELEASE-NOT-READY-YET</span>
                     <a class="copy" href="#" onclick="javascript:copyToClipboard('delegationAddress',event);">
                         <img src="/img/stake-pools/copy.png" width="19px">
-                        Copy
                     </a>
                 </div>
             </div>
