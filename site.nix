@@ -202,17 +202,17 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    cardano-wallet = rec {
-      title    = "Cardano Wallet";
+    cantor-wallet = rec {
+      title    = "Cantor Wallet";
       hideTitle = true;
-      section  = "cardano";
-      path     = "/cardano-wallet/index.html";
+      section  = "cantor";
+      path     = "/cantor-wallet/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = sections.cardano-wallet.content;
+      content  = sections.cantor-wallet.content;
       extraContent = sections.download_center.content;
       sections = lib.loadDir {
-        dir = ./content/cardano-wallet;
+        dir = ./content/cantor-wallet;
         asAttrs = true;
       };
       inherit (data) site-partials;
