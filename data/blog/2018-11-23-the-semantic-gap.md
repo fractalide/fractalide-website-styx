@@ -9,8 +9,6 @@ The Semantic Gap
 
 >>>
 
-## Introduction
-
 Executable semantics are making inroads into cryptographic currencies. This interests us greatly, for good reasons, and is one of the primary reasons we're building Fractalide on Cardano. Blockchains are facing a situation not normally encountered, the contract source code is publicly visible to the world. This is a honey pot for crackers who will certainly attempt to crack a contract with a large amount of money in it.
 
 Having formal semantics, and semantics proof of your smart contract, puts up a clear, bright red sign to prospective attackers: "Access denied, don't even bother". New terminology such as "the semantic gap", "formal semantics", "executable semantics", "formal semantic compilation" etc have entered into the community's lexicon. This essay attempts to clarify the need for formal semantics, what problem they're solving, and how they provide a stable foundation for smart contract programmers, who live in terror that their contracts will be exploited.
@@ -45,7 +43,7 @@ Efficiency was indeed compromised, the stalwarts' valid argument of computing ti
 <p>
 ![](/img/blog/the-semantic-gap/semantic-gap-03-min.png)
 <p>
-The semantic gap consists of two types of gaps, grey section bridges the specification semantic gap and the red section, the execution semantic gap. The specification gap describes a scenario when you have two different specifications of the same task. The execution gap describes a scenario whereby a single specification is implemented by two different programming languages. A good example of the specification gap is how the yellow paper uses impenetrable, obfuscated language to specify the Ethereum Virtual Machine, yet the paper `KEVM: A Complete Semantics of the Ethereum Virtual Machine` uses clear and precise language to describe the KEVM.
+The semantic gap consists of two types of gaps, grey section bridges the specification semantic gap and the red section, the execution semantic gap. The specification gap describes a scenario when you have two different specifications of the same task. The execution gap describes a scenario whereby a single specification is implemented by two different programming languages. A good example of the specification gap is how the yellow paper uses impenetrable language to specify the Ethereum Virtual Machine, yet the paper `KEVM: A Complete Semantics of the Ethereum Virtual Machine` uses clear and precise language to describe the KEVM.
 
 We make use of specifications, design, implementation, interpreters and translators (compilers) to translate semantics from the application domain into the execution domain. Specifications, design and implementation *are the grey side* of the bridge. Teams of people translate the application domain semantics into high-level code humans can reason about with respect to the specification.
 Interpreters and translators *are the red side* of the bridge, they translate the semantics from the high-level code into the execution domain. Interpreters execute the code directly and completely bridge the execution gap, albeit execution is slower. Translators take a different approach by translating semantics from a source language to a target language along a series of interlinking languages that form the red side of the bridge, much like a simple suspension bridge. Semantics are lost at every translation step, but the resulting file (executable) created executes directly on the CPU and outperforms interpreted programs.
