@@ -9,8 +9,6 @@ The Semantic Gap
 
 >>>
 
-## Introduction
-
 Executable semantics are making inroads into cryptographic currencies. This interests us greatly, for good reasons, and is one of the primary reasons we're building Fractalide on Cardano. Blockchains are facing a situation not normally encountered, the contract source code is publicly visible to the world. This is a honey pot for crackers who will certainly attempt to crack a contract with a large amount of money in it.
 
 Having formal semantics, and semantics proof of your smart contract, puts up a clear, bright red sign to prospective attackers: "Access denied, don't even bother". New terminology such as "the semantic gap", "formal semantics", "executable semantics", "formal semantic compilation" etc have entered into the community's lexicon. This essay attempts to clarify the need for formal semantics, what problem they're solving, and how they provide a stable foundation for smart contract programmers, who live in terror that their contracts will be exploited.
