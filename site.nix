@@ -8,8 +8,8 @@
 , pkgs ? import ./nixpkgs.nix {}
 , fractalide-src ? pkgs.fetchFromGitHub {
     owner = "fractalide"; repo = "fractalide";
-    rev = "4bf39a28c34fd5750e7d835943dc0357cff53e2e";
-    sha256 = "04yfzjjskimrjds4jk0z9s18873d939l3sc1sjm0r1m7cs280ddl";
+    rev = "8b5f020895612d17dcf86f20115c14fa845a79e4";
+    sha256 = "1jbbmnrgyi4245imixfs8slgw3kdp7li8dhfy84d4snw239z5dpj";
   }
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
 , liveConf ? pkgs.callPackage <fractalide-com-config> {}
