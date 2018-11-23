@@ -20,7 +20,7 @@
                 The software components are designed to be reusable, reproducible and composable, meaning anyone can easily build new wallets to support other cryptocurrencies.
             </p>
             <p>
-                <a href="https://github.com/fractalide/cardano-wallet">View Cantor source</a>
+                <a href="https://github.com/fractalide/fractalide/tree/master/modules/rkt/rkt-fbp/agents/cardano-wallet">View Cantor source</a>
             </p>
         </div>
         <div class="col-lg-4 col-xs-12 text-center cantor_feature">
