@@ -192,6 +192,19 @@
                         </div>
                         <div class="col-md-11 col-xs-10">
                             <p>
+                                I agree not participate in this presale if I'm a citizen of United States of America, China or India.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 col-xs-2 text-right">
+                            <label>
+                                <input type="checkbox" />
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="col-md-11 col-xs-10">
+                            <p>
                                 I agree not to send ADA directly from a hardware wallet as I will not be able to extract the private key from the device and will never be able to claim my LUCEO.
                             </p>
                         </div>

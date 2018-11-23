@@ -37,7 +37,7 @@ function isValidAnswer() {
     var answer = (parseFloat($('#answer').val()) || 0).toFixed(6);
     valid &= answer === p;
     $('#answer').parents('div.form-group').toggleClass('has-error', answer !== p);
-    $('#answer ~ span').html('Ouch! The right answer for epoch ' + $('#epoch').html() + '  was: ' + p).toggleClass('hidden', answer === p);
+    $('#answer ~ span').html('Incorrect! The right answer for epoch ' + $('#epoch').html() + '  was: ' + p).toggleClass('hidden', answer === p);
 
     $('#warning_message').toggleClass('text-danger', !valid);
 
