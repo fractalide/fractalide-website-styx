@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 text-center">
-        <h2 class="sub_heading_blue">Fractalide Gateway Drug</h2>
+        <h2 class="sub_heading_blue">Fractalide Stakepools</h2>
         <p>
-            Fractalide prefers reaching out to blockchain communities by providing useful services that prompt word-of-mouth instead of shallow digital marketing. This is our way of onboarding users onto our free and open source browser. We hope for our stakepools to be your gateway drug.
+            Fractalide prefers reaching out to blockchain communities by providing useful services that prompt word-of-mouth instead of shallow digital marketing. This is our way of onboarding users onto our free and open source browser. We hope our stakepools introduce you to the Fractalide browser and encourage you to use it.
         </p>
         <p>
             All our stakepool software is <a class="" href="https://github.com/fractalide/fractalpools">free and open source</a>. We encourage you to use and contribute to the source code. We've endeavoured to make the entire solution simple and turnkey.
@@ -30,7 +30,7 @@
         <img src="/img/roadmap-min/fractal-min.png" />
         <h3>Tezos (XTZ)</h3>
         <p>
-            Initially our primary reason for supporting a Tezos (XTZ) stakepool was to gain experience running stakepools before Cardano (ADA) came online. We've found the XTZ community to be friendly and full of beans and thus, have decided to keep the XTZ Stakepool a permanent gateway.
+            Initially our primary reason for supporting a Tezos (XTZ) stakepool was to gain experience running stakepools before Cardano (ADA) came online. We've found the XTZ community to be friendly and full of beans and thus, have decided to keep the XTZ Stakepool a permanent fixture.
         </p>
         <a class="" href="/stake-pool/tezos-xtz">Currently live</a>
     </div>
