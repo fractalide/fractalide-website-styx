@@ -108,11 +108,11 @@ a.disclaimer {
     font-size: 14px;
     color: #ffffff;
 }
-ul {
+ul.text_dark_blue {
     padding: 1em;
 }
-ul li {
-  color: #64DBEC;
+ul.text_dark_blue li {
+  color: #0d3e4c;
 }
 
 /******************/
@@ -537,6 +537,25 @@ section#tezos-xtz button {
     color: #58B4CD;
     background-color: #FFF;
     text-decoration: none;
+}
+
+.tezos_icon {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section#tezos-xtz ul {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+section#tezos-xtz ul li {
+    padding-top: 5px;
+}
+
+.border_blue {
+    border: 1px solid #58B4CD;
+    border-radius: 4px;
 }
 
 
