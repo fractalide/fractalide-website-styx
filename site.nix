@@ -8,10 +8,11 @@
 , pkgs ? import ./nixpkgs.nix {}
 , fractalide-src ? pkgs.fetchFromGitHub {
     owner = "fractalide"; repo = "fractalide";
-    rev = "4bf39a28c34fd5750e7d835943dc0357cff53e2e";
-    sha256 = "04yfzjjskimrjds4jk0z9s18873d939l3sc1sjm0r1m7cs280ddl";
+    rev = "8b5f020895612d17dcf86f20115c14fa845a79e4";
+    sha256 = "1jbbmnrgyi4245imixfs8slgw3kdp7li8dhfy84d4snw239z5dpj";
   }
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
+, liveConf ? pkgs.callPackage <fractalide-com-config> {}
 }:
 
 rec {
@@ -155,6 +156,16 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
+    stake-pool-overview = rec {
+      title    = "Stakepools";
+      section  = "stakepools";
+      path     = "/stake-pool/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/stake-pool/stakepools.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
     stake-pool-cardano-luceo = rec {
       title    = "";
       section  = "cardano-luceo";
@@ -181,21 +192,27 @@ rec {
       path     = "/stake-pool/tezos-xtz/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/stake-pool/tezos-xtz.md; }).content;
+      content  = (lib.loadFile {
+        file = ./content/stake-pool/tezos-xtz.md;
+        env = {
+          inherit (liveConf.stakepool.xtz) address data;
+          inherit lib;
+        };
+      }).content;
       extraContent = site-partials.signup.content;
     };
 
-    cardano-wallet = rec {
-      title    = "Cardano Wallet";
+    cantor-wallet = rec {
+      title    = "Cantor Wallet";
       hideTitle = true;
-      section  = "cardano";
-      path     = "/cardano-wallet/index.html";
+      section  = "cantor";
+      path     = "/cantor-wallet/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = sections.cardano-wallet.content;
+      content  = sections.cantor-wallet.content;
       extraContent = sections.download_center.content;
       sections = lib.loadDir {
-        dir = ./content/cardano-wallet;
+        dir = ./content/cantor-wallet;
         asAttrs = true;
       };
       inherit (data) site-partials;

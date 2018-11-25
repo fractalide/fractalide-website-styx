@@ -11,12 +11,13 @@
       { name = "Hyperflow"; url = "/hyperflow/"; }
       { name = "Fractalmarket"; url = "/fractalmarket/"; }
       { name = "Services"; url = "/development-and-analysis/"; }
-      { name = "Cardano Wallet"; url = "/cardano-wallet/"; }
+      { name = "Cantor Wallet"; url = "/cantor-wallet/"; }
     ];
   }
   {
-    name = "Stake Pools";
+    name = "Stakepools";
     children = [
+      { name = "Overview"; url = "/stake-pool/"; }
       { name = "Cardano (LUCEO)"; url = "/stake-pool/cardano-luceo/"; }
       { name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }
       { name = "Tezos (XTZ)"; url = "/stake-pool/tezos-xtz/"; }

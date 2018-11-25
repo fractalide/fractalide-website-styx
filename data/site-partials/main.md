@@ -32,11 +32,11 @@
             </div>
             <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-8">
                 <div class="text-center">
-                    <h2 class="text_blue fractal_blue">Cardano Stake Pool</h2>
+                    <h2 class="text_blue fractal_blue">Stakepools</h2>
                     <p>
-                        You don't need to be online to secure ADA. By delegating your vote to Fractalide's stake pool, you can continue to secure the consensus algorithm while offline, and you'll be contributing to the development of Fractalide.
+                        You don't need to be online to secure your Proof of Stake coin. By delegating your vote to Fractalide's stake pools, you can continue to secure the consensus algorithm while offline, and you'll be contributing to the development of Fractalide.
                     </p>
-                    <a class="" href="/cardano-stake-pool/">Learn more</a>
+                    <a class="" href="/stake-pool/">Learn more</a>
                 </div>
             </div>
         </div>
