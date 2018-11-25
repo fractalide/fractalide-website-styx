@@ -162,7 +162,7 @@ rec {
       path     = "/stake-pool/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/stake-pool/stakepools.md; }).content;
+      content  = (lib.loadFile { file = ./content/stake-pool/overview.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
