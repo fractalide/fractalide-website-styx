@@ -56,7 +56,7 @@
     </div>
     <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/earnings-min.png">
-        <h2 class="sub_heading_blue">Trasparency</h2>
+        <h2 class="sub_heading_blue">Transparency</h2>
         <p class="stake_pool_text">
             We'll make our costs and spendings transparent. If you appreciate Fractalide and want your experience improved, then nominate us to stake for you. The more nominators the lighter it is for everyone. All pool earnings (not nominator earnings), after server costs, goes into development of the open source Hyperflow dapp browser. By nominating Fractalide, you're helping improve Fractalide and the Cardano ecosystem.
         </p>
