@@ -45,21 +45,21 @@
 <div class="row">
     <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/algorithm-min.png">
-        <h2 class="sub_heading_blue">Heading</h2>
+        <h2 class="sub_heading_blue">Decentralisation</h2>
         <p class="stake_pool_text">
             Centralised mining is an issue for currencies like Bitcoin, because when pools get too big and centralised, it can lead to an attack on the consensus protocol. Being on Cardano, Fractalide's stake pool participates in a process that avoids centralisation.
         </p>
     </div>
     <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/reward-min.png">
-        <h2 class="sub_heading_blue">Heading</h2>
+        <h2 class="sub_heading_blue">Mining and rewards</h2>
         <p class="stake_pool_text">
             Cryptocurrency users take part in mining and earn rewards. Cardano allows you to nominate another party, like Fractalide, to vote on your behalf to make it easier. If you nominate someone else, both you and your nominee will be rewarded through the Cardano blockchain, which removes the fear of theft.
         </p>
     </div>
     <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/earnings-min.png">
-        <h2 class="sub_heading_blue">Heading</h2>
+        <h2 class="sub_heading_blue">Transparency</h2>
         <p class="stake_pool_text">
             We'll make our costs and spendings transparent. If you appreciate Fractalide and want your experience improved, then nominate us to stake for you. The more nominators the lighter it is for everyone. All pool earnings (not nominator earnings), after server costs, goes into development of the open source Hyperflow dapp browser. By nominating Fractalide, you're helping improve Fractalide and the Cardano ecosystem.
         </p>
