@@ -39,7 +39,7 @@
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <div class="blue_box">
             <h2 class="sub_heading_blue">Your address</h2>
-            <input class="form-control" id="yourAddress" name="yourAddress" placeholder="KT1..."/>
+            <input type="text" class="form-control input-lg" id="yourAddress" name="yourAddress" placeholder="KT1..."/>
         </div>
     </div>
 </div>
@@ -47,45 +47,120 @@
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <div class="blue_box">
             <h2 class="sub_heading_blue">Estimate Your Annual Rewards</h2>
-            <div class="row">
-                <div class="col-xs-2">
-                    Your Stake
-                    <div class="input-group">
-                        <input type="text" class="form-control" aria-describedby="your-stake-addon">
-                        <span class="input-group-addon" id="your-stake-addon"><img src="/img/stake-pools/tezos-currency-white-min.png" width="12px"/></span>
+            <div class="math_formula">
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue"><br>Your Stake</b>
+                    </div>
+                    <div class="math_field">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-describedby="your-stake-addon">
+                            <span class="input-group-addon darker" id="your-stake-addon"><img src="/img/stake-pools/tezos-currency-white-min.png" width="12px"/></span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-2">
-                    Estimated Blocks Per Year
+                <div class="math_symbol">
+                    <i class="fa fa-times text_blue" aria-hidden="true"></i>
                 </div>
-                <div class="col-xs-2">
-                    Baker Rewards Per Block
-                </div>
-                <div class="col-xs-2">
-                    Average Fees Per Block
-                    <div class="input-group">
-                        <input type="text" class="form-control" aria-describedby="your-stake-addon">
-                        <span class="input-group-addon" id="your-stake-addon"><img src="/img/stake-pools/tezos-currency-white-min.png" width="12px"/></span>
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue">Estimated<br>Blocks Per Year</b>
+                    </div>
+                    <div class="math_value">
+                        <span>491.520</span>
                     </div>
                 </div>
-                <div class="col-xs-2">
-                    Endorsement Rewards Per Block
+                <div class="math_symbol">
+                    <i class="fa fa-times text_blue" aria-hidden="true"></i>
                 </div>
-                <div class="col-xs-2">
-                    Endorsement Per Block
+                <div class="math_symbol">
+                    <b class="text_blue">(</b>
                 </div>
-                <div class="col-xs-2">
-                    Total Tezos Supply
-                </div>
-                <div class="col-xs-2">
-                    Percentage of Tez that Stake
-                    <div class="input-group">
-                        <input type="text" class="form-control" aria-describedby="your-stake-addon">
-                        <span class="input-group-addon" id="your-stake-addon"><b class="text_white">%</b></span>
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue">Baker Rewards<br>Per Block</b>
+                    </div>
+                    <div class="math_value">
+                        <span>16</span>
                     </div>
                 </div>
-                <div class="col-xs-2">
-                    Fractalide XTZ Stake Pool Reward-Share
+                <div class="math_symbol">
+                    <i class="fa fa-plus text_blue" aria-hidden="true"></i>
+                </div>
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue">Average Fees<br>Per Block</b>
+                    </div>
+                    <div class="math_field">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-describedby="your-stake-addon">
+                            <span class="input-group-addon darker" id="your-stake-addon"><img src="/img/stake-pools/tezos-currency-white-min.png" width="12px"/></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="math_symbol">
+                    <i class="fa fa-plus text_blue" aria-hidden="true"></i>
+                </div>
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue">Endorsement<br>Rewards Per Block</b>
+                    </div>
+                    <div class="math_value">
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="math_symbol">
+                    <i class="fa fa-times text_blue" aria-hidden="true"></i>
+                </div>
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue">Endorsement<br>Per Block</b>
+                    </div>
+                    <div class="math_value">
+                        <span>32</span>
+                    </div>
+                </div>
+                <div class="math_symbol">
+                    <b class="text_blue">)</b>
+                </div>
+                <div class="math_symbol">
+                    <b class="text_blue">/</b>
+                </div>
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue">Total Tezos<br>Supply</b>
+                    </div>
+                    <div class="math_value">
+                        <span>763.3M</span>
+                    </div>
+                </div>
+                <div class="math_symbol">
+                    <b class="text_blue">/</b>
+                </div>
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue">Percentage of<br>Tez that Stake</b>
+                    </div>
+                    <div class="math_field">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-describedby="your-stake-addon">
+                            <span class="input-group-addon darker" id="your-stake-addon"><b class="text_white">%</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="math_symbol">
+                    <i class="fa fa-times text_blue" aria-hidden="true"></i>
+                </div>
+                <div class="math_element">
+                    <div class="math_name">
+                        <b class="text_dark_blue">Fractalide XTZ Stake<br>Pool Reward-Share</b>
+                    </div>
+                    <div class="math_value">
+                        <span>85%</span>
+                    </div>
+                </div>
+                <div class="math_symbol">
+                    <b class="text_blue">=</b>
                 </div>
             </div>
         </div>
@@ -106,8 +181,8 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-        <div class="text-center">
+    <div class="col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
+        <div class="text-center top_margin">
             <h2 class="sub_heading_blue">Earnings Calculation</h2>
             <img class="tezos_icon" src="/img/stake-pools/icon-calculation-min.png" width="85px">
         </div>
@@ -126,7 +201,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
+    <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center top_margin">
         <h2 class="sub_heading_blue">Estimates & Projections</h2>
         <img class="tezos_icon" src="/img/stake-pools/icon-projection-min.png" width="85px">
         <p class="text_dark_blue">
@@ -144,8 +219,8 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-        <div class="text-center">
+    <div class="col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
+        <div class="text-center top_margin">
             <h2 class="sub_heading_blue">Community Impact</h2>
             <img class="tezos_icon" src="/img/stake-pools/icon-community-min.png" width="85px">
         </div>
