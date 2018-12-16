@@ -166,14 +166,14 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-5 text-center">
+<div class="row row-eq-height">
+    <div class="col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-10 text-center">
         <div class="border_blue">
             <p class="text_dark_blue">Your Estimated Fractalide XTZ Stake Pool Rewards</p>
             <h2 class="sub_heading_blue">87.58 <img src="/img/stake-pools/tezos-currency-blue-min.png" width="18px"/></h2>
         </div>
     </div>
-    <div class="col-sm-4 col-xs-5 text-center">
+    <div class="col-sm-offset-0 col-sm-4 col-xs-offset-1 col-xs-10 text-center">
         <div class="border_blue">
             <p class="text_dark_blue">Your Estimated Fractalide XTZ Stake Pool Delegation Annual Reward Percentage</p>
             <h2 class="sub_heading_blue">8.8 %</h2>
