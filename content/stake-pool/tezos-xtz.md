@@ -43,6 +43,9 @@
         </div>
     </div>
 </div>
+
+<div id="estimation" class="hidden">
+
 <div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <div class="blue_box">
@@ -180,6 +183,84 @@
         </div>
     </div>
 </div>
+
+</div>
+
+<!-- kt1 data table -->
+<div id="kt1" class="">
+
+<div class="row">
+    <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
+        <div class="border_blue">
+            <h2 class="sub_heading_blue">You're delegating!</h2>
+            <p class="text_dark_blue">
+                You delegated by Cycle 26
+            </p>
+            <p class="text_dark_blue">
+                All rewards re-delegate and you are supporting Fractalide XTZ Stake Pool
+            </p>
+            <h2 class="sub_heading_blue">91.75 <img src="/img/stake-pools/tezos-currency-blue-min.png" width="18px"/></h2>
+            <h2 class="sub_heading_blue">Staked & Delegated</h2>
+        </div>
+    </div>
+</div>
+
+<div class="row row-eq-height">
+    <div class="col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-10 text-center">
+        <div class="blue_box">
+            <p><b class="text_dark_blue">Last Cycle Paid</b></p>
+            <h2 class="sub_heading_blue">40</h2>
+        </div>
+    </div>
+    <div class="col-sm-offset-0 col-sm-4 col-xs-offset-1 col-xs-10 text-center">
+        <div class="blue_box">
+            <p><b class="text_dark_blue">All-time Rewards Paid</b></p>
+            <h2 class="sub_heading_blue">17368.671477</h2>
+        </div>
+    </div>
+</div>
+
+<div class="row kt1_data">
+    <div class="col-sm-offset-2 col-sm-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Cycle</th>
+                    <th>Snapshot Balance</th>
+                    <th>Estimated Rewards</th>
+                    <th>Final Rewards</th>
+                    <th>Payout Hash</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>26</td>
+                    <td>19999.74</td>
+                    <td>14.391045</td>
+                    <td>14.391485</td>
+                    <td class="text_blue">Paid out</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>19999.74</td>
+                    <td>14.391045</td>
+                    <td>14.391485</td>
+                    <td class="text_blue">Paid out</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>19999.74</td>
+                    <td>14.391045</td>
+                    <td>14.391485</td>
+                    <td class="text_blue">Paid out</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+
 <div class="row">
     <div class="col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
         <div class="text-center top_margin">
