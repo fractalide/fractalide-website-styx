@@ -12,7 +12,7 @@
                     <div class="col-xs-offset-2 col-xs-8">
                         <div class="text-center">
                             <p class="text_white">
-                                <b class="text_white">Problem:</b> A centralised app provider operates behind closed doors. It can cut your service, invade your privacy and can be disabled in one hit.
+                                <b class="text_white">Problem:</b> A centralised app provider (website) operates behind closed doors. It can cut your service, invade your privacy and disabled your account in one hit.
                             </p>
                             <p class="text_white">
                                 <b class="text_white">Solution:</b> Fractalide supports the creation of decentralised apps ("dapps"). Anyone can create, buy, sell and share dapps in a stable, reliable way.
