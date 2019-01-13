@@ -8,9 +8,9 @@
   {
     name = "Solutions";
     children = [
-      { name = "Hyperflow"; url = "/hyperflow/"; }
-      { name = "Fractalmarket"; url = "/fractalmarket/"; }
-      { name = "Services"; url = "/development-and-analysis/"; }
+      { name = "Trulity"; url = "/trulity/"; }
+      { name = "Mercat Cross"; url = "/mercat/"; }
+      { name = "Luceo"; url = "/luceo/"; }
       { name = "Cantor Wallet"; url = "/cantor-wallet/"; }
     ];
   }

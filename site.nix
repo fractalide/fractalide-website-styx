@@ -146,13 +146,13 @@ rec {
       pages    = lib.pagesToList { inherit pages; };
     };
 
-    development-and-analysis = rec {
-      title    = "Development and Analysis";
-      section  = "development_and_analysis";
-      path     = "/development-and-analysis/index.html";
+    luceo = rec {
+      title    = "Luceo (CEO)";
+      section  = "luceo";
+      path     = "/luceo/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/development-and-analysis.md; }).content;
+      content  = (lib.loadFile { file = ./content/luceo.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
@@ -218,25 +218,25 @@ rec {
       inherit (data) site-partials;
     };
 
-    hyperflow = rec {
-      title    = "Hyperflow";
-      section  = "hyperflow";
-      path     = "/hyperflow/index.html";
+    trulity = rec {
+      title    = "Trulity";
+      section  = "trulity";
+      path     = "/trulity/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = sections.hyperflow.content;
-      extraContent = sections.hyperflow_modes.content + site-partials.signup.content;
-      sections = lib.loadDir { dir = ./content/hyperflow; asAttrs = true; };
+      content  = sections.trulity.content;
+      extraContent = sections.trulity_modes.content + site-partials.signup.content;
+      sections = lib.loadDir { dir = ./content/trulity; asAttrs = true; };
       inherit (data) site-partials;
     };
 
-    fractalmarket = rec {
-      title    = "Fractalmarket";
-      section  = "fractalmarket";
-      path     = "/fractalmarket/index.html";
+    mercat = rec {
+      title    = "Mercat Cross";
+      section  = "mercat";
+      path     = "/mercat/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/fractalmarket.md; }).content;
+      content  = (lib.loadFile { file = ./content/mercat.md; }).content;
       extraContent = site-partials.signup.content;
     };
 

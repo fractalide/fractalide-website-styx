@@ -5,18 +5,18 @@
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Trulity</h2>
                     <p>
-                        We need a simple way to interact with a named data network. Trulity is a next generation browser built from scratch and is used to run named dapps.
+                        We need a simple way to interact with each other without governments and monopolies spying on and censoring us. Trulity is a next generation browser built from scratch and is used to run named dapps.
                     </p>
                     <a class="" href="/trulity/">Learn more</a>
                 </div>
             </div>
             <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-8">
                 <div class="text-center">
-                    <h2 class="text_blue fractal_blue">Fractalmarket</h2>
+                    <h2 class="text_blue fractal_blue">Mercat Cross</h2>
                     <p>
-                         Dapps need to be shared. Trulity connects to a dapp market called Fractalmarket, where anyone can buy, sell and share Trulity dapps.
+                         Dapps need to be shared. Trulity connects to a dapp marketplace called Mercat Cross, where anyone can buy, sell and share Trulity dapps.
                     </p>
-                    <a class="" href="/fractalmarket/">Learn more</a>
+                    <a class="" href="/mercat/">Learn more</a>
                 </div>
             </div>
         </div>
