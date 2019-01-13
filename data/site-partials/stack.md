@@ -6,7 +6,7 @@
                     <div class="col-xs-12">
                         <div class="text-center">
                             <img src="/img/stack-min.png" width="121px" />
-                            <h1 class="section_heading_white">Cardano DApp Browser</h1>
+                            <h1 class="section_heading_white">A Browser for a Future Internet</h1>
                         </div>
                     </div>
                     <div class="col-xs-offset-2 col-xs-8">
