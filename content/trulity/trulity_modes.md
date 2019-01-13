@@ -1,9 +1,9 @@
-<section id="hyperflow_modes">
+<section id="trulity_modes">
     <div class="container">
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <div class="text-center">
-                    <h2 class="sub_heading_blue">Hyperflow features</h2>
+                    <h2 class="sub_heading_blue">Trulity features</h2>
                 </div>
             </div>
         </div>
@@ -58,4 +58,4 @@
             </div>
         </div>
     </div>
-</section> <!-- hyperflow_modes -->
+</section> <!-- trulity_modes -->
