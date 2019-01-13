@@ -12,19 +12,19 @@
 <div class="row">
     <div class="col-lg-4 col-xs-12 text-center development_item">
         <img src="/img/roadmap-min/fractal-min.png" />
-        <h3>Cardano (LUCEO)</h3>
+        <h3>Cardano (ADA)</h3>
         <p>
-            Luceo (CEO) is a new genesis block of the Cardano blockchain. The Luceo coin will be used on the Fractalmarket and be the main currency in the Hyperflow browser. The source code maintains parity with the Cardano (ADA). Luceo will come online once we've completed an ICO and go live in Q1 2019.
+            Cardano (ADA) stakepool will come online in 2019 when the Shelley release takes place. We aim to be one of the first Cardano (ADA) stakepools on the block.
         </p>
-        <a class="" href="/stake-pool/cardano-luceo">Waiting to go live</a>
+        <a class="" href="/stake-pool/cardano-ada">Waiting to go live</a>
     </div>
     <div class="col-lg-4 col-xs-12 text-center development_item">
         <img src="/img/roadmap-min/fractal-min.png" />
-        <h3>Cardano (ADA)</h3>
+        <h3>Luceo (CEO)</h3>
         <p>
-            Cardano (ADA) will come online in 2019 when the Shelley release takes place. We aim to be one of the first Cardano (ADA) stakepools on the block.
+            Luceo (CEO) is an implementation of the Ouroboros consensus protocol and is a new genesis block. The <a class="" href="/luceo/">Luceo</a> coin will be used on the <a class="" href="/mercat/">Mercat Cross</a> and be the main currency in the <a class="" href="/trulity/">Trulity</a> browser. Luceo stakepools will come online once we've completed an ICO and go live in Q3 2019.
         </p>
-        <a class="" href="/stake-pool/cardano-ada">Waiting to go live</a>
+        <a class="" href="/stake-pool/luceo-ceo">Waiting to go live</a>
     </div>
     <div class="col-lg-4 col-xs-12 text-center development_item">
         <img src="/img/roadmap-min/fractal-min.png" />

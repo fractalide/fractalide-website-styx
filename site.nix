@@ -166,13 +166,13 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    stake-pool-cardano-luceo = rec {
+    stake-pool-luceo-ceo = rec {
       title    = "";
-      section  = "cardano-luceo";
-      path     = "/stake-pool/cardano-luceo/index.html";
+      section  = "luceo-ceo";
+      path     = "/stake-pool/luceo-ceo/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/stake-pool/cardano-luceo.md; }).content;
+      content  = (lib.loadFile { file = ./content/stake-pool/luceo-ceo.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
