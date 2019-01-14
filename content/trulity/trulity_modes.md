@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <div class="text-center">
-                    <h2 class="sub_heading_blue">Trulity features</h2>
+                    <h2 class="sub_heading_blue">Trulity modes</h2>
                 </div>
             </div>
         </div>
@@ -21,38 +21,28 @@
                 <div class="hyperflow_mode hyperflow_item_1">
                     <h2 class="sub_heading_blue">Node mode</h2>
                     <p>
-                        Node mode is for programmers. It allows them to build reusable, reproducible and composable software agents, or
-                        nodes. These are “black box” processes that do one and only one thing. They have unique names, enforced by the nix
-                        language.
+                        Nodemoders are the first wave of pioneers. These people move into uninhabited, wild territory seeking out and extracting gold ore and nuggets from the hills and rivers.
                     </p>
                     <p>
-                        Racket is the glue language. It provides the programmer with plenty of <a href="http://docs.racket-lang.org/search/index.html?q=H%3A">languages</a>
-                        to use within agents, and the Rust language makes for fast, secure dapps.
+                        This browser mode consists of a text editor and an interpreter so that people may build the very lowest level of reusable, reproducible and composable components. Luceo is the gold to be extracted. A large portion of Luceo will be used to subsidise nodemoders building out initial infrastructure.
                     </p>
                 </div>
                 <div class="hyperflow_mode hyperflow_item_2">
                     <h2 class="sub_heading_blue">Graph mode</h2>
                     <p>
-                        Graph mode is for people who are experts in their industries, such as engineers, biologists, or mathematicians, who
-                        may not necessarily have programming skills. Using a visual tool, they can easily compose subgraphs using the nodes
-                        created by programmers.
+                        Graphmoders are the second wave of pioneers consisting of blacksmiths, inn keepers, bakers, coin minters etc. They are the specialists that sell services in new towns earning recently minted gold coins.
                     </p>
                     <p>
-                        Subgraphs and agents are both considered nodes, and can be composed into graphs, or networks of nodes, which become
-                        a dapp. Fractalide's core strength is that nodes are independent blocks of software that are reusable, reproducable
-                        and composable. Nodes can be connected in as many ways as you wish, to create any number of different dapps.
+                        This browser mode consists of a visual tool for domain experts to compose components created by nodemoders into problem solving dapps. Graphmoders might not be programmers, but they do know how to snap lego blocks together and to markup their compositions allowing them to earn Luceo.
                     </p>
                 </div>
                 <div class="hyperflow_mode hyperflow_item_3">
                     <h2 class="sub_heading_blue">Run mode</h2>
                     <p>
-                        Run mode is for everyone, and does not require programming knowledge. It runs dapps created by programmers and
-                        industry experts. Just enter the name of the dapp in the search bar, and Hyperflow will find and run the dapp, just
-                        like any other browser.
+                        Runmoders are the last phase of settlers, they seek out already built towns with polished products and a high standard of living. The town must have sufficient gold circulating so that they may comfortably set up a business, albeit, in a competitive environment and thrive.
                     </p>
                     <p>
-                        In this mode, you can buy high-quality dapps. A typical dapp on Hyperflow would be a cryptocurrency wallet. In the
-                        future, dapps will be able to talk to smart contracts to carry out advanced concepts, such as taking out insurance.
+                        This browser mode, allows one to buy and run dapps in much the same way one interacts with websites in legacy browsers, except they have the power of Google's entire data dissemination capabilities in their back pocket.
                     </p>
                 </div>
             </div>
