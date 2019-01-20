@@ -8,19 +8,18 @@
   {
     name = "Solutions";
     children = [
-      { name = "Hyperflow"; url = "/hyperflow/"; }
-      { name = "Fractalmarket"; url = "/fractalmarket/"; }
-      { name = "Services"; url = "/development-and-analysis/"; }
-      { name = "Cantor Wallet"; url = "/cantor-wallet/"; }
+      { name = "Trulity"; url = "/trulity/"; }
+      { name = "Mercat Cross"; url = "/mercat/"; }
+      { name = "Luceo"; url = "/luceo/"; }
     ];
   }
   {
     name = "Stakepools";
     children = [
       { name = "Overview"; url = "/stake-pool/"; }
-      { name = "Cardano (LUCEO)"; url = "/stake-pool/cardano-luceo/"; }
-      { name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }
+      { name = "Luceo (CEO)"; url = "/stake-pool/luceo-ceo/"; }
       { name = "Tezos (XTZ)"; url = "/stake-pool/tezos-xtz/"; }
+      { name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }
     ];
   }
   {

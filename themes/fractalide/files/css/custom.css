@@ -326,11 +326,11 @@ h2.fractal_blue {
       margin: 0 25px 0 25px;
   }
 }
-section#hyperflow_modes {
+section#trulity_modes {
     margin-top: 90px;
 }
 @media (min-width: 1200px) {
-    section#hyperflow_modes > div.container > div.row:nth-child(2) {
+    section#trulity_modes > div.container > div.row:nth-child(2) {
         margin-top: 120px;
     }
     .hyperflow_flex_container {
