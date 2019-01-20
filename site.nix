@@ -156,6 +156,16 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
+    gift = rec {
+      title    = "";
+      section  = "luceo-ceo";
+      path     = "/gift/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/gift.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
     stake-pool-overview = rec {
       title    = "Stakepools";
       section  = "stakepools";
