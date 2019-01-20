@@ -236,8 +236,9 @@ rec {
       path     = "/mercat/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/mercat.md; }).content;
-      extraContent = site-partials.signup.content;
+      content  = sections.mercat.content;
+      extraContent = sections.mercat_dapps.content + site-partials.signup.content;
+      sections = lib.loadDir { dir = ./content/mercat; asAttrs = true; };
     };
 
     blogIndex = lib.mkSplit {
