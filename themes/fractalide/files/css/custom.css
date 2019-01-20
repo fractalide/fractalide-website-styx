@@ -456,7 +456,7 @@ section#trulity_modes {
 /*************************************/
 
 /* Page: Cardano (LUCEO) */
-section#cardano-luceo h1.fractal_white {
+section#luceo-ceo h1.fractal_white {
     background: url('/img/stake-pools/stake-pool-luceo-min.png') no-repeat center;
     background-size: 437px 190px;
     height: 190px;
@@ -482,10 +482,10 @@ section#tezos-xtz h1.fractal_white {
     margin-bottom: 80px;
 }
 
-section#cardano-luceo p,
+section#luceo-ceo p,
 section#cardano-ada p,
 section#tezos-xtz p,
-section#cardano-luceo button,
+section#luceo-ceo button,
 section#cardano-ada button,
 section#tezos-xtz button {
     margin-top: 30px;
