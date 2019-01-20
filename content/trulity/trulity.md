@@ -2,7 +2,7 @@
             <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                 <div class="text-center">
                     <p><img class="" src="/img/comic/sword-min.png" width="317px"/></p>
-                    <h2 class="sub_heading_blue">A kingmaker browser</h2>
+                    <h2 class="sub_heading_blue">A Kingmaker Browser</h2>
                     <p>
                         Being truthful and responsible are the core characteristics of a hero. Speaking truth to power and shouldering responsibility to the point of buckling knees is the only antidote to bitterness and resentment.
                     </p>

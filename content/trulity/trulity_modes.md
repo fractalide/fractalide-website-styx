@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <div class="text-center">
-                    <h2 class="sub_heading_blue">Trulity modes</h2>
+                    <h2 class="sub_heading_blue">Trulity Modes and Waves</h2>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                 <div class="hyperflow_mode hyperflow_item_1">
                     <h2 class="sub_heading_blue">Node mode</h2>
                     <p>
-                        Nodemoders are the first wave of pioneers. These people move into uninhabited, wild territory seeking out and extracting gold ore and nuggets from the hills and rivers.
+                        Nodemoders are the first wave of pioneers. These people move into uninhabited, wild territory seeking out and extracting gold ore and nuggets from hills and rivers. Currently the Fractalide project is in this stage and seeks out these pioneers.
                     </p>
                     <p>
                         This browser mode consists of a text editor and an interpreter so that people may build the very lowest level of reusable, reproducible and composable components. Luceo is the gold to be extracted. A large portion of Luceo will be used to subsidise nodemoders building out initial infrastructure.
