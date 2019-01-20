@@ -4,7 +4,7 @@
             <img src="/img/wallet-min/cantor-logo-min.png" />
             <h2 class="sub_heading_blue">What is Cantor?</h2>
             <p>
-                Fractalide's first application is Cantor, a Cardano wallet. The wallet allows you to send and receive ADA. Please consider this alpha software and use with patience once it's released.
+                Fractalide's first application is Cantor, a UTXO wallet for an Ouroboros blockchain. The wallet allows you to send and receive LUCEO (CEO). Please consider this alpha software and use with patience once it's released.
             </p>
             <a class="btn btn-lg btn-primary" href="#download_center">Download Cantor</a>
         </div>
@@ -25,7 +25,7 @@
         </div>
         <div class="col-lg-4 col-xs-12 text-center cantor_feature">
             <img src="/img/wallet-min/verified-min.png" />
-            <h3>A formally verified Cardano wallet</h3>
+            <h3>A formally verified wallet</h3>
             <p>
                 Cantor adheres to the <a href="https://cardanodocs.com/technical/formal-specification-for-a-cardano-wallet/">Cardano Wallet Specification</a> document by using IOHK's new wallet backend. Meaning our wallet will be well behaved.
             </p>
@@ -34,7 +34,7 @@
             <img src="/img/wallet-min/long-term-min.png" />
             <h3>Efficient, long-term integration</h3>
             <p>
-                Most Fractalide dapps will need to interact with Cardano's currency ADA. With Cantor, the process is streamlined - all they need to do is call in the wallet and start transacting with ADA. Cantor makes dapps usable more quickly and to more people.
+                Most Fractalide dapps will need to interact with Luceo. With Cantor, the process is streamlined - all they need to do is call in the wallet and start transacting with Luceo. Cantor makes dapps usable more quickly and to more people.
             </p>
         </div>
     </div>

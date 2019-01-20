@@ -11,7 +11,6 @@
       { name = "Trulity"; url = "/trulity/"; }
       { name = "Mercat Cross"; url = "/mercat/"; }
       { name = "Luceo"; url = "/luceo/"; }
-      { name = "Cantor Wallet"; url = "/cantor-wallet/"; }
     ];
   }
   {
