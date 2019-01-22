@@ -15,10 +15,13 @@
             Which means you won't see the importance of building a browser for an information centric network ... from scratch. Nor will you be able to populate this new internet with new applications. Indeed you'll probably be sucking from the teat of Google, Facebook and Twitter.
         </p>
         <p>
-            This means you won't become filthy rich, because you're handing your identity to these tech Giants and not able to grasp the degree of self sovereignty you can exercise.  
+            You're handing your identity to these tech giants and not able to experience the degree of self sovereignty available to you.  
         </p>
         <p>
             If you're not your average sausage out of the sausage factory then you need some filthy lucre, which serves as an invitation for you to participate in the early stages of a new internet. To start off you're going to need to email the below information to the email address on your card. <mark> 1.) ADA address generated from this <a href="https://github.com/input-output-hk/cardano-cli">software</a> 2.) The code that's on your card.</mark>
+        </p>
+        <p>
+            The amount on the card will be sent to the address you emailed us.
         </p>
     </div>
 </div>

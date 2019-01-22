@@ -3,7 +3,7 @@
 }:
 
 [
-  { name = "About us"; url = "/about_us/"; }
+  { name = "Vision"; url = "/vision/"; }
   #{ name = "ICO"; url = "/ico/"; }
   {
     name = "Solutions";

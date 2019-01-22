@@ -283,16 +283,17 @@ rec {
       content  = (lib.loadFile { file = ./content/404.md; }).content;
     };
 
-    about_us = rec {
-      title        = "About us";
+    vision = rec {
+      title        = "Vision";
       section      = "about_us";
-      path         = "/about_us/index.html";
+      path         = "/vision/index.html";
       template     = templates.page.sections;
       layout       = templates.layout;
       lede         = sections.lede.content;
-      sectionOrder = [ "team" "vision" ];
+      sectionOrder = [ "team" ];
+      extraContent = site-partials.signup.content;
       sections     = lib.loadDir {
-        dir = ./content/about_us;
+        dir = ./content/vision;
         env = { inherit (data) team; inherit lib; };
         asAttrs = true;
       };
