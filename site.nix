@@ -118,6 +118,16 @@ rec {
       footer   = "";
     };
 
+    videos = rec {
+      title    = "Videos";
+      section  = "videos";
+      path     = "/videos/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/videos.md; }).content;
+      footer   = "";
+    };
+
     community = rec {
       title    = "Community";
       section  = "community";
