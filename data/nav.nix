@@ -25,6 +25,7 @@
   {
     name = "Resources";
     children = [
+      { name = "Videos"; url = "/videos/"; }
       { name = "Research"; url = "/research/"; }
       { name = "Community"; url = "/community/"; }
       { name = "Documentation"; url = "/documentation/"; }
