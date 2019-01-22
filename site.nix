@@ -289,7 +289,7 @@ rec {
       path         = "/vision/index.html";
       template     = templates.page.sections;
       layout       = templates.layout;
-      lede         = sections.lede.content;
+      lede         = sections.vision.content;
       sectionOrder = [ "team" ];
       extraContent = site-partials.signup.content;
       sections     = lib.loadDir {
