@@ -6,7 +6,7 @@
                 Our stakepool is now live and you're welcome to put your tezzies to work by delegating them to our below address.
             </p>
             <p>
-                We return 85% the rewards to our delegators in the same cycle they are released. All our pool software is <a href="https://github.com/fractalide/fractalpools">open source</a> and we operate is a high security environment. Pool earnings are used to help fund the development of <a href="/trulity">Trulity</a>, an open source browser for a future internet. Just as cryptocurrencies allow for a bank in your back pocket, so Fractalide aims to give you data dissemination capabilities of Internet monopolies at negligible cost.
+                We return 93% the rewards to our delegators in the same cycle they are released. All our pool software is <a href="https://github.com/fractalide/fractalpools">open source</a> and we operate is a high security environment. Pool earnings are used to help fund the development of <a href="/trulity">Trulity</a>, an open source browser for a future internet. Just as cryptocurrencies allow for a bank in your back pocket, so Fractalide aims to give you data dissemination capabilities of Internet monopolies at negligible cost.
             </p>
         </div>
     </div>
