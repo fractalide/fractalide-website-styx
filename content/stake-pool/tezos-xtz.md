@@ -52,7 +52,7 @@
     </div>
 </div>
 
-<div id="estimation" class="">
+<div id="estimation">
 
 <div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="math_field">
                         <div class="input-group">
-                            <input type="text" class="form-control" aria-describedby="your-stake-addon">
+                            <input type="text" class="form-control" aria-describedby="your-stake-addon" id="yourStake" value="1000">
                             <span class="input-group-addon darker" id="your-stake-addon"><img src="/img/stake-pools/tezos-currency-white-min.png" width="12px"/></span>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                         <b class="text_dark_blue">Estimated<br>Blocks Per Year</b>
                     </div>
                     <div class="math_value">
-                        <span>491.520</span>
+                        <span id="estiamatedBlocksPerYear" data-val="491520">491.520</span>
                     </div>
                 </div>
                 <div class="math_symbol math_symbol_times">
@@ -92,7 +92,7 @@
                         <b class="text_dark_blue">Baker Rewards<br>Per Block</b>
                     </div>
                     <div class="math_value">
-                        <span>16</span>
+                        <span id="bakerRewardsPerBlock">16</span>
                     </div>
                 </div>
                 <div class="math_symbol math_symbol_plus">
@@ -104,8 +104,8 @@
                     </div>
                     <div class="math_field">
                         <div class="input-group">
-                            <input type="text" class="form-control" aria-describedby="your-stake-addon">
-                            <span class="input-group-addon darker" id="your-stake-addon"><img src="/img/stake-pools/tezos-currency-white-min.png" width="12px"/></span>
+                            <input type="text" class="form-control" aria-describedby="avg-fees-per-block-addon" id="averageFeesPerBlock" value="0">
+                            <span class="input-group-addon darker" id="avg-fees-per-block-addon"><img src="/img/stake-pools/tezos-currency-white-min.png" width="12px"/></span>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                         <b class="text_dark_blue">Endorsement<br>Rewards Per Block</b>
                     </div>
                     <div class="math_value">
-                        <span>2</span>
+                        <span id="endorsementRewardsPerBlock">2</span>
                     </div>
                 </div>
                 <div class="math_symbol math_symbol_times">
@@ -128,7 +128,7 @@
                         <b class="text_dark_blue">Endorsement<br>Per Block</b>
                     </div>
                     <div class="math_value">
-                        <span>32</span>
+                        <span id="endorsementPerBlock">32</span>
                     </div>
                 </div>
                 <div class="math_symbol math_symbol_parenthesis_close">
@@ -142,7 +142,7 @@
                         <b class="text_dark_blue">Total Tezos<br>Supply</b>
                     </div>
                     <div class="math_value">
-                        <span>763.3M</span>
+                        <span id="totalTezosSupply" data-val="763300000">763.3M</span>
                     </div>
                 </div>
                 <div class="math_symbol math_symbol_divide">
@@ -154,8 +154,8 @@
                     </div>
                     <div class="math_field">
                         <div class="input-group">
-                            <input type="text" class="form-control" aria-describedby="your-stake-addon">
-                            <span class="input-group-addon darker" id="your-stake-addon"><b class="text_white">%</b></span>
+                            <input type="text" class="form-control" aria-describedby="percentage-stake-addon" id="percentageOfTezThatStake" value="50">
+                            <span class="input-group-addon darker" id="percentage-stake-addon"><b class="text_white">%</b></span>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                         <b class="text_dark_blue">Fractalide XTZ Stake<br>Pool Reward-Share</b>
                     </div>
                     <div class="math_value">
-                        <span>85%</span>
+                        <span id="fractalideXTZStakePoolRewardShare" data-val="0.85">85%</span>
                     </div>
                 </div>
                 <div class="math_symbol math_symbol_equal">
@@ -181,13 +181,13 @@
     <div class="col-sm-offset-2 col-sm-4 col-xs-offset-1 col-xs-10 text-center">
         <div class="border_blue">
             <p class="text_dark_blue">Your Estimated Fractalide XTZ Stake Pool Rewards</p>
-            <h2 class="sub_heading_blue">87.58 <img src="/img/stake-pools/tezos-currency-blue-min.png" width="18px"/></h2>
+            <h2 class="sub_heading_blue"><span id="yourEstimated">87.58</span> <img src="/img/stake-pools/tezos-currency-blue-min.png" width="18px"/></h2>
         </div>
     </div>
     <div class="col-sm-offset-0 col-sm-4 col-xs-offset-1 col-xs-10 text-center">
         <div class="border_blue">
             <p class="text_dark_blue">Your Estimated Fractalide XTZ Stake Pool Delegation Annual Reward Percentage</p>
-            <h2 class="sub_heading_blue">8.8 %</h2>
+            <h2 class="sub_heading_blue"><span id="yourEstimatedPercentage">8.8</span> %</h2>
         </div>
     </div>
 </div>
@@ -195,7 +195,7 @@
 </div>
 
 <!-- kt1 data table -->
-<div id="kt1" class="hidden">
+<div id="kt1" style="display: none;">
 
 <div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
@@ -242,27 +242,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>26</td>
-                        <td>19999.74</td>
-                        <td>14.391045</td>
-                        <td>14.391485</td>
-                        <td class="text_blue">Paid out</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td>19999.74</td>
-                        <td>14.391045</td>
-                        <td>14.391485</td>
-                        <td class="text_blue">Paid out</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td>19999.74</td>
-                        <td>14.391045</td>
-                        <td>14.391485</td>
-                        <td class="text_blue">Paid out</td>
-                    </tr>
                 </tbody>
             </table>
         </div>
@@ -331,3 +310,4 @@
 </div>
 
 <script src="/js/global.js"></script>
+<script src="/js/tezos.js"></script>
