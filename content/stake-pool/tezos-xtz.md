@@ -70,8 +70,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <i class="fa fa-times text_blue" aria-hidden="true"></i>
+                <div class="math_symbol math_symbol_times">
+                    <span></span>
                 </div>
                 <div class="math_element">
                     <div class="math_name">
@@ -81,11 +81,11 @@
                         <span>491.520</span>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <i class="fa fa-times text_blue" aria-hidden="true"></i>
+                <div class="math_symbol math_symbol_times">
+                    <span></span>
                 </div>
-                <div class="math_symbol">
-                    <b class="text_blue">(</b>
+                <div class="math_symbol math_symbol_parenthesis_open">
+                    <span></span>
                 </div>
                 <div class="math_element">
                     <div class="math_name">
@@ -95,8 +95,8 @@
                         <span>16</span>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <i class="fa fa-plus text_blue" aria-hidden="true"></i>
+                <div class="math_symbol math_symbol_plus">
+                    <span></span>
                 </div>
                 <div class="math_element">
                     <div class="math_name">
@@ -109,8 +109,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <i class="fa fa-plus text_blue" aria-hidden="true"></i>
+                <div class="math_symbol math_symbol_plus">
+                    <span></span>
                 </div>
                 <div class="math_element">
                     <div class="math_name">
@@ -120,8 +120,8 @@
                         <span>2</span>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <i class="fa fa-times text_blue" aria-hidden="true"></i>
+                <div class="math_symbol math_symbol_times">
+                    <span></span>
                 </div>
                 <div class="math_element">
                     <div class="math_name">
@@ -131,11 +131,11 @@
                         <span>32</span>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <b class="text_blue">)</b>
+                <div class="math_symbol math_symbol_parenthesis_close">
+                    <span></span>
                 </div>
-                <div class="math_symbol">
-                    <b class="text_blue">/</b>
+                <div class="math_symbol math_symbol_divide">
+                    <span></span>
                 </div>
                 <div class="math_element">
                     <div class="math_name">
@@ -145,8 +145,8 @@
                         <span>763.3M</span>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <b class="text_blue">/</b>
+                <div class="math_symbol math_symbol_divide">
+                    <span></span>
                 </div>
                 <div class="math_element">
                     <div class="math_name">
@@ -159,8 +159,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <i class="fa fa-times text_blue" aria-hidden="true"></i>
+                <div class="math_symbol math_symbol_times">
+                    <span></span>
                 </div>
                 <div class="math_element">
                     <div class="math_name">
@@ -170,8 +170,8 @@
                         <span>85%</span>
                     </div>
                 </div>
-                <div class="math_symbol">
-                    <b class="text_blue">=</b>
+                <div class="math_symbol math_symbol_equal">
+                    <span></span>
                 </div>
             </div>
         </div>

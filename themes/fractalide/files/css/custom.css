@@ -577,7 +577,49 @@ section#tezos-xtz ul li {
 
 .math_symbol {
     order: 1;
-    padding: 65px 10px 5px 10px;
+    padding: 60px 10px 5px 10px;
+}
+
+.math_symbol_plus > span:before {
+    content: "+";
+    font-size: 20px;
+    font-weight: 900;
+    color: #58B4CD;
+}
+
+.math_symbol_times > span:before {
+    content: "\00D7";
+    font-size: 20px;
+    font-weight: 900;
+    color: #58B4CD;
+}
+
+.math_symbol_divide > span:before {
+    content: "\00F7";
+    font-size: 20px;
+    font-weight: 900;
+    color: #58B4CD;
+}
+
+.math_symbol_equal > span:before {
+    content: "=";
+    font-size: 20px;
+    font-weight: 900;
+    color: #58B4CD;
+}
+
+.math_symbol_parenthesis_open > span:before {
+    content: "(";
+    font-size: 20px;
+    font-weight: 900;
+    color: #58B4CD;
+}
+
+.math_symbol_parenthesis_close > span:before {
+    content: ")";
+    font-size: 20px;
+    font-weight: 900;
+    color: #58B4CD;
 }
 
 .math_element {
