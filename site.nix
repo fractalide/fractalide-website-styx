@@ -168,11 +168,21 @@ rec {
 
     gift = rec {
       title    = "";
-      section  = "luceo-ceo";
+      section  = "";
       path     = "/gift/index.html";
       template = templates.page.full;
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/gift.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
+    gift-details = rec {
+      title    = "";
+      section  = "luceo-ceo";
+      path     = "/gift-details/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/gift-details.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
