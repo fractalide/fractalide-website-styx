@@ -1385,3 +1385,16 @@ fieldset[disabled] .btn-primary.focus {
 .has-error .form-control-feedback {
   color: #ed7a7f;
 }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-eq-height > [class*="col-"] {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

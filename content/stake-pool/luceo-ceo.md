@@ -24,7 +24,7 @@
 </div>
 <div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
-        <div class="blue_box">
+        <div class="blue_box top_margin">
             <h2 class="sub_heading_blue">Delegation address</h2>
             <div class="row white_box">
                 <div class="col-lg-8 col-xs-offset-2 col-xs-10">
