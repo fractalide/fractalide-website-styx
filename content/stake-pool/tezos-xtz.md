@@ -33,11 +33,8 @@
         </div>
     </div>
 </div>
-<div class="row">
+<!--<div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
-        <p class="text_dark_blue">
-            We return 85% of our baking rewards to you. The other 15% supports the building of a new browser for a future internet which requires fast moving efficient cryptocurrencies to facilitate transactions in the community.
-        </p>
         <p class="text_dark_blue">
             <b class="text_dark_blue">Enter your public key to see how your XTZs baking progress:</b>
         </p>
@@ -50,7 +47,7 @@
             <input type="text" class="form-control input-lg" id="yourAddress" name="yourAddress" placeholder="KT1..."/>
         </div>
     </div>
-</div>
+</div> -->
 
 <div id="estimation">
 
@@ -78,7 +75,7 @@
                         <b class="text_dark_blue">Estimated<br>Blocks Per Year</b>
                     </div>
                     <div class="math_value">
-                        <span id="estiamatedBlocksPerYear" data-val="491520">491.520</span>
+                        <span id="estiamatedBlocksPerYear" data-val="491520">491,520</span>
                     </div>
                 </div>
                 <div class="math_symbol math_symbol_times">
@@ -167,7 +164,7 @@
                         <b class="text_dark_blue">Fractalide XTZ Stake<br>Pool Reward-Share</b>
                     </div>
                     <div class="math_value">
-                        <span id="fractalideXTZStakePoolRewardShare" data-val="0.85">85%</span>
+                        <span id="fractalideXTZStakePoolRewardShare" data-val="0.93">93%</span>
                     </div>
                 </div>
                 <div class="math_symbol math_symbol_equal">
