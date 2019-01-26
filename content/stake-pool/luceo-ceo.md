@@ -1,15 +1,15 @@
 <div class="row">
     <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
         <div class="text-center">
-            <h2 class="sub_heading_blue">A Cardano Stake Pool has an important role in securing the LUCEO cryptocurrency</h2>
+            <h2 class="sub_heading_blue">Fractalide CEO Stakepool</h2>
             <p>
-                Luceo (CEO) is a friendly genesis fork of the Cardano protocol. CEO will maintain version parity with the ADA blockchain for the foreseeable future.
+                Proof of Stake consensus algorithms require users to be online when it's their turn to make a block, this isn't always possible. A stakepool allows users to delegate their vote to a stake pool of their choice. This way, users can take part in securing the consensus algorithm, earn rewards and be offline.
             </p>
             <p>
-                Ouroboros, Cardano’s Proof of Stake algorithm, requires users to be online, which isn't always possible. Ouroboros allows offline users to delegate their vote to a stake pool of their choice, such as Fractalide's Cardano Stake Pool. This way, users can take part in securing the consensus algorithm and earn rewards.
+                Fractalide's CEO Stakepool will come online in Q3 2019.
             </p>
             <p>
-                The Cardano Shelley release is due around Q4 2019, and shifts the architecture to a completely decentralised Cardano. Fractalide's Cardano Stake Pool will then go live.
+                We return 85% the rewards to our delegators in the same epoch they are released. All our pool software is <a href="https://github.com/fractalide/fractalpools">open source</a> and we operate is a high security environment. Pool earnings are used to fund the development of an open source browser for a future internet. Just as cryptocurrencies allow for a bank in your back pocket, so Fractalide aims to give you data dissemination capabilities of Internet monopolies at negligible cost.
             </p>
         </div>
     </div>
@@ -28,7 +28,7 @@
             <h2 class="sub_heading_blue">Delegation address</h2>
             <div class="row white_box">
                 <div class="col-lg-8 col-xs-offset-2 col-xs-10">
-                    <span id="delegationAddress">CARDANO-SHELLEY-RELEASE-NOT-READY-YET</span>
+                    <span id="delegationAddress">LUCEO-IS-NOT-READY-YET</span>
                     <a class="copy" href="#" onclick="javascript:copyToClipboard('delegationAddress',event);">
                         <img src="/img/stake-pools/copy.png" width="19px">
                     </a>
@@ -45,23 +45,23 @@
 <div class="row">
     <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/algorithm-min.png">
-        <h2 class="sub_heading_blue">Heading</h2>
+        <h2 class="sub_heading_blue">Decentralisation</h2>
         <p class="stake_pool_text">
-            Centralised mining is an issue for currencies like Bitcoin, because when pools get too big and centralised, it can lead to an attack on the consensus protocol. Being on Cardano, Fractalide's stake pool participates in a process that avoids centralisation.
+            Centralised mining is an issue for currencies like Bitcoin, because when pools get too big and centralised, it can lead to an attack on the consensus protocol. Being on Luceo, Fractalide's stake pool participates in a process that avoids centralisation.
         </p>
     </div>
     <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/reward-min.png">
-        <h2 class="sub_heading_blue">Heading</h2>
+        <h2 class="sub_heading_blue">Rewards</h2>
         <p class="stake_pool_text">
-            Cryptocurrency users take part in mining and earn rewards. Cardano allows you to nominate another party, like Fractalide, to vote on your behalf to make it easier. If you nominate someone else, both you and your nominee will be rewarded through the Cardano blockchain, which removes the fear of theft.
+            Proof-of-Stake users take part in staking and earn rewards. Cardano allows you to be offline and nominate another party, like Fractalide, to stake on your behalf. If you nominate someone else, both you and your nominee will be rewarded through the Cardano blockchain, which removes the fear of theft.
         </p>
     </div>
     <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <img class="stake_pool_icon" src="/img/stake-pools/earnings-min.png">
-        <h2 class="sub_heading_blue">Heading</h2>
+        <h2 class="sub_heading_blue">Free Speech</h2>
         <p class="stake_pool_text">
-            We'll make our costs and spendings transparent. If you appreciate Fractalide and want your experience improved, then nominate us to stake for you. The more nominators the lighter it is for everyone. All pool earnings (not nominator earnings), after server costs, goes into development of the open source Hyperflow dapp browser. By nominating Fractalide, you're helping improve Fractalide and the Cardano ecosystem.
+            If you appreciate Fractalide and want your experience improved, then nominate us to stake for you. All pool earnings (not nominator earnings), after server costs, goes into development of <a href="/trulity">Trulity</a>, a censorship free browser. By nominating Fractalide, you help promote tools that further free speech.
         </p>
     </div>
 </div>

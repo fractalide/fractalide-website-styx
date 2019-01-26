@@ -118,6 +118,16 @@ rec {
       footer   = "";
     };
 
+    videos = rec {
+      title    = "Videos";
+      section  = "videos";
+      path     = "/videos/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/videos.md; }).content;
+      footer   = "";
+    };
+
     community = rec {
       title    = "Community";
       section  = "community";
@@ -146,13 +156,23 @@ rec {
       pages    = lib.pagesToList { inherit pages; };
     };
 
-    development-and-analysis = rec {
-      title    = "Development and Analysis";
-      section  = "development_and_analysis";
-      path     = "/development-and-analysis/index.html";
+    luceo = rec {
+      title    = "Luceo (CEO)";
+      section  = "luceo";
+      path     = "/luceo/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/development-and-analysis.md; }).content;
+      content  = (lib.loadFile { file = ./content/luceo.md; }).content;
+      extraContent = site-partials.signup.content;
+    };
+
+    gift = rec {
+      title    = "";
+      section  = "luceo-ceo";
+      path     = "/gift/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/gift.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
@@ -162,17 +182,17 @@ rec {
       path     = "/stake-pool/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/stake-pool/stakepools.md; }).content;
+      content  = (lib.loadFile { file = ./content/stake-pool/overview.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
-    stake-pool-cardano-luceo = rec {
+    stake-pool-luceo-ceo = rec {
       title    = "";
-      section  = "cardano-luceo";
-      path     = "/stake-pool/cardano-luceo/index.html";
+      section  = "luceo-ceo";
+      path     = "/stake-pool/luceo-ceo/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/stake-pool/cardano-luceo.md; }).content;
+      content  = (lib.loadFile { file = ./content/stake-pool/luceo-ceo.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
@@ -218,26 +238,27 @@ rec {
       inherit (data) site-partials;
     };
 
-    hyperflow = rec {
-      title    = "Hyperflow";
-      section  = "hyperflow";
-      path     = "/hyperflow/index.html";
+    trulity = rec {
+      title    = "Trulity";
+      section  = "trulity";
+      path     = "/trulity/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = sections.hyperflow.content;
-      extraContent = sections.hyperflow_modes.content + site-partials.signup.content;
-      sections = lib.loadDir { dir = ./content/hyperflow; asAttrs = true; };
+      content  = sections.trulity.content;
+      extraContent = sections.trulity_modes.content + site-partials.signup.content;
+      sections = lib.loadDir { dir = ./content/trulity; asAttrs = true; };
       inherit (data) site-partials;
     };
 
-    fractalmarket = rec {
-      title    = "Fractalmarket";
-      section  = "fractalmarket";
-      path     = "/fractalmarket/index.html";
+    mercat = rec {
+      title    = "Mercat Cross";
+      section  = "mercat";
+      path     = "/mercat/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/fractalmarket.md; }).content;
-      extraContent = site-partials.signup.content;
+      content  = sections.mercat.content;
+      extraContent = sections.mercat_dapps.content + site-partials.signup.content;
+      sections = lib.loadDir { dir = ./content/mercat; asAttrs = true; };
     };
 
     blogIndex = lib.mkSplit {
@@ -272,16 +293,17 @@ rec {
       content  = (lib.loadFile { file = ./content/404.md; }).content;
     };
 
-    about_us = rec {
-      title        = "About us";
+    vision = rec {
+      title        = "Vision";
       section      = "about_us";
-      path         = "/about_us/index.html";
+      path         = "/vision/index.html";
       template     = templates.page.sections;
       layout       = templates.layout;
-      lede         = sections.lede.content;
-      sectionOrder = [ "team" "vision" ];
+      lede         = sections.vision.content;
+      sectionOrder = [ "team" ];
+      extraContent = site-partials.signup.content;
       sections     = lib.loadDir {
-        dir = ./content/about_us;
+        dir = ./content/vision;
         env = { inherit (data) team; inherit lib; };
         asAttrs = true;
       };

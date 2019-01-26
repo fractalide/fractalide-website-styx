@@ -132,7 +132,7 @@ the power of its position.
 
 As described earlier, semantics pertain to the meaning of words or a language. It would make sense to have your semantics absolutely unambiguous. Not in a hand wavey ad hoc manner but preferably in the same way we use EBNF to formally define a syntax. The earliest occurrence of formalising the semantics of a language came with Alonzo Church's lambda calculus. Funnily enough Lambda Calculus was actually meant to replace Bertrand Russell and Alfred North Whitehead's Principia Mathematica which proves 1 + 1 = 2 in some 400 odd pages.
 
-Fast forward many years skipping a lot of work, and we arrive at the &Kopf;-Framework of Grigore Rosu of the FSL research group at the University of Illinois at Urbana-Champaign, together with the FMSE group led by Dorel Lucanu at the Alexandru Ioan Cuza University of Iasi, Romania.
+Fast forward many years skipping a lot of work, and we arrive at the [&Kopf;-Framework](http://www.kframework.org/index.php/Main_Page) of Grigore Rosu of the [FSL research group](http://fsl.cs.illinois.edu/index.php/Formal_Systems_Laboratory) at the University of Illinois at Urbana-Champaign, together with the [Runtime Verification Inc.](https://runtimeverification.com/).
 
 &Kopf;-Framework allows you to define the semantics of a programming language in much the same way one would do with the syntax of a language. It goes a step further, it executes the semantics of your program written in that language. Otherwise known as Operational Semantics. Thus achieving a complete bridging of the execution semantic gap.
 

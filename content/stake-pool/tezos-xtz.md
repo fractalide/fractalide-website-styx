@@ -1,6 +1,14 @@
 <div class="row">
-    <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
-        <h2 class="sub_heading_blue">A Tezos Stake Pool has an important role in securing the XTZ cryptocurrency</h2>
+    <div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+        <div class="text-center">
+            <h2 class="sub_heading_blue">Fractalide XTZ Stakepool</h2>
+            <p>
+                Our stakepool is now live and you're welcome to put your tezzies to work by delegating them to our below address.
+            </p>
+            <p>
+                We return 93% the rewards to our delegators in the same cycle they are released. All our pool software is <a href="https://github.com/fractalide/fractalpools">open source</a> and we operate is a high security environment. Pool earnings are used to help fund the development of <a href="/trulity">Trulity</a>, an open source browser for a future internet. Just as cryptocurrencies allow for a bank in your back pocket, so Fractalide aims to give you data dissemination capabilities of Internet monopolies at negligible cost.
+            </p>
+        </div>
     </div>
 </div>
 <div class="row">
@@ -44,7 +52,7 @@
     </div>
 </div>
 
-<div id="estimation" class="hidden">
+<div id="estimation" class="">
 
 <div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
@@ -187,7 +195,7 @@
 </div>
 
 <!-- kt1 data table -->
-<div id="kt1" class="">
+<div id="kt1" class="hidden">
 
 <div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
