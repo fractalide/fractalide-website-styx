@@ -531,10 +531,10 @@ section#tezos-xtz button {
 
 @media (max-width: 1200px) {
   .blue_box {
-    padding: 20px 0 20px 0;
+    padding: 20px;
   }
   .white_box {
-    padding: 20px 0 20px 0;
+    padding: 20px;
   }
   #delegationAddress {
     word-wrap:break-word;
@@ -600,6 +600,15 @@ section#tezos-xtz ul li {
 
 .kt1_data {
     margin-top: 90px;
+}
+
+.table-padded > thead > tr > th,
+.table-padded > tbody > tr > th,
+.table-padded > tfoot > tr > th,
+.table-padded > thead > tr > td,
+.table-padded > tbody > tr > td,
+.table-padded > tfoot > tr > td {
+    padding: 15px;
 }
 
 

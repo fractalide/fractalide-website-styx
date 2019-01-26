@@ -222,40 +222,42 @@
 
 <div class="row kt1_data">
     <div class="col-sm-offset-2 col-sm-8">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Cycle</th>
-                    <th>Snapshot Balance</th>
-                    <th>Estimated Rewards</th>
-                    <th>Final Rewards</th>
-                    <th>Payout Hash</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>26</td>
-                    <td>19999.74</td>
-                    <td>14.391045</td>
-                    <td>14.391485</td>
-                    <td class="text_blue">Paid out</td>
-                </tr>
-                <tr>
-                    <td>26</td>
-                    <td>19999.74</td>
-                    <td>14.391045</td>
-                    <td>14.391485</td>
-                    <td class="text_blue">Paid out</td>
-                </tr>
-                <tr>
-                    <td>26</td>
-                    <td>19999.74</td>
-                    <td>14.391045</td>
-                    <td>14.391485</td>
-                    <td class="text_blue">Paid out</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-padded">
+                <thead>
+                    <tr>
+                        <th>Cycle</th>
+                        <th>Snapshot Balance</th>
+                        <th>Estimated Rewards</th>
+                        <th>Final Rewards</th>
+                        <th>Payout Hash</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>26</td>
+                        <td>19999.74</td>
+                        <td>14.391045</td>
+                        <td>14.391485</td>
+                        <td class="text_blue">Paid out</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>19999.74</td>
+                        <td>14.391045</td>
+                        <td>14.391485</td>
+                        <td class="text_blue">Paid out</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>19999.74</td>
+                        <td>14.391045</td>
+                        <td>14.391485</td>
+                        <td class="text_blue">Paid out</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
