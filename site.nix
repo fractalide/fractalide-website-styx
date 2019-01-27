@@ -172,7 +172,7 @@ rec {
       path     = "/gift/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/gift.md; }).content;
+      content  = (lib.loadFile { file = ./content/gift/gift.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
@@ -182,7 +182,7 @@ rec {
       path     = "/gift-details/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/gift-details.md; }).content;
+      content  = (lib.loadFile { file = ./content/gift/gift-details.md; }).content;
       extraContent = site-partials.signup.content;
     };
 
