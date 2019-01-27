@@ -29,6 +29,9 @@
             If on the other hand, you're not your average sausage out of the sausage factory then you need some filthy lucre, which serves as an invitation for you to participate in the early stages of a new internet. To start off you're going to need to email the below information to the email address on your card. <mark> 1.) The <b>code</b> that's on your card as the <b>email subject title</b>. 2.) <b>ADA address</b> generated from this <a href="https://github.com/input-output-hk/cardano-cli">software</a> in the <b>email body</b> (only use this software to generate the address and <b>don't use</b> an existing ADA address, which might be in a scenario where you cannot access your private key, i.e. hardware wallet, or on an exchange)</mark>
         </p>
         <p>
+            If you don't have time to setup the ADA client to generate your address, please send an email with the code as the subject and you will be contacted at a later date for the address.
+        </p>
+        <p>
             The amount of <a href="/luceo">Luceo</a> on the card will be sent to the address you emailed us. We still have a couple of months to go before the release of mainnet in Q3 2019, so be patient and start slinging parentheses.
         </p>
         <p>
