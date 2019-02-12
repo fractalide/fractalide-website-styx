@@ -5,7 +5,7 @@
         <p>The below will give you an idea of the process to generate a luceo address</p>
         <ol>
           <li>Install the <a href="https://www.rust-lang.org/tools/install">Rust toolchain</a></li>
-          <li><code>$ git clone https://github.com/input-output-hk/cardano-cli</code></li>
+          <li><code>$ git clone --recursive https://github.com/input-output-hk/cardano-cli</code></li>
           <li><code>$ cd cardano-cli</code></li>
           <li><code>$ cargo build --release</code></li>
           <li>Carefully record all secret information being sure to write down the 24 word mnemonic words backing it up via pen and paper.</li>
