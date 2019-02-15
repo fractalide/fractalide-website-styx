@@ -8,7 +8,7 @@
                     Here be ideological giant tech dragons who see it their place to police free speech. They will cut access to your account and in the near future, should they control the monetary supply, render you broke at the flick of a switch. Some countries have already implemented such draconian systems such as the Social Credit Score.
                 </p>
                 <p>
-                    Luceo is a cryptocurrency that implements <a class="" href="https://eprint.iacr.org/2018/1132">Ouroboros Crypsinous</a>, a privacy preserving coin with native K-Framework smart contracts which are formally verified. Luceo is suitable for the rough and ready pioneer looking to forge a new uninhibited internet where free speech and chain history immutability are sacrosanct.
+                    Luceo is a cryptocurrency that aims to implements <a class="" href="https://eprint.iacr.org/2018/1132">Ouroboros Crypsinous</a>, a privacy preserving coin with native K-Framework smart contracts which are formally verified. Luceo is suitable for the rough and ready pioneer looking to forge a new uninhibited internet where free speech and chain history immutability are sacrosanct. Though due to time constraints we'll first start off with a non-privacy preserving coin and evolve towards Crypsinous.
                 </p>
             </div>
         </div>
