@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <div class="text-center">
                     <p class="copyright">
-                        Copyright ©2017 Fractalide. All Rights Reserved.
+                        Copyright ©2019 Fractalide. All Rights Reserved.
                     </p>
                 </div>
             </div>
