@@ -12,8 +12,8 @@
           <li><code>$ ./target/release/cardano-cli wallet create luceo</code></li>
           <li><code>$ ./target/release/cardano-cli wallet attach luceo luceo-mainnet</code></li>
           <li><code>$ ./target/release/cardano-cli wallet address luceo 0 0</code></li>
-          <li>Copy past the address, which'll look similar to this <code>Ae2tdPwUPEZ9MW89k5T9Fh4qRwztiddhUJKB9XXTvjfxNGzdmxEhRwC7S5g</code> and email it to the address on the card.</li>
-          <li>Now copy your address and paste it into an email body where the email title is the code on your card, the destination email address ("to" field) can also be found on your card.</li>
+          <li>The output will look similar to this:  <code>Ae2tdPwUPEZ9M.................JKB9XXTvjfxNGzdmxEhRwC7S5g</code></li>
+          <li>Now copy your generated address created on the command line and paste it into an email body where the email title is the code on your card, the destination email address ("to" field) can also be found on your card.</li>
         </ol>
     </div>
 </div>
