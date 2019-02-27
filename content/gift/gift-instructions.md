@@ -3,8 +3,8 @@
         <h2 class="sub_heading_blue">Instructions</h2>
         <p>Please follow the below to generate a luceo address</p>
         <ol>
-          <li>Download Cardano CLI from <code>https://github.com/input-output-hk/cardano-cli/releases/tag/v1.0.1</code></li>
-          <li>Uncompress the artefact</li>
+          <li>Download <a href="https://github.com/input-output-hk/cardano-cli/releases/tag/v1.0.1">Cardano CLI</a></li>
+          <li>Extract the binary</li>
           <li>Carefully record all secret information being sure to write down the 24 word mnemonic words backing it up via pen and paper.</li>
           <li><code>$ cardano-cli blockchain new luceo-mainnet</code></li>
           <li><code>$ cardano-cli wallet create luceo</code></li>
