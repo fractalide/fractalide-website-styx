@@ -10,7 +10,7 @@ A step back and reassessment
 
 At FOSDEM 2019 it dawned on me that our entire approach to reproducibility is incorrect.
 
-Right, back to the drawing board. What are the major important aspects of this system we're trying to build?
+Right, back to the drawing board. What are the major important concepts of this system we're trying to build?
 Let's take a step back from purely technical objectives. Software after all is meant to be used by people, programmer or not. Therefore the core goals should be social in nature.
 
 [Social scalability](https://unenumerated.blogspot.com/2017/02/money-blockchains-and-social-scalability.html), a term coined by Nick Szabo describes a community that is amenable to increasing in size yet retaining the original intent of the endeavour. Let's isolate the social scalabilities of the system and focus on these entirely. What are they?
