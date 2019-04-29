@@ -10,8 +10,8 @@
                 <h2 class="sub_heading_blue">
                     <a href="https://riot.im/app/#/room/#fractalide:matrix.org" target="_blank">Riot Channel</a>
                 </h2>
-                <h2 class="sub_heading_blue">
+                <!--<h2 class="sub_heading_blue">
                     <a href="https://t.me/joinchat/HXdgc1CvRT6K3A4la7AApQ" target="_blank">Telegram Group</a>
-                </h2>
+                </h2>-->
             </div>
         </div>
