@@ -1,11 +1,11 @@
 {---
-title = "Using Named Data to Subvert Tech Giants.";
+title = "Revuln 2019: Using Named Data to Subvert Tech Giants.";
 tags = [ "social scalability" ];
 level = [ "★★" ];
 author = { name = "Stewart Mackenzie"; image = "photo-stewart-min.png"; };
 ---}
 
-Using Named Data to Subvert Tech Giants.
+Revuln 2019: Using Named Data to Subvert Tech Giants.
 >>>
 
 The overview of my talk will start with outlining the problem of today's internet, then I'll go into the different generations of the internet. Followed by detailing what the future internet will look like. Then finishing off with what we're doing to solve this problem.
