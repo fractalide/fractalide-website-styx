@@ -12,7 +12,7 @@
     sha256 = "1jbbmnrgyi4245imixfs8slgw3kdp7li8dhfy84d4snw239z5dpj";
   }
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
-, liveConf ? pkgs.callPackage <fractalide-com-config> {}
+#, liveConf ? pkgs.callPackage <fractalide-com-config> {}
 }:
 
 rec {
@@ -224,38 +224,6 @@ rec {
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/stake-pool/cardano-ada.md; }).content;
       extraContent = site-partials.signup.content;
-    };
-
-    stake-pool-tezos-xtz = rec {
-      title    = "";
-      section  = "tezos-xtz";
-      path     = "/stake-pool/tezos-xtz/index.html";
-      template = templates.page.full;
-      layout   = templates.layout;
-      content  = (lib.loadFile {
-        file = ./content/stake-pool/tezos-xtz.md;
-        env = {
-          inherit (liveConf.stakepool.xtz) address data;
-          inherit lib;
-        };
-      }).content;
-      extraContent = site-partials.signup.content;
-    };
-
-    cantor-wallet = rec {
-      title    = "Cantor Wallet";
-      hideTitle = true;
-      section  = "cantor";
-      path     = "/cantor-wallet/index.html";
-      template = templates.page.full;
-      layout   = templates.layout;
-      content  = sections.cantor-wallet.content;
-      extraContent = sections.download_center.content;
-      sections = lib.loadDir {
-        dir = ./content/cantor-wallet;
-        asAttrs = true;
-      };
-      inherit (data) site-partials;
     };
 
     trulity = rec {

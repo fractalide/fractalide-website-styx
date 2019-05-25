@@ -18,7 +18,6 @@
     children = [
       { name = "Overview"; url = "/stake-pool/"; }
       { name = "Luceo (CEO)"; url = "/stake-pool/luceo-ceo/"; }
-      { name = "Tezos (XTZ)"; url = "/stake-pool/tezos-xtz/"; }
       { name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }
     ];
   }
