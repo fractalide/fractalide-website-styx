@@ -226,22 +226,6 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    cantor-wallet = rec {
-      title    = "Cantor Wallet";
-      hideTitle = true;
-      section  = "cantor";
-      path     = "/cantor-wallet/index.html";
-      template = templates.page.full;
-      layout   = templates.layout;
-      content  = sections.cantor-wallet.content;
-      extraContent = sections.download_center.content;
-      sections = lib.loadDir {
-        dir = ./content/cantor-wallet;
-        asAttrs = true;
-      };
-      inherit (data) site-partials;
-    };
-
     trulity = rec {
       title    = "Trulity";
       section  = "trulity";
