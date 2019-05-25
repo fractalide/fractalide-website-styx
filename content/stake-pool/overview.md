@@ -10,11 +10,13 @@
     </div>
 </div>
 <div class="row">
+    <div class="col-lg-2 col-xs-12 text-center development_item">
+    </div>
     <div class="col-lg-4 col-xs-12 text-center development_item">
         <img src="/img/roadmap-min/fractal-min.png" />
         <h3>Cardano (ADA)</h3>
         <p>
-            Cardano (ADA) Stakepool will come online in Q2 2019 when the Shelley release takes place. We aim to be one of the first Cardano (ADA) stakepools on the block.
+            Cardano (ADA) Stakepool will come online in Q3 2019 when the Shelley release takes place. We aim to be one of the first Cardano (ADA) stakepools on the block.
         </p>
         <a class="" href="/stake-pool/cardano-ada">Waiting to go live</a>
     </div>
@@ -26,14 +28,9 @@
         </p>
         <a class="" href="/stake-pool/luceo-ceo">Waiting to go live</a>
     </div>
-    <div class="col-lg-4 col-xs-12 text-center development_item">
-        <img src="/img/roadmap-min/fractal-min.png" />
-        <h3>Tezos (XTZ)</h3>
-        <p>
-            The XTZ community's attitude towards formally specified systems impresses us. Our XTZ Stakepool is our first stakepool and we're proud of it.
-        </p>
-        <a class="" href="/stake-pool/tezos-xtz">Currently live</a>
+    <div class="col-lg-2 col-xs-12 text-center development_item">
     </div>
+
 </div>
 
 <script src="/js/global.js"></script>

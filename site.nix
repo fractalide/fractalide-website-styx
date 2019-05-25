@@ -226,22 +226,6 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    stake-pool-tezos-xtz = rec {
-      title    = "";
-      section  = "tezos-xtz";
-      path     = "/stake-pool/tezos-xtz/index.html";
-      template = templates.page.full;
-      layout   = templates.layout;
-      content  = (lib.loadFile {
-        file = ./content/stake-pool/tezos-xtz.md;
-        env = {
-          inherit (liveConf.stakepool.xtz) address data;
-          inherit lib;
-        };
-      }).content;
-      extraContent = site-partials.signup.content;
-    };
-
     cantor-wallet = rec {
       title    = "Cantor Wallet";
       hideTitle = true;
