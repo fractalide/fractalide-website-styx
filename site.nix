@@ -12,7 +12,7 @@
     sha256 = "1jbbmnrgyi4245imixfs8slgw3kdp7li8dhfy84d4snw239z5dpj";
   }
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
-, liveConf ? pkgs.callPackage <fractalide-com-config> {}
+#, liveConf ? pkgs.callPackage <fractalide-com-config> {}
 }:
 
 rec {
