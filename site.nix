@@ -12,6 +12,7 @@
     sha256 = "1jbbmnrgyi4245imixfs8slgw3kdp7li8dhfy84d4snw239z5dpj";
   }
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
+, whitepaper ? ""
 #, liveConf ? pkgs.callPackage <fractalide-com-config> {}
 }:
 
@@ -312,7 +313,7 @@ rec {
       };
     };
 
-    /* ico = rec {
+    ico = rec {
       title    = "ICO";
       section  = "ico";
       path     = "/ico/index.html";
@@ -328,8 +329,8 @@ rec {
       path     = "/ico/details/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/ico/details.md; }).content;
-    }; */
+      content  = (lib.loadFile { file = ./content/ico/details.md; env = { inherit (data) whitepaper; }; }).content;
+    };
 
   };
 
