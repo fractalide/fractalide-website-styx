@@ -12,8 +12,6 @@
     sha256 = "1jbbmnrgyi4245imixfs8slgw3kdp7li8dhfy84d4snw239z5dpj";
   }
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
-, whitepaper ? ""
-#, liveConf ? pkgs.callPackage <fractalide-com-config> {}
 }:
 
 rec {
@@ -66,7 +64,6 @@ rec {
     nav = import ./data/nav.nix { inherit pages templates; };
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
     team = lib.loadDir { dir = ./data/team; };
-    whitepaper = whitepaper;
     faqs = import ./data/faqs.nix;
   };
 
@@ -330,7 +327,7 @@ rec {
       path     = "/ico/details/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = (lib.loadFile { file = ./content/ico/details.md; env = { inherit (data) whitepaper; }; }).content;
+      content  = (lib.loadFile { file = ./content/ico/details.md; }).content;
     };
 
   };
