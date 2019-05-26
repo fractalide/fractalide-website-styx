@@ -4,4 +4,4 @@
   sha256 = "15wgf7yz9jv3wrsp6hbh0bjbwnd0h2siisjyy1ma5l8bwx2dr8l1"; }
 , pkgs ? import pinnedPkgsSrc {}
 }:
-pkgs
+bootPkgs
