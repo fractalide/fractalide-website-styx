@@ -1,8 +1,7 @@
 { bootPkgs ? import <nixpkgs> {}
-, optionalPegAdjustWhenNeeded ? bootPkgs.fetchFromGitHub { owner = "NixOS"; repo = "nixpkgs-channels";
-  rev = "ea145b68a019f6fff89e772e9a6c5f0584acc02c";
-  sha256 = "18jr124cbgc5zvawvqvvmrp8lq9jcscmn5sg8f5xap6qbg1dgf22"; }
-, pkgs ? import optionalPegAdjustWhenNeeded {}
+, pinnedPkgsSrc ? bootPkgs.fetchFromGitHub { owner = "NixOS"; repo = "nixpkgs-channels";
+  rev = "28b4f7b6ace4d7854294f96c190a4b6379136271";
+  sha256 = "15wgf7yz9jv3wrsp6hbh0bjbwnd0h2siisjyy1ma5l8bwx2dr8l1"; }
+, pkgs ? import pinnedPkgsSrc {}
 }:
-
-bootPkgs
+pkgs
