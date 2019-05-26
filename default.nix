@@ -1,8 +1,6 @@
-{ pkgs ? import ./nixpkgs.nix {}
-, whitepaper ? ""
-}:
+{ pkgs ? import ./nixpkgs.nix {} }:
 
 let
-  site-attrs = pkgs.callPackage ./site.nix { inherit whitepaper; };
+  site-attrs = pkgs.callPackage ./site.nix { };
 in
   site-attrs.site // site-attrs
