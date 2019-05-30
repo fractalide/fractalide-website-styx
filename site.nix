@@ -330,6 +330,15 @@ rec {
       content  = (lib.loadFile { file = ./content/ico/details.md; }).content;
     };
 
+    ico_tutorial = rec {
+      title    = "";
+      section  = "ico-tutorial";
+      path     = "/ico/tutorial/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/ico/tutorial.md; }).content;
+    };
+
   };
 
 

@@ -15,7 +15,7 @@
                                 <b>Currency ticker symbol:</b> CEO
                             </p>
                             <p>
-                                <b>Currency type:</b> Utility coin used in Fractalide marketplace (Fractalmarket).
+                                <b>Currency type:</b> A privacy preserving proof of stake utility cybercoin for an information-centric network browser
                             </p>
                             <p>
                                 <b>Total supply:</b> 45 Billion CEO
@@ -261,6 +261,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h2 class="modal-title sub_heading_blue text-center" id="myModalLabel">ADA presale address</h2>
+                <a class="btn btn-lg btn-primary btn-block" href="/ico/tutorial"">Luceo ICO Tutorial</a>
                 <div class="light_blue_box text-center">
                     <span id="presale_address">...</span>
                 </div>

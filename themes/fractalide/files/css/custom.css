@@ -1184,3 +1184,72 @@ section#ico-details .header_gradient {
     color: #58b4cd;
     margin-bottom: 20px;
 }
+
+
+/*********************/
+/* Page: ICO Tutorial */
+/*********************/
+section#ico-tutorial h1.fractal_white {
+    background: url('/img/comic/coin-min.png') no-repeat center;
+    background-size: 437px 190px;
+    height: 190px;
+    padding-top: 75px;
+    margin-bottom: 80px;
+}
+
+section#ico-tutorial {
+    background-color: #A7DDEC;
+    background-image: -webkit-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -moz-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -ms-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+    background-image: -o-linear-gradient(90deg, rgb(88, 180, 205) 0%, rgba(88, 180, 205, 0) 20%);
+}
+
+section#ico-tutorial .header_gradient {
+    background: #A7DDEC !important;
+}
+
+.light_blue_box {
+    background-color: #E8F7FA;
+    padding: 20px;
+}
+
+.sword {
+  width: 317px;
+  padding-left: 50%;
+}
+
+.trezor {
+    width: 100%;
+}
+
+.trezor_steps {
+    width: 580px;
+}
+
+.sub_heading_blue val {
+    font-size: 24px;
+    color: #58b4cd;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 479px) {
+    .trezor_steps {
+        width: 260px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .trezor_steps {
+        width: 300px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .trezor_steps {
+        width: 420px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .trezor_steps {
+        width: 480px;
+    }
+}
