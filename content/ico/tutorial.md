@@ -45,53 +45,40 @@
                     <div class="row">
                         <div class="col-md-offset-1 col-md-10 col-xs-12 light_blue_box">
                             <p>
-                                <a href="http://www.nixos.org/nix">Nix</a> is a high quality, robust, innovative and fast package manager that comes with a large and up to date package collection. It's maintained by a competent group of programmers who take security seriously by running up to date software.
+                                There are three ways of obtaining Luceo.
+                                <ol>
+                                  <li>Luceo binaries</li>
+                                  <li>Build from source</li>
+                                  <li>Using Nix</li>
+                                </ol>
                             </p>
+                            <h3>Most people will download Luceo binaries</h3>
                             <p>
-                                We use Nix to distribute all luceo software to users. Prior experience working with distributed ledgers showed it a constant hassle getting exchanges to upgrade software and move miners over to the latest code after a hardfork. Ideally the upgrade process should be as painless as possible for luceo stakepool owners, exchanges, and end users. Using Nix, users only need to install one dependency which will manage the installation and upgrading of luceo thereafter.
+                                <ol>
+                                  <li><pre>Download Luceo from the <a href="https://github.com/fractalide/jormungandr-luceo/releases">downloads section</a></pre></li>
+                                  <li><pre>C:\Users\u\Downloads> unzip jormungandr-luceo-version-x86_64-pc-windows-gnu.zip</pre></li>
+                                  <li><pre>C:\Users\u\Downloads> start jcli.exe --help</pre></li>
+                                </ol>
                             </p>
+                            <h3>Programmers build from source</h3>
                             <p>
-                                Sadly, for the moment, this decision will limit windows users, as Nix doesn't run well on windows. Though, latest editions of windows will include the linux kernel which means windows users will be able to use the exact same process as everyone else. You may try installing Nix using the current Windows Subsystem for Linux, though we haven't tested it.
+                                Run these commands on a Unix/BSD system.
+                                <ol>
+                                  <li><pre>Follow these <a href="https://www.rust-lang.org/tools/install">instructions</a> to install Rust.</pre></li>
+                                  <li><pre>$ git clone --recursive https://github.com/fractalide/jormungandr-luceo</pre></li>
+                                  <li><pre>$ cd jormungandr-luceo</pre></li>
+                                  <li><pre>$ git tag</pre></li>
+                                  <li><pre>$ git checkout &lt;latest tag&gt;</pre></li>
+                                  <li><pre>$ export PRODUCTION_ADDRESS_PREFIX=ceo</pre></li>
+                                  <li><pre>$ export TEST_ADDRESS_PREFIX=teo</pre></li>
+                                  <li><pre>$ rustup run nightly cargo install</pre></li>
+                                  <li><pre>$ cd ~/.cargo/bin/</pre></li>
+                                  <li><pre>$ ./jcli --help</pre></li>
+                                </ol>
                             </p>
+                            <h3>Luceo stakepool operators build and run using Nix</h3>
                             <p>
-                                Some linux distributions provide a package for the Nix package manager, by all means use it. Otherwise, Nix may be installed via a script on the <a href="https://nixos.org/nix/">Nix website</a>.
-                            </p>
-                            <p>
-                                Once you've installed Nix you need to add the Fractalide channel:
-                                <pre>$ nix-channel --add https://hydra.fractalide.com/project/Ouroboros/channel/latest fractalide</pre>
-                                For the moment we only build for the Linux(x86_64) cpu architecture, later we'll add builds for <code>Linux (i686, aarch64), macOS (x86_64)</code>.
-                            </p>
-                            <p>
-                                The Luceo channel tracks <a href="https://github.com/NixOS/nixpkgs/tree/release-19.03">nixpkgs 19.03</a>. As the Nix package manager defaults to the development version of nixpkgs, we'll need to switch to the latest stable release:
-                                <pre>$ nix-channel --delete nixpkgs</pre>
-                                then
-                                <pre>$ nix-channel --add https://nixos.org/channels/nixos-19.03 nixpkgs</pre>
-                            </p>
-                            <p>
-                                Finally effect your changes by the following:
-                                <pre>$ nix-channel --update</pre>
-                            </p>
-                            <p>
-                                Nix will only install packages with a verified cryptographic signature. Add the Fractalide public key by creating the file <code>~/.config/nix/nix.conf</code> with the following contents:
-                                <pre>substituters = https://cache.nixos.org https://hydra.fractalide.com
-trusted-public-keys = cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= hydra.fractalide.com-1:EnGZBrRHPabgRET+umo2e+wNrw+c4QdbsxsnV5H7zs0=</pre>
-                            </p>
-                            <p>
-                                Now go ahead and install <code>luceo</code> with this command:
-                                <pre>$ nix-env -iA fractalide.jormungandr-luceo</pre>
-                                The above inserts two commands: <code>jormungandr-luceo</code> and <code>luceo</code> into your environment.
-                            </p>
-                            <p>
-                                If you came across this error: <code>file 'fractalide' was not found in the Nix search path</code> then you've hit this <a href="https://github.com/NixOS/nix/issues/2709">nix bug</a>. The workaround is to enter the command below command and try again.
-                                <pre>$ export NIX_PATH=~/.nix-defexpr/channels:$NIX_PATH</pre>
-                            </p>
-                            <p>
-                                To check if the software is working you may run the <code>luceo</code> and <code>jormungandr-luceo</code> commands:
-                                <pre>$ luceo --version
-jormungandr-luceo 0.0.1</pre>
-                                and try:
-                                <pre>$ jormungandr-luceo --version
-jormungandr-luceo 0.0.1</pre>
+                                If you intend on running a Luceo stakepool, these <a href="https://git.fractalide.org/fractalide/luceo">nix expression</a> are strongly recommended. They contain service modules descriptions which will automatically setup and configured your stakepool by pointing at the correct BFT nodes with the latest genesis block hash.
                             </p>
                         </div>
                     </div>
@@ -119,13 +106,10 @@ jormungandr-luceo 0.0.1</pre>
                                 When the luceo genesis block is regenerated your luceo amount will be reset to the original amount. This allows you to experiment with luceo by sending coin to other accounts on the ledger. If you decide to purchase another batch of luceo during a later tranche then this'll be added to the original amount. Though once we shift into <code>mainnet</code> at the end of the ICO period, your coin won't be reset.
                             </p>
                             <p>
-                                Run the below command to retrieve information about the latest versions of luceo and luceo genesis block.
-                                <pre>$ nix-channel --update</pre>
-                                Now reinstall <code>luceo</code> with this command:
-                                <pre>$ nix-env -iA fractalide.jormungandr-luceo</pre>
+                                Please ensure your stakepool software is up to date. Users of the command line interface program <code>luceo[.exe]</code> may update their software less frequently.
                             </p>
                             <p>
-                                For the moment <code>luceo</code> only supports a "blockchain-in-a-box" and isn't decentralised. Over the ICO period this will change allowing you to setup stakepools. At that point please do submit your stakepool certificate, allowing us to include your pool in the next genesis block regeneration. We'll then list your stakepool so others can see it and experiment with it. Thus when we launch <code>mainnet</code> we'll have a sufficiently large user base with enough decentralisation in the form of people running luceo stakepools.
+                                For the moment <code>luceo</code> only supports a "blockchain-in-a-box" and isn't decentralised. Over the ICO period this will change allowing you to setup stakepools. At that point please do submit your stakepool key, allowing us to include your pool in the next genesis block regeneration. We'll then list your stakepool so others can see it and experiment with it. Thus when we launch <code>mainnet</code> we'll have a sufficiently large user base with enough decentralisation in the form of people running luceo stakepools.
                             </p>
                             <p>
                                 Hence this ICO process also serves to choreograph and build out the initial decentralised network. It's critical for more experienced technical people to find and report exploits and bugs in the software, should they arise.
@@ -154,29 +138,32 @@ jormungandr-luceo 0.0.1</pre>
                                   <li>Luceo Address</li>
                                 </ol>
                             </p>
+                            <h3>Private or Secret Key</h3>
                             <p>
                                 Let's start with creating your secret key. Keep in mind, the example data is not your keys and will be different to the below.
                                 Run this command:
-                                <pre>$ luceo key generate --type ed25519Extended</pre>
+                                <pre>$ jcli key generate --type ed25519Extended</pre>
                                 You should see an output similar to this:
-                                <pre>$ luceo key generate --type ed25519Extended
+                                <pre>$ jcli key generate --type ed25519Extended
 ed25519e_sk1prz97aenm5z0344087hyt2mpr26zrvh0ymcq9lpff3mw47fpwax8pxx24dynwwejm5uhccfr6rtuezcfqfev08urxv8zyls36zwe2psrx9cnm</pre>
                                 The output is the secret key, a bit of explanation might be needed.
                                 The initial <code>ed25519</code> indicates it's the digital signature scheme named Edwards-curve Digital Signature Algorithm. The <code>e</code> at the end of <code>ed25519e</code> indicates that it contains extra information, the <code>e</code> is for the <code>extended</code> version of the <code>ed25519</code> algorithm. The extension is to support stakepool delegation. The <code>sk</code> indicates it's the secret or private key. The <code>1</code> acts as a separator for the actual key. The whole line is needed.
                             </p>
+                            <h3>Public Key</h3>
                             <p>
                                 Next you need to generate your public key from the secret key by running this command:
-                                <pre>$ echo ed25519e_sk1prz97aenm5z0344087hyt2mpr26zrvh0ymcq9lpff3mw47fpwax8pxx24dynwwejm5uhccfr6rtuezcfqfev08urxv8zyls36zwe2psrx9cnm | luceo key to-public</pre>
+                                <pre>$ echo ed25519e_sk1prz97aenm5z0344087hyt2mpr26zrvh0ymcq9lpff3mw47fpwax8pxx24dynwwejm5uhccfr6rtuezcfqfev08urxv8zyls36zwe2psrx9cnm | jcli key to-public</pre>
                                 You should see an output similar to the below, after you hit the return key:
-                                <pre>$ echo ed25519e_sk1prz97aenm5z0344087hyt2mpr26zrvh0ymcq9lpff3mw47fpwax8pxx24dynwwejm5uhccfr6rtuezcfqfev08urxv8zyls36zwe2psrx9cnm | luceo key to-public
+                                <pre>$ echo ed25519e_sk1prz97aenm5z0344087hyt2mpr26zrvh0ymcq9lpff3mw47fpwax8pxx24dynwwejm5uhccfr6rtuezcfqfev08urxv8zyls36zwe2psrx9cnm | jcli key to-public
 ed25519e_pk1agqvdmh25xtt44ms2a33pt4thr3qcuappv7yzz8cyhj02djnfk3s0a5slc</pre>
                                 What you just did was use the unix <code>echo</code> command to "repeat" your secret key into the program via the pipe symbol <code>|</code>. The <code>luceo</code> program then received the input and generated the public key from the secret key. Note the similar but shorter output as the secret key, where the <code>pk</code> indicates it's the public key.
                             </p>
+                            <h3>Luceo Address</h3>
                             <p>
                                 Lastly, you need to generate your luceo address, copy and paste your public key into this command.
-                                <pre>$ luceo address single ed25519e_pk1agqvdmh25xtt44ms2a33pt4thr3qcuappv7yzz8cyhj02djnfk3s0a5slc</pre>
+                                <pre>$ jcli address single ed25519e_pk1agqvdmh25xtt44ms2a33pt4thr3qcuappv7yzz8cyhj02djnfk3s0a5slc</pre>
                                 Now hit the return key:
-                                <pre>$ luceo address single ed25519e_pk1agqvdmh25xtt44ms2a33pt4thr3qcuappv7yzz8cyhj02djnfk3s0a5slc
+                                <pre>$ jcli address single ed25519e_pk1agqvdmh25xtt44ms2a33pt4thr3qcuappv7yzz8cyhj02djnfk3s0a5slc
 ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</pre>
                                 Note the generated luceo address should contain a <code>ceo</code> at the beginning. This indicates a <code>production</code> address to be used on the <code>mainnet</code> after the ICO launches.
                             </p>
@@ -260,8 +247,13 @@ luceo address: ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-offset-1 col-md-10 col-xs-12 light_blue_box">
+                            <h3>Pre-ICO phase</h3>
                             <p>
-                                It's time your keys are set in stone.
+                                The below ICO phase is for you to get familiar with the process of sending your luceo address in a bitcoin transaction. In the mean time before we actually start the ICO process you may email your testing luceo address to <code>testnet@fra*lide.com</code> and the amount of coin you want. Generate your luceo testing address using this command: <pre>$ jcli address single ed25519e_pk1agqvdmh25xtt44ms2a33pt4thr3qcuappv7yzz8cyhj02djnfk3s0a5slc --testing</pre> will generate a testnet address.
+                            </p>
+                            <h3>ICO phase</h3>
+                            <p>
+                                During the ICO phase, it'll be time to set your keys in stone.
                             </p>
                             <p>
                                 We need to do two things:
@@ -320,7 +312,7 @@ luceo address: ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</
                                 <img class="trezor" src="/img/ico-tutorial/step6.png" />
                             </div>
                             <p>
-                                Copy paste your generated <code>ceo1<your-address></code> address into the <code>Data(text)</code> section ensuring there are no spaces. You will see the <code>Data(hex)</code> section automatically populated with the hexadecimal version of your address. Don't change anything in the <code>Data(hex)</code>. Notice that the fees went up a little after you pasted your address into the <code>Data(text)</code> text box. This is because you are sending a bit more data into the bitcoin network. More data, more money.
+                                Copy paste your generated <code>ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</code> address into the <code>Data(text)</code> section ensuring there are no spaces. You will see the <code>Data(hex)</code> section automatically populated with the hexadecimal version of your address. Don't change anything in the <code>Data(hex)</code>. Notice that the fees went up a little after you pasted your address into the <code>Data(text)</code> text box. This is because you are sending a bit more data into the bitcoin network. More data, more money.
                             </p>
                             <p>
                                 Finally click on the <code>Send $###</code> button and confirm the transaction on your trezor device.
@@ -346,9 +338,9 @@ luceo address: ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</
                             </p>
                             <p>
                                 You'll need to wait a week or so before we make the next regeneration. Once ready then issue this command:
-                                <pre>$ luceo rest v0 utxo get --host https://luceo.fractalide.com</pre>
+                                <pre>$ jcli rest v0 utxo get --host https://luceo.fractalide.com</pre>
                                 You should see a long list of all luceo accounts and associated luceo amounts. You might prefer to search a different way if the output gets too large:
-                                <pre>$ luceo rest v0 utxo get--host https://luceo.fractalide.com | grep ceo1<your-address></pre> You should see your address there.
+                                <pre>$ jcli rest v0 utxo get --host https://luceo.fractalide.com | grep ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</pre> You should see an output similar to: <pre>  out_addr: ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</pre>
                             </p>
                         </div>
                     </div>
@@ -367,16 +359,22 @@ luceo address: ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</
                     <div class="row">
                         <div class="col-md-offset-1 col-md-10 col-xs-12 light_blue_box">
                             <p>
-                                By leveraging the latest in peer review future internet technologies (Named Data Networking or NDN) we're giving people the same data dissemination capabilities as tech monopolies, but at negligible cost. Meaning a child on the edge of the internet can, without using tech giants like AWS, Google, Facebook, disseminate their application to millions of people around the world at negligible cost to them.
+                                The Fractalide project takes aim at two main targets.
+                                <ol>
+                                  <li>Decentralised, scalable, privacy preserving, efficient currency</li>
+                                  <li>Giving you options to close the door on tech giants and decentralise your online activities</li>
+                                </ol>
+                            </p>
+                            <h3>Decentralised, immutable, permissionless, scalable, privacy preserving and efficient currency</h3>
+                            <p>
+                                Luceo aims to be a decentralized, immutable, permissionless, scalable, efficient and privacy preserving currency. Its purpose is to provide a unit of exchange for the <a href="/mercat">Mercat Cross</a> app marketplace, allowing you to buy and sell applications that execute on the <code>Xin</code> platform. It also brings together an initial group of people with skin in the game.
+                            </p>
+                            <h3>Large scale data dissemination capabilities without needing tech giants</h3>
+                            <p>
+                                <code>Xin</code> is a webassembly execution environment which executes a portable binary format. <code>Wasm</code> applications are decentralised and are obtained via Named Data Networking which is implemented on <code>libp2p</code>. This type of networking immediately makes the need for tech giants who increasingly see it their role to police free speech.
                             </p>
                             <p>
-                                A currency, such as Luceo, associated with a new browser for an information-centric network will be able to compete with a Facebook or Amazon coin and their data dissemination infrastructure.
-                            </p>
-                            <p>
-                                Just as the HTTP browser assisted the TCP/IP network to blossom to what it is today. So, a new NDN browser aims to achieve a similar effect. The Fractalide project isn't just a new cryptocoin, but it's a new implementation of Named Data Networking, a new browser designed for the NDN protocol, and importantly, an app store allowing a market for users to trade luceo for applications that are designed to run on a browser meant for an NDN.
-                            </p>
-                            <p>
-                                The money you send to purchase luceo will be used to build out this infrastructure only.
+                                Once we bootstrap a thriving community using decentralised applications + money, more grand goals of a privacy preserving identity system can be addressed. We don't want just another useless currency that is purely for speculation, but a currency that can be used to buy applications developed by people looking to pay for their children's school fees and roof over their head.
                             </p>
                         </div>
                     </div>
