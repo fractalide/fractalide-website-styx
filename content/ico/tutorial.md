@@ -251,6 +251,9 @@ luceo address: ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</
                             <p>
                                 The below ICO phase is for you to get familiar with the process of sending your luceo address in a bitcoin transaction. In the mean time before we actually start the ICO process you may email your testing luceo address to <code>testnet@fra*lide.com</code> and the amount of coin you want. Generate your luceo testing address using this command: <pre>$ jcli address single ed25519e_pk1agqvdmh25xtt44ms2a33pt4thr3qcuappv7yzz8cyhj02djnfk3s0a5slc --testing</pre> will generate a testnet address.
                             </p>
+                            <p>
+                                The above simply gets your <code>testing</code> address into our hands so we can configure it into the testnet. The below section, on the other hand, gets your <code>production</code> address into our hands via the bitcoin network. This helps us verify that your payment has gone through and your luceo will be minted for you.
+                            </p>
                             <h3>ICO phase</h3>
                             <p>
                                 During the ICO phase, it'll be time to set your keys in stone.

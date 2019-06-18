@@ -1138,6 +1138,11 @@ section#ico-details .header_gradient {
     background: #A7DDEC !important;
 }
 
+.multipass {
+    width: 565px;
+    margin-bottom: 10px;
+}
+
 .light_blue_box {
     background-color: #E8F7FA;
     padding: 20px;

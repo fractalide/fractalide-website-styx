@@ -12,6 +12,11 @@
     sha256 = "1jbbmnrgyi4245imixfs8slgw3kdp7li8dhfy84d4snw239z5dpj";
   }
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
+, docs-fractalide ? pkgs.fetchFromGitHub {
+    owner = "fractalide"; repo = "docs-fractalide";
+    rev = "7fc6ee1f3a1622007aed74b0dab91d7df13edbb5";
+    sha256 = "1vadn61n19554v0kb92anm9432kxlkx65j3ii3n61w61jhmsw8jw";
+  }
 }:
 
 rec {
@@ -87,13 +92,22 @@ rec {
       path     = "/documentation/index.html";
       template = templates.page.full;
       layout   = templates.layout;
+      content  = (lib.loadFile { file = ./content/documentation.md; }).content;
+      footer   = "";
+    };
+
+    httyjm = rec { #How to train your jormungandr manual
+      title    = "How to Train your Jörmungandr Manual";
+      path     = "/httyj/index.html";
+      template = templates.page.full;
+      layout   = templates.layout;
       content  = builtins.readFile (
         pkgs.runCommand "doc-index" {
           buildInputs = [ pkgs.styx ];
           allowSubstitutes = false;
-          src = fractalide-src;
+          src = docs-fractalide;
         } ''
-          asciidoctor -b xhtml5 -s -a showtitle -o- $src/doc/index.adoc > $out
+          asciidoctor -b xhtml5 -s -a showtitle -o- $src/jormungandr/main.adoc > $out
         ''
       );
       footer   = "";
