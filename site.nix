@@ -14,8 +14,8 @@
 , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
 , docs-fractalide ? pkgs.fetchFromGitHub {
     owner = "fractalide"; repo = "docs-fractalide";
-    rev = "7fc6ee1f3a1622007aed74b0dab91d7df13edbb5";
-    sha256 = "1vadn61n19554v0kb92anm9432kxlkx65j3ii3n61w61jhmsw8jw";
+    rev = "13e7560ddc00da32e3467013e3c895e513274d3d";
+    sha256 = "0zf4pn4sacfjy1051nlh6kpvlfl0rdrpkj88zx0m2y0ddg9d0962";
   }
 }:
 
