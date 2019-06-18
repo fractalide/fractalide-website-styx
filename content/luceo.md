@@ -1,6 +1,6 @@
         <div class="row">
             <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 text-center">
-                <h2 class="sub_heading_blue">An Implementation of Ouroboros Crypsinous, a Privacy-Preserving Proof-of-Stake Coin with Native K Smart Contracts.</h2>
+                <h2 class="sub_heading_blue">A Rust implementation of Ouroboros Crypsinous, a Privacy-Preserving Proof-of-Stake Coin.</h2>
                 <p>
                     Luceo belongs in the hands of first wave pioneers building a brave new world. Pioneers leave comfort zones and head into dangerous unknown terrain in search of a brighter future. They see what could be, and are prepared to kill dragons to achieve their goals.
                 </p>
@@ -8,10 +8,37 @@
                     Here be ideological giant tech dragons who see it their place to police free speech. They will cut access to your account and in the near future, should they control the monetary supply, render you broke at the flick of a switch. Some countries have already implemented such draconian systems such as the Social Credit Score.
                 </p>
                 <p>
-                    Luceo is a cryptocurrency that aims to implements <a class="" href="https://eprint.iacr.org/2018/1132">Ouroboros Crypsinous</a>, a privacy preserving coin with native K-Framework smart contracts which are formally verified. Luceo is suitable for the rough and ready pioneer looking to forge a new uninhibited internet where free speech and chain history immutability are sacrosanct. Though due to time constraints we'll first start off with a non-privacy preserving coin and evolve towards Crypsinous.
+                    Luceo is a cryptocurrency that aims to implements <a class="" href="https://eprint.iacr.org/2018/1132">Ouroboros Crypsinous</a>, a privacy preserving coin. Luceo is suitable for the rough and ready pioneer looking to forge a new uninhibited internet where free speech and chain history immutability are sacrosanct. Though due to time constraints we'll first start off with a non-privacy preserving coin and evolve towards Crypsinous.
                 </p>
             </div>
         </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 text-center light_blue_box">
+                    <h3>Luceo Connection Information<h3>
+                    <p>
+                        <b>Current Genesis Hash</b>
+                    </p>
+                    <p>
+                        Not set yet
+                    </p>
+                    <p>
+                        <b>Trusted peer access points</b>
+                    </p>
+                    <p>
+                        https://luceo.fractalide.org
+                    </p>
+                    <p>
+                        <b>REST access point</b>
+                    </p>
+                    <p>
+                        https://luceo.fractalide.org
+                    </p>
+                    <p>
+                        Read up on <a href="/documentation">How To Train Your Jormungandr</a> to use the above information.
+                    </p>
+                </div>
+            </div>
         <div class="row">
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
@@ -22,9 +49,9 @@
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
-                <h3>Verified Ledgerware</h3>
+                <h3>Secure Implementation</h3>
                 <p>
-                    Operational semantics successfully bridges the <a class="" href="/blog/2018-11-23-the-semantic-gap.html">Semantic Gap</a>. The K-Framework represents decades of research and has formally specify IELE, Casper and the KEVM. K will be used to implement Luceo's ledgerware.
+                    Jormungandr, our node software, is implemented in Rust by cryptoengineers, people who implement cryptographic primitives in libraries for languages such as Haskell and Rust.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
