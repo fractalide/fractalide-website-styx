@@ -6,20 +6,10 @@
                     First two rules of fight club hold.
                 </h2>
                 <p class="text_blue">
-                    Please don't broadcast this ICO in chat groups. This'll only bring the "when lambo/moon?" crowd,
-                    when in actuality, we want to attract the exact opposite sort of person.
+                    Do not broadcast this ICO on public forums, instead, please spread the word one-on-one to <b>kind people</b> who make decisions <b>based on facts</b>. An initial group of people of such caliber would be a uplifting experience indeed. This is why this ICO will run for a year without any marketing or hype as it gives time for word to spread amongst the right sort of people.
                 </p>
                 <p class="text_blue">
-                    Please spread the word one-on-one to <b>kind people</b> who make decisions <b>based on facts</b>.
-                    An initial group of people of such caliber would be a uplifting experience indeed.
-                </p>
-                <p class="text_blue">
-                    The actual link to the ICO is hidden in plain sight, hence our rather pathetic attempt in trying to
-                    filter for these qualities becomes apparent.
-                </p>
-                <p class="text_blue">
-                    Note: At epoch 13 of the ICO the first of two hurdles is removed, at epoch 26 all hurdles are
-                    removed. We will also temporarily remove these ICO links if the ICO gets hyped on websites/groups.
+                    The actual link to the ICO is hidden in plain sight.
                 </p>
             </div>
         </div>

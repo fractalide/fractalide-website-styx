@@ -1,45 +1,87 @@
 $(document).ready(function(){
-    generateRandomEpoch();
-
+    setup();
     $('#presaleAddressModal').on('show.bs.modal', function (e) {
         if(!isValidAnswer()) {
             e.preventDefault();
-            generateRandomEpoch();
         }
     });
-
 });
 
-function generateRandomEpoch(){
-    var e = Math.floor(Math.random() * 41); // generate a random number from 0 to 40
-    $('#epoch').html(e);
+function setup() {
+  var number_of_tranches = 200.0;
+  var ico_start_in_seconds = new Date('2019-07-22').getTime() / 1000;
+  var ico_end_in_seconds = new Date('2020-07-21').getTime() / 1000;
+  var now = new Date().getTime() / 1000;
+
+  var days_per_year = 365.0;
+  var ico_tranches_per_year = number_of_tranches;
+  var ico_tranches_per_day = ico_tranches_per_year / days_per_year;
+  var ico_tranches_per_second = ico_tranches_per_day / (60.0 * 60.0 * 24.0); //secs * mins * hrs
+  var ico_length_in_secs = ico_end_in_seconds - ico_start_in_seconds;
+  var gap = ico_length_in_secs / number_of_tranches;
+  var current_ico_tranche = Math.floor(ico_tranches_per_second * (now - ico_start_in_seconds));
+  var progress = (current_ico_tranche / number_of_tranches) * 100;
+
+  var x_rate = 1.0;
+  var initial_discount = 90.0;
+  var discount = x_rate * 0.01 * ((100 - initial_discount) + (current_ico_tranche * (initial_discount / number_of_tranches)));
+  var percentage_discounted = (100 -(discount * 100)).toFixed(3);
+  var price_in_satoshi_per_ceo_in_final_tranche = 0.00001337;
+  var current_price = price_in_satoshi_per_ceo_in_final_tranche * discount;
+
+  $('#ico_start').html(GetFormattedDate(ico_start_in_seconds));
+  $('#ico_end').html(GetFormattedDate(ico_end_in_seconds));
+  $('#number_of_tranches').html(number_of_tranches);
+
+  if (now < ico_start_in_seconds){
+    $('#ico_header').html("ICO public sale is due to start");
+    $('#theprogressbar').attr('aria-valuenow', current_ico_tranche).css('width', "0%");
+    $('#theprogressbar').attr('aria-valuemax', number_of_tranches);
+    $('#sale_progress').html( "ICO hasn't started");
+    $('#current_tranche').html("-");
+    $('#percentage_discounted').html( "-");
+    $('#current_price').html( "-" );
+  } else if (now < ico_end_in_seconds) {
+    $('#ico_header').html("ICO public sale has started");
+    $('#theprogressbar').attr('aria-valuenow', current_ico_tranche).css('width', progress.toFixed(0)+"%");
+    $('#theprogressbar').attr('aria-valuemax', number_of_tranches);
+    $('#sale_progress').html( progress.toFixed(0) + "% completed");
+    $('#current_tranche').html(current_ico_tranche);
+    $('#percentage_discounted').html( percentage_discounted + "% off");
+    $('#current_price').html( current_price.toFixed(8) + " btc satoshi");
+  } else if (now > ico_end_in_seconds) {
+    $('#ico_header').html("ICO public sale has finished");
+    $('#theprogressbar').attr('aria-valuenow', current_ico_tranche).css('width', "100%");
+    $('#theprogressbar').attr('aria-valuemax', number_of_tranches);
+    $('#sale_progress').html( "ICO is completed");
+    $('#current_tranche').html("-");
+    $('#percentage_discounted').html( "-");
+    $('#current_price').html( "-" );
+  }
 }
 
-function calculateP(e) {
-    // e = epoch to query for ADA price (p)
-    // p = ADA price at queried epoch (e)
-    var x = 1.0; //exchange rate of 1 ADA in final epoch
-    var d = 75.0; //initial discount of 75%
-    var n = 41.0; //41 epochs to complete presale (0 upto and including 40)
-    var p = x * 0.01 * (100.0 - d + e / (n - 1.0) * d);
-    return p.toFixed(6);
+function GetFormattedDate(secs) {
+  var t = new Date(1970, 0, 1);
+  t.setSeconds(secs);
+  var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+  ];
+  var day = t.getDate();
+  var monthIndex = t.getMonth();
+  var year = t.getFullYear();
+  return day + ' ' + monthNames[monthIndex] + ' ' + year;
 }
+
 
 function isValidAnswer() {
     var valid = true;
-
     $('.checklist input[type=checkbox]').each(function(i) {
         valid &= $(this).is(':checked');
         $(this).toggleClass('error', $(this).is(':not(:checked)'));
     });
-
-    var p = calculateP(parseInt($('#epoch').html()));
-    var answer = (parseFloat($('#answer').val()) || 0).toFixed(6);
-    valid &= answer === p;
-    $('#answer').parents('div.form-group').toggleClass('has-error', answer !== p);
-    $('#answer ~ span').html('Incorrect! The right answer for epoch ' + $('#epoch').html() + '  was: ' + p).toggleClass('hidden', answer === p);
-
     $('#warning_message').toggleClass('text-danger', !valid);
-
     return valid;
 }
