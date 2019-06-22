@@ -15,13 +15,13 @@
                                 <b>Currency ticker symbol:</b> CEO
                             </p>
                             <p>
-                                <b>Currency type:</b> A privacy preserving proof of stake utility cryptocoin for an information-centric network browser
+                                <b>Currency type:</b> A privacy preserving proof of stake utility cryptocoin for an information-centric network browser.
                             </p>
                             <p>
-                                <b>First use case:</b> First application on the browser will be a amateur video pay per stream app.
+                                <b>First use case:</b> As ICN makes data dissemination very cheap, the first app is a pay per video stream, used in sport events and webcams.
                             </p>
                             <p>
-                                <b>Total supply:</b> uncapped; amount will be determined at the end of the ICO.
+                                <b>Total supply:</b> uncapped
                             </p>
                             <p>
                                 <b>ICO duration:</b> 12 months
