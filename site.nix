@@ -69,6 +69,7 @@ rec {
     nav = import ./data/nav.nix { inherit pages templates; };
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
     team = lib.loadDir { dir = ./data/team; };
+    partners = lib.loadDir { dir = ./data/partners; };
     faqs = import ./data/faqs.nix;
   };
 
@@ -151,7 +152,7 @@ rec {
       footer   = "";
     };
 
-    roadmap = rec {
+    /* roadmap = rec {
       path     = "/roadmap/index.html";
       template = templates.block-page.full;
       layout   = templates.layout;
@@ -160,7 +161,7 @@ rec {
         inherit lib;
         inherit (data) changelog;
       }; };
-    };
+    }; */
 
     sitemap = {
       path     = "/sitemap.xml";
@@ -301,11 +302,11 @@ rec {
       template     = templates.page.sections;
       layout       = templates.layout;
       lede         = sections.vision.content;
-      sectionOrder = [ "team" ];
+      sectionOrder = [ "team" "partners"];
       extraContent = site-partials.signup.content;
       sections     = lib.loadDir {
         dir = ./content/vision;
-        env = { inherit (data) team; inherit lib; };
+        env = { inherit (data) team; inherit (data) partners; inherit lib; };
         asAttrs = true;
       };
     };
