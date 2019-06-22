@@ -380,7 +380,7 @@ luceo address: ceo1q04qp3hwa2sedwkhwptkxy9w4wuwyrrn5y9ncsgglqj7fafk2dx6xuzsgv9</
                     </div>
                     <br>
                     <div class="text-center">
-                      <p><img class="" src="/img/comic/sword-min.png" width="317px"/></p>
+                      <p><img class="sword" src="/img/comic/sword-min.png"/></p>
                     </div>
                 </div>
             </div>
