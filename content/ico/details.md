@@ -184,7 +184,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h2 class="modal-title sub_heading_blue text-center" id="myModalLabel">Multipass</h2>
-                <a href="/ico/tutorial"><img class="multipass no-repeat center"  src="/img/multipass.jpg"/></a>
+                <a href="/ico/tutorial"><img class="multipass"  src="/img/multipass.jpg"/></a>
                 <a class="btn btn-lg btn-primary btn-block" href="/ico/tutorial">Luceo ICO Tutorial</a>
             </div>
         </div>
