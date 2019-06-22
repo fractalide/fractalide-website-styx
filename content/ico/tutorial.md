@@ -12,9 +12,6 @@
                                 (If a party pooper gave you this direct link, then you're missing out on the story. Return to page <a href="/ico/">99</a> of this choose your own adventure and try solve the puzzles to get back here.)
                             </p>
                             <p>
-                                You made it this far, the past two challenges were a mere warm up. Getting through the next hurdle earns you, the hero, a sword that'll overcome centralised fat bankers and tech giant monopolies.
-                            </p>
-                            <p>
                                 This tutorial will guide you through the process of getting your luceo address into the luceo mainnet genesis block. It's designed so that we never interact with your secret/private keys, making the process more secure.
                             </p>
                             <p>
