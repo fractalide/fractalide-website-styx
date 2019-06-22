@@ -1139,6 +1139,7 @@ section#ico-details .header_gradient {
 }
 
 .multipass {
+    background: #FFFFFF url('/img/multipass.png') no-repeat center top;
     width: 565px;
     margin-bottom: 10px;
 }
@@ -1188,6 +1189,27 @@ section#ico-details .header_gradient {
     font-size: 24px;
     color: #58b4cd;
     margin-bottom: 20px;
+}
+
+@media (max-width: 479px) {
+    .multipass {
+        width: 260px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .multipass {
+        width: 420px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .multipass {
+        width: 565px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .multipass {
+        width: 565px;
+    }
 }
 
 
