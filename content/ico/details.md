@@ -49,7 +49,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
-                            <a class="btn btn-lg btn-primary btn-block" href="/fractalide-whitepaper.pdf">Download whitepaper</a>
+                            <a class="btn btn-lg btn-primary btn-block" href="/fractalide-whitepaper.pdf">Whitepaper</a>
                         </div>
                     </div>
                 </div>

@@ -1242,8 +1242,8 @@ section#ico-tutorial .header_gradient {
 }
 
 .sword {
-  width: 317px;
-  padding-left: 50%;
+  width: 417px;
+  padding-left: 20px;
 }
 
 .trezor {
@@ -1264,19 +1264,31 @@ section#ico-tutorial .header_gradient {
     .trezor_steps {
         width: 260px;
     }
+    .sword {
+      width: 160px;
+    }
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .trezor_steps {
         width: 300px;
+    }
+    .sword {
+      width: 260px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .trezor_steps {
         width: 420px;
     }
+    .sword {
+      width: 260px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .trezor_steps {
         width: 480px;
+    }
+    .sword {
+      width: 417px;
     }
 }
