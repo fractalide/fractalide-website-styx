@@ -43,7 +43,7 @@
                                 <br/>
                                 <b>d</b> = initial discount of <code>90%</code>
                                 <br/>
-                                <b>n</b> = number of tranches is <code>200</code>
+                                <b>n</b> = number of tranches is <code>365</code>
                                 <br/>
                                 <b>e</b> = current tranche the ICO is in
                                 <br/>
@@ -78,9 +78,9 @@
                                 <p id="sale_progress" class="sale_progress">0% completed</p>
                             </div>
                             <p><b>ICO start:</b> <span class="pull-right"><val id="ico_start">ico_start_in_seconds</val></span></p>
-                            <p><b>Current ICO tranche:</b> <span class="pull-right"><val id="current_tranche">current_tranche</val>/<val id="number_of_tranches">number_of_tranches</val></span></p>
-                            <p><b>Current discount:</b> <span class="pull-right"><val id="percentage_discounted">percentage_discounted</val></span></p>
-                            <p><b>Current price in satoshi:</b> <span class="pull-right"><val id="current_price">current_price</val></span></p>
+                            <p><b>Today's ICO tranche:</b> <span class="pull-right"><val id="current_tranche">current_tranche</val>/<val id="number_of_tranches">number_of_tranches</val></span></p>
+                            <p><b>Today's discount:</b> <span class="pull-right"><val id="percentage_discounted">percentage_discounted</val></span></p>
+                            <p><b>Today 1 CEO costs:</b> <span class="pull-right"><val id="current_price">current_price</val></span></p>
                             <p><b>ICO end:</b> <span class="pull-right"><val id="ico_end">ico_end_in_seconds</val></span></p>
                         </div>
                     </div>

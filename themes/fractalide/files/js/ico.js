@@ -8,7 +8,7 @@ $(document).ready(function(){
 });
 
 function setup() {
-  var number_of_tranches = 200.0;
+  var number_of_tranches = 365.0;
   var ico_start_in_seconds = new Date('2019-07-23').getTime() / 1000;
   var ico_end_in_seconds = new Date('2020-07-22').getTime() / 1000;
   var now = new Date().getTime() / 1000;
@@ -50,7 +50,7 @@ function setup() {
     $('#percentage_discounted').html( percentage_discounted + "% off");
     // what javascript idiocy is this?
     var current_price_trunc = current_price.toString().substring(0, current_price.toString().indexOf(".") + 9)
-    $('#current_price').html(current_price_trunc);
+    $('#current_price').html(current_price_trunc + " satoshi");
   } else if (current_ico_tranche > (number_of_tranches-1)) {
     $('#ico_header').html("ICO public sale concluded");
     $('#theprogressbar').attr('aria-valuenow', current_ico_tranche).css('width', "100%");
