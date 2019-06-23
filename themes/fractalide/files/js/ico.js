@@ -48,7 +48,9 @@ function setup() {
     $('#sale_progress').html( progress.toFixed(0) + "% completed");
     $('#current_tranche').html((current_ico_tranche + 1));
     $('#percentage_discounted').html( percentage_discounted + "% off");
-    $('#current_price').html(current_price.toFixed(8));
+    // what javascript idiocy is this?
+    var current_price_trunc = current_price.toString().substring(0, current_price.toString().indexOf(".") + 9)
+    $('#current_price').html(current_price_trunc);
   } else if (current_ico_tranche > (number_of_tranches-1)) {
     $('#ico_header').html("ICO public sale concluded");
     $('#theprogressbar').attr('aria-valuenow', current_ico_tranche).css('width', "100%");
