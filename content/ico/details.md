@@ -24,7 +24,7 @@
                                 <b>Total supply:</b> Hard capped at ICO end
                             </p>
                             <p>
-                                <b>ICO duration:</b> 12 months
+                                <b>ICO duration:</b> 365 days
                             </p>
                         </div>
                         <div class="col-md-5 col-xs-12 light_blue_box">
