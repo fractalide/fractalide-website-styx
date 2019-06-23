@@ -33,7 +33,7 @@
                             </p>
                             <p>
                                 <!--
-                                  p = x \cdot 0.01 \cdot ((100 - d) + e \cdot {d \over n})
+                                  p = 0.01x \cdot ((100 - d) + e \cdot {d \over (n-1)})
                                   https://www.codecogs.com/latex/eqneditor.php
                                 -->
                                 <img src="/svg/equation.svg">
@@ -77,11 +77,11 @@
                             <div class="text-center">
                                 <p id="sale_progress" class="sale_progress">0% completed</p>
                             </div>
-                            <p><b>ICO Start:</b> <span class="pull-right"><val id="ico_start">ico_start_in_seconds</val></span></p>
-                            <p><b>Current ICO Tranche:</b> <span class="pull-right"><val id="current_tranche">current_tranche</val>/<val id="number_of_tranches">number_of_tranches</val></span></p>
-                            <p><b>Current Discount:</b> <span class="pull-right"><val id="percentage_discounted">percentage_discounted</val></span></p>
-                            <p><b>Current Price:</b> <span class="pull-right"><val id="current_price">current_price</val></span></p>
-                            <p><b>ICO End:</b> <span class="pull-right"><val id="ico_end">ico_end_in_seconds</val></span></p>
+                            <p><b>ICO start:</b> <span class="pull-right"><val id="ico_start">ico_start_in_seconds</val></span></p>
+                            <p><b>Current ICO tranche:</b> <span class="pull-right"><val id="current_tranche">current_tranche</val>/<val id="number_of_tranches">number_of_tranches</val></span></p>
+                            <p><b>Current discount:</b> <span class="pull-right"><val id="percentage_discounted">percentage_discounted</val></span></p>
+                            <p><b>Current price in satoshi:</b> <span class="pull-right"><val id="current_price">current_price</val></span></p>
+                            <p><b>ICO end:</b> <span class="pull-right"><val id="ico_end">ico_end_in_seconds</val></span></p>
                         </div>
                     </div>
                 </div>
