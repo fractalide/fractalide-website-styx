@@ -16,6 +16,5 @@ rec {
     lib.bootstrap = { enable = true; version = "3.3.7"; };
     lib.font-awesome = { enable = true; version = "4.7.0"; };
     lib.googlefonts = [ "Nunito+Sans:400,900" ];
-    lib.mathjax = { enable = true; version = "2.7.5"; };
   };
 }

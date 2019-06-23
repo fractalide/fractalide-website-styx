@@ -32,7 +32,7 @@
                                 <b>Price:</b> Starting at 90% discount at first tranche to 0% discount at last tranche where <code>0.00001337 Satoshi BTC</code> buys <code>1 CEO</code>.
                             </p>
                             <p>
-                                $$p = x \cdot 0.01 \cdot ((100 - d) + (e \cdot {d \over n}))$$
+                                <img src="/svg/equation.svg">
                             </p>
                             <p>
                                 <b>x</b> = exchange rate of <code>1</code> where 1 CEO to 0.00001337 Satoshi in final epoch
