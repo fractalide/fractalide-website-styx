@@ -29,9 +29,13 @@
                         </div>
                         <div class="col-md-5 col-xs-12 light_blue_box">
                             <p>
-                                <b>Price:</b> Starting at 90% discount at first tranche to 0% discount at last tranche where <code>0.00001337 Satoshi BTC</code> buys <code>1 CEO</code>.
+                                <b>Price:</b> Starting at 90% discount at first tranche to no discount at last tranche where <code>0.00001337 Satoshi BTC</code> buys <code>1 CEO</code>.
                             </p>
                             <p>
+                                <!--
+                                  p = x \cdot 0.01 \cdot ((100 - d) + e \cdot {d \over n})
+                                  https://www.codecogs.com/latex/eqneditor.php
+                                -->
                                 <img src="/svg/equation.svg">
                             </p>
                             <p>
