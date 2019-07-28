@@ -9,8 +9,8 @@ $(document).ready(function(){
 
 function setup() {
   var number_of_tranches = 365.0;
-  var ico_start_in_seconds = new Date('2019-07-23').getTime() / 1000;
-  var ico_end_in_seconds = new Date('2020-07-22').getTime() / 1000;
+  var ico_start_in_seconds = new Date('2019-08-23').getTime() / 1000;
+  var ico_end_in_seconds = new Date('2020-08-22').getTime() / 1000;
   var now = new Date().getTime() / 1000;
 
   var days_per_year = 365.0;
