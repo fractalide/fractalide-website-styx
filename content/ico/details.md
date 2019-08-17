@@ -36,7 +36,7 @@
                                   p = 0.01x \cdot ((100 - d) + e \cdot {d \over (n-1)})
                                   https://www.codecogs.com/latex/eqneditor.php
                                 -->
-                                <img src="/svg/equation.svg">
+                                <img class="formula" src="/svg/equation.svg">
                             </p>
                             <p>
                                 <b>x</b> = exchange rate of <code>1</code> where 1 CEO to 0.00001337 Satoshi in final epoch

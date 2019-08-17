@@ -1144,6 +1144,10 @@ section#ico-details .header_gradient {
     margin-bottom: 10px;
 }
 
+.formula {
+  width: 260px;
+}
+
 .light_blue_box {
     background-color: #E8F7FA;
     padding: 20px;
@@ -1194,6 +1198,9 @@ section#ico-details .header_gradient {
 @media (max-width: 479px) {
     .multipass {
         width: 260px;
+    }
+    .formula {
+      width: 200px;
     }
 }
 @media (min-width: 480px) and (max-width: 767px) {
