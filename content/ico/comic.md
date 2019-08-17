@@ -3,13 +3,34 @@
         <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
             <div class="text-center">
                 <h2 class="text_blue">
-                    First two rules of fight club hold.
+                    Luceo: A privacy preserving digital currency for a society facing tyrannical rule
                 </h2>
                 <p class="text_blue">
-                    Do not broadcast this ICO on public forums, instead, please spread the word one-on-one to <b>kind people</b> who make decisions <b>based on facts</b>. An initial group of people of such caliber would be a uplifting experience indeed. This is why this ICO will run for a year without any marketing or hype as it gives time for word to spread amongst the right sort of people.
+                    When the old force their outdated, traditional ways on the young, the young grow impatient.
+                    When the young force their immature, naive ways on the old, the old become restless.
+                    When both sides cannot see each other chaos ensues.
                 </p>
                 <p class="text_blue">
-                    The actual link to the ICO is hidden in plain sight.
+                    The only way to return to peace is through unbiased attentive observation (symbolised by the eye).
+                    The young should observe the old and learn, update and refresh knowledge to keep themselves alive and society thriving.
+                    The old should observe the young and with kindness, teach fundamental truths void of ideology to the young so they may become brave, independent people capable of shouldering the responsibilities of society.
+                </p>
+                <p class="text_blue">
+                    Don't cling to ideas of yesteryear.
+                    Don't assume your naive ideas are effective.
+                    Learn widely, deeply and recover your humanity.
+                </p>
+                <p class="text_blue">
+                    Hong Kong, this currency is for you. Support our ICO so that we may build out communication tools immune to government surveillance. Help us build a new alternative economy disconnected from tyrannical authority who can bankrupt you because your viewpoints don't align with the government's.
+                </p>
+                <p class="text_blue">
+                    Learn how to use the software, teach others how to use the software. Help build tools that solve real world problems on the platform. Accept Luceo for your services offered. Encourage other Hong Kongers to use Luceo.
+                </p>
+                <p class="text_blue">
+                    Luceo means <code>I shine</code>. Let us turn the troubles Hong Kong has faced into a silver lining. Let us secure our future with technology that empowers your self sovereignty and enables free speech.
+                </p>
+                <p class="text_blue">
+                    <b>When the sword is given to you, click the on sword to go to the ICO.</b>
                 </p>
             </div>
         </div>

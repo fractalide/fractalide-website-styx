@@ -15,10 +15,10 @@
                                 <b>Currency ticker symbol:</b> CEO
                             </p>
                             <p>
-                                <b>Currency type:</b> A privacy preserving, immutable, permissionless, proof of stake utility cryptocoin for an information-centric network browser.
+                                <b>Currency type:</b> A privacy preserving, immutable, permissionless, proof of stake utility digital currency for a citizen in a tyrannical society.
                             </p>
                             <p>
-                                <b>First use case:</b> As ICN makes data dissemination very cheap, the first app is a pay per video stream, used in sport events and webcams.
+                                <b>First use case:</b> As Fractalide makes data dissemination very cheap, the first app is an pay (optional) per video stream, used in protests and webcams.
                             </p>
                             <p>
                                 <b>Total supply:</b> Hard capped at ICO end
