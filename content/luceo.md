@@ -49,9 +49,9 @@
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
-                <h3>Secure Implementation</h3>
+                <h3>Modular</h3>
                 <p>
-                    Jormungandr, our node software, is implemented in Rust by cryptoengineers, people who implement cryptographic primitives in libraries for languages such as Haskell and Rust.
+                    Jormungandr, builds on <code>chain-libs</code>, a modular framework implemented in Rust. Allowing Luceo to be easily embedded in other applications.
                 </p>
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">

@@ -8,8 +8,8 @@
   {
     name = "Solutions";
     children = [
-      { name = "Trulity"; url = "/trulity/"; }
-      { name = "Mercat Cross"; url = "/mercat/"; }
+    #  { name = "Trulity"; url = "/trulity/"; }
+    #  { name = "Mercat Cross"; url = "/mercat/"; }
       { name = "Luceo"; url = "/luceo/"; }
     ];
   }
@@ -25,7 +25,7 @@
     name = "Resources";
     children = [
       { name = "Videos"; url = "/videos/"; }
-      { name = "Research"; url = "/research/"; }
+      /* { name = "Research"; url = "/research/"; } */
       { name = "Community"; url = "/community/"; }
       { name = "Documentation"; url = "/documentation/"; }
       { name = "GitHub"; url = "https://github.com/fractalide/"; target = "_blank"; }

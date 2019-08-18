@@ -122,7 +122,7 @@ rec {
       content  = lib.loadFile { file = ./content/index.md; env = { inherit (data) site-partials; }; };
     };
 
-    research = rec {
+    /* research = rec {
       title    = "Research";
       section  = "research";
       path     = "/research/index.html";
@@ -130,7 +130,7 @@ rec {
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/research.md; }).content;
       footer   = "";
-    };
+    }; */
 
     videos = rec {
       title    = "Videos";
@@ -240,7 +240,7 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    trulity = rec {
+    /* trulity = rec {
       title    = "Trulity";
       section  = "trulity";
       path     = "/trulity/index.html";
@@ -261,7 +261,7 @@ rec {
       content  = sections.mercat.content;
       extraContent = sections.mercat_dapps.content + site-partials.signup.content;
       sections = lib.loadDir { dir = ./content/mercat; asAttrs = true; };
-    };
+    }; */
 
     blogIndex = lib.mkSplit {
       basePath     = "/blog/index";
