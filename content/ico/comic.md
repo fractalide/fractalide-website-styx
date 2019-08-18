@@ -18,16 +18,7 @@
                 <p class="text_blue">
                     Don't cling to ideas of yesteryear.
                     Don't assume your naive ideas are effective.
-                    Learn widely, deeply and recover your humanity.
-                </p>
-                <p class="text_blue">
-                    Hong Kong, this currency is for you. Support our ICO so that we may build out communication tools immune to government surveillance. Help us build a new alternative economy disconnected from tyrannical authority who can bankrupt you because your viewpoints don't align with the government's.
-                </p>
-                <p class="text_blue">
-                    Learn how to use the software, teach others how to use the software. Help build tools that solve real world problems on the platform. Accept Luceo for your services offered. Encourage other Hong Kongers to use Luceo.
-                </p>
-                <p class="text_blue">
-                    Luceo means <code>I shine</code>. Let us turn the troubles Hong Kong has faced into a silver lining. Let us secure our future with technology that empowers your self sovereignty and enables free speech.
+                    Learn widely and study deeply.
                 </p>
                 <p class="text_blue">
                     <b>When the sword is given to you, click the on sword to go to the ICO.</b>
