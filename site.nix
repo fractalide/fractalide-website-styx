@@ -210,7 +210,7 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    stake-pool-overview = rec {
+    /* stake-pool-overview = rec {
       title    = "Stakepools";
       section  = "stakepools";
       path     = "/stake-pool/index.html";
@@ -218,7 +218,7 @@ rec {
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/stake-pool/overview.md; }).content;
       extraContent = site-partials.signup.content;
-    };
+    }; */
 
     stake-pool-luceo-ceo = rec {
       title    = "";
@@ -230,7 +230,7 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    stake-pool-cardano-ada = rec {
+    /* stake-pool-cardano-ada = rec {
       title    = "";
       section  = "cardano-ada";
       path     = "/stake-pool/cardano-ada/index.html";
@@ -238,7 +238,7 @@ rec {
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/stake-pool/cardano-ada.md; }).content;
       extraContent = site-partials.signup.content;
-    };
+    }; */
 
     /* trulity = rec {
       title    = "Trulity";

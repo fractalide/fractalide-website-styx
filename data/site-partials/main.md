@@ -14,7 +14,7 @@
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Stakepools</h2>
                     <p>
-                        Show your support by delegating your stake to our stakepools thus allowing us to further develop Trulity, a free and open source browser from pool fees earned. Stakepools are our first point of contact with people. We rely on word of mouth so please do tell your friends to stake with us.
+                        Stakepools are a decentralised way of securing a digital currency as they allow the currency to have an immutable transaction history. Luceo is a permissionless currency, meaning that anyone can participate in securing the currency and earning rewards by running a Luceo stakepool.
                     </p>
                     <a class="" href="/stake-pool/">Learn more</a>
                 </div>

@@ -14,11 +14,11 @@
     ];
   }
   {
-    name = "Stakepools";
+    name = "Stakepool";
     children = [
-      { name = "Overview"; url = "/stake-pool/"; }
+      /* { name = "Overview"; url = "/stake-pool/"; } */
       { name = "Luceo (CEO)"; url = "/stake-pool/luceo-ceo/"; }
-      { name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }
+      /* { name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; } */
     ];
   }
   {
