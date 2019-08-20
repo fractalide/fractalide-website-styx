@@ -3,10 +3,10 @@
     "description": "High level description of all releases.",
     "releases": [
       {
-        "title": "STAGE 1 - Luceo",
+        "title": "STAGE 1 - Luceo Genesis Praos Mainnet",
         "default-expand-on-website": true,
         "render-features-on-website": true,
-        "description": "Focus on the Luceo Cryptocurrency",
+        "description": "At this stage of the project, Luceo will only implement the Genesis Praos consensus protocol. It'll be a fully decentralised network capable of transactions. A testnet will allow users to try out the currency. Companies and individuals may setup stakepools and encourage users to delegate their Luceo to them.",
         "features": [
           {
             "title": "Ledger",
@@ -26,43 +26,57 @@
             "Objectives": [
               "Define communication between nodes",
               "Node bootstrapping",
-              "Nodes exchange blocks",
-              "Start with a centralised network using trusted-peers",
-              "Gradually move to a decentralised network"
+              "Nodes exchange blocks"
             ],
             "Work Done": []
           },
           {
-            "title": "Luceo Testnet",
+            "title": "Luceo Genesis Praos Testnet",
             "progress-bar": 95,
             "Objectives": [
-              "Setup initial Luceo testnet even before it's ready for prime time"
+              "Start Luceo Testnet in Genesis Praos mode"
+            ],
+            "Work Done": []
+          },
+          {
+            "title": "Luceo Genesis Praos Mainnet",
+            "progress-bar": 95,
+            "Objectives": [
+              "Start Luceo Mainnet in Genesis Praos mode"
             ],
             "Work Done": []
           }
         ]
       },
       {
-        "title": "STAGE 2 - Crypsinous",
+        "title": "STAGE 2 - Luceo Crypsinous Mainnet",
         "default-expand-on-website": true,
         "render-features-on-website": true,
-        "description": "Focus on extending Luceo to be privacy preserving",
+        "description": "Luceo Crypsinous Mainnet brings to completion the privacy preserving for financial transactions. By this stage Genesis Praos should already be running in beta mode for a sufficiently long time. A snapshot of the existing Genesis Praos UTXO will be extracted and used to generate a new genesis block in Crypsinous mode.",
         "features": [
           {
             "title": "Ouroboros Crypsinous",
             "progress-bar": 0,
             "Objectives": [
-              "Extend Luceo so that it supports privacy preserving"
+              "Extend Luceo so that it supports privacy preserving functionality"
+            ],
+            "Work Done": []
+          },
+          {
+            "title": "Luceo Crypsinous Mainnet",
+            "progress-bar": 0,
+            "Objectives": [
+              "Upon completion of Ouroboros Crypsinous we launch Luceo Mainnet"
             ],
             "Work Done": []
           }
         ]
       },
       {
-        "title": "STAGE 3 - Named Data Networking",
+        "title": "STAGE 3 - Applications",
         "default-expand-on-website": true,
         "render-features-on-website": true,
-        "description": "Focus on building out and testing the Named Data Networking layer",
+        "description": "The application layer builds out a platform for Luceo holders to create, buy and sell applications on an app marketplace. Fundamental to this is the implementation of the Named Data Networking (NDN) protocol in Rust. A front end for the NDN is needed as well as a frontend for Luceo users to make transactions. Lastly, a \"killer app\" is needed: Leveraging NDN to reduce the cost of data dissemination allows users to stream data without needing centralised tech giant monopolies like Youtube. This creates a use case for Luceo as users may charge for video streams.",
         "features": [
           {
             "title": "Named Data Networking (NDN)",
@@ -71,15 +85,7 @@
               "Utilize libp2p and implement Named Data Networking in Rust"
             ],
             "Work Done": []
-          }
-        ]
-      },
-      {
-        "title": "STAGE 4 - Applications",
-        "default-expand-on-website": true,
-        "render-features-on-website": true,
-        "description": "Focus on the application layer",
-        "features": [
+          },
           {
             "title": "Jolt - Jormungandr Frontend",
             "progress-bar": 3,
