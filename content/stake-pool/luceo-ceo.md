@@ -9,24 +9,56 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-offset-2 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
-        <button class="btn btn-lg btn-primary btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdVgN3RK6hW_6qetR4hTL17z1SbWcK_Mt4ZmpBNvab-ncxGIQ/viewform';">Email me when it's live</button>
+    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
+        <img class="stake_pool_icon" src="/img/stake-pools/earnings-min.png">
+        <h2 class="sub_heading_blue">Performance</h2>
+        <p class="stake_pool_text">
+            Luceo's stakepool implementation is implemented in Rust, a blazingly fast and memory-efficient programming language with no runtime or garbage collector.
+        </p>
     </div>
-    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
-        <button class="btn btn-lg btn-default btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfSrkVfE7PcMmfOn77OS9UImKwOnj3TK5NtQLkwJDMzi8hl4Q/viewform';">I want to run a LUCEO stake pool</button>
+    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
+        <img class="stake_pool_icon" src="/img/stake-pools/reward-min.png">
+        <h2 class="sub_heading_blue">Rewards</h2>
+        <p class="stake_pool_text">
+            Users take part in securing Luceo by delegating their Luceo to a stakepool, they earn Luceo rewards in this process.
+        </p>
+    </div>
+    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
+        <img class="stake_pool_icon" src="/img/stake-pools/algorithm-min.png">
+        <h2 class="sub_heading_blue">Reliable</h2>
+        <p class="stake_pool_text">
+            The stakepool uses a rich type system and memory ownership model guaranteeing memory-safety and thread-safety, eliminating many classes of bugs at compile-time.
+        </p>
+    </div>
+</div>
+<div class="row">
+    <!-- <div class="col-lg-offset-2 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
+        <button class="btn btn-lg btn-primary btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdVgN3RK6hW_6qetR4hTL17z1SbWcK_Mt4ZmpBNvab-ncxGIQ/viewform';">Email me when it's live</button>
+    </div> -->
+    <div class="col-lg-offset-4 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
+        <button class="btn btn-lg btn-default btn-block" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfSrkVfE7PcMmfOn77OS9UImKwOnj3TK5NtQLkwJDMzi8hl4Q/viewform';">List my LUCEO stakepool below</button>
     </div>
 </div>
 <div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
         <div class="blue_box top_margin">
-            <h2 class="sub_heading_blue">Delegation address</h2>
+            <h2 class="sub_heading_blue">Luceo Stakepools</h2>
             <div class="row white_box">
-                <div class="col-lg-8 col-xs-offset-2 col-xs-10">
+                <div class="col-lg-offset-1 col-lg-2 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
+                    <span>Fractalide</span>
+                </div>
+                <div class="col-lg-offset-2 col-lg-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
                     <span id="delegationAddress">LUCEO-IS-NOT-READY-YET</span>
                     <a class="copy" href="#" onclick="javascript:copyToClipboard('delegationAddress',event);">
                         <img src="/img/stake-pools/copy.png" width="19px">
                     </a>
                 </div>
+                <!-- <div class="col-lg-8 col-xs-offset-4 col-xs-10">
+                    <span id="delegationAddress">LUCEO-IS-NOT-READY-YET</span>
+                    <a class="copy" href="#" onclick="javascript:copyToClipboard('delegationAddress',event);">
+                        <img src="/img/stake-pools/copy.png" width="19px">
+                    </a>
+                </div> -->
             </div>
             <div class="row full_box hidden">
                 <div class="">
@@ -34,29 +66,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
-        <img class="stake_pool_icon" src="/img/stake-pools/algorithm-min.png">
-        <h2 class="sub_heading_blue">Immutable</h2>
-        <p class="stake_pool_text">
-            An immutable transaction history is critical to public trust in the Luceo transaction history. It's unacceptable to have a select group of people unilaterally deciding to undo their transactions, rewriting history. As is the case with the DAO hack of Ethereum.
-        </p>
-    </div>
-    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
-        <img class="stake_pool_icon" src="/img/stake-pools/reward-min.png">
-        <h2 class="sub_heading_blue">Rewards</h2>
-        <p class="stake_pool_text">
-            Users take part in securing Luceo by delegating their Luceo to a stakepool, they earn rewards in this process.
-        </p>
-    </div>
-    <div class="col-lg-offset-0 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 text-center">
-        <img class="stake_pool_icon" src="/img/stake-pools/earnings-min.png">
-        <h2 class="sub_heading_blue">Permissionless</h2>
-        <p class="stake_pool_text">
-            Anyone can participate in securing Luceo by running a stakepool. There is no up front fee nor do you have to be an important famous CEO of a big company to run a Luceo stakepool. Setup and run your stakepool and encourage others to delegate to your pool.
-        </p>
     </div>
 </div>
 
