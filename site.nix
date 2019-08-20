@@ -11,7 +11,7 @@
     rev = "8b5f020895612d17dcf86f20115c14fa845a79e4";
     sha256 = "1jbbmnrgyi4245imixfs8slgw3kdp7li8dhfy84d4snw239z5dpj";
   }
-, changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json")
+/* , changelog ? builtins.fromJSON (builtins.readFile "${fractalide-src}/CHANGELOG.json") */
 , docs-fractalide ? pkgs.fetchFromGitHub {
     owner = "fractalide"; repo = "docs-fractalide";
     rev = "13e7560ddc00da32e3467013e3c895e513274d3d";
@@ -65,12 +65,12 @@ rec {
 
   data = {
     blog = lib.sortBy "date" "dsc" (lib.loadDir { dir = ./data/blog; inherit env; });
-    inherit changelog;
     nav = import ./data/nav.nix { inherit pages templates; };
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
     team = lib.loadDir { dir = ./data/team; };
     partners = lib.loadDir { dir = ./data/partners; };
     faqs = import ./data/faqs.nix;
+    roadmap = builtins.fromJSON (builtins.readFile ./data/roadmap.json);
   };
 
 /*-----------------------------------------------------------------------------
@@ -152,16 +152,16 @@ rec {
       footer   = "";
     };
 
-    /* roadmap = rec {
+    roadmap = rec {
       path     = "/roadmap/index.html";
       template = templates.block-page.full;
       layout   = templates.layout;
       blocks   = [ content ];
       content  = lib.loadFile { file = ./content/roadmap.md; env = {
         inherit lib;
-        inherit (data) changelog;
+        inherit (data) roadmap;
       }; };
-    }; */
+    };
 
     sitemap = {
       path     = "/sitemap.xml";

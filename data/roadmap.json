@@ -1,0 +1,120 @@
+{
+  "Fractalide-Releases": {
+    "description": "High level description of all releases.",
+    "releases": [
+      {
+        "title": "STAGE 1 - Luceo",
+        "default-expand-on-website": true,
+        "render-features-on-website": true,
+        "description": "Focus on the Luceo Cryptocurrency",
+        "features": [
+          {
+            "title": "Ledger",
+            "progress-bar": 90,
+            "Objectives": [
+              "Transactions", "UTXO", "Accounts", "Multisig",
+              "Stakepool", "Certificates",
+              "Cryptographic Primitives", "Consensus Primitives",
+              "Proof-of-stake Consensus"
+            ],
+            "Work Done": [
+            ]
+          },
+          {
+            "title": "Networking",
+            "progress-bar": 40,
+            "Objectives": [
+              "Define communication between nodes",
+              "Node bootstrapping",
+              "Nodes exchange blocks",
+              "Start with a centralised network using trusted-peers",
+              "Gradually move to a decentralised network"
+            ],
+            "Work Done": []
+          },
+          {
+            "title": "Luceo Testnet",
+            "progress-bar": 95,
+            "Objectives": [
+              "Setup initial Luceo testnet even before it's ready for prime time"
+            ],
+            "Work Done": []
+          }
+        ]
+      },
+      {
+        "title": "STAGE 2 - Crypsinous",
+        "default-expand-on-website": true,
+        "render-features-on-website": true,
+        "description": "Focus on extending Luceo to be privacy preserving",
+        "features": [
+          {
+            "title": "Ouroboros Crypsinous",
+            "progress-bar": 0,
+            "Objectives": [
+              "Extend Luceo so that it supports privacy preserving"
+            ],
+            "Work Done": []
+          }
+        ]
+      },
+      {
+        "title": "STAGE 3 - Named Data Networking",
+        "default-expand-on-website": true,
+        "render-features-on-website": true,
+        "description": "Focus on building out and testing the Named Data Networking layer",
+        "features": [
+          {
+            "title": "Named Data Networking (NDN)",
+            "progress-bar": 0,
+            "Objectives": [
+              "Utilize libp2p and implement Named Data Networking in Rust"
+            ],
+            "Work Done": []
+          }
+        ]
+      },
+      {
+        "title": "STAGE 4 - Applications",
+        "default-expand-on-website": true,
+        "render-features-on-website": true,
+        "description": "Focus on the application layer",
+        "features": [
+          {
+            "title": "Jolt - Jormungandr Frontend",
+            "progress-bar": 3,
+            "Objectives": [
+              "Jolt is a Jormungandr frontend giving users a convenient frontend to manage a wallet",
+              "Generate a secure keypair for users"
+            ],
+            "Work Done": []
+          },
+          {
+            "title": "Puff - An NDN frontend",
+            "progress-bar": 0,
+            "Objectives": [
+              "Create an NDN frontend which executes applications obtained for the NDN"
+            ],
+            "Work Done": []
+          },
+          {
+            "title": "Webcams over NDN + Puff",
+            "progress-bar": 0,
+            "Objectives": [
+              "Utilize Named Data Networking to allow users to broadcast without using centralised services"
+            ],
+            "Work Done": []
+          },
+          {
+            "title": "Application marketplace",
+            "progress-bar": 0,
+            "Objectives": [
+              "An application marketplace that allows users to buy and sell applications they create"
+            ],
+            "Work Done": []
+          }
+        ]
+      }
+    ]
+  }
+}

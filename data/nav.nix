@@ -38,5 +38,5 @@
       }
     ];
   }
-  #{ name = "Roadmap"; url = "/roadmap/"; }
+  { name = "Roadmap"; url = "/roadmap/"; }
 ]

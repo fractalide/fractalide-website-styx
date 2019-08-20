@@ -10,13 +10,7 @@
                 <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                     <div class="text-center">
                         <p class="text_dark_blue">
-                            The Fractalide Roadmap is a changelog of what has happened in the project. We've chosen to represent changes in a format that highlights objectives and work done to complete a release. The progress bar gives a best-effort estimate on the completion of the release.
-                        </p>
-                        <p class="text_dark_blue">
-                            At Fractalide, we believe that all developers, be they a founder or an occasional contributor, should be subject to the same contribution policy. It applies to everyone equally. The contribution policy we follow is the <a href="https://github.com/fractalide/fractalide/blob/master/CONTRIBUTING.md" target="_blank"> Collective Code Construction Contract (C4)</a>.
-                        </p>
-                        <p class="text_dark_blue">
-                            Everyone is welcome to participate.
+                            This roadmap gives a high level overview of the project.
                         </p>
                     </div>
                 </div>
@@ -99,6 +93,7 @@
                       else ""}
                     </div>
                   </div> <!-- roadmap_detail -->
+<!-- commenting out work done drop down to keep it simple
                   <div class="roadmap_detail">
                     <a role="button" data-toggle="collapse" href="#${id}_workdone"
                        aria-expanded="false" aria-controls="${id}">
@@ -115,14 +110,15 @@
                         '' else "<p>${builtins.elemAt work_done 0}</p>"
                       else ""}
                     </div>
-                  </div> <!-- roadmap_detail -->
+                  </div>  
+roadmap_detail -->
                 </div> <!-- roadmap_info -->
               </div> <!-- roadmap_container -->
             '');
           in
             output);
        in
-         lib.concatMapStringsSep "\n" renderRelease changelog.Fractalide-Releases.releases
+         lib.concatMapStringsSep "\n" renderRelease roadmap.Fractalide-Releases.releases
        }}
         <div class="roadmap_end">
             <div class="roadmap_line_end"></div>
@@ -139,7 +135,7 @@
                         <div class="text-center">
                             <h1 class="section_heading_white">Fractalide</h1>
                             <h2 class="sub_heading_white">
-                                Your decentralised dapp browser
+                                A privacy preserving platform for communications and financial transactions
                             </h2>
                         </div>
                     </div>
