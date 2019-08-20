@@ -3,7 +3,7 @@
     "description": "",
     "releases": [
       {
-        "title": "STAGE 1 - Luceo Genesis Praos Mainnet",
+        "title": "STAGE 1 - Luceo Genesis Praos Betanet",
         "default-expand-on-website": true,
         "render-features-on-website": true,
         "description": "At this stage of the project, Luceo will only implement the Genesis Praos consensus protocol. It'll be a fully decentralised network capable of transactions. A testnet will allow users to try out the currency. Companies and individuals may setup stakepools and encourage users to delegate their Luceo to them.",
@@ -39,10 +39,10 @@
             "Work Done": []
           },
           {
-            "title": "Luceo Genesis Praos Mainnet",
+            "title": "Luceo Genesis Praos Betanet",
             "progress-bar": 95,
             "Objectives": [
-              "Start Luceo Mainnet in Genesis Praos mode"
+              "Start Luceo Betanet in Genesis Praos mode"
             ],
             "Work Done": []
           }
@@ -52,7 +52,7 @@
         "title": "STAGE 2 - Luceo Crypsinous Mainnet",
         "default-expand-on-website": true,
         "render-features-on-website": true,
-        "description": "Luceo Crypsinous Mainnet brings to completion the privacy preserving feature for financial transactions. By this stage Genesis Praos should already be running in beta mode for a sufficiently long time. A snapshot of the existing Genesis Praos UTXO will be extracted and used to generate a new genesis block in Crypsinous mode.",
+        "description": "Luceo Crypsinous Mainnet brings to completion the privacy preserving extension for financial transactions. By this stage Genesis Praos should already be running for a sufficiently long time in Betanet. A snapshot of the existing Genesis Praos UTXO will be extracted and used to generate a new genesis block in Crypsinous mode.",
         "features": [
           {
             "title": "Ouroboros Crypsinous",
