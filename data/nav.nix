@@ -4,7 +4,7 @@
 
 [
   { name = "Vision"; url = "/vision/"; }
-  #{ name = "ICO"; url = "/ico/"; }
+  { name = "ICO"; url = "/ico/"; }
   {
     name = "Solutions";
     children = [

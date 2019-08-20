@@ -15,10 +15,7 @@
                                 <b>Currency ticker symbol:</b> CEO
                             </p>
                             <p>
-                                <b>Currency type:</b> A privacy preserving, immutable, permissionless, proof of stake utility digital currency for a citizen in a tyrannical society.
-                            </p>
-                            <p>
-                                <b>First use case:</b> As Fractalide makes data dissemination very cheap, the first app is an pay (optional) per video stream, used in protests and webcams.
+                                <b>Currency type:</b> A privacy preserving, immutable, permissionless, proof-of-stake, digital currency for citizens in authoritarian countries.
                             </p>
                             <p>
                                 <b>Total supply:</b> Hard capped at ICO end

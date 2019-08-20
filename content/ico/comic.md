@@ -3,25 +3,16 @@
         <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
             <div class="text-center">
                 <h2 class="text_blue">
-                    Luceo: A privacy preserving digital currency for a society facing tyrannical rule
+                    Luceo: A privacy preserving digital currency for people in living under authoritarian governments.
                 </h2>
                 <p class="text_blue">
-                    When the old force their outdated, traditional ways on the young, the young grow impatient.
-                    When the young force their immature, naive ways on the old, the old become restless.
-                    When both sides cannot see each other chaos ensues.
+                    Luceo ensures your financial freedom. Government and Tech giants cannot put your financial history under surveillance and cannot stop you from making transactions in the system.
                 </p>
                 <p class="text_blue">
-                    The only way to return to peace is through unbiased attentive observation (symbolised by the eye).
-                    The young should observe the old and learn, update and refresh knowledge to keep themselves alive and society thriving.
-                    The old should observe the young and with kindness, teach fundamental truths void of ideology to the young so they may become brave, independent people capable of shouldering the responsibilities of society.
+                    The ICO enables the development of easy to use privacy preserving communication tools.
                 </p>
                 <p class="text_blue">
-                    Don't cling to ideas of yesteryear.
-                    Don't assume your naive ideas are effective.
-                    Learn widely and study deeply.
-                </p>
-                <p class="text_blue">
-                    <b>When the sword is given to you, click the on sword to go to the ICO.</b>
+                    <b>The link to the ICO can be found by clicking on the image of the sword when it is given to you.</b>
                 </p>
             </div>
         </div>

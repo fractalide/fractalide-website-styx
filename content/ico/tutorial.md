@@ -175,19 +175,16 @@
                     <div class="row">
                         <div class="col-md-offset-1 col-md-10 col-xs-12 light_blue_box">
                             <p>
-                                The Fractalide is a privacy preserving project for communications and financial transactions.
+                                Fractalide is a privacy preserving project for communications and financial transactions.
                             </p>
-                            <p><b>Blockchain characteristics:</b></p>
-                            <ol>
-                                <li>Decentralised</li>
-                                <li>Immutable</li>
-                                <li>Permissionless</li>
-                                <li>Scalable</li>
-                                <li>Privacy preserving</li>
-                                <li>Proof of Stake</li>
-                            </ol>
                             <p>
-                                Luceo aims to be a decentralized, immutable, permissionless, scalable, efficient and privacy preserving currency. Its purpose is to provide a unit of exchange for the <a href="/mercat">Mercat Cross</a> app marketplace, allowing you to buy and sell applications that execute on the <code>Puff</code> platform.
+                                <code>Luceo</code> aims to be a decentralized, immutable, permissionless, scalable, efficient and privacy preserving currency. It's purpose is to provide a safe haven for people living under authoritarian governments. ICO funds will be used to implement a privacy preserving communications platform called <code>Puff</code>.
+                            </p>
+                            <p>
+                                <code>Puff</code> will be an application that implements a new networking layer that makes it easier to implement strong security, anonymity and reduces the cost of data dissemination.
+                            </p>
+                            <p>
+                                We thank you for your contribution. Further details can be read in our technical whitepaper.
                             </p>
                         </div>
                     </div>
