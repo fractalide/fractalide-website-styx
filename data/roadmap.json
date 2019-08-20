@@ -104,7 +104,7 @@
             "Work Done": []
           },
           {
-            "title": "Webcams over NDN + Puff",
+            "title": "Pay per video stream application",
             "progress-bar": 0,
             "Objectives": [
               "Utilize Named Data Networking to allow users to broadcast without using centralised services"
