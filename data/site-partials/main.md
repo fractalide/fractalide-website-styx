@@ -5,7 +5,7 @@
                 <div class="text-center">
                     <h2 class="text_blue fractal_blue">Luceo</h2>
                     <p>
-                        We need a way to make commercial transactions with other people. Wherever you have browsers you have interacting people. When people interact, commercial transactions happen. Instead of using an antiquated fiat banking system, we use a modern cryptocurrency as a medium of exchange.
+                        Luceo is a privacy preserving, permissionless, immutable, scalable, efficient Proof-of-Stake cryptocurrency based on Ouroboros. The currency is meant for citizens living in countries with authoritarian governments. Places where privacy is a life or death matter.
                     </p>
                     <a class="" href="/luceo/">Learn more</a>
                 </div>
