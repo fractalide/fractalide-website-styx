@@ -87,11 +87,10 @@
             "Work Done": []
           },
           {
-            "title": "Jolt - Jormungandr Frontend",
+            "title": "Jolt - Jormungandr frontend",
             "progress-bar": 3,
             "Objectives": [
-              "Jolt is a Jormungandr frontend giving users a convenient frontend to manage a wallet",
-              "Generate a secure keypair for users"
+              "Jolt is a Jormungandr frontend giving users a convenient frontend to manage a wallet"
             ],
             "Work Done": []
           },
@@ -99,7 +98,7 @@
             "title": "Puff - An NDN frontend",
             "progress-bar": 0,
             "Objectives": [
-              "Create an NDN frontend which executes applications obtained for the NDN"
+              "Create an NDN frontend which executes applications obtained from the NDN"
             ],
             "Work Done": []
           },
@@ -107,7 +106,7 @@
             "title": "Pay per video stream application",
             "progress-bar": 0,
             "Objectives": [
-              "Utilize Named Data Networking to allow users to broadcast without using centralised services"
+              "Utilize Named Data Networking to allow users to broadcast without using centralised streaming services like Youtube"
             ],
             "Work Done": []
           },
@@ -115,7 +114,7 @@
             "title": "Application marketplace",
             "progress-bar": 0,
             "Objectives": [
-              "An application marketplace that allows users to buy and sell applications they create"
+              "An application marketplace allows users to buy and sell applications they create"
             ],
             "Work Done": []
           }
