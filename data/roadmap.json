@@ -52,7 +52,7 @@
         "title": "STAGE 2 - Luceo Crypsinous Mainnet",
         "default-expand-on-website": true,
         "render-features-on-website": true,
-        "description": "Luceo Crypsinous Mainnet brings to completion the privacy preserving for financial transactions. By this stage Genesis Praos should already be running in beta mode for a sufficiently long time. A snapshot of the existing Genesis Praos UTXO will be extracted and used to generate a new genesis block in Crypsinous mode.",
+        "description": "Luceo Crypsinous Mainnet brings to completion the privacy preserving feature for financial transactions. By this stage Genesis Praos should already be running in beta mode for a sufficiently long time. A snapshot of the existing Genesis Praos UTXO will be extracted and used to generate a new genesis block in Crypsinous mode.",
         "features": [
           {
             "title": "Ouroboros Crypsinous",
@@ -66,7 +66,7 @@
             "title": "Luceo Crypsinous Mainnet",
             "progress-bar": 0,
             "Objectives": [
-              "Upon completion of Ouroboros Crypsinous we launch Luceo Mainnet"
+              "Upon completion of Ouroboros Crypsinous we launch Luceo Crypsinous Mainnet"
             ],
             "Work Done": []
           }
@@ -76,7 +76,7 @@
         "title": "STAGE 3 - Applications",
         "default-expand-on-website": true,
         "render-features-on-website": true,
-        "description": "The application layer builds out a platform for Luceo holders to create, buy and sell applications on an app marketplace. Fundamental to this is the implementation of the Named Data Networking (NDN) protocol in Rust. A front end for the NDN is needed as well as a frontend for Luceo users to make transactions. Lastly, a \"killer app\" is needed: Leveraging NDN to reduce the cost of data dissemination allows users to stream data without needing centralised tech giant monopolies like Youtube. This creates a use case for Luceo as users may charge for video streams.",
+        "description": "The application layer builds out a platform for Luceo holders to create, buy and sell applications on an app marketplace. Fundamental to this is the implementation of the Named Data Networking (NDN) protocol in Rust. A front end for the NDN is needed as well as a frontend for Luceo users to make transactions. Lastly, a \"killer app\" is needed: Leveraging NDN to reduce the cost of data dissemination allows users to stream data without needing centralised tech giant monopolies like Youtube. This creates demand for Luceo as users may charge for video streams.",
         "features": [
           {
             "title": "Named Data Networking (NDN)",
