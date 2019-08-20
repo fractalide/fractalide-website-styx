@@ -11,12 +11,12 @@
                     </div>
                     <div class="col-xs-offset-2 col-xs-8">
                         <div class="text-center">
-                            <h2 class="text_white">
-                                Problem: Governments and technology giants put their citizens/users under surveillance. They may switch off your bank account and see private information you communicate.
-                            </h2>
-                            <h2 class="text_white">
-                                Solution: Luceo, Fractalide's digital currency, will be a privacy preserving currency with a communications platform that allows you to communicate securely without requiring GAFAM*
-                            </h2>
+                            <p class="text_white">
+                                <b class="text_white">Problem:</b> Governments and technology giants put their citizens/users under surveillance. They may switch off your bank account and see private information you communicate.
+                            </p>
+                            <p class="text_white">
+                                <b class="text_white">Solution:</b> Luceo, Fractalide's digital currency, will be a privacy preserving currency with a communications platform that allows you to communicate securely without requiring GAFAM*
+                            </p>
                             <p>
                             <span class="text_white" style="font-size:0.7em">* Google, Amazon, Facebook, Apple, Microsoft.</span>.
                             </p>
