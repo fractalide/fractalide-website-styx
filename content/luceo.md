@@ -2,13 +2,10 @@
             <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 text-center">
                 <h2 class="sub_heading_blue">A Rust implementation of Ouroboros Crypsinous, a Privacy-Preserving Proof-of-Stake Coin.</h2>
                 <p>
-                    Luceo belongs in the hands of first wave pioneers building a brave new world. Pioneers leave comfort zones and head into dangerous unknown terrain in search of a brighter future. They see what could be, and are prepared to kill dragons to achieve their goals.
+                    Tech giants and governments seek to police free speech. They will deplatform you and in the near future, should they control the monetary supply, render you broke at the flick of a switch. Some countries have already implemented such systems such as the Social Credit Score.
                 </p>
                 <p>
-                    Here be ideological giant tech and draconian government dragons who see it their place to police free speech. They will deplatform you and in the near future, should they control the monetary supply, render you broke at the flick of a switch. Some countries have already implemented such systems such as the Social Credit Score.
-                </p>
-                <p>
-                    Luceo is a cryptocurrency that aims to implements <a class="" href="https://eprint.iacr.org/2018/1132">Ouroboros Crypsinous</a>, a privacy preserving coin. Ensuring the pioneer seeking free speech and self sovereignty cannot have their financial freedom encroached on by malicious actors. Though due to time constraints we'll first start off with a non-privacy preserving coin and evolve towards Crypsinous.
+                    Luceo is a cryptocurrency that aims to implements <a class="" href="https://eprint.iacr.org/2018/1132">Ouroboros Crypsinous</a>, a privacy preserving coin. The seeker of free speech and self sovereignty cannot have their financial freedom encroached on by malicious actors. Due to time constraints, we'll first start off with a non-privacy preserving coin and evolve towards Ouroboros Crypsinous.
                 </p>
             </div>
         </div>

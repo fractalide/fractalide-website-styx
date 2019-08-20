@@ -9,10 +9,10 @@
                     Luceo ensures your financial freedom. Government and Tech giants cannot put your financial history under surveillance and cannot stop you from making transactions in the system.
                 </p>
                 <p class="text_blue">
-                    The ICO enables the development of easy to use privacy preserving communication tools.
+                    We're just about to reach the completion of Stage 1 of our <a href="/roadmap"><b>roadmap</b></a> meaning we have a testnet ready for use. The ICO is to help us complete the rest of the tasks required to complete our vision of a privacy preserving platform for communications and financial transactions.
                 </p>
                 <p class="text_blue">
-                    <b>The link to the ICO can be found by clicking on the image of the sword when it is given to you.</b>
+                    <b>The link to the ICO can be found by clicking on the image of the sword below when it is given to you.</b>
                 </p>
             </div>
         </div>
