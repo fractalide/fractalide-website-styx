@@ -10,7 +10,7 @@
                 <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
                     <div class="text-center">
                         <p class="text_dark_blue">
-                            This roadmap gives a high level overview of the project.
+                            Each stage represents an important milestone of the Fractalide project. The highlevel goals of this project consist of implementing a non-privacy preserving cryptocurrency, then a privacy preserving extension. After this focus moves to enabling the application layer and implementing "killer applications" that drive demand for the Luceo currency.
                         </p>
                     </div>
                 </div>
