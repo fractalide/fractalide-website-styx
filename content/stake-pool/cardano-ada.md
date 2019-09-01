@@ -3,7 +3,7 @@
       <div class="text-center">
           <h2 class="sub_heading_blue">Cardano (ADA) Stakepools</h2>
           <p>
-              Cardano (CEO) is an Ouroboros currency. This is a Proof-of-Stake currency with an estimated energy consumption of about 20800 kilowatthours (kWh) per year for the whole entire network. Negligible compared to chains like Bitcoin (BTC) which uses some 22 terawatt-hours (TWh) per year. Cardano (ADA) is not a privacy preserving currency but has a very large user base we wish to help grow and contribute to.
+              Cardano (ADA) is an Ouroboros currency. This is a Proof-of-Stake currency with an estimated energy consumption of about 20800 kilowatthours (kWh) per year for the whole entire network. Negligible compared to chains like Bitcoin (BTC) which uses some 22 terawatt-hours (TWh) per year. Cardano (ADA) is not a privacy preserving currency but has a very large user base we wish to help grow and contribute to.
           </p>
       </div>
     </div>
