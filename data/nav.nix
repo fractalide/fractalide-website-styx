@@ -13,14 +13,14 @@
       { name = "Luceo"; url = "/luceo/"; }
     ];
   }
-  { name = "Stakepools"; url = "/stake-pool/luceo-ceo/"; }
-  /* {
-    name = "Stakepool";
+  {
+    name = "Stakepools";
     children = [
       { name = "Overview"; url = "/stake-pool/"; }
       { name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }
+      { name = "Luceo (CEO)"; url = "/stake-pool/luceo-ceo/"; }
     ];
-  } */
+  }
   {
     name = "Resources";
     children = [
