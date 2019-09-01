@@ -16,7 +16,7 @@
                     <p>
                         Stakepools are a decentralised way of securing a digital currency as they allow the currency to have an immutable transaction history. Luceo is a permissionless currency, meaning that anyone can participate in securing the currency and earning rewards by running a Luceo stakepool.
                     </p>
-                    <a class="" href="/stake-pool/luceo-ceo">Learn more</a>
+                    <a class="" href="/stake-pool">Learn more</a>
                 </div>
             </div>
         </div>
