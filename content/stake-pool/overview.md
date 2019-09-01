@@ -16,7 +16,7 @@
         <img src="/img/roadmap-min/fractal-min.png" />
         <h3>Cardano (ADA)</h3>
         <p>
-            Cardano (ADA) already has a large user base and is listed on many exchanges. We provide a list of Cardano (ADA) stakepools we think are doing a great job at benefiting society.
+            Cardano (ADA) already has a large user base and is listed on many exchanges. We provide a list of Cardano (ADA) stakepools we think are doing a great job of building tools.
         </p>
         <a class="" href="/stake-pool/cardano-ada">Selected Cardano (ADA) stakepool list</a>
     </div>
