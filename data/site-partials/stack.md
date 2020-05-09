@@ -6,7 +6,7 @@
                     <div class="col-xs-12">
                         <div class="text-center">
                             <img src="/img/stack-min.png" width="121px" />
-                            <h1 class="section_heading_white">A privacy preserving platform<br>for communications and financial transactions</h1>
+                            <h1 class="section_heading_white">A privacy preserving platform<br>for communications</h1>
                         </div>
                     </div>
                     <div class="col-xs-offset-2 col-xs-8">
@@ -15,7 +15,7 @@
                                 <b class="text_white">Problem:</b> Governments and technology giants put their citizens/users under surveillance. They may switch off your bank account and see private information you communicate.
                             </p>
                             <p class="text_white">
-                                <b class="text_white">Solution:</b> Luceo, Fractalide's digital currency, will be a privacy preserving currency with a communications platform that allows you to communicate securely without requiring GAFAM*
+                                <b class="text_white">Solution:</b> Copernica is a privacy preserving networking protocol that allows you to communicate securely without requiring GAFAM*
                             </p>
                             <p>
                             <span class="text_white" style="font-size:0.7em">* Google, Amazon, Facebook, Apple, Microsoft.</span>.
