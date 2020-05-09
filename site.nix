@@ -151,7 +151,7 @@ rec {
       content  = (lib.loadFile { file = ./content/community.md; }).content;
       footer   = "";
     };
-
+/*
     roadmap = rec {
       path     = "/roadmap/index.html";
       template = templates.block-page.full;
@@ -162,7 +162,7 @@ rec {
         inherit (data) roadmap;
       }; };
     };
-
+*/
     sitemap = {
       path     = "/sitemap.xml";
       template = templates.sitemap;
@@ -302,11 +302,14 @@ rec {
       template     = templates.page.sections;
       layout       = templates.layout;
       lede         = sections.vision.content;
-      sectionOrder = [ "team" "partners"];
+      sectionOrder = [];# "team" "partners"];
       extraContent = site-partials.signup.content;
       sections     = lib.loadDir {
         dir = ./content/vision;
-        env = { inherit (data) team; inherit (data) partners; inherit lib; };
+        env = {
+        #  inherit (data) team; inherit (data) partners;
+          inherit lib;
+        };
         asAttrs = true;
       };
     };
