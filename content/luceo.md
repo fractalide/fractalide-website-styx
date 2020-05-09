@@ -1,11 +1,8 @@
         <div class="row">
             <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 text-center">
-                <h2 class="sub_heading_blue">A Rust implementation of Ouroboros Crypsinous, a Privacy-Preserving Proof-of-Stake Coin.</h2>
+                <h2 class="sub_heading_blue">A utility coin for the distributed peer-to-peer networking protocol called Copernica.</h2>
                 <p>
                     Tech giants and governments seek to police free speech. They will deplatform you and in the near future, should they control the monetary supply, render you broke at the flick of a switch. Some countries have already implemented such systems such as the Social Credit Score.
-                </p>
-                <p>
-                    Luceo is a cryptocurrency that aims to implements <a class="" href="https://eprint.iacr.org/2018/1132">Ouroboros Crypsinous</a>, a privacy preserving coin. The seeker of free speech and self sovereignty cannot have their financial freedom encroached on by malicious actors. Due to time constraints, we'll first start off with a non-privacy preserving coin and evolve towards Ouroboros Crypsinous.
                 </p>
             </div>
         </div>
@@ -39,29 +36,6 @@
         <div class="row">
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
-                <h3>Privacy Preserving</h3>
-                <p>
-                    Is there an organisation that accepts having all of its income and expenses seen by its competitors? In the vein of free speech, one should be able to censor your transactions from malicious actors.
-                </p>
-            </div>
-            <div class="col-lg-4 col-xs-12 text-center development_item">
-                <img src="/img/roadmap-min/fractal-min.png" />
-                <h3>Modular</h3>
-                <p>
-                    Jormungandr, the name of the consensus node, builds on <code>chain-libs</code>, a modular framework implemented in Rust. Allowing Luceo to be easily embedded in other applications.
-                </p>
-            </div>
-            <div class="col-lg-4 col-xs-12 text-center development_item">
-                <img src="/img/roadmap-min/fractal-min.png" />
-                <h3>Energy Efficient</h3>
-                <p>
-                    Proof-of-Stake consumes far less energy than Proof-of-Work. Participants no longer need to fork out large amounts of money to buy ASIC miners, all they need to participate in the consensus process is to own Luceo coin.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-xs-12 text-center development_item">
-                <img src="/img/roadmap-min/fractal-min.png" />
                 <h3>Immutable</h3>
                 <p>
                     An immutable transaction history is critical for public trust in Luceo. It's unacceptable to have a privileged group of people undo their transactions. As is the case after the Ethereum DAO hack which resulted in the loss of 70 million USD.
@@ -76,9 +50,9 @@
             </div>
             <div class="col-lg-4 col-xs-12 text-center development_item">
                 <img src="/img/roadmap-min/fractal-min.png" />
-                <h3>No Smart Contracts</h3>
+                <h3>Enabel P2P Communication</h3>
                 <p>
-                    Smart contract programming languages attempt to suck the world into their execution. The complexities associated with verifying data about the world in order for a smart contract to execute is intractable. Instead, the Luceo blockchain itself is treated as an "oracle" for standard off-chain software execution. Keeping it simple.
+                    Luceo enables an economic model for the peer-to-peer communication protocol Copernica. The existing internet runs on a pervasive advertising push economic model. What does the Copernica economic model look like when all data is signed and optionally encrypted on a pull network?
                 </p>
             </div>
         </div>
