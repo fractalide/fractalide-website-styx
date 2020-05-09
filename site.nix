@@ -325,7 +325,7 @@ rec {
         asAttrs = true;
       };
     };
-
+/*
     ico = rec {
       title    = "ICO";
       section  = "ico";
@@ -353,7 +353,7 @@ rec {
       layout   = templates.layout;
       content  = (lib.loadFile { file = ./content/ico/tutorial.md; }).content;
     };
-
+*/
   };
 
 
