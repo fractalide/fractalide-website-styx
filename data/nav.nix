@@ -5,31 +5,32 @@
 [
   { name = "Vision"; url = "/vision/"; }
   /*{ name = "ICO"; url = "/ico/"; }*/
+  { name = "Whitepaper"; url = "/fractalide.pdf"; }
   {
     name = "Solutions";
     children = [
     #  { name = "Trulity"; url = "/trulity/"; }
-    #  { name = "Mercat Cross"; url = "/mercat/"; }
-      { name = "Luceo"; url = "/luceo/"; }
+      { name = "Copernica"; url = "/copernica/"; }
+    #  { name = "Luceo"; url = "/luceo/"; }
     ];
   }
-  {
-    name = "Stakepools";
-    children = [
-      /*{ name = "Overview"; url = "/stake-pool/"; }*/
-      /*{ name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }*/
-      { name = "Luceo (CEO)"; url = "/stake-pool/luceo-ceo/"; }
-    ];
-  }
+  #{
+  #  name = "Stakepools";
+  #  children = [
+  #    /*{ name = "Overview"; url = "/stake-pool/"; }*/
+  #    /*{ name = "Cardano (ADA)"; url = "/stake-pool/cardano-ada/"; }*/
+  #    { name = "Luceo (CEO)"; url = "/stake-pool/luceo-ceo/"; }
+  #  ];
+  #}
   {
     name = "Resources";
     children = [
-      { name = "Videos"; url = "/videos/"; }
+      #{ name = "Videos"; url = "/videos/"; }
       /* { name = "Research"; url = "/research/"; } */
-      { name = "Community"; url = "/community/"; }
-      { name = "Documentation"; url = "/documentation/"; }
+      #{ name = "Community"; url = "/community/"; }
+      #{ name = "Documentation"; url = "/documentation/"; }
       { name = "GitHub"; url = "https://github.com/fractalide/"; target = "_blank"; }
-      { name = "FAQs"; url = "/faqs/"; }
+      #{ name = "FAQs"; url = "/faqs/"; }
       { name = "Blog"; url = "/blog/"; }
       { name = "Twitter"; pre = "twitter-min.png"; url = "http://twitter.com/fractalide"; }
       {

@@ -56,7 +56,6 @@ rec {
   */
   inherit (themesData) conf lib files templates env;
 
-
 /*-----------------------------------------------------------------------------
    Data
 
@@ -69,6 +68,7 @@ rec {
     site-partials = lib.loadDir { dir = ./data/site-partials; inherit env; asAttrs = true; };
     team = lib.loadDir { dir = ./data/team; };
     partners = lib.loadDir { dir = ./data/partners; };
+    whitepaper = ./fractalide.pdf;
     faqs = import ./data/faqs.nix;
     roadmap = builtins.fromJSON (builtins.readFile ./data/roadmap.json);
   };
@@ -169,7 +169,7 @@ rec {
       layout   = lib.id;
       pages    = lib.pagesToList { inherit pages; };
     };
-
+/*
     luceo = rec {
       title    = "Luceo (CEO)";
       section  = "luceo";
@@ -240,7 +240,7 @@ rec {
       extraContent = site-partials.signup.content;
     };
 
-    /* trulity = rec {
+    trulity = rec {
       title    = "Trulity";
       section  = "trulity";
       path     = "/trulity/index.html";
@@ -251,17 +251,17 @@ rec {
       sections = lib.loadDir { dir = ./content/trulity; asAttrs = true; };
       inherit (data) site-partials;
     };
-
-    mercat = rec {
-      title    = "Mercat Cross";
-      section  = "mercat";
-      path     = "/mercat/index.html";
+*/
+    copernica = rec {
+      title    = "Copernica";
+      section  = "copernica";
+      path     = "/copernica/index.html";
       template = templates.page.full;
       layout   = templates.layout;
-      content  = sections.mercat.content;
-      extraContent = sections.mercat_dapps.content + site-partials.signup.content;
-      sections = lib.loadDir { dir = ./content/mercat; asAttrs = true; };
-    }; */
+      content  = sections.copernica.content;
+      extraContent = site-partials.signup.content;
+      sections = lib.loadDir { dir = ./content/copernica; asAttrs = true; };
+    };
 
     blogIndex = lib.mkSplit {
       basePath     = "/blog/index";
@@ -374,6 +374,7 @@ rec {
   site = lib.mkSite {
     inherit files pageList;
     postGen = ''
+      cp ${data.whitepaper} $out/fractalide.pdf
       echo "${conf.domain}" > $out/CNAME
     '';
   };
